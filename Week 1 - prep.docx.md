@@ -15,7 +15,7 @@ Research proposal:
   * Research question \+ sub-questions  
   * One main question  
   * Four sub-questions  
-  * At least two Internal analysis+ two external analysis  
+  * At least two Internal analysis + two external analysis  
 - *Methodology*   
   * Field \+ desk research  
   * One SME visit  

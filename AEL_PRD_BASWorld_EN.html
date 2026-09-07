@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Week 1 - AI PRD - BAS World</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Week 1 - AI PRD - BAS World</h1>
+</header>
+<p><strong>Week 1 – 7 September 2026</strong></p>
+<p><strong>AI Product Requirements Document (First Draft)</strong></p>
+<p><em>Platform for handbook research and production — BAS World
+case</em></p>
+<p>1. About</p>
+<p>This product is an agentic research and publishing platform that lets
+the project team publish one new handbook page per week on AI at BAS
+World, an international, multilingual trading platform for used
+commercial vehicles and machinery (Veghel, NL). The team must deliver a
+well-founded page every week, drawing on both English and Dutch-language
+sources, without losing human control over quality.</p>
+<p>2. Market Insights</p>
+<p>General AI research assistants (e.g. Perplexity, Notion AI) are
+widely available, but none are tailored to this project's specific
+combination: a fixed weekly publishing cadence, a fixed chapter
+template, and mandatory processing of Dutch-language sources alongside
+English ones.</p>
+<ul>
+<li><p>Customer segments: the research team (4 students, rotating build
+roles: product manager, developer, tester, deployer); downstream, BAS
+World's management, who read the published pages.</p></li>
+<li><p>User personas: a team researcher without a deep AI background,
+who must turn raw sources into a publishable page within a week; an SME
+reader (a BAS World manager) without a technical AI background, reading
+the page to decide on the next AI step.</p></li>
+<li><p>Technology: the platform relies on an agentic CLI (directed by
+the team, not hand-coded), existing language/translation models, and the
+course's existing wiki/site infrastructure.</p></li>
+</ul>
+<p>3. The Problem</p>
+<ul>
+<li><p>Use cases: find and assess Dutch and English sources for
+relevance/reliability per sub-question; translate Dutch sources
+accurately into English; summarise sources into a page that follows the
+handbook template; have the team review and publish it.</p></li>
+<li><p>Pain point: manual searching, translating, assessing and writing
+takes too much time to sustain weekly for six weeks alongside the rest
+of the programme. Use of Dutch sources also currently depends on which
+team member happens to speak Dutch.</p></li>
+</ul>
+<p><em>Problem statement: the research team spends too much time
+manually searching, translating and assessing Dutch and English sources,
+and therefore does not always deliver a publication-ready, well-founded
+handbook page every week. AI is uniquely suited here, as language
+detection, translation, summarisation and source assessment are tasks a
+language model performs faster and more consistently than a small team
+can within the available time.</em></p>
+<p><em>Hypothesis: automating source collection, translation and
+page-concept generation — with the team acting as reviewer and editor
+rather than executor — makes the process faster and more consistent, and
+reduces dependence on which team member happens to speak Dutch.</em></p>
+<p>4. The Solution</p>
+<ul>
+<li><p>Ideation: agentic source finder (NL/EN); automatic language
+detection and NL→EN translation with verification; source
+reliability/relevance scoring; per-sub-question summarisation;
+page-concept generator following the handbook template; review checklist
+tool.</p></li>
+</ul>
+<p>Leveraging AI: translation, summarisation and source assessment are
+language- and time-bound tasks a language model performs structurally
+faster and more consistently than a four-person team can within a week,
+without removing human control over final quality.</p>
+<p>Feature Prioritisation (RICE)</p>
+<table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Feature</strong></td>
+<td><strong>Reach (1–100%)</strong></td>
+<td><strong>Impact (1–10)</strong></td>
+<td><strong>Confidence (1–10)</strong></td>
+<td><strong>Effort (1–10)</strong></td>
+<td><strong>Score (RxIxC)/E</strong></td>
+</tr>
+<tr class="even">
+<td>Review checklist tool</td>
+<td>100%</td>
+<td>5</td>
+<td>8</td>
+<td>3</td>
+<td>13.3</td>
+</tr>
+<tr class="odd">
+<td>NL→EN translation pipeline + verification</td>
+<td>100%</td>
+<td>8</td>
+<td>7</td>
+<td>5</td>
+<td>11.2</td>
+</tr>
+<tr class="even">
+<td>Source reliability scoring</td>
+<td>100%</td>
+<td>6</td>
+<td>6</td>
+<td>4</td>
+<td>9.0</td>
+</tr>
+<tr class="odd">
+<td>Page-concept generator (template)</td>
+<td>100%</td>
+<td>9</td>
+<td>6</td>
+<td>7</td>
+<td>7.7</td>
+</tr>
+</tbody>
+</table>
+<p><strong>AI MVP:</strong> no custom model is trained. The MVP is a
+hybrid solution — existing language models and translation services are
+directed via an agentic CLI, with prompt-driven tasks for language
+detection, translation, summarisation, source assessment and page
+generation.</p>
+<p><strong>Roadmap:</strong> based on RICE scores — review checklist
+tool first (highest score, lowest effort), then the translation
+pipeline, then source scoring, then the page-concept generator, which
+builds on the first three.</p>
+<p><strong>Technical architecture:</strong> the team (client) directs
+tasks via an agentic CLI; the agent retrieves sources (web/files), sends
+text to language-model and translation APIs, and writes results back to
+the course's existing wiki/site. No new infrastructure is built.</p>
+<p><strong>Assumptions &amp; constraints:</strong> agentic CLI rather
+than hand-coded; reuse of existing wiki/site infrastructure; must be
+runnable by a non-coding team member; every automated step has a manual
+fallback; assumes BAS World is willing to host at least one visit in
+weeks 2–4.</p>
+<p><em>Open question: BAS World's scale (450+ employees, global reach)
+is well beyond a typical SME. Does the research stay scoped to the
+sales/customer process, or is a smaller SME in the same sector added, in
+consultation with the lecturers?</em></p>
+<ul>
+<li><p>Risks: translation errors in figures/quotes → mandatory
+verification against the original; misplaced trust in unreliable sources
+→ explicit, traceable reliability scoring; dependency on external
+AI/translation services → manual fallback at every step; sensitivity of
+interview material → keep the transcript internal, no automatic
+publication without review.</p></li>
+</ul>
+<p>5. Requirements</p>
+<p>User journey: source input/retrieval → language detection &amp;
+translation → source assessment → per-sub-question summarisation →
+page-concept generation → human review &amp; editing → publication to
+the wiki/site.</p>
+<ul>
+<li><p>Functional: retrieve or accept sources via agentic search; detect
+language and translate Dutch sources, keeping the original; score source
+reliability and relevance with a traceable rationale; summarise and
+structure material per sub-question; generate a page concept from the
+handbook template; publish the reviewed page to the existing
+wiki/site.</p></li>
+<li><p>Non-functional: usable by a team member without a coding
+background; every automated step has a manual fallback; turnaround per
+page fits within one week; no storage of sensitive interview material
+outside the team's own environment.</p></li>
+<li><p>AI &amp; data: public Dutch and English sources plus one
+interview transcript; no custom model training, existing language-model
+and translation APIs only; temporary storage of source text and
+translations during processing.</p></li>
+</ul>
+<p>6. Challenges</p>
+<p>Sufficient data is available: public sources plus at least one
+interview. No extra budget is required, as existing language-model and
+translation services fall within the course's resources. The main
+uncertainty is user conviction — whether the team trusts an automated
+translation and assessment step enough to build on it, or whether much
+still ends up being checked manually in practice.</p>
+<p>7. Positioning</p>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 27%" />
+<col style="width: 27%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Use case</strong></td>
+<td><strong>Pain point</strong></td>
+<td><strong>Possible solutions</strong></td>
+<td><strong>Impact of solution</strong></td>
+</tr>
+<tr class="even">
+<td>Publish one well-founded handbook page per week on AI at BAS World,
+based on NL and EN sources.</td>
+<td>Manually searching, translating and assessing sources takes too much
+time to sustain weekly for six weeks.</td>
+<td>Agentic source search, automatic translation with verification,
+automated summarisation and page generation, human review step.</td>
+<td>The team publishes a well-founded page every week without language
+being a bottleneck; NL sources are used as effectively as EN
+sources.</td>
+</tr>
+</tbody>
+</table>
+<p>8. Measuring Success</p>
+<ul>
+<li><p>Metrics: number of pages published on time per week (target: 1
+per week, for six weeks); time from raw source material to a
+publication-ready concept.</p></li>
+<li><p>AI-specific metrics: translation accuracy (share of checked
+translations with no deviation in figures, amounts or quotes); share of
+page claims traceable to a source.</p></li>
+</ul>
+<p><strong>North Star metric:</strong> number of publication-ready
+handbook pages per week that pass human review without major manual
+rewriting.</p>
+<p>9. Launching</p>
+<ul>
+<li><p>Stakeholders &amp; communication: the team itself, the AIBS/AEL
+lecturers and assessors, and a BAS World contact for the interview; kept
+informed via the weekly publication and the portfolio.</p></li>
+<li><p>Rollout strategy: phased rollout per the roadmap in Section 4 —
+review checklist tool first, then the translation pipeline, then source
+assessment, then the page generator — so the team can already publish
+each week while the platform keeps growing.</p></li>
+</ul>
+</body>
+</html>

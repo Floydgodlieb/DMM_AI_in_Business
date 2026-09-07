@@ -31,4 +31,3 @@ Product requirement Document (PRD)
     * Subtasks,   
     * Tests,  
     * Deployment.  
-- 

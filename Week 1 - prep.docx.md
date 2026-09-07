@@ -8,7 +8,7 @@ Research proposal:
   * Which SME’s is this for?  
   * Be specific: sector, size, region  
   * A named partner company is ideal  
-- *What to the target audience need?*  
+- *What does the target audience need?*  
   * What do they know or decide about AI, and why?  
   * Use the Drahi report and your own reasoning  
 - *Explanation of the research problem*  

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Requirements Document — Research and publishing platform for the BAS World handbook</title>
+<style>
+:root{
+  --ink:#000;
+  --rule:#000;
+  --hair:#c9ccd1;
+  --band:#eceef1;
+  --paper:#fff;
+  --measure:78ch;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:#f6f6f4;
+  color:var(--ink);
+  font:16px/1.62 "Iowan Old Style","Charter","Georgia","Times New Roman",serif;
+}
+.sheet{
+  max-width:960px;margin:0 auto;background:var(--paper);
+  padding:56px 60px 72px;border-left:1px solid var(--hair);border-right:1px solid var(--hair);
+  min-height:100vh;
+}
+h1{font-size:2.1rem;line-height:1.15;margin:0 0 .35rem;font-weight:700;letter-spacing:-.01em}
+.subtitle{font-size:1.12rem;margin:0 0 1.1rem;color:var(--ink)}
+.rule{border:0;border-top:2px solid var(--rule);margin:0 0 1.6rem}
+h2{
+  font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:1.02rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;
+  margin:2.6rem 0 .9rem;padding-bottom:.4rem;border-bottom:1.5px solid var(--rule);
+}
+h3{font-size:1rem;font-weight:700;margin:1.6rem 0 .55rem}
+p{margin:0 0 .85rem;max-width:var(--measure)}
+ul{margin:.2rem 0 1rem;padding-left:1.2rem;max-width:var(--measure)}
+li{margin:0 0 .4rem}
+strong{font-weight:700}
+table{
+  border-collapse:collapse;width:100%;margin:.4rem 0 1.5rem;
+  font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:.9rem;line-height:1.5;
+  border-top:2px solid var(--rule);border-bottom:2px solid var(--rule);
+}
+thead th{
+  background:var(--band);color:var(--ink);font-weight:700;text-align:left;
+  padding:.6rem .7rem;border-bottom:1.5px solid var(--rule);vertical-align:bottom;
+}
+tbody td{padding:.6rem .7rem;border-bottom:1px solid var(--hair);vertical-align:top}
+tbody tr:last-child td{border-bottom:0}
+td.num,th.num{text-align:left;width:2.4rem;color:var(--ink)}
+.meta{margin:0 0 .4rem;border-top:2px solid var(--rule);border-bottom:2px solid var(--rule)}
+.meta th{
+  width:11rem;text-align:left;background:var(--band);font-weight:700;
+  padding:.55rem .7rem;border-bottom:1px solid var(--hair);vertical-align:top;
+  font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:.9rem;
+}
+.meta td{padding:.55rem .7rem;border-bottom:1px solid var(--hair);
+  font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:.9rem}
+.meta tr:last-child th,.meta tr:last-child td{border-bottom:0}
+nav.toc{margin:2rem 0 .5rem;padding:0}
+nav.toc ol{list-style:none;margin:0;padding:0;columns:2;column-gap:2.5rem}
+nav.toc li{margin:0 0 .35rem;break-inside:avoid;
+  font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:.88rem}
+nav.toc a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hair)}
+nav.toc a:hover,nav.toc a:focus{border-bottom-color:var(--rule)}
+.toc-label{font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin:0 0 .6rem}
+.note{
+  border-left:4px solid var(--rule);background:#f3f3f1;
+  padding:.7rem .9rem;margin:1.2rem 0;max-width:var(--measure);
+}
+.note p{margin:0}
+blockquote{
+  margin:1rem 0 .3rem;padding:0 0 0 1.1rem;border-left:2px solid var(--hair);
+  font-size:1.05rem;font-style:italic;max-width:var(--measure);
+}
+blockquote+.caption{margin:0 0 1.3rem 1.1rem;font-size:.85rem;
+  font-family:-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a:focus-visible,nav.toc a:focus-visible{outline:2px solid #000;outline-offset:2px}
+@media (max-width:760px){
+  .sheet{padding:32px 20px 48px;border:0}
+  h1{font-size:1.6rem}
+  nav.toc ol{columns:1}
+  table{font-size:.84rem}
+  thead th,tbody td{padding:.5rem .45rem}
+}
+@media print{
+  body{background:#fff}
+  .sheet{max-width:none;padding:0;border:0}
+  nav.toc{display:none}
+  h2{break-after:avoid}
+  table,tr,.note,blockquote{break-inside:avoid}
+  thead{display:table-header-group}
+}
+</style>
+</head>
+<body>
+<main class="sheet">
+<h1>Product Requirements Document</h1>
+<p class="subtitle">Research and publishing platform for the BAS World handbook</p>
+<hr class="rule">
+<table class="meta"><tbody><tr><th scope="row">Team</th><td>Aäron Bos, Floyd Godlieb, Ivan van Vreeswijk, Baran Yapici</td></tr><tr><th scope="row">Build roles</th><td>Product manager, developer, tester, deployer</td></tr><tr><th scope="row">Version</th><td>1.0</td></tr><tr><th scope="row">Date</th><td>10 September 2026</td></tr><tr><th scope="row">Status</th><td>First draft</td></tr></tbody></table>
+<nav class="toc" aria-label="Contents"><p class="toc-label">Contents</p><ol><li><a href="#1-problem-and-users">1. Problem and users</a></li><li><a href="#2-what-the-platform-lets-a-user-do">2. What the platform lets a user do</a></li><li><a href="#3-output-qualities">3. Output qualities</a></li><li><a href="#4-known-constraints">4. Known constraints</a></li><li><a href="#5-handling-dutch-source-material">5. Handling Dutch source material</a></li><li><a href="#6-architecture">6. Architecture</a></li><li><a href="#7-build-plan">7. Build plan</a></li><li><a href="#8-out-of-scope-for-now">8. Out of scope for now</a></li><li><a href="#9-open-questions-and-assumptions">9. Open questions and assumptions</a></li></ol></nav>
+<section id="1-problem-and-users">
+<h2>1. Problem and users</h2>
+<p><strong>Primary users.</strong> Our own four-person research team.</p>
+<p><strong>Downstream readers.</strong> Commercial and operations management at BAS World, who read a published page to decide on a next AI step. Behind them stands the handbook&#x27;s standing reader, a non-technical owner of a much smaller firm in the same trade.</p>
+<p><strong>The problem it solves.</strong> We publish one well-founded handbook page every week for six weeks, built from Dutch and English material plus one Dutch-language interview. Done by hand, the searching, appraising, translating and drafting will not fit inside a week, and the page that comes out cannot be traced back to what it was built from. Dutch material creates a second problem: whoever happens to read Dutch decides what gets researched.</p>
+</section>
+<section id="2-what-the-platform-lets-a-user-do">
+<h2>2. What the platform lets a user do</h2>
+<table>
+<colgroup><col style="width:6%"><col style="width:18%"><col style="width:34%"><col style="width:42%"></colgroup>
+<thead><tr><th class="num">#</th><th class="">Step</th><th class="">What the user does</th><th class="">What the platform does</th></tr></thead><tbody>
+<tr><td class="num">1</td><td>Gather sources</td><td>States the sub-question, adds any known sources</td><td>Searches Dutch and English material, stores each hit with URL, publisher and date</td></tr>
+<tr><td class="num">2</td><td>Appraise</td><td>Reviews the score, overrides it when wrong</td><td>Scores credibility, relevance and recency <em>in the source&#x27;s own language</em>, writes a reason per source</td></tr>
+<tr><td class="num">3</td><td>Process the interview</td><td>Uploads the recording, confirms consent is on file</td><td>Transcribes, anonymises by role, keeps the transcript inside the team environment</td></tr>
+<tr><td class="num">4</td><td>Draft</td><td>Sets the angle, edits</td><td>Summarises per sub-question, drafts against the chapter template, attaches a source reference to every claim</td></tr>
+<tr><td class="num">5</td><td>Check</td><td>Runs the checklist, fixes what fails</td><td>Tests the draft against the six qualities in section 3, reports what it misses</td></tr>
+<tr><td class="num">6</td><td>Publish</td><td>Approves</td><td>Commits the reviewed page to the existing course wiki and site</td></tr>
+</tbody></table>
+<p><strong>Build order.</strong> Retrieval and the language path come first, not the checklist. Our stated pain is language and source handling, so a checklist that runs on pages we cannot yet produce buys us nothing. Order: (1) retrieval, appraisal, translation, (2) summarisation, (3) template drafting, (4) checklist.</p>
+</section>
+<section id="3-output-qualities">
+<h2>3. Output qualities</h2>
+<p><strong>Floor criteria from the chapter template.</strong> Clear to a non-technical reader. Accurate against appraised sources. Covers responsible AI. Useful to an owner.</p>
+<h3>A good page also</h3>
+<table>
+<colgroup><col style="width:6%"><col style="width:94%"></colgroup>
+<thead><tr><th class="num">#</th><th class="">Quality</th></tr></thead><tbody>
+<tr><td class="num">1</td><td>Attaches every recommendation to a <strong>named step</strong> in BAS World&#x27;s sales or documentation chain, never to a category of tool.</td></tr>
+<tr><td class="num">2</td><td>Keeps time-saving automation apart from automation that touches the customer relationship, and says which of the two applies.</td></tr>
+<tr><td class="num">3</td><td>Names the <strong>rule in play</strong> per recommendation (AI Act, GDPR, sanctions screening) and what evidence compliance would need.</td></tr>
+<tr><td class="num">4</td><td>Labels each figure company-reported or independently verifiable.</td></tr>
+<tr><td class="num">5</td><td>States what a trader with 10 to 50 staff in the same business would need to run a <strong>smaller version</strong> of it.</td></tr>
+<tr><td class="num">6</td><td>Ends on one concrete next step: an owner, a rough cost, and a way to tell inside three months whether it worked.</td></tr>
+</tbody></table>
+<p><strong>Cross-check.</strong> Identical to section 4 of the research proposal. Qualities 3 and 4 are the two the platform enforces mechanically: every claim carries a source reference, and company-reported figures get flagged when they enter the store. The rest rely on the reviewer.</p>
+</section>
+<section id="4-known-constraints">
+<h2>4. Known constraints</h2>
+<table>
+<colgroup><col style="width:30%"><col style="width:70%"></colgroup>
+<thead><tr><th class="">Constraint</th><th class="">What it means for the build</th></tr></thead><tbody>
+<tr><td>Way of working</td><td>We direct an agentic CLI. We do not hand write code.</td></tr>
+<tr><td>Infrastructure</td><td>We reuse the existing wiki and site. We build no new infrastructure.</td></tr>
+<tr><td>Operability</td><td>Somebody who does not code has to be able to run it.</td></tr>
+<tr><td>Fallbacks</td><td>Every automated step keeps a named manual fallback. See the table below.</td></tr>
+</tbody></table>
+<h3>Manual fallback per step</h3>
+<table>
+<colgroup><col style="width:26%"><col style="width:74%"></colgroup>
+<thead><tr><th class="">Step</th><th class="">Fallback when the automation fails or nobody trusts it</th></tr></thead><tbody>
+<tr><td>Retrieval</td><td>Manual search, sources pasted into the store by hand</td></tr>
+<tr><td>Appraisal</td><td>A team member scores against the same three written criteria</td></tr>
+<tr><td>Transcription</td><td>Notes taken by hand during the visit</td></tr>
+<tr><td>Translation</td><td>Our Dutch reader translates only the passages we quote</td></tr>
+<tr><td>Drafting</td><td>The author writes the section straight from the appraised sources</td></tr>
+<tr><td>Publishing</td><td>Manual commit to the wiki</td></tr>
+</tbody></table>
+<p><strong>Team constraint.</strong> Exactly one of us reads Dutch fluently. Three of those six fallbacks run through that one person, which is a single point of failure, and it is why the language path gets built early rather than late.</p>
+</section>
+<section id="5-handling-dutch-source-material">
+<h2>5. Handling Dutch source material</h2>
+<p>Dutch material (CBS, KvK, sector bodies, regional press, our own interview recording) carries things the English sources do not. The handbook itself is written in English.</p>
+<p><strong>Retrieval.</strong> Queries go out in both languages. Dutch queries get generated from the sub-question rather than translated from the English query, so that Dutch trade vocabulary such as <em>tweedehands bedrijfswagens</em>, <em>exportdocumentatie</em> and <em>sanctielijst</em> show up in the results.</p>
+<p><strong>Appraisal before translation.</strong> A source gets scored in the language it was written in. Score a machine translation and you score the translation: a hedge or qualifier that got flattened is what turns a weak source into a strong-looking one. Only sources that pass appraisal go on to be translated.</p>
+<p><strong>Translation.</strong> The original stays beside the translation. Figures, amounts, dates and quoted text get checked against the original before any claim built on them reaches a draft.</p>
+<p><strong>Why the tool does this and not a person.</strong> Language should not decide who on the team can research, and our one Dutch reader belongs in the reviewer seat rather than the bottleneck.</p>
+</section>
+<section id="6-architecture">
+<h2>6. Architecture</h2>
+<table>
+<colgroup><col style="width:22%"><col style="width:26%"><col style="width:52%"></colgroup>
+<thead><tr><th class="">Component</th><th class="">Takes in</th><th class="">Hands on</th></tr></thead><tbody>
+<tr><td>Source store</td><td>Raw hits from retrieval</td><td>URL, publisher, date, language, original text</td></tr>
+<tr><td>Appraisal</td><td>A stored source</td><td>Score plus written reason, in the source language. Only passing sources continue</td></tr>
+<tr><td>Translation</td><td>A source that passed</td><td>English text, original kept alongside, figures checked</td></tr>
+<tr><td>Summarisation</td><td>Translated material</td><td>A digest per sub-question</td></tr>
+<tr><td>Drafting</td><td>Digests</td><td>Page draft on the chapter template, every claim tied to a source reference</td></tr>
+<tr><td>Evaluation</td><td>Page draft</td><td>Report against the six qualities of section 3</td></tr>
+<tr><td>Human review</td><td>Report plus draft</td><td>Approved page</td></tr>
+<tr><td>Publishing</td><td>Approved page</td><td>Committed to the existing wiki and site</td></tr>
+</tbody></table>
+<p><strong>Where things run.</strong> CLI and source store run locally on team machines. Language and translation calls go to hosted models we already have access to. The published page lives in the course repository and site.</p>
+<p><strong>Decisions already taken.</strong> No model gets trained: this is existing models driven by prompts. Appraisal runs before translation, for the reason given in section 5.</p>
+</section>
+<section id="7-build-plan">
+<h2>7. Build plan</h2>
+<table>
+<colgroup><col style="width:16%"><col style="width:24%"><col style="width:42%"><col style="width:18%"></colgroup>
+<thead><tr><th class="">Phase</th><th class="">Subtasks</th><th class="">Test that proves it works</th><th class="">Deployment</th></tr></thead><tbody>
+<tr><td><strong>1. Source spine</strong></td><td>Store, Dutch and English retrieval, appraisal with written reason</td><td>Ten known sources (five Dutch, five English) come back with correct metadata, and a team member agrees with the written reason in at least 8 of 10</td><td>CLI local, store committed to the repo</td></tr>
+<tr><td><strong>2. Language path</strong></td><td>Transcription, Dutch to English translation, figure checking</td><td>Twenty figures and three quotes drawn from Dutch sources match their originals character for character</td><td>Same</td></tr>
+<tr><td><strong>3. Page path</strong></td><td>Summarisation, template drafting, checklist, publishing</td><td>One full page goes live, every claim resolves to a stored source, and the checklist catches at least one real defect</td><td>Course wiki and site</td></tr>
+</tbody></table>
+<h3>Owners</h3>
+<table>
+<colgroup><col style="width:30%"><col style="width:70%"></colgroup>
+<thead><tr><th class="">Role</th><th class="">Owns</th></tr></thead><tbody>
+<tr><td>Developer</td><td>Builds. Keeps a failure log: what got tried, what broke, what changed</td></tr>
+<tr><td>Tester</td><td>Writes and runs the test</td></tr>
+<tr><td>Deployer</td><td>Owns publication</td></tr>
+<tr><td>Product manager</td><td>Owns scope</td></tr>
+</tbody></table>
+</section>
+<section id="8-out-of-scope-for-now">
+<h2>8. Out of scope for now</h2>
+<ul><li>Any interface beyond the CLI. Nobody outside the team uses this thing.</li><li>Publishing without human review. That review is the product&#x27;s main control, not a delay.</li><li>Storing or processing the interview recording anywhere outside the environment we agreed on.</li><li>Output in more than one language. The handbook is English only.</li><li>Fine-tuning or training any model on BAS World material.</li><li>Anything built for a second partner company. One case, done properly.</li></ul>
+</section>
+<section id="9-open-questions-and-assumptions">
+<h2>9. Open questions and assumptions</h2>
+<h3>What we are assuming</h3>
+<ul><li>BAS World hosts one visit during weeks 2 to 4, and sends somebody from export documentation rather than sales alone.</li><li>Hosted language and translation services we already have access to will do the job, so no budget is needed.</li><li>The chapter template will not change much during the module.</li></ul>
+<h3>What we still need answered</h3>
+<table>
+<colgroup><col style="width:30%"><col style="width:70%"></colgroup>
+<thead><tr><th class="">Open question</th><th class="">Why it matters</th></tr></thead><tbody>
+<tr><td><strong>Where may the Dutch recording be processed?</strong></td><td>If transcription has to stay inside the EU, or off third-party services altogether, phase 2 tooling changes. Settle this first: it blocks the build, and it is the concrete version of the vendor dependency argument the research proposal makes in the abstract.</td></tr>
+<tr><td><strong>Will we trust an automated appraisal score,</strong> or re-check every source by hand anyway?</td><td>If the second, the platform saves nothing and phase 1 needs rethinking rather than extending.</td></tr>
+<tr><td><strong>How do we measure &quot;ready to publish&quot;</strong> without it collapsing into &quot;the reviewer was tired&quot;?</td><td>Two countable proposals: share of claims that resolve to an appraised source (target 100 percent), and number of quality criteria failed at first review (target 1 or fewer). Both get trialled in week 2 before we commit.</td></tr>
+</tbody></table>
+<div class="note"><p><strong>The bar.</strong> A reader can tell what we are building, who it is for, and how we will know it works.</p></div>
+</section>
+</main>
+</body>
+</html>

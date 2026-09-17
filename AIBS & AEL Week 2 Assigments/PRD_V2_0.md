@@ -17,13 +17,13 @@ Our team of four people from the minor 'Data Driven Decision Making in Business'
 
 **Who reads the result.**
 
-The managers at BAS World in sales and operations. They read a page to decide on a next step with AI.
+The owner or commercial manager of a Dutch trader in this sector, roughly 10 to 50 staff, with no IT function. They read a page to decide on a next step with AI. 
 
-A second type of reader is the owner of an SME in the same sector.
+A second type of reader is management at BAS World in sales and operations, who host the case and get the findings back.
 
 **What we deliver.**
 
-handbook discusses how AI can be applied within SMEs in the Dutch used commercial vehicles and machinery sector, with BAS World as case. One handbook page each week for six weeks. Each page is built from Dutch and/or international sources.
+The handbook discusses how AI can be applied within SMEs in the Dutch used commercial vehicles and machinery sector, with BAS World as case. One handbook page each week for six weeks. Each page is built from Dutch and/or international sources.
 
 To build the handbook we will also use at least one case company that is interviewed. The handbook will be produced for SME's in the sector Dutch trade in used commercial vehicles and machinery, with BAS World as case.
 
@@ -119,7 +119,6 @@ We build no screen or app beyond the command line. We publish nothing without a 
 | ------------------------------------------- | --------------------------------------------------------------------------- | ------------------------------- |
 | The work does not fit in one week           | Our experience from week 1. We kept no time log                             | A measured result from week 2   |
 | A page cannot be traced back to its sources | We saw this in our own week 1 documents. They named no source per statement | Nothing further                 |
-| Language decides who does the research      | One of our four team members reads Dutch                                    | A time log per person in week 2 |
 
 **The week 2 measurement.**
 

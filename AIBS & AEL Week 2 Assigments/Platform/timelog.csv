@@ -1,0 +1,8 @@
+date,person,stage,minutes,done_by (tool|hand|both),note
+17-09-2026,Floyd,1,13:55 - 14:16,tool,
+17-09-2026,Floyd,2,14:19-14:20,tool,
+17-09-2026,Floyd,3,14:21 - 14:25,tool,
+17-09-2026,Floyd,4,14:25- 14:27,tool,
+17-09-2026,Floyd,5,14:27- 14:31,tool,
+17-09-2026,Floyd,5,14:31-14:39,hand,checking and approving
+17-09-2026,Floyd,6,14:39- 14:42,both,

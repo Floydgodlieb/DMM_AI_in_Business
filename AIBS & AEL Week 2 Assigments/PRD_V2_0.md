@@ -6,8 +6,8 @@
 | --------------- | ---------------------------------------------------------- |
 | **Build roles** | Product manager, developer, tester, deployer               |
 | **Version**     | 1.2                                                        |
-| **Status**      | Revised after week 1 feedback                              |
-| **Date**        | 14 September 2026                                          |
+| **Status**      | Revised after the technical blueprint (v1.0, 17 September) |
+| **Date**        | 17 September 2026                                          |
 
 ## 1\. What we build and why
 
@@ -17,53 +17,51 @@ Our team of four people from the minor 'Data Driven Decision Making in Business'
 
 **Who reads the result.**
 
-The owner or commercial manager of a Dutch trader in this sector, roughly 10 to 50 staff, with no IT function. They read a page to decide on a next step with AI. 
-
-A second type of reader is management at BAS World in sales and operations, who host the case and get the findings back.
+The owner or commercial manager of a Dutch trader in used commercial vehicles, trailers and machinery, roughly 10 to 50 staff, no IT function. They read one page to decide on one next step with AI. A second reader is BAS World's sales and operations management, who host the case and get the findings back.
 
 **What we deliver.**
 
-The handbook discusses how AI can be applied within SMEs in the Dutch used commercial vehicles and machinery sector, with BAS World as case. One handbook page each week for six weeks. Each page is built from Dutch and/or international sources.
-
-To build the handbook we will also use at least one case company that is interviewed. The handbook will be produced for SME's in the sector Dutch trade in used commercial vehicles and machinery, with BAS World as case.
+One English handbook page per week for six weeks, on how AI can be applied within SMEs in this sector, with BAS World as case.
 
 **The problem.**
 
-This work takes a long time just by hand. We use AI to extend our research. We judge whether a source is reliable, and then we translate the Dutch parts. Then we write the page.
+This work takes too long by hand. We use AI to extend our research: it finds and rates sources, translates the Dutch parts and drafts; we judge, correct and approve.
 
 **How certain we are.**
 
-The time problem is our expectation and not a measurement. Section 9 explains how we turn it into a real number in week 2.
+The time problem is our expectation and not a measurement. Section 8 explains how we turn it into a real number in week 2.
 
 ## 2\. What the tool does step by step
 
-| **Step**                 | **What we do**                                                           | **What the tool does**                                                                                              |
-| ------------------------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
-| 1\. Find sources         | we type the question you want answered                                   | It searches in Dutch and in English. It saves each result with the web address and the date.                        |
-| 2\. Judge sources        | We read the rating. We change it when we disagree                        | It rates each source on reliability, and it writes down the reason.                                                 |
-| 3\. Handle the interview | We upload the recording or transcript. We confirm that consent was given | It writes out the text, and it replaces names with job roles                                                        |
-| 4\. Write a draft        | We choose the angle and edit the text                                    | It summarizes the material and writes a draft. Every statement gets a source and a quoted sentence from that source |
-| 5\. Check                | We answer the questions on the checklist                                 | It tests the draft against the six points in section 3                                                              |
-| 6\. Publish              | We approve and finalize the page                                         | It places the page on the course website                                                                            |
+| **Step** | **What we do** | **What the tool does** | **File it hands on** |
+|----------|----------------|------------------------|----------------------|
+| 1. Find sources | We type the research question. | Searches in Dutch and English, including the visible channels of 20–30 smaller traders (proposal §5, strand 2). Saves each result with web address, date and language. | `source.md` |
+| 2. Judge sources | We read the rating and change it when we disagree; the change is recorded with our name and reason. | Rates each source on credibility, relevance and recency and writes down the reason. | `appraised.md` |
+| 3. Translate | We verify every number and quoted sentence against the original. | Turns each Dutch sentence we will use into an English claim, keeping the original sentence, the source and the location. | `claims_en.md` |
+| 4. Write a draft | We choose the angle and edit the text. | Writes a draft from `claims_en.md` only. Every statement carries a claim-id; a statement without a source and a quoted sentence does not enter the draft. | `draft.md` |
+| 5. Check | We answer the reader questions on the checklist. | Tests the draft on the tool-checkable points in section 3 and on traceability, and returns pass/fail per statement. | `check.md` |
+| 6. Publish | We approve. | Places the page on the course website with a version and a checking note. | `page.md` |
+
+**The interview is not a tool step.** A person transcribes the BAS World recording, replaces names with job roles, and writes the claims we will use into `claims_en.md` by hand, labelled company-reported and case. The recording and both transcripts stay on one team laptop outside the tool and are deleted after the module.
 
 **What we build first.**
 
-We start with the search and the language work. The checklist comes later. We cannot test a checklist before we can produce a page.
+Steps 1 to 3: search and the language work. The checklist comes later; we cannot test a checklist before we can produce a page.
 
 ## 3\. What a good page looks like
 
-Four basic requirements come from the handbook template. A page is clear for a reader without technical knowledge. It is accurate. It covers responsible use of AI. It is useful for a manager.
+Four basic requirements come from the handbook template: clear for a reader without technical knowledge; accurate against appraised sources; covers responsible use of AI; useful to an owner.
 
-We add six points of our own.
+We add six points of our own, identical to research proposal v2 section 4.
 
-| **#** | **A good page**                                                                                                       | **Who checks it** |
-| ----- | --------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| 1     | Points each piece of advice to a named step in the sales or document process. It does not point to a type of software | Reader            |
-| 2     | Separates advice that saves time from advice that touches contact with the customer                                   | Reader            |
-| 3     | Names the rule that applies to each piece of advice                                                                   | Tool              |
-| 4     | Marks each number as company reported or independently confirmed                                                      | Tool              |
-| 5     | Explains what a company with 10 to 50 staff need for a smaller version would                                          | Reader            |
-| 6     | Ends with one next step. It names an owner and a rough cost                                                           | Reader            |
+| **#** | **A good page** | **Who checks it** |
+|-------|-----------------|-------------------|
+| 1 | Names a step in the sales or documentation chain, never a category of tool. | Reader |
+| 2 | Keeps time-saving automation apart from automation that touches the customer, and says which each recommendation is. | Reader |
+| 3 | Names the duty that applies (AI Act, GDPR, sanctions screening), the evidence for it, and any outside supplier's hosting location. | Tool checks that a duty is named; reader checks it is the right one |
+| 4 | Labels every figure company-reported or independently verifiable, and case evidence or sector evidence. | Tool |
+| 5 | Labels every recommendation by complexity: bought tooling, a named process owner, or an in-house build, flagged as a warning. | Reader |
+| 6 | Closes with one next step: an owner, a rough cost, and a three-month check. | Reader |
 
 **Who checks the points marked 'Reader'.**
 
@@ -78,38 +76,38 @@ The tool cannot judge these four points. A second person from our team reads eve
 
 ## 5\. How we build it
 
-| **Phase** | **What we build**                             | **How we test it**                                                                                           | **Where it runs** |
-| --------- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ----------------- |
-| Sources   | Storage, search and rating                    | We use ten sources that we already know. The tool must save them correctly.                                  | Our laptops       |
-| Language  | Interview text, translation and number checks | We take twenty numbers and three quotes from Dutch sources. Each one must match the original                 | Our laptops       |
-| Page      | Summary, draft, checklist and publishing      | One page goes live. Every statement can be traced to a source. The checklist finds at least one real mistake | Course website    |
+| **Phase** | **What we build** | **How we test it** | **Where it runs** |
+|-----------|-------------------|--------------------|-------------------|
+| Sources | Storage, search and rating (steps 1–2) | Ten sources we already know must be saved and rated correctly, with a reason each. | Our laptops |
+| Language | Translation and number checks (step 3) | Twenty numbers and three quotes from Dutch sources must match the original in `claims_en.md`. Dutch sources are appraised in Dutch first. | Our laptops |
+| Page | Draft, checklist and publishing (steps 4–6) | One page goes live. Every statement traces to a claim-id. The checklist finds at least one real mistake. | Course website |
 
 **Who does what.** The developer builds and keeps a log of the problems. The tester writes and runs the tests. The deployer publishes the page. The product manager decides on the scope.
 
 ## 6\. How we know that the tool works
 
-The tests in section 6 show that the separate parts work. They do not show whether one week is enough time. We follow three numbers each week from week 2.
+The tests in section 5 show that the parts work. They do not show whether one week is enough. We follow three numbers each week from week 2.
 
-| **What we measure**                             | **How we measure it**                                | **What we aim for**                                                                |
-| ----------------------------------------------- | ---------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| Hours the team spends on one page               | Each person notes the time per step                  | The same as the manual result of week 2 or lower. The number should drop each week |
-| Steps done by hand instead of by the tool       | We count them during the review. There are six steps | One or none from week 4                                                            |
-| Statements that can be traced to a saved source | We count them during the review                      | All of them                                                                        |
+| **What we measure** | **How** | **Aim** |
+|---------------------|---------|---------|
+| Hours the team spends on one page | Each person logs time per step, by hand, outside the tool. | Equal to the manual week-2 result or lower, and dropping each week. |
+| Of the six tool steps, how many were done by hand | Counted at review from `check.md` and the time log. The interview is never counted: it is by design manual. | One or none from week 4. |
+| Statements that trace to a saved source | Counted by the check step. | All of them. |
 
-**Where a page can still go wrong.** We watch two cases. In the first case a statement has no source behind it. The tool writes readable text even when the summary does not support the statement. In the second case a statement points to a source that does not contain it. The reference looks correct and our third measure would still show a good result. The second case is harder to notice for that reason. We handle both cases in four ways.
+**Where a page can still go wrong.** Two cases. A statement with no source behind it: readable text the material does not support. A statement pointing to a source that does not contain it: the reference looks right and our third measure still shows a good result, so it is the harder one to notice. We handle both in four ways:
 
-- Every statement carries a quoted sentence from the original source. A statement without such a quote does not enter the draft.
-- We check every number and every date. We take no samples here.
-- The second reader picks five other statements. That person opens the original source and checks the quote.
-- A rating can also be wrong. Each rating has a written reason. The reader can change it.
+- Every statement carries a quoted sentence from the original source. Without it, it does not enter the draft (step 4).
+- Every number and date is checked against the source. No sampling (step 5).
+- The second reader opens the original source for five statements of their choice (section 3).
+- A rating can be wrong too; each carries a written reason, and the reader can change it (step 2).
 
-**What does this not cover.**
-
-Five checks out of roughly forty statements will not find every mistake. We note on each page how much checking was done.
+**What this does not cover.** Five opened sources out of roughly forty statements will not find every mistake. Each page states how much checking was done.
 
 ## 7\. What we do not build
 
-We build no screen or app beyond the command line. We publish nothing without a human check. We keep the interview recording inside our own environment. We publish in English only. We train no AI models on BAS World material.
+We build no screen or app beyond the command line. We publish nothing without a human check. We publish in English only. We train no AI model on BAS World material.
+
+**The line: the interview recording, its transcript and the anonymised transcript never reach a model service.** They stay outside the tool on one laptop, and only files inside the tool's folder can be sent to a model. A person carries what we use from the interview into `claims_en.md`.
 
 ## 8\. Open points
 

@@ -1,7 +1,7 @@
 # Who owns the AI tools I use, and what happens to my business if that changes?
 
 version: 1.0 · 17-09-2026
-checking note: second reader (Floyd) passed all 4 criteria (steps named, time-saving vs
+checking note: second reader passed all 4 criteria (steps named, time-saving vs
 customer-touching stated, complexity labelled, one next step given) and spot-checked 5
 statements against their original source, per check.md — the individual statements checked
 were not named in check.md, so this note can't say which five.

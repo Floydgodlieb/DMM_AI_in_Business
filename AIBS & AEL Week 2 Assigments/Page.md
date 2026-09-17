@@ -105,14 +105,3 @@ touches the customer, and how complex it is to adopt.
    [W2-020, independently-verifiable, sector], and for checking each supplier's AI Act deployer
    obligations apply and are met [W2-009, independently-verifiable, sector].
 
-## Next step
-
-- **Owner:** [fill in — the named person accountable for this]
-- **Rough cost:** [fill in]
-- **Three-month check:** [fill in — what you will look at in three months to know if this worked]
-
-## Disclaimer
-
-[insert the exact handbook-template disclaimer text — educational, not consultancy]
-
-Two bracketed spots I deliberately did not fill: Next step (owner/cost/three-month check) and the Disclaimer. Those are your editorial calls and the template's exact wording, not claims I can source — filling them myself would mean inventing content, which is exactly what this whole process is built to prevent. Saving this as page.md, branching, and merging is on you.

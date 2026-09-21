@@ -138,4 +138,4 @@ Where may we process the Dutch recording? The answer changes phase 2 and we need
 - **CBS.** The Dutch statistics office. A source type in section 5.
 - **KvK.** The Dutch chamber of commerce. A source type in section 5.
 - **Chapter template of the handbook.** The four basic requirements in section 3.
-- **Research proposal BAS World version 0.3.** The six points in section 3.
+- **Research proposal BAS World version 2.** The six points in section 3.

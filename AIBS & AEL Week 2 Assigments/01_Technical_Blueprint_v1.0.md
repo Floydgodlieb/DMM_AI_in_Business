@@ -1,6 +1,6 @@
 # Technical Blueprint — the BAS World handbook platform
 
-Bos · Godlieb · Van Vreeswijk · Yapici · document 2 of 6, implements PRD v2.1 · v1.0 · 17 September 2026 · pen: developer
+Bos · Godlieb · Van Vreeswijk · Yapici · document 2 of 6, implements PRD v2.1 · v1.1 · 17 September 2026 · pen: developer
 
 **What the platform is for.** Four students produce one English handbook page per week for the owner of a Dutch used-vehicle trader (10–50 staff, no IT function), with BAS World as case, where every statement traces to a saved source and a quoted sentence. The platform makes that page producible in one week without four people doing all of it by hand.
 

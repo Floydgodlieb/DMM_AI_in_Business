@@ -5,7 +5,7 @@
 | **Team**        | Aäron Bos, Floyd Godlieb, Ivan van Vreeswijk, Baran Yapici |
 | --------------- | ---------------------------------------------------------- |
 | **Build roles** | Product manager, developer, tester, deployer               |
-| **Version**     | 1.2                                                        |
+| **Version**     | 2.1                                                        |
 | **Status**      | Revised after the technical blueprint (v1.0, 17 September) |
 | **Date**        | 17 September 2026                                          |
 

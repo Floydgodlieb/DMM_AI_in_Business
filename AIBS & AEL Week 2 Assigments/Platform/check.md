@@ -22,9 +22,9 @@
 | W2-021 | yes | yes (S-012) | n/a | n/a | yes | PASS | `verified_by: "Ivan"` |
 | W2-022 | yes | yes (S-012) | n/a | n/a | yes | PASS | `verified_by: "Ivan"` |
 | W2-023 (×2) | yes | yes (S-012) | n/a | n/a (Rec. 3's own duty now covered by W2-009) | yes | PASS | `verified_by: "Ivan"`; usesage of terms changed|
-| W2-024 | yes | yes (S-013) | n/a | n/a | yes | PASS | |
-| W2-025 (×2) | yes | yes (S-013) | n/a | yes (Rec. 2 now cites W2-020) | yes | PASS | |
-| W2-026 | yes | yes (S-014) | n/a | yes | yes | PASS | |
+| W2-024 | yes | yes (S-013) | n/a | n/a | yes | Fail | `verified_by: "Ivan"` present in claims_en.md, but pending re-check under the reopened Stage 5 |
+| W2-025 (×2) | yes | yes (S-013) | n/a | yes (Rec. 2 now cites W2-020) | yes | Fail | `verified_by: "Ivan"` present in claims_en.md, but pending re-check under the reopened Stage 5 |
+| W2-026 | yes | yes (S-014) | n/a | yes | yes | Fail | `verified_by: "Ivan"` present in claims_en.md, but pending re-check under the reopened Stage 5 |
 | W2-027 | yes | yes (S-014) | yes ("60%" matches) | yes | yes | PASS | `verified_by: "Floyd"`; still correctly labelled as a vendor-reported figure |
 | W2-028 | yes | yes (S-015) | n/a | n/a | yes | **note** | `verified_by` line is malformed YAML: `verified_by: ""Floyd` (stray leading quote, no closing quote). Was already PASS before verification (statement kind), so this doesn't block Check, but it should be corrected to `verified_by: "Floyd"` for a clean file — a person should fix this directly in claims_en.md, not me |
 | W2-029 | yes | yes (S-015) | n/a | n/a | yes | PASS | |

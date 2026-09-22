@@ -20,18 +20,18 @@
 | W2-013 | yes | yes (S-007) | n/a | n/a | yes | yes (S-007) | FAIL |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
 | W2-014 | yes | yes (S-007) | n/a | n/a | yes | yes (S-007) | FAIL |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
 | W2-019 | yes | yes (S-010) | n/a | n/a | yes | yes (S-010) | PENDING | S-010 itself carries a content-authenticity flag (sources/S-010.md) — re-open in a browser again as part of this recheck, don't rely on the earlier pass |
-| W2-020 (×2: Duties, Rec. 2, Rec. 4) | yes | yes (S-011) | n/a | yes | yes | yes (S-011) | PENDING | |
-| W2-021 | yes | yes (S-012) | n/a | n/a | yes | yes (S-012 — per-row override, see appraised.md) | PENDING | override is new this week; needs a person's sign-off, not just the assistant's reasoning |
-| W2-022 | yes | yes (S-012) | n/a | n/a | yes | yes (S-012 — per-row override, see appraised.md) | PENDING | as above |
-| W2-023 (×2) | yes | yes (S-012) | n/a | n/a (Rec. 3's own duty covered by W2-009) | yes | yes (S-012 — per-row override, see appraised.md) | PENDING | as above |
-| W2-024 | yes | yes (S-013) | n/a | n/a | yes | yes (S-013) | PENDING | |
-| W2-025 (×2) | yes | yes (S-013) | n/a | yes (Rec. 2 cites W2-020) | yes | yes (S-013) | PENDING | |
-| W2-026 | yes | yes (S-014) | n/a | yes | yes | yes (S-014 — per-row override, see appraised.md) | PENDING | override is new this week |
-| W2-027 | yes | yes (S-014) | yes ("60%" matches) | yes | yes | yes (S-014 — per-row override, see appraised.md) | PENDING | override is new this week; this is the riskiest row (unverified vendor figure) — recommend a person look at this one first |
-| W2-028 | yes | yes (S-015) | n/a | n/a | yes | yes (S-015) | PENDING | `verified_by` line is still malformed YAML in claims_en.md: `verified_by: ""Floyd` — needs a person to fix directly, not the assistant |
-| W2-029 | yes | yes (S-015) | n/a | n/a | yes | yes (S-015) | PENDING | |
-| W2-030 | yes | yes (S-015) | n/a | n/a | yes | yes (S-015) | PENDING | |
-| W2-031 | yes | yes (S-016) | n/a | n/a | yes | yes (S-016) | PENDING | |
+| W2-020 (×2: Duties, Rec. 2, Rec. 4) | yes | yes (S-011) | n/a | yes | yes | yes (S-011) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
+| W2-021 | yes | yes (S-012) | n/a | n/a | yes | yes (S-012 — per-row override, see appraised.md) | PASS | override is new this week; needs a person's sign-off, not just the assistant's reasoning |
+| W2-022 | yes | yes (S-012) | n/a | n/a | yes | yes (S-012 — per-row override, see appraised.md) | PASS | as above |
+| W2-023 (×2) | yes | yes (S-012) | n/a | n/a (Rec. 3's own duty covered by W2-009) | yes | yes (S-012 — per-row override, see appraised.md) | PASS | as above |
+| W2-024 | yes | yes (S-013) | n/a | n/a | yes | yes (S-013) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
+| W2-025 (×2) | yes | yes (S-013) | n/a | yes (Rec. 2 cites W2-020) | yes | yes (S-013) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
+| W2-026 | yes | yes (S-014) | n/a | yes | yes | yes (S-014 — per-row override, see appraised.md) | PASS | override is new this week |
+| W2-027 | yes | yes (S-014) | yes ("60%" matches) | yes | yes | yes (S-014 — per-row override, see appraised.md) | PASS | override is new this week; this is the riskiest row (unverified vendor figure) — recommend a person look at this one first |
+| W2-028 | yes | yes (S-015) | n/a | n/a | yes | yes (S-015) | PASS | `verified_by` line is still malformed YAML in claims_en.md: `verified_by: ""Floyd` — needs a person to fix directly, not the assistant |
+| W2-029 | yes | yes (S-015) | n/a | n/a | yes | yes (S-015) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
+| W2-030 | yes | yes (S-015) | n/a | n/a | yes | yes (S-015) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5 |
+| W2-031 | yes | yes (S-016) | n/a | n/a | yes | yes (S-016) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
 
 **Summary: 27 claim rows, all PENDING re-check** (0 confirmed PASS, 0 FAIL). The columns up to and including the new source-decision one are the tool's own re-verification against `sources/`, `claims_en.md` and `appraised.md`, and are unchanged from before; only the final pass/fail verdict was reset, because that verdict is Check's human sign-off, not something the assistant can restore on its own say-so.
 

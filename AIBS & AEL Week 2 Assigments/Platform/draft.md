@@ -116,7 +116,7 @@ touches the customer, and how complex it is to adopt.
 
 3. **Quotation step — AI-assisted pricing.** *Time-saving automation, not customer-touching* (it
    informs a price your staff still sets). Complexity: **in-house build — flagged as a
-   warning**. BAS World's pricing agent is a custom, purpose-built system on a modular
+   warning**. BAS World's pricing agent is a purpose-built, custom system on a modular
    architecture [W2-023, company-reported, case]. That took a much larger company, with an IT
    partner, to build. For a 10-50 staff trader with no IT function, copying this approach
    directly is very unlikely to be the right first step; treat it as evidence of what is

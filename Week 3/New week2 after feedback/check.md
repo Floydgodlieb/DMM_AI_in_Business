@@ -5,7 +5,7 @@
 ## Tool checks (one row per [claim-id] in draft.md)
 | claim_id | claim exists | quote in source | number/date matches | duty named (crit 3) | labels present (crit 4) | source `decision: use` in appraised.md | pass/fail | note |
 |----------|--------------|-----------------|---------------------|---------------------|--------------------------|--------------------------|-----------|------|
-| W2-001 | yes | yes (S-001) | yes — draft reads "22.7%... up almost 9 percentage points from 2023", matching the claim | n/a | yes | yes (S-001) | PENDING | `verified_by: "Floyd"` present in claims_en.md, but pending re-check under the reopened Stage 5 |
+| W2-001 | yes | yes (S-001) | yes — draft reads "22.7%... up almost 9 percentage points from 2023", matching the claim | n/a | yes | yes (S-001) | PASS | `verified_by: "Floyd"` present in claims_en.md, but pending re-check under the reopened Stage 5 |
 | W2-002 | yes | yes (S-001) | n/a (draft states direction only) | n/a | yes | yes (S-001) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5 |
 | W2-003 | yes | yes (S-002) | n/a (direction only) | n/a | yes | yes (S-002) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5 |
 | W2-004 | yes | yes (S-002) | n/a (direction only) | n/a | yes | yes (S-002) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |

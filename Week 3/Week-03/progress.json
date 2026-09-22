@@ -1,0 +1,571 @@
+{
+  "phases": [
+    {
+      "id": 1,
+      "title": "Requirements & Constraints",
+      "tasks": [
+        {
+          "id": "1.1",
+          "title": "Populate 00_input",
+          "description": "Pull week 3 AIBS brief from course site (site/week-03.html) and team context from the DMM_AI_in_Business GitHub repo into 00_input/",
+          "status": "done",
+          "started": "2026-09-22T15:22:22+02:00",
+          "finished": "2026-09-22T15:23:00+02:00",
+          "minutes": 0.63,
+          "sessions": [
+            {
+              "start": "2026-09-22T15:22:22+02:00",
+              "end": "2026-09-22T15:23:00+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "1.2",
+          "title": "Write checklist.md",
+          "description": "Hard/soft requirements, rubric, word budgets, AI-use disclosure rules",
+          "status": "done",
+          "started": "2026-09-22T15:23:01+02:00",
+          "finished": "2026-09-22T15:25:04+02:00",
+          "minutes": 2.05,
+          "sessions": [
+            {
+              "start": "2026-09-22T15:23:01+02:00",
+              "end": "2026-09-22T15:25:04+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "1.3",
+          "title": "Write source_criteria.md",
+          "description": "Inclusion criteria derived from requirements and output type",
+          "status": "done",
+          "started": "2026-09-22T15:25:05+02:00",
+          "finished": "2026-09-22T15:25:05+02:00",
+          "minutes": 0.0,
+          "sessions": [
+            {
+              "start": "2026-09-22T15:25:05+02:00",
+              "end": "2026-09-22T15:25:05+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "1.4",
+          "title": "Write format.md",
+          "description": "Format, deadline, individual/group, citation style, length, AI-disclosure block",
+          "status": "done",
+          "started": "2026-09-22T15:25:05+02:00",
+          "finished": "2026-09-22T15:25:05+02:00",
+          "minutes": 0.0,
+          "sessions": [
+            {
+              "start": "2026-09-22T15:25:05+02:00",
+              "end": "2026-09-22T15:25:05+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "1.5",
+          "title": "Update status.md and stop for gate",
+          "description": "Run progress.py report, set current stage, stop for Floyd's approval per rule 2",
+          "status": "done",
+          "started": "2026-09-22T15:25:05+02:00",
+          "finished": "2026-09-22T15:25:20+02:00",
+          "minutes": 0.25,
+          "sessions": [
+            {
+              "start": "2026-09-22T15:25:05+02:00",
+              "end": "2026-09-22T15:25:20+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "1.6",
+          "title": "Incorporate Floyd's answers",
+          "description": "Resolve chapter-shape, citation-style, and word-budget open questions in checklist.md/format.md/status.md",
+          "status": "done",
+          "started": "2026-09-22T16:12:01+02:00",
+          "finished": "2026-09-22T16:12:01+02:00",
+          "minutes": 0.0,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:12:01+02:00",
+              "end": "2026-09-22T16:12:01+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Research & Source Bank",
+      "tasks": [
+        {
+          "id": "2.1",
+          "title": "Search academic databases",
+          "description": "OpenAlex/Semantic Scholar/Crossref per search-strategy skill, against source_criteria.md",
+          "status": "done",
+          "started": "2026-09-22T16:20:07+02:00",
+          "finished": "2026-09-22T16:21:54+02:00",
+          "minutes": 1.78,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:20:07+02:00",
+              "end": "2026-09-22T16:21:54+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "2.2",
+          "title": "Write to_download.md",
+          "description": "Search strings, database results (or why insufficient), pointer to Platform/searchlog.md's direct-web-search trail",
+          "status": "done",
+          "started": "2026-09-22T16:21:54+02:00",
+          "finished": "2026-09-22T16:22:15+02:00",
+          "minutes": 0.35,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:21:54+02:00",
+              "end": "2026-09-22T16:22:15+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "2.3",
+          "title": "Reconcile Platform/ sources into 02_sources/source_bank.md",
+          "description": "Full appraised set (13 sources), team's own citation/scoring convention per format.md",
+          "status": "done",
+          "started": "2026-09-22T16:22:15+02:00",
+          "finished": "2026-09-22T16:22:49+02:00",
+          "minutes": 0.57,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:22:15+02:00",
+              "end": "2026-09-22T16:22:49+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "2.4",
+          "title": "Update status.md and stop for gate",
+          "description": "Search strings used, sources found, quality scores, any pending items",
+          "status": "done",
+          "started": "2026-09-22T16:22:49+02:00",
+          "finished": "2026-09-22T16:23:06+02:00",
+          "minutes": 0.28,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:22:49+02:00",
+              "end": "2026-09-22T16:23:06+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Own Data Intake",
+      "tasks": [
+        {
+          "id": "3.1",
+          "title": "Stage skipped",
+          "description": "No interview has happened for this week; 03_data/consent_checklist.md is unchecked, so this optional stage has nothing to run on. Skipped with Floyd's approval, 2026-09-22.",
+          "status": "done",
+          "started": "2026-09-22T16:24:53+02:00",
+          "finished": "2026-09-22T16:24:53+02:00",
+          "minutes": 0.0,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:24:53+02:00",
+              "end": "2026-09-22T16:24:53+02:00"
+            }
+          ],
+          "notes": [
+            {
+              "time": "2026-09-22T16:24:53+02:00",
+              "text": "Skipped, not run: no consented interview data exists for this week. Revisit if/when the BAS World field visit happens and consent_checklist.md is fully checked."
+            }
+          ],
+          "block_reason": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Argument Architecture & Drafting",
+      "tasks": [
+        {
+          "id": "4.1",
+          "title": "Write outline.md (4a)",
+          "description": "Mapped to rubric criteria, word budgets per section, checked against source_bank.md, within the strict 1-page limit",
+          "status": "done",
+          "started": "2026-09-22T16:25:18+02:00",
+          "finished": "2026-09-22T16:25:42+02:00",
+          "minutes": 0.4,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:25:18+02:00",
+              "end": "2026-09-22T16:25:42+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "4.2",
+          "title": "Update status.md, stop for 4a gate",
+          "description": "Separate gate from the full draft, per agent instructions",
+          "status": "done",
+          "started": "2026-09-22T16:25:42+02:00",
+          "finished": "2026-09-22T16:25:55+02:00",
+          "minutes": 0.22,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:25:42+02:00",
+              "end": "2026-09-22T16:25:55+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "4.3",
+          "title": "Write draft_v1.md (4b)",
+          "description": "Full ~485-word draft from outline.md and source_bank.md only, claim-id citations excluded from word count per Floyd's clarification",
+          "status": "done",
+          "started": "2026-09-22T16:27:34+02:00",
+          "finished": "2026-09-22T16:28:55+02:00",
+          "minutes": 1.35,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:27:34+02:00",
+              "end": "2026-09-22T16:28:55+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "4.4",
+          "title": "Update status.md, stop for 4b gate",
+          "description": "Word count check, AI-disclosure block status",
+          "status": "done",
+          "started": "2026-09-22T16:28:55+02:00",
+          "finished": "2026-09-22T16:29:20+02:00",
+          "minutes": 0.42,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:28:55+02:00",
+              "end": "2026-09-22T16:29:20+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "4.5",
+          "title": "Revise: write draft_v2.md",
+          "description": "Fix I1-I4, I6-I7 from issue_log.md; never overwrite draft_v1.md",
+          "status": "done",
+          "started": "2026-09-22T16:40:28+02:00",
+          "finished": "2026-09-22T16:40:52+02:00",
+          "minutes": 0.4,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:40:28+02:00",
+              "end": "2026-09-22T16:40:52+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "4.6",
+          "title": "Verify physical one-A4-page fit (I5)",
+          "description": "Render as print-styled HTML, measure in a real browser against A4 printable dimensions",
+          "status": "done",
+          "started": "2026-09-22T16:40:52+02:00",
+          "finished": "2026-09-22T16:42:22+02:00",
+          "minutes": 1.5,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:40:52+02:00",
+              "end": "2026-09-22T16:42:22+02:00"
+            }
+          ],
+          "notes": [
+            {
+              "time": "2026-09-22T16:42:22+02:00",
+              "text": "Browser tool unavailable this session (extension not connected) — could not get a real rendered/printed page count. Fell back to a typographic estimate instead of a verified measurement; documented as an estimate, not a pass, in status.md."
+            }
+          ],
+          "block_reason": null
+        },
+        {
+          "id": "4.7",
+          "title": "Update status.md, stop for gate",
+          "description": "Report fixes and page-fit result",
+          "status": "done",
+          "started": "2026-09-22T16:42:22+02:00",
+          "finished": "2026-09-22T16:43:13+02:00",
+          "minutes": 0.85,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:42:22+02:00",
+              "end": "2026-09-22T16:43:13+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Review & Verification",
+      "tasks": [
+        {
+          "id": "5.1",
+          "title": "Pass 1 — rubric audit",
+          "description": "Audit draft_v1.md against checklist.md, hard requirements first",
+          "status": "done",
+          "started": "2026-09-22T16:33:40+02:00",
+          "finished": "2026-09-22T16:33:45+02:00",
+          "minutes": 0.08,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:33:40+02:00",
+              "end": "2026-09-22T16:33:45+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "5.2",
+          "title": "Pass 2 — quote verification",
+          "description": "Attempt verify_quotes.py (expected to fail, no 02_sources/text/), then manual check against Platform/sources/S-0NN.md",
+          "status": "done",
+          "started": "2026-09-22T16:33:45+02:00",
+          "finished": "2026-09-22T16:33:45+02:00",
+          "minutes": 0.0,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:33:45+02:00",
+              "end": "2026-09-22T16:33:45+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "5.3",
+          "title": "Write issue_log.md and verification.md",
+          "description": "Per issue-log-format",
+          "status": "done",
+          "started": "2026-09-22T16:33:45+02:00",
+          "finished": "2026-09-22T16:34:19+02:00",
+          "minutes": 0.57,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:33:45+02:00",
+              "end": "2026-09-22T16:34:19+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "5.4",
+          "title": "Update status.md, stop for gate",
+          "description": "Issue count and severities",
+          "status": "done",
+          "started": "2026-09-22T16:34:19+02:00",
+          "finished": "2026-09-22T16:34:35+02:00",
+          "minutes": 0.27,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:34:19+02:00",
+              "end": "2026-09-22T16:34:35+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Humanization & Deliverables",
+      "tasks": [
+        {
+          "id": "6.1",
+          "title": "Style-guide pass",
+          "description": "Banned words, sentence variety, hollow contrasts, repetitive openings, filler — per style-guide skill",
+          "status": "done",
+          "started": "2026-09-22T16:58:25+02:00",
+          "finished": "2026-09-22T16:58:30+02:00",
+          "minutes": 0.08,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:58:25+02:00",
+              "end": "2026-09-22T16:58:30+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "6.2",
+          "title": "Finalize AI-use disclosure block",
+          "description": "Replace the interim placeholder with an honest, accurate disclosure of what happened so far",
+          "status": "done",
+          "started": "2026-09-22T16:58:30+02:00",
+          "finished": "2026-09-22T16:59:20+02:00",
+          "minutes": 0.83,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:58:30+02:00",
+              "end": "2026-09-22T16:59:20+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "6.3",
+          "title": "Update status.md, stop for gate",
+          "description": "",
+          "status": "done",
+          "started": "2026-09-22T16:59:20+02:00",
+          "finished": "2026-09-22T16:59:44+02:00",
+          "minutes": 0.4,
+          "sessions": [
+            {
+              "start": "2026-09-22T16:59:20+02:00",
+              "end": "2026-09-22T16:59:44+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Final QA",
+      "tasks": [
+        {
+          "id": "7.1",
+          "title": "Run wordcount.py vs budgets",
+          "description": "Build word_budgets.json from checklist.md's table, matching draft_v3.md's actual headings",
+          "status": "done",
+          "started": "2026-09-22T17:01:00+02:00",
+          "finished": "2026-09-22T17:01:27+02:00",
+          "minutes": 0.45,
+          "sessions": [
+            {
+              "start": "2026-09-22T17:01:00+02:00",
+              "end": "2026-09-22T17:01:27+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "7.2",
+          "title": "Full checklist audit",
+          "description": "Every hard and soft requirement in checklist.md, not a sample",
+          "status": "done",
+          "started": "2026-09-22T17:01:27+02:00",
+          "finished": "2026-09-22T17:01:46+02:00",
+          "minutes": 0.32,
+          "sessions": [
+            {
+              "start": "2026-09-22T17:01:27+02:00",
+              "end": "2026-09-22T17:01:46+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "7.3",
+          "title": "Manual-fallback-note presence check",
+          "description": "Every script actually used this week: progress.py, verify_quotes.py, wordcount.py",
+          "status": "done",
+          "started": "2026-09-22T17:01:46+02:00",
+          "finished": "2026-09-22T17:02:03+02:00",
+          "minutes": 0.28,
+          "sessions": [
+            {
+              "start": "2026-09-22T17:01:46+02:00",
+              "end": "2026-09-22T17:02:03+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "7.4",
+          "title": "Two-way reference check",
+          "description": "source_bank.md vs draft_v3.md citations, both directions; no zotero_export.md this week (no PDFs synced)",
+          "status": "done",
+          "started": "2026-09-22T17:02:03+02:00",
+          "finished": "2026-09-22T17:02:20+02:00",
+          "minutes": 0.28,
+          "sessions": [
+            {
+              "start": "2026-09-22T17:02:03+02:00",
+              "end": "2026-09-22T17:02:20+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        },
+        {
+          "id": "7.5",
+          "title": "Write 06_final/ + QA note, stop for gate",
+          "description": "",
+          "status": "done",
+          "started": "2026-09-22T17:02:20+02:00",
+          "finished": "2026-09-22T17:03:01+02:00",
+          "minutes": 0.68,
+          "sessions": [
+            {
+              "start": "2026-09-22T17:02:20+02:00",
+              "end": "2026-09-22T17:03:01+02:00"
+            }
+          ],
+          "notes": [],
+          "block_reason": null
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Feedback Integration",
+      "tasks": []
+    }
+  ]
+}

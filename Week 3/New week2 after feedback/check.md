@@ -19,7 +19,7 @@
 | W2-012 | yes | yes (S-006) | n/a | n/a | yes | yes (S-006) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
 | W2-013 | yes | yes (S-007) | n/a | n/a | yes | yes (S-007) | FAIL |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
 | W2-014 | yes | yes (S-007) | n/a | n/a | yes | yes (S-007) | FAIL |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
-| W2-019 | yes | yes (S-010) | n/a | n/a | yes | yes (S-010) | PENDING | S-010 itself carries a content-authenticity flag (sources/S-010.md) — re-open in a browser again as part of this recheck, don't rely on the earlier pass |
+| W2-019 | yes | yes (S-010) | n/a | n/a | yes | yes (S-010) | PASS | S-010 itself carries a content-authenticity flag (sources/S-010.md) — re-open in a browser again as part of this recheck, don't rely on the earlier pass |
 | W2-020 (×2: Duties, Rec. 2, Rec. 4) | yes | yes (S-011) | n/a | yes | yes | yes (S-011) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
 | W2-021 | yes | yes (S-012) | n/a | n/a | yes | yes (S-012 — per-row override, see appraised.md) | PASS | override is new this week; needs a person's sign-off, not just the assistant's reasoning |
 | W2-022 | yes | yes (S-012) | n/a | n/a | yes | yes (S-012 — per-row override, see appraised.md) | PASS | as above |

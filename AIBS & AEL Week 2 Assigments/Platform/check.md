@@ -19,9 +19,9 @@
 | W2-014 | yes | yes (S-007) | n/a | n/a | yes | PASS | `verified_by: "Ivan"` |
 | W2-019 | yes | yes (S-010) | n/a | n/a | yes | PASS | `verified_by: "Floyd"`; user confirms S-010 was opened directly in a browser and confirmed genuine, separately from the blanket verification pass |
 | W2-020 (×2: Duties, Rec. 2, Rec. 4) | yes | yes (S-011) | n/a | yes | yes | PASS | Rec. 2 now names this duty explicitly |
-| W2-021 | yes | yes (S-012) | n/a | n/a | yes | PASS | |
-| W2-022 | yes | yes (S-012) | n/a | n/a | yes | PASS | |
-| W2-023 (×2) | yes | yes (S-012) | n/a | n/a (Rec. 3's own duty now covered by W2-009) | yes | PASS | |
+| W2-021 | yes | yes (S-012) | n/a | n/a | yes | PASS | `verified_by: "Ivan"` |
+| W2-022 | yes | yes (S-012) | n/a | n/a | yes | PASS | `verified_by: "Ivan"` |
+| W2-023 (×2) | yes | yes (S-012) | n/a | n/a (Rec. 3's own duty now covered by W2-009) | yes | PASS | `verified_by: "Ivan"`; usesage of terms changed|
 | W2-024 | yes | yes (S-013) | n/a | n/a | yes | PASS | |
 | W2-025 (×2) | yes | yes (S-013) | n/a | yes (Rec. 2 now cites W2-020) | yes | PASS | |
 | W2-026 | yes | yes (S-014) | n/a | yes | yes | PASS | |

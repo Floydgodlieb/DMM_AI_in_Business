@@ -7,7 +7,7 @@
 | W2-002 | yes | yes (S-001) | n/a (draft states direction only) | n/a | yes | PASS | `verified_by: "Floyd"` |
 | W2-003 | yes | yes (S-002) | n/a (direction only) | n/a | yes | PASS | `verified_by: "Floyd"` |
 | W2-004 | yes | yes (S-002) | n/a (direction only) | n/a | yes | PASS | `verified_by: "Floyd"` |
-| W2-005 | yes | yes (S-003) | n/a | yes | yes | PASS | |
+| W2-005 | yes | yes (S-003) | n/a | yes | yes | PASS |`verified_by: "Ivan"` |
 | W2-006 | yes | yes (S-004) | n/a | yes | yes | PASS | |
 | W2-007 | yes | yes (S-004) | n/a | yes | yes | PASS | |
 | W2-008 | yes | yes (S-004) | n/a | yes | yes | PASS | |

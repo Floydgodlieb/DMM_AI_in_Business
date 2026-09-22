@@ -6,19 +6,19 @@
 | claim_id | claim exists | quote in source | number/date matches | duty named (crit 3) | labels present (crit 4) | source `decision: use` in appraised.md | pass/fail | note |
 |----------|--------------|-----------------|---------------------|---------------------|--------------------------|--------------------------|-----------|------|
 | W2-001 | yes | yes (S-001) | yes — draft reads "22.7%... up almost 9 percentage points from 2023", matching the claim | n/a | yes | yes (S-001) | PENDING | `verified_by: "Floyd"` present in claims_en.md, but pending re-check under the reopened Stage 5 |
-| W2-002 | yes | yes (S-001) | n/a (draft states direction only) | n/a | yes | yes (S-001) | PENDING | |
-| W2-003 | yes | yes (S-002) | n/a (direction only) | n/a | yes | yes (S-002) | PENDING | |
-| W2-004 | yes | yes (S-002) | n/a (direction only) | n/a | yes | yes (S-002) | PENDING | |
-| W2-005 | yes | yes (S-003) | n/a | yes | yes | yes (S-003) | PENDING | |
-| W2-006 | yes | yes (S-004) | n/a | yes | yes | yes (S-004) | PENDING | |
-| W2-007 | yes | yes (S-004) | n/a | yes | yes | yes (S-004) | PENDING | |
-| W2-008 | yes | yes (S-004) | n/a | yes | yes | yes (S-004) | PENDING | |
-| W2-009 (×2: Duties, Rec. 3) | yes | yes (S-005) | n/a | yes | yes | yes (S-005) | PENDING | |
-| W2-010 | yes | yes (S-005) | n/a | yes | yes | yes (S-005) | PENDING | |
-| W2-011 | yes | yes (S-006) | yes | n/a | yes | yes (S-006) | PENDING | |
-| W2-012 | yes | yes (S-006) | n/a | n/a | yes | yes (S-006) | PENDING | |
-| W2-013 | yes | yes (S-007) | n/a | n/a | yes | yes (S-007) | PENDING | |
-| W2-014 | yes | yes (S-007) | n/a | n/a | yes | yes (S-007) | PENDING | |
+| W2-002 | yes | yes (S-001) | n/a (draft states direction only) | n/a | yes | yes (S-001) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5 |
+| W2-003 | yes | yes (S-002) | n/a (direction only) | n/a | yes | yes (S-002) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5 |
+| W2-004 | yes | yes (S-002) | n/a (direction only) | n/a | yes | yes (S-002) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
+| W2-005 | yes | yes (S-003) | n/a | yes | yes | yes (S-003) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
+| W2-006 | yes | yes (S-004) | n/a | yes | yes | yes (S-004) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
+| W2-007 | yes | yes (S-004) | n/a | yes | yes | yes (S-004) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5 |
+| W2-008 | yes | yes (S-004) | n/a | yes | yes | yes (S-004) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
+| W2-009 (×2: Duties, Rec. 3) | yes | yes (S-005) | n/a | yes | yes | yes (S-005) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
+| W2-010 | yes | yes (S-005) | n/a | yes | yes | yes (S-005) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
+| W2-011 | yes | yes (S-006) | yes | n/a | yes | yes (S-006) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
+| W2-012 | yes | yes (S-006) | n/a | n/a | yes | yes (S-006) | PASS |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
+| W2-013 | yes | yes (S-007) | n/a | n/a | yes | yes (S-007) | FAIL |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
+| W2-014 | yes | yes (S-007) | n/a | n/a | yes | yes (S-007) | FAIL |`verified_by: "Baran"` present in claims_en.md, but pending re-check under the reopened Stage 5  |
 | W2-019 | yes | yes (S-010) | n/a | n/a | yes | yes (S-010) | PENDING | S-010 itself carries a content-authenticity flag (sources/S-010.md) — re-open in a browser again as part of this recheck, don't rely on the earlier pass |
 | W2-020 (×2: Duties, Rec. 2, Rec. 4) | yes | yes (S-011) | n/a | yes | yes | yes (S-011) | PENDING | |
 | W2-021 | yes | yes (S-012) | n/a | n/a | yes | yes (S-012 — per-row override, see appraised.md) | PENDING | override is new this week; needs a person's sign-off, not just the assistant's reasoning |

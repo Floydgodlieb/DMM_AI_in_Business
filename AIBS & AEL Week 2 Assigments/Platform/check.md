@@ -13,10 +13,10 @@
 | W2-008 | yes | yes (S-004) | n/a | yes | yes | PASS | `verified_by: "Ivan"` |
 | W2-009 (×2: Duties, Rec. 3) | yes | yes (S-005) | n/a | yes | yes | PASS | `verified_by: "Floyd"`; Rec. 3 now names this duty explicitly |
 | W2-010 | yes | yes (S-005) | n/a | yes | yes | PASS | `verified_by: "Floyd"` |
-| W2-011 | yes | yes (S-006) | yes | n/a | yes | PASS | |
-| W2-012 | yes | yes (S-006) | n/a | n/a | yes | PASS | |
-| W2-013 | yes | yes (S-007) | n/a | n/a | yes | PASS | |
-| W2-014 | yes | yes (S-007) | n/a | n/a | yes | PASS | |
+| W2-011 | yes | yes (S-006) | yes | n/a | yes | PASS | `verified_by: "Ivan"` |
+| W2-012 | yes | yes (S-006) | n/a | n/a | yes | PASS | `verified_by: "Ivan"` |
+| W2-013 | yes | yes (S-007) | n/a | n/a | yes | PASS | `verified_by: "Ivan"` |
+| W2-014 | yes | yes (S-007) | n/a | n/a | yes | PASS | `verified_by: "Ivan"` |
 | W2-019 | yes | yes (S-010) | n/a | n/a | yes | PASS | `verified_by: "Floyd"`; user confirms S-010 was opened directly in a browser and confirmed genuine, separately from the blanket verification pass |
 | W2-020 (×2: Duties, Rec. 2, Rec. 4) | yes | yes (S-011) | n/a | yes | yes | PASS | Rec. 2 now names this duty explicitly |
 | W2-021 | yes | yes (S-012) | n/a | n/a | yes | PASS | |

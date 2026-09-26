@@ -2,4 +2,4 @@ ProjectGroup for the AI in Business course at the HAN University of Applied Scie
 Aaron = project manager,
 Floyd = developer,
 Ivan = tester,
-Baran = developer
+Baran = deployer.

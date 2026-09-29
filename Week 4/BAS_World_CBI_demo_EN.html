@@ -1,0 +1,383 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head><body>
+<title>BAS World Handbook Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#EEF1F3; --card:#FFFFFF; --ink:#16202B; --muted:#56616F; --rule:#D6DCE2;
+  --accent:#0E6A70; --accent-ink:#FFFFFF; --accent-soft:#E0EFEF;
+  --warn:#8F5400; --warn-soft:#FBF0DF; --ok:#2F6B36; --ok-soft:#E4F1E5; --bad:#9B2C2C; --bad-soft:#F8E4E4;
+  --code-bg:#F1F4F6; --chip-bg:#000000; --chip-fg:#FFFFFF;
+  --sans:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#0D1318; --card:#172029; --ink:#E6EBEF; --muted:#9AA6B2; --rule:#2B3743;
+    --accent:#5CC3C8; --accent-ink:#0D1318; --accent-soft:#16363A;
+    --warn:#E3B25E; --warn-soft:#3A2D16; --ok:#8FD19A; --ok-soft:#1C3322; --bad:#F09A9A; --bad-soft:#3B1E1E;
+    --code-bg:#0F161C;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#0D1318; --card:#172029; --ink:#E6EBEF; --muted:#9AA6B2; --rule:#2B3743;
+  --accent:#5CC3C8; --accent-ink:#0D1318; --accent-soft:#16363A;
+  --warn:#E3B25E; --warn-soft:#3A2D16; --ok:#8FD19A; --ok-soft:#1C3322; --bad:#F09A9A; --bad-soft:#3B1E1E;
+  --code-bg:#0F161C;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5;padding-inline:16px;padding-block:0 40px}
+.wrap{max-width:1180px;margin:0 auto}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+header.top{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;justify-content:space-between;padding-block:18px 12px}
+.brand small{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.brand h1{font-size:24px;margin:2px 0 0;line-height:1.2}
+.tools{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.tbtn{border:1px solid var(--rule);background:var(--card);border-radius:6px;padding:6px 12px;font-size:14px}
+.tbtn[aria-pressed="true"]{background:var(--accent-soft);border-color:var(--accent);color:var(--accent);font-weight:600}
+#clock{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:15px;padding:6px 10px;border-radius:6px;background:var(--card);border:1px solid var(--rule);min-width:66px;text-align:center}
+#clock.late{color:var(--bad);border-color:var(--bad)}
+nav.qnav{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:18px}
+nav.qnav button{border:1px solid var(--rule);background:var(--card);border-radius:10px;padding:12px 14px;text-align:left;line-height:1.3}
+nav.qnav button b{display:block;font-size:12px;letter-spacing:.07em;text-transform:uppercase;color:var(--accent);margin-bottom:3px}
+nav.qnav button span{font-size:15px;font-weight:500}
+nav.qnav button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+nav.qnav button[aria-selected="true"] b{color:var(--accent-ink);opacity:.85}
+.panel{background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:24px 26px}
+.panel h2{font-size:24px;margin:0 0 6px;line-height:1.25;text-wrap:balance}
+.q{color:var(--muted);font-size:15px;margin:0 0 16px;max-width:80ch}
+.say{background:var(--accent-soft);border-left:3px solid var(--accent);padding:10px 14px;margin:0 0 18px;border-radius:0 6px 6px 0;font-size:15.5px;max-width:95ch}
+.say b{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);display:block}
+body:not(.show-say) .say{display:none}
+.fl{display:inline-flex;gap:6px;align-items:center;margin-right:6px}
+.line{font-size:13px;color:var(--accent);text-decoration:underline;white-space:nowrap}
+.links h3{font-size:16px;margin:18px 0 8px}
+.links ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.links li{display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:12px;align-items:baseline;padding:8px 10px;border:1px solid var(--rule);border-radius:8px;background:var(--code-bg);font-size:14.5px}
+.links li span.d{color:var(--muted)}
+@media (max-width:640px){.links li{grid-template-columns:1fr}}
+.md{font-family:var(--mono);font-size:.86em;background:var(--chip-bg);color:var(--chip-fg);padding:2px 7px;border-radius:4px;white-space:nowrap;text-decoration:none}
+a.md:hover{text-decoration:underline}
+code{font-family:var(--mono);font-size:.9em}
+/* chain */
+.chain{display:grid;grid-template-columns:repeat(8,1fr);gap:8px;margin-bottom:16px;counter-reset:c}
+.chain button{counter-increment:c;border:1px solid var(--rule);background:var(--code-bg);border-radius:8px;padding:10px 8px;font-size:13.5px;font-weight:500;line-height:1.25;text-align:left;min-height:64px}
+.chain button::before{content:counter(c);display:block;font-weight:700;font-size:18px;color:var(--accent);font-variant-numeric:tabular-nums}
+.chain button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.chain button[aria-selected="true"]::before{color:var(--accent-ink)}
+.chain button.human{border-style:dashed}
+.detail{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:22px;align-items:start}
+.files{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px;font-size:15px}
+pre.x{background:var(--code-bg);border:1px solid var(--rule);border-radius:8px;padding:12px 14px;font-family:var(--mono);font-size:13px;line-height:1.5;white-space:pre;overflow-x:auto;margin:0}
+.point{font-size:17px;line-height:1.5;margin:0 0 12px}
+.note{background:var(--warn-soft);border-radius:8px;padding:10px 14px;font-size:14.5px;margin:0 0 10px}
+.note b{color:var(--warn)}
+.stepnav{display:flex;gap:8px;margin-top:14px}
+.tag{display:inline-block;font-size:.85em;font-weight:600;padding:0 8px;border-radius:4px}
+.tag.ok{background:var(--ok-soft);color:var(--ok)} .tag.bad{background:var(--bad-soft);color:var(--bad)}
+/* pickers (Q2/Q3) */
+.pick{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.pick button{border:1px solid var(--rule);background:var(--code-bg);border-radius:999px;padding:7px 14px;font-size:14.5px;font-weight:500}
+.pick button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.box{background:var(--code-bg);border:1px solid var(--rule);border-radius:10px;padding:16px 18px}
+.box h3{font-size:16px;margin:0 0 8px}
+ul.plain{margin:0;padding-left:1.1em} ul.plain li{margin-bottom:5px}
+ol.iq{margin:0;padding-left:0;list-style:none;display:grid;gap:8px}
+ol.iq li{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:10px 12px;display:grid;grid-template-columns:34px 1fr;gap:8px;font-size:15px}
+ol.iq li span{font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
+table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;vertical-align:top;border:1px solid var(--rule);padding:9px 12px}
+th{background:var(--code-bg);font-weight:600}
+.tbl{overflow-x:auto}
+details{border:1px solid var(--rule);border-radius:8px;background:var(--code-bg);margin-bottom:8px}
+details summary{padding:11px 14px;font-weight:600;font-size:15.5px;cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"+";display:inline-block;width:18px;color:var(--accent);font-weight:700}
+details[open] summary::before{content:"\2212"}
+details p{margin:0;padding:0 14px 12px 32px;font-size:15px;max-width:90ch}
+.copy{font:inherit;font-size:13px;border:1px solid var(--rule);background:var(--card);border-radius:5px;padding:3px 9px;float:right}
+footer{color:var(--muted);font-size:13px;margin-top:18px}
+[hidden]{display:none!important}
+@media (max-width:900px){.chain{grid-template-columns:repeat(4,1fr)} .detail,.two{grid-template-columns:1fr} nav.qnav{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:520px){nav.qnav{grid-template-columns:1fr 1fr} .chain{grid-template-columns:repeat(2,1fr)} .panel{padding:18px 16px}}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="brand"><small>Mini-CBI, AI in Business, HAN minor DDDM</small><h1>BAS World handbook platform</h1></div>
+  <div class="tools">
+    <a class="tbtn" id="repolink" href="https://github.com/Floydgodlieb/DMM_AI_in_Business" target="_blank" rel="noopener" style="text-decoration:none;color:var(--ink)">Open repo on GitHub</a>
+    <span id="clock" aria-live="off" title="Conversation time, 10 minutes maximum">10:00</span>
+    <button class="tbtn" id="clockbtn" type="button">Start timer</button>
+    <button class="tbtn" id="saybtn" type="button" aria-pressed="false">Speaker notes</button>
+  </div>
+</header>
+
+<nav class="qnav" role="tablist" aria-label="The teacher's questions">
+  <button role="tab" type="button" data-p="demo" aria-selected="true"><b>Question 1</b><span>Demo of the tool</span></button>
+  <button role="tab" type="button" data-p="agentic" aria-selected="false"><b>Question 2</b><span>Why agentic</span></button>
+  <button role="tab" type="button" data-p="interview" aria-selected="false"><b>Question 3</b><span>Interview questions</span></button>
+  <button role="tab" type="button" data-p="veld" aria-selected="false"><b>Question 4</b><span>Field research and tool</span></button>
+  <button role="tab" type="button" data-p="tegen" aria-selected="false"><b>Backup</b><span>Pushbacks and live run</span></button>
+  <button role="tab" type="button" data-p="links" aria-selected="false"><b>Repo</b><span>All links</span></button>
+</nav>
+
+<!-- ========== VRAAG 1 ========== -->
+<section class="panel" id="p-demo" role="tabpanel">
+  <h2>One claim from source to page</h2>
+  <p class="q">"Can you give a mini demo in which you show how your desk research tool works?" Click a step. Every step hands on a file, so a person can always take over.</p>
+  <div class="say"><b>Say</b>Our tool turns a research question into a handbook page where every sentence traces back to a saved source. I will follow claim W2-020 through the chain.</div>
+  <div class="chain" role="tablist" aria-label="Steps in the chain" id="chain"></div>
+  <div id="stepbox"></div>
+</section>
+
+<!-- ========== VRAAG 2 ========== -->
+<section class="panel" id="p-agentic" role="tabpanel" hidden>
+  <h2>Why this is an agentic tool</h2>
+  <p class="q">"Explain why this is an agentic tool: LLM, Skills, Tools, Context (PRD, research proposal, blueprint, build plan with memory)." Click a concept.</p>
+  <div class="say"><b>Say</b>An AI model works towards one goal over several steps: a checked page. It uses tools, follows skills and a fixed context, and keeps its memory in files. A failed check sends the work back. A person approves and publishes.</div>
+  <div class="pick" role="tablist" id="cpick"></div>
+  <div class="two">
+    <div class="box" id="cbox"></div>
+    <div class="box"><h3>Deliberately bounded</h3>
+      <ul class="plain">
+        <li><strong>The agent does:</strong> search, appraise, translate, write, check itself, and stop and ask when in doubt.</li>
+        <li><strong>A person does:</strong> approve after every stage, fill in verified_by, process the interview, publish.</li>
+        <li>In weeks 2 and 3 the PM runs the steps. From week 4 an orchestrator takes over one step at a time, once that step passes its test.</li>
+      </ul></div>
+  </div>
+</section>
+
+<!-- ========== VRAAG 3 ========== -->
+<section class="panel" id="p-interview" role="tabpanel" hidden>
+  <h2>From sub-question to interview question</h2>
+  <p class="q">"Explain how you translated your research question and sub questions into interview questions, and whether working on the interview guide was a reason to improve your research proposal." Click a sub-question.</p>
+  <div class="say"><b>Say</b>Three sub-questions can only be answered inside the company. Three of us each wrote a guide; we tested all 30 questions on six points and built one new guide from them.</div>
+  <div class="pick" role="tablist" id="spick"></div>
+  <div class="two">
+    <div class="box"><h3 id="stitle"></h3><ol class="iq" id="slist"></ol></div>
+    <div style="display:grid;gap:14px">
+      <div class="box"><h3>How the 30 original questions were tested</h3>
+        <ul class="plain"><li>Does it feed a sub-question or criterion?</li><li>Does it ask for an example or a number?</li><li>Is it neutral, not leading?</li><li>Can this person know the answer?</li><li>One thing at a time?</li><li>Does it help the handbook page?</li></ul></div>
+      <div class="box"><h3>Did it improve the proposal?</h3>
+        <p style="margin:0 0 6px;font-size:15px">Honestly: the big changes from v1 to v2 came from the week-1 feedback. Working on the guides gave four points for v2.1:</p>
+        <ul class="plain" style="font-size:15px"><li>Concrete examples for the boundary question</li><li>The budget holder as the source for I2</li><li>Name the chain steps explicitly</li><li>Name S-012 as a limitation</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== VRAAG 4 ========== -->
+<section class="panel" id="p-veld" role="tabpanel" hidden>
+  <h2>What the field research adds to the tool</h2>
+  <p class="q">"Explain how you expect your field research can contribute to improving your desk research tool."</p>
+  <div class="say"><b>Say</b>The interview gives what desk research cannot: real case evidence, and a test of our own criteria against practice. We can only show this after the interview.</div>
+  <div class="tbl"><table>
+    <thead><tr><th style="width:40%">What the interview gives us</th><th>Which part of the tool changes</th></tr></thead>
+    <tbody>
+      <tr><td>Case statements, entered by hand</td><td><a class="md" data-f="Week 3/New week2 after feedback/claims_en.md">claims_en.md</a> Replaces our only technical BAS World evidence: an undated marketing source (S-012).</td></tr>
+      <tr><td>The words and suppliers staff mention</td><td>Step 1, search: new Dutch search terms, and targeted searches for those suppliers' contracts.</td></tr>
+      <tr><td>Time-saving versus customer-facing use (interview questions 4 to 7)</td><td>Criterion 2 in <a class="md" data-f="Week 3/New week2 after feedback/context.md">context.md</a> and the check step.</td></tr>
+      <tr><td>Cost, people and owner (questions 8 and 13)</td><td>Criteria 5 and 6: real complexity labels and a real cost estimate.</td></tr>
+      <tr><td>How BAS World checks work before it reaches a customer (question 6)</td><td>The check step: we can adopt their practice.</td></tr>
+      <tr><td>The interviewee reads one page</td><td>The criteria only a person can test: clear and useful.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note" style="margin-top:14px"><b>Limitation to name yourself:</b> one interview at one large company says little about a small trader. That is why the claims are labelled case, with a scan of 20 to 30 smaller traders as a counterweight.</p>
+</section>
+
+<!-- ========== RESERVE ========== -->
+<section class="panel" id="p-tegen" role="tabpanel" hidden>
+  <h2>Pushbacks and live option</h2>
+  <p class="q">Open a question when the teacher asks it. Rule of thumb: admit a gap first, then say what we are doing about it.</p>
+  <div class="two">
+    <div>
+      <details><summary>Is this not just a workflow?</summary><p>Partly, and on purpose. It has the building blocks of an agent; its autonomy grows one step at a time as each step passes its test.</p></details>
+      <details><summary>Show me a skill or the build plan.</summary><p>They are used in the week-3 pipeline (see <a class="md" data-f="Week 3/Week-03/status.md">status.md</a>, tasks 2.1 and 6.1). The files themselves are not in this repo yet; that is an open point.</p></details>
+      <details><summary>Does the tool save time?</summary><p>We do not know yet. There is one logged run of 43 minutes in <code>timelog.csv</code>; that is not a baseline yet.</p></details>
+      <details><summary>BAS World is not an SME.</summary><p>It is a frontier case: it shows what stays hard even with budget and IT. Interview questions 12 and 13 ask directly what a small trader can copy.</p></details>
+      <details><summary>Why is the interview kept outside the tool?</summary><p>Privacy by design. The recording and transcripts never go to an AI model; a person enters the statements into claims_en.md by hand (Blueprint section 4).</p></details>
+      <details><summary>What did you contribute yourself?</summary><p>Name one concrete file or task, not a meeting. The commit history on GitHub shows who changed what.</p></details>
+    </div>
+    <div class="box">
+      <h3>Only if the teacher wants to see a live run</h3>
+      <p style="font-size:14.5px;margin:0 0 10px">Open a terminal in the folder Week 3 / New week2 after feedback, type <code>claude</code> and paste a prompt. Neither prompt writes any file. Rehearse beforehand.</p>
+      <p style="margin:0 0 4px;font-weight:600;font-size:14.5px">Prompt 1: context <button class="copy" type="button" data-copy="p1">Copy</button></p>
+      <pre class="x" id="p1" style="white-space:pre-wrap;margin-bottom:12px">Read context.md. List the six quality criteria every handbook page must meet, and for each one say who checks it: the tool or the second reader. Do not change any file.</pre>
+      <p style="margin:0 0 4px;font-weight:600;font-size:14.5px">Prompt 2: one step <button class="copy" type="button" data-copy="p2">Copy</button></p>
+      <pre class="x" id="p2" style="white-space:pre-wrap">Rate only sources/S-011.md on credibility, relevance and recency (1-3), using the scale in 03_Assignment2_Writeup.md section 1. Give a one-line reason, then compare your rating with the S-011 row in appraised.md. Show the result in the chat only. Do not write or change any file.</pre>
+    </div>
+  </div>
+</section>
+
+<!-- ========== REPO LINKS ========== -->
+<section class="panel links" id="p-links" role="tabpanel" hidden>
+  <h2>All key files in the repo</h2>
+  <p class="q">Checked on 28 September 2026 (latest commit 26 September, 7594f1f). Click a file name to open the file, or "lines" to jump straight to the right lines.</p>
+  <div id="linklist"></div>
+</section>
+
+<footer>Excerpts copied verbatim from the repo Floydgodlieb/DMM_AI_in_Business (as of 28 September 2026); [...] marks a cut. Black file names open the original on GitHub. Page drafted with AI.</footer>
+</div>
+
+<script>
+(function(){
+  var BASE='https://github.com/Floydgodlieb/DMM_AI_in_Business/blob/main/';
+  var W2='Week 3/New week2 after feedback/';
+  function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+  function enc(p){return p.split('/').map(encodeURIComponent).join('/');}
+  function url(p,l){var u=BASE+enc(p);if(l){var r=String(l).split('-');u+='?plain=1#L'+r[0]+(r[1]?'-L'+r[1]:'');}return u;}
+  function norm(o){return typeof o==='string'?{p:o}:o;}
+  function link(o,label){o=norm(o);var name=label||o.label||o.p.split('/').pop();
+    var h='<a class="md" data-f="'+o.p+'">'+name+'</a>';
+    if(o.l){h+='<a class="line" data-f="'+o.p+'" data-l="'+o.l+'">'+(String(o.l).indexOf('-')>0?'lines '+String(o.l).replace('-',' to '):'line '+o.l)+'</a>';}
+    return '<span class="fl">'+h+'</span>';}
+  function wire(root){root.querySelectorAll('a[data-f]').forEach(function(a){a.href=url(a.getAttribute('data-f'),a.getAttribute('data-l'));a.target='_blank';a.rel='noopener';a.title=a.href;});}
+
+  /* ---------- Vraag 1: keten ---------- */
+  var steps=[
+    {t:'Context and rules',f:[{p:W2+'context.md',l:'29-36'},{p:W2+'CLAUDE.md',l:'6-10'}],
+     x:"- Work only with files inside this `platform/` folder. [...] Interview\n  material is entered by a person; you never process it.\n- Every fact you write down carries a source id and the verbatim sentence\n  it rests on. If you cannot point to a sentence in `sources/`, write nothing.\n- Never edit `original_nl`. Never fill `verified_by`; a person does.\n- Never publish. Stage 6 is done by a person.",
+     p:'Every step first reads the shared context: the reader, the six criteria and the house style. The rules always apply, even without chat history.'},
+    {t:'Question and search',f:[{p:W2+'question.md',l:'5-6'},{p:W2+'searchlog.md',l:'19'}],
+     x:"handbook question: Who owns the AI tools I use, and what happens to my\n                   business if that changes?\nresearch question served: main question; sub-questions E2 and E3\n\n| 2026-09-17 | web search | GDPR data processing agreement obligations\n  controller AI cloud provider EUR-Lex | S-011 | Legiscope, Parloa, [...]\n  discarded: compliance-vendor/law-firm marketing blogs, not primary",
+     p:'The question links to our sub-questions. Every search is logged, including what we discarded and why.'},
+    {t:'Save the source',f:[{p:W2+'sources/S-011.md',l:'1-15'}],
+     x:"id: S-011\nurl: https://commission.europa.eu/publications/\n     standard-contractual-clauses-controllers-and-processors-eueea_en\nretrieved: 2026-09-17\npublisher: European Commission\ntype: regulation",
+     p:'Rule from the Blueprint: a source is saved with its web address and date, or it does not exist.'},
+    {t:'Appraise',f:[{p:W2+'appraised.md',l:'15'},{p:'Week 3/Week-03/Platform/context.md',l:'60',label:'Week-03 context.md (v2.0)'}],
+     x:"| S-011 | 3 | 2 | 1 | European Commission's own standard-contractual-\n  clauses page (Art. 28 GDPR mechanism); the retrieved text was thin [...]\n  | user (PM): treat all as use, skipping per-row tester review this once\n  | use |",
+     p:'The AI scores credibility, relevance and recency (1 to 3) and gives a reason. A person can override it in a separate column.',
+     n:'<b>Name it yourself:</b> this week the PM approved all rows at once. After feedback we decide per source, and the source rule is stricter: see the week-3 version of context.md (version 2.0, line 60).'},
+    {t:'Record the claim',f:[{p:W2+'claims_en.md',l:'221-230'}],
+     x:"- claim_id: W2-020\n  source_id: S-011\n  original_nl: \"Commission Implementing Decision on standard contractual\n                clauses between controllers and processors under\n                Article 28 (7) of Regulation (EU) 2016/679\"\n  translation_en: \"The European Commission has adopted standard\n                   contractual clauses [...] under Article 28(7) GDPR.\"\n  evidence: independently-verifiable\n  scope: sector\n  translated_by: tool\n  verified_by: \"Floyd\"",
+     p:'The key hand-over. The original sentence stays unchanged next to the claim, with labels and who checked it. The draft may use nothing that is not in this file.'},
+    {t:'Write the draft',f:[{p:W2+'draft.md',l:'80-83'}],
+     x:"- GDPR. If a supplier processes personal data on your behalf (most cloud\n  AI tools do), the European Commission has published standard contract\n  clauses for exactly this relationship, under Article 28(7) of the GDPR\n  [W2-020, independently-verifiable, sector].",
+     p:'Every sentence on the page carries a claim ID, so a reader can trace it back to the source.'},
+    {t:'Check',f:[{p:W2+'check.md',l:'20-23'},{p:W2+'check.md',l:'36',label:'check.md summary'}],
+     x:"| claim  | exists | quote in source | duty | labels | source use | result |\n| W2-020 | yes    | yes (S-011)     | yes  | yes    | yes        | PASS   |\n| W2-013 | yes    | yes (S-007)     | n/a  | yes    | yes        | FAIL   |",
+     p:'W2-020 <span class="tag ok">PASS</span>. W2-013 <span class="tag bad">FAIL</span>: the source is about the Dutch financial sector, not our trade. A failed claim goes back to the draft.',
+     n:'<b>Check with Ivan beforehand:</b> the exact reason for the FAIL.'},
+    {t:'Week 3: agents',f:[{p:'Week 3/Week-03/05_review/issue_log.md',l:'7-8'},{p:'Week 3/Week-03/status.md',l:'35-45'},{p:'Week 3/Week-03/06_final/handbook_page_week3.md',label:'handbook_page_week3.md'}],human:true,
+     x:"| I1 | Whole page | The page never names BAS World or the sector [...] | major | fixed |\n| I2 | Disclaimer | Disclaimer is paraphrased [...] rather than verbatim | major | fixed |\n\n| 4b. Full draft                                    | Floyd | 2026-09-22 |\n| 5 / 4-revision. Review + revised draft (draft_v2) | Floyd | 2026-09-22 |",
+     p:'The next version: a separate reviewer agent finds real errors, the writer fixes them in a new version, and a person approves after every stage. Publishing stays with a person.'}
+  ];
+  var chain=document.getElementById('chain'), box=document.getElementById('stepbox'), cur=0;
+  steps.forEach(function(s,k){var b=document.createElement('button');b.type='button';b.setAttribute('role','tab');b.textContent=s.t;if(s.human)b.className='human';b.onclick=function(){showStep(k);};chain.appendChild(b);});
+  function showStep(k){
+    cur=k; var s=steps[k];
+    [].forEach.call(chain.children,function(b,j){b.setAttribute('aria-selected',j===k?'true':'false');});
+    box.innerHTML='<div class="detail"><div><div class="files">'+s.f.map(function(f){return link(f);}).join('')+'</div><pre class="x">'+esc(s.x)+'</pre></div>'+
+      '<div><p class="point">'+s.p+'</p>'+(s.n?'<p class="note">'+s.n+'</p>':'')+
+      '<div class="stepnav"><button class="tbtn" type="button" id="sprev"'+(k===0?' disabled':'')+'>Previous step</button><button class="tbtn" type="button" id="snext"'+(k===steps.length-1?' disabled':'')+'>Next step</button></div></div></div>';
+    wire(box);
+    document.getElementById('sprev').onclick=function(){if(cur>0)showStep(cur-1);};
+    document.getElementById('snext').onclick=function(){if(cur<steps.length-1)showStep(cur+1);};
+  }
+  showStep(0);
+
+  /* ---------- Vraag 2: begrippen ---------- */
+  var concepts=[
+    {t:'LLM',h:'Claude through the command line on a paid plan, never a free tool. In the week-3 pipeline: Sonnet by default, Opus for writing and fact-checking, Haiku for mechanical work.',f:[{p:'Week 3/Week-03/CLAUDE.md',l:'125-150',label:'Week-03 CLAUDE.md'},{p:'Week 3/01_Technical_Blueprint_v1.1_1.md',l:'77-86'}]},
+    {t:'Tools',h:'Web search, reading and writing files, and scripts such as verify_quotes.py, wordcount.py and anonymize.py. Each agent only gets what it needs: the writer has no web access, the reviewer is read-only.',f:[{p:'Week 3/Week-03/CLAUDE.md',l:'125-150',label:'Week-03 CLAUDE.md'},{p:'Week 3/Week-03/scripts/verify_quotes.py',label:'verify_quotes.py'}]},
+    {t:'Skills',h:'Reusable instructions such as source-evaluation, search-strategy and style-guide. In week 2 the templates and the fixed prompts in the runbook played that role. The skill files themselves are not in this repo yet.',f:[{p:W2+'RUNBOOK.md',l:'14-30'},{p:'Week 3/Week-03/status.md',label:'Week-03 status.md'}]},
+    {t:'PRD',h:'What the tool does and does not do: six steps, six quality criteria with who checks each, no code, and a manual backup for every step.',f:[{p:'Week 3/02_PRD_v2.1_1.md',l:'24-55'}]},
+    {t:'Research proposal',h:'The main question and sub-questions E1 to E3 and I1 to I3. Each week, question.md states which sub-questions the page serves.',f:[{p:'AIBS & AEL Week 2 Assigments/Research_proposal_BASWorld_V2.md',l:'30-46'},{p:W2+'question.md',l:'5-6'}]},
+    {t:'Blueprint',h:'The parts, the fixed files between the steps, and the line: interview material never goes to an AI model.',f:[{p:'Week 3/01_Technical_Blueprint_v1.1_1.md',l:'7-40'},{p:'Week 3/01_Technical_Blueprint_v1.1_1.md',l:'86',label:'Blueprint: the line'}]},
+    {t:'Build plan and memory',h:'Memory lives in files instead of the chat: context.md, status.md with approvals and open questions, progress.json and timelog.csv. The build plan is named in the Blueprint but is not in this repo yet.',f:[{p:'Week 3/Week-03/status.md',l:'35-60',label:'Week-03 status.md'},{p:'Week 3/Week-03/progress.json',label:'progress.json'},{p:W2+'timelog.csv',label:'timelog.csv'},{p:'Week 3/01_Technical_Blueprint_v1.1_1.md',l:'40',label:'Blueprint: control'}]}
+  ];
+  var cpick=document.getElementById('cpick'), cbox=document.getElementById('cbox');
+  concepts.forEach(function(c,k){var b=document.createElement('button');b.type='button';b.setAttribute('role','tab');b.textContent=c.t;b.onclick=function(){showC(k);};cpick.appendChild(b);});
+  function showC(k){var c=concepts[k];[].forEach.call(cpick.children,function(b,j){b.setAttribute('aria-selected',j===k?'true':'false');});
+    cbox.innerHTML='<h3>'+c.t+'</h3><p style="margin:0 0 10px;font-size:15.5px">'+c.h+'</p><div class="files">'+c.f.map(function(f){return link(f);}).join('')+'</div>';wire(cbox);}
+  showC(0);
+
+  /* ---------- Vraag 3: deelvragen ---------- */
+  var sq=[
+    {t:'I1 What is automated now',q:[[1,'What is your role, and which steps from lead to export document do you work on yourself?'],[2,'Walk us through a recent sale outside the EU. At which steps did AI play a part, and at which none?'],[3,'If that AI tool disappeared tomorrow, how would the same task be done?']]},
+    {t:'I3 Where is the line',q:[[4,'May AI act on BAS World\'s behalf anywhere without a person approving first? Where is the line between acting and advising?'],[5,'Which AI uses only save staff time, and which does a customer actually see?'],[6,'What checks happen before AI work reaches a customer, and who is responsible?'],[7,'Would you still draw the line in the same place? (same question as 4, after the examples)']]},
+    {t:'I2 What the next step costs',q:[[8,'Which recurring task would you hand to AI next, and what would it take in money, people and ownership?'],[9,'Have you tried AI for something and then stopped? Why?']]},
+    {t:'E2 and E3 Suppliers and rules',q:[[10,'Which information may never go into a public AI tool, and how do staff know?'],[11,'Export documentation only: does AI play a part in sanctions screening or export paperwork?']]},
+    {t:'Main question What a small trader can carry',q:[[12,'Which AI problem is still hard despite budget and IT, and what could a small trader not copy?'],[13,'A trader with 10 to 50 staff wants a 30-day pilot. What should they test first, who owns it, and what does it cost?']]}
+  ];
+  var spick=document.getElementById('spick'), slist=document.getElementById('slist'), stitle=document.getElementById('stitle');
+  sq.forEach(function(s,k){var b=document.createElement('button');b.type='button';b.setAttribute('role','tab');b.textContent=s.t;b.onclick=function(){showS(k);};spick.appendChild(b);});
+  function showS(k){var s=sq[k];[].forEach.call(spick.children,function(b,j){b.setAttribute('aria-selected',j===k?'true':'false');});
+    stitle.textContent='Interview questions for '+s.t;
+    slist.innerHTML=s.q.map(function(x){return '<li><span>'+x[0]+'</span>'+esc(x[1])+'</li>';}).join('');}
+  showS(0);
+
+  /* ---------- repo-links ---------- */
+  var groups=[
+    ['Plans and design (context for the agent)',[
+      [{p:'AIBS & AEL Week 2 Assigments/Research_proposal_BASWorld_V2.md',l:'30-46'},'Research proposal v2: main question and sub-questions E1 to I3'],
+      [{p:'AIBS & AEL Week 2 Assigments/Research_proposal_BASWorld_V2.md',l:'71-95',label:'Research_proposal (method)'},'Method: three strands, including the interview at BAS World'],
+      [{p:'Week 3/02_PRD_v2.1_1.md',l:'24-38'},'PRD v2.1: the six steps of the tool'],
+      [{p:'Week 3/02_PRD_v2.1_1.md',l:'39-55',label:'PRD (criteria)'},'PRD v2.1: the six quality criteria and who checks them'],
+      [{p:'Week 3/01_Technical_Blueprint_v1.1_1.md',l:'7-40'},'Blueprint v1.1: parts and control'],
+      [{p:'Week 3/01_Technical_Blueprint_v1.1_1.md',l:'77-86',label:'Blueprint (the line)'},'The line: interview material never goes to an AI model'],
+      [{p:'Week 3/01_Technical_Blueprint_v1.1_1.md',l:'101-115',label:'Blueprint (open questions)'},'Open-questions tracker, including the 43-minute timing']
+    ]],
+    ['The week-2 chain (demo, question 1)',[
+      [{p:'Week 3/New week2 after feedback/context.md',l:'29-36'},'Shared context: the six criteria'],
+      [{p:'Week 3/New week2 after feedback/CLAUDE.md'},'Rules for the agent'],
+      [{p:'Week 3/New week2 after feedback/RUNBOOK.md'},'Runbook with the prompt for each step'],
+      [{p:'Week 3/New week2 after feedback/searchlog.md',l:'19'},'Search log, the line for source S-011'],
+      [{p:'Week 3/New week2 after feedback/sources/S-011.md'},'Saved source S-011'],
+      [{p:'Week 3/New week2 after feedback/appraised.md',l:'15'},'Appraisal of S-011'],
+      [{p:'Week 3/New week2 after feedback/claims_en.md',l:'221-230'},'Claim W2-020'],
+      [{p:'Week 3/New week2 after feedback/draft.md',l:'80-83'},'Sentence with W2-020 on the page'],
+      [{p:'Week 3/New week2 after feedback/check.md',l:'20-23'},'Check: W2-013 FAIL, W2-020 PASS'],
+      [{p:'Week 3/New week2 after feedback/timelog.csv'},'Time log of the run on 17 September'],
+      [{p:'AIBS & AEL Week 2 Assigments/HandbookPage.md'},'Published week-2 handbook page']
+    ]],
+    ['The week-3 pipeline (agents)',[
+      [{p:'Week 3/Week-03/CLAUDE.md',l:'84-124',label:'Week-03 CLAUDE.md'},'The eight stages of the pipeline'],
+      [{p:'Week 3/Week-03/CLAUDE.md',l:'125-150',label:'Week-03 CLAUDE.md (agents)'},'Agents, tools and models per stage'],
+      [{p:'Week 3/Week-03/status.md',l:'35-60',label:'Week-03 status.md'},'Approvals and open questions'],
+      [{p:'Week 3/Week-03/05_review/issue_log.md',l:'5-12'},'Errors found by the reviewer agent'],
+      [{p:'Week 3/Week-03/Platform/context.md',l:'60',label:'Week-03 context.md (v2.0)'},'Stricter source rule after feedback'],
+      [{p:'Week 3/Week-03/06_final/handbook_page_week3.md'},'Final week-3 page'],
+      [{p:'Week 3/Week-03/03_data/consent_checklist.md'},'Consent and processing of the interview']
+    ]]
+  ];
+  document.getElementById('linklist').innerHTML=groups.map(function(g){return '<h3>'+g[0]+'</h3><ul>'+g[1].map(function(r){return '<li><span>'+link(r[0])+'</span><span class="d">'+r[1]+'</span></li>';}).join('')+'</ul>';}).join('');
+
+  /* ---------- hoofdnavigatie ---------- */
+  var tabs=[].slice.call(document.querySelectorAll('nav.qnav button'));
+  function showP(id){tabs.forEach(function(t){var on=t.getAttribute('data-p')===id;t.setAttribute('aria-selected',on?'true':'false');document.getElementById('p-'+t.getAttribute('data-p')).hidden=!on;});
+    try{history.replaceState(null,'','#'+id);}catch(e){}}
+  tabs.forEach(function(t){t.onclick=function(){showP(t.getAttribute('data-p'));};});
+  var h=(location.hash||'').slice(1); if(document.getElementById('p-'+h)) showP(h);
+  document.addEventListener('keydown',function(e){
+    if(e.target.closest&&e.target.closest('input,textarea'))return;
+    var n=parseInt(e.key,10); if(n>=1&&n<=6){showP(tabs[n-1].getAttribute('data-p'));return;}
+    if(!document.getElementById('p-demo').hidden){
+      if(e.key==='ArrowRight'&&cur<steps.length-1){showStep(cur+1);}
+      if(e.key==='ArrowLeft'&&cur>0){showStep(cur-1);}
+    }
+  });
+
+  /* ---------- spreektekst ---------- */
+  var sb=document.getElementById('saybtn');
+  sb.onclick=function(){var on=document.body.classList.toggle('show-say');sb.setAttribute('aria-pressed',String(on));};
+
+  /* ---------- timer 10 min ---------- */
+  var left=600, run=null, clock=document.getElementById('clock'), cb=document.getElementById('clockbtn');
+  function draw(){var a=Math.abs(left),m=Math.floor(a/60),s=a%60;clock.textContent=(left<0?'-':'')+m+':'+(s<10?'0':'')+s;clock.classList.toggle('late',left<=60);}
+  cb.onclick=function(){if(run){clearInterval(run);run=null;cb.textContent='Resume';}else{run=setInterval(function(){left--;draw();},1000);cb.textContent='Pause';}};
+  clock.ondblclick=function(){left=600;draw();};
+  draw();
+
+  document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){var el=document.getElementById(b.getAttribute('data-copy'));
+    function sel(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected';}
+    try{navigator.clipboard.writeText(el.textContent).then(function(){b.textContent='Copied';},sel);}catch(e){sel();}});});
+  wire(document);
+})();
+</script>
+</body></html>

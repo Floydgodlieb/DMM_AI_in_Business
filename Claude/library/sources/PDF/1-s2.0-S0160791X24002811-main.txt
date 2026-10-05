@@ -1,0 +1,1895 @@
+
+=== page 1 (PDF page index) ===
+Analyzing AI adoption in European SMEs: A study of digital capabilities,
+innovation, and external environment
+Marta F. Arroyabe a, Carlos F.A. Arranz b, Ignacio Fernandez De Arroyabe c,d,
+Juan Carlos Fernandez de Arroyabe a,*
+a Essex Business School. University of Essex, UK
+b Greenwich Business School, University of Greenwich, UK
+c Computer Science Department, Loughborough University, UK
+d Data Services, Commercial Banking, Lloyds Banking Group, London, UK
+A R T I C L E I N F O
+Keywords:
+Artificial intelligence
+SMEs
+Digital capabilities
+Innovation capabilities
+Business environmental support
+A B S T R A C T
+This study investigates the effects of digital capabilities, innovation capabilities, and business environmental
+support on the adoption of Artificial Intelligence (AI) in Small and Medium-sized Enterprises (SMEs). Utilizing
+dynamic capabilities and resource dependency theories, we provide a comprehensive and integral analysis of the
+drivers that facilitate AI adoption in SMEs. We conducted an empirical study encompassing 12,108 SMEs, based
+on survey data of the Flash Eurobarometer database from the European Union. Our analysis employed a com-
+bination of classical regression methods and advanced machine learning techniques, including artificial neural
+networks and tree regression. Our findings highlight the importance of digital capabilities in driving AI adoption,
+where complementing innovation capabilities exhibit synergistic effects. Contrary to prevailing literature,
+business environmental support alone demonstrates limited impact, emphasizing its contingent effectiveness
+within a well-elaborated institutional framework. Furthermore, the synergy between business environmental
+support and digital and innovation capabilities has a significant impact on AI adoption in SMEs. However, in-
+ternal capabilities exert a greater influence on AI adoption in SMEs compared to business environmental support.
+This study contributes to dynamic capabilities theory by elucidating the interplay of digital and innovation
+capabilities, offering a nuanced understanding of their combined influence on AI adoption. It also enriches
+resource dependency theory by highlighting the dynamic nature of business environmental support. For prac-
+titioners, our results underscore the need for a balanced investment in digital and innovation capabilities. Pol-
+icymakers should consider these insights when designing support structures for SMEs, emphasizing a
+comprehensive approach to foster internal capabilities alongside creating an enabling external environment.
+1. Introduction
+Artificial intelligence (AI) has profoundly transformed the economy
+and society by offering innovative solutions [1–4]. In the economy, AI
+has optimized business processes, increased operational efficiency, and
+facilitated decision-making. Moreover, it has driven the creation of new
+specialized jobs and fostered technological innovation, thereby stimu-
+lating economic growth. In society, AI has enhanced healthcare, edu-
+cation,
+and
+security
+by
+providing
+precise
+medical
+diagnoses,
+personalizing education, and strengthening cybersecurity. Overall,
+artificial intelligence has emerged as a crucial engine for economic and
+social progress, shaping the future of our societies significantly [2,5–7].
+In this context, businesses acknowledge the significance of AI [5].
+Consequently, AI has emerged as a transformative force reshaping how
+businesses operate and interact with their customers. While larger cor-
+porations have organized the adoption of advanced AI technologies,
+small and medium-sized enterprises (SMEs) have struggled with the
+challenge of integrating these innovations into their daily operations
+(Almashawreh et al., 2023; [8,9]). These challenges include financial
+constraints [10], a lack of expertise and skills [8,11], resistance to
+change, and difficulties in integrating AI with existing systems [12].
+Although the academic community has made substantial contributions
+* Corresponding author.
+E-mail addresses: mf17255@essex.ac.uk (M.F. Arroyabe), c.fernandezdearroyabearranz@greenwich.ac.uk (C.F.A. Arranz), I.Fernandez@lboro.ac.uk, ignacio.
+fernandez-de-arroyabe@lloydsbanking.com (I. Fernandez De Arroyabe), jcfern@essex.ac.uk (J.C. Fernandez de Arroyabe).
+Contents lists available at ScienceDirect
+Technology in Society
+journal homepage: www.elsevier.com/locate/techsoc
+https://doi.org/10.1016/j.techsoc.2024.102733
+Received 28 November 2023; Received in revised form 10 October 2024; Accepted 10 October 2024
+Technology in Society 79 (2024) 102733 
+Available online 28 October 2024 
+0160-791X/© 2024 The Authors. Published by Elsevier Ltd. This is an open access article under the CC BY license ( http://creativecommons.org/licenses/by/4.0/ ). 
+
+=== page 2 (PDF page index) ===
+to understanding these obstacles, the insights remain diverse, frag-
+mented, and inconclusive about the dynamics of AI adoption within
+SMEs. Wang et al. [11] and Bhalerao et al. [12] note the critical
+importance of comprehending how SMEs are navigating this adoption
+journey, considering an integrative perspective that considers both in-
+ternal organizational capabilities and external environmental in-
+fluences. This approach is particularly critical for SMEs, given their
+limited resources and unique constraints.
+Despite these calls for a more integrative perspective, there remains a
+pronounced gap in the literature concerning the complex nature of AI
+adoption in SMEs. Specifically, existing studies often overlook the syn-
+ergies between digital and innovation capabilities and how these capa-
+bilities interact with external environmental factors ([13]; [14]; [15]).
+While individual factors such as digital and innovation capabilities have
+been studied in isolation [16,17], the synergistic effects of these capa-
+bilities and their interaction with external business environmental fac-
+tors remain largely unexplored ([18]; Agostini et al., [19]). This gap in
+the literature may be attributed to the complexity of capturing
+multi-dimensional interactions in empirical research and a historical
+focus on larger organizations where internal capabilities were seen as
+sufficient to drive technological adoption ([20]; Vial, 2019). Our study
+aims to address this gap by providing an integrative analysis that not
+only identifies key drivers of AI adoption in SMEs but also reveals how
+these factors interact to shape adoption outcomes.
+This study focuses on exploring the landscape of AI adoption by SMEs
+in the context of the European Union (EU). In particular, we aim to
+answer the research question: How do digital capabilities, innovation ca-
+pabilities, and business environmental support interact to facilitate the
+adoption of Artificial Intelligence (AI) in SMEs across the European Union?
+To address our research question, we conducted an empirical study
+encompassing 12,108 SMEs. We collected data through a survey utiliz-
+ing the Flash Eurobarometer No. 486 database from Eurostat, which
+belongs to the European Union (EU). The literature has highlighted the
+economic role of SMEs, especially in the case of the EU, where they
+represent more than 96 % of all businesses.
+As a theoretical framework, we use resources dependency theory
+[21–24] and the dynamic capabilities theory [25,26]. Dynamic capa-
+bilities theory allows us to explore how SMEs internally develop and
+adapt their strategies to leverage AI effectively, while resource de-
+pendency theory offers insights into how external resources and envi-
+ronmental factors influence these adoption processes. Thus, we examine
+both the support provided by the European ecosystem to SMEs for AI
+adoption and the internal resources of SMEs. The literature has previ-
+ously emphasized the importance of the ecosystem as a driver of in-
+novations within organizations [27,28]. Furthermore, we integrate the
+resources dependency theory with dynamic capability to demonstrate
+how the possession of digital and innovation capabilities serve as a
+catalyst for AI adoption in companies. The literature highlights the
+pivotal role of organizational capabilities as essential drivers in the
+digital transformation of organizations [16,17,29]. Additionally, Arranz
+et al. [29] demonstrate that the interaction of capabilities within an
+organization can generate complementary and synergistic effects,
+arising from the sharing of organizational routines and resources.
+From a methodological point of view, we combine regression anal-
+ysis with machine learning, using artificial neural networks (ANNs) and
+tree regression in our modelling. This strategic combination of statistical
+methods offers several substantial advantages. On one hand, it enables
+us to explore causal relationships between variables, which is essential
+for understanding the underlying dynamics. Thus, to the explanatory
+power of regression models, we can add the capacity of ANNs in the
+analysis of complex problems, determining all interactions through
+learning algorithms. This allow us to solve previous limitations of
+regression models, providing a higher level of explained variance, which
+result in a better understanding and quantification of how various
+drivers affect the development of innovation [30,31]. On the other hand,
+tree regression analysis is a technique used in data mining and machine
+learning to construct predictive models. Tree model analysis provides
+numerous benefits, such as interpretability, as decision rules are pre-
+sented clearly and intuitively. Moreover, tree models can handle both
+numerical and categorical data and automatically manage feature se-
+lection, rendering them suitable for various types of datasets.
+Our study makes several contributions to the understanding of AI
+adoption in SMEs. Theoretically, we extend both dynamic capabilities
+theory and resource dependency theory by demonstrating how digital
+and innovation capabilities within SMEs interact with external business
+environmental support to drive AI adoption. We highlight the critical
+synergistic relationship between these internal and external factors,
+providing new insights into how SMEs leverage their internal adapt-
+ability alongside external resources to effectively integrate AI technol-
+ogies. Additionally, we contribute methodologically by combining
+traditional regression analysis with machine learning techniques, of-
+fering a more comprehensive understanding of the complex, non-linear
+relationships that influence AI adoption.
+2. Literature review
+The adoption of AI by SMEs is a complex process influenced by both
+internal capabilities and external environmental factors. To fully cap-
+ture this complexity, our research integrates dynamic capabilities theory
+and resource dependency theory as complementary frameworks. These
+theories, when combined, provide a holistic understanding of how SMEs
+navigate AI adoption.
+On the one hand, dynamic capabilities theory emphasizes the
+importance of an organization’s ability to sense, seize, and reconfigure
+its resources in response to technological advancements (Teece, 2007).
+This theory is crucial for understanding how SMEs develop and adapt
+their innovation capabilities, which enable them to continuously inno-
+vate and align their internal resources to take advantage of AI technol-
+ogies. By fostering innovation, SMEs are better equipped to respond to
+technological changes and remain competitive in dynamic markets [25].
+Resource dependency theory, on the other hand, focuses on how
+SMEs manage their external dependencies to secure critical resources
+required for AI adoption. Specifically, digital capabilities are supported
+by resource dependency theory because SMEs often rely on external
+technology providers, infrastructure support, and regulatory frame-
+works to build the technological foundation necessary for integrating AI
+into their operations (Pfeffer & Salancik, 1978). These digital capabil-
+ities, which include access to technological infrastructure, data man-
+agement tools, and digital expertise, are often dependent on external
+resources and partnerships, emphasizing the reliance on external sup-
+port for technological advancements [21].
+By integrating these two theories, our model captures both the in-
+ternal adaptability of SMEs through dynamic capabilities and the
+external dependencies they must manage through resource dependency
+theory. This synergy provides a more comprehensive view of AI adop-
+tion, demonstrating that internal innovation capabilities and external
+digital capabilities, supported by business environmental factors, are
+interdependent and must work together for successful AI integration.
+Our framework builds on studies that have highlighted the importance
+of blending internal and external perspectives for a richer understanding
+of organizational behavior and strategy (Karim & Mitchell, 2000; [32]).
+2.1. Resources dependency theory and SMEs
+Resource Dependency Theory is a theoretical framework that ex-
+amines the relationships between organizations and their external
+environment, emphasizing the influence of resource interdependence.
+Developed by Pfeffer and Salancik [33], this theory posits that organi-
+zations depend on external resources for their survival and success. The
+core idea is that organizations seek to reduce uncertainty and increase
+their control over critical resources by forming strategic dependencies
+with external entities such as suppliers, customers, and regulatory
+M.F. Arroyabe et al.
+Technology in Society 79 (2024) 102733 
+2 
+
+=== page 3 (PDF page index) ===
+bodies [21–24]. In the context of SMEs, this theory has been applied to
+understand how these businesses rely on various external and internal
+factors for survival and development [34]. For example, a recent study
+by Badghish and Soomro [35] shows the significance of technological
+orientation and external support mechanisms in enhancing digital value
+creation through AI in SMEs. They argue that a supportive business
+environment, characterized by conducive governmental policies and
+market conditions, mediates the relationship between SMEs’ techno-
+logical orientation and their successful adoption of AI technologies.
+Several studies have explored the application of resources dependency
+theory in the SME, shedding light on the external dependencies SMEs
+face [34,36,37]. These external dependencies include access to financial
+resources, technological support, market access, and legal frameworks.
+SMEs often rely on established networks, government policies, and in-
+ternational collaborations to navigate these challenges. Research in-
+dicates that understanding and managing these external dependencies
+are critical for SMEs to remain competitive and sustainable in the global
+market. Furthermore, the literature highlights internal dependencies
+within SMEs, focusing on factors such as leadership, skills and capabil-
+ities, and organizational culture [17,37]. For instance, Sharma et al.
+[38] identified employee capability and financial support as key factors
+in AI adoption by SMEs. Effective internal management and innovation
+are identified as essential elements for SMEs to reduce their dependency
+on external factors. Studies suggest that SMEs need to develop internal
+resources and capabilities, foster a culture of innovation, and invest in
+human capital to mitigate their reliance on external resources. Hence,
+this theory provides a valuable lens to analyze the complex relationships
+and interdependencies faced by SMEs.
+2.2. Dynamic capabilities theory: digital and innovation capabilities in
+SMEs
+In addition to the resource dependency theory, we employ the dy-
+namic capabilities theory [25,26]. Dynamic capabilities involve three
+key stages that enable firms to align their operations with high-yield
+activities: sensing, seizing, and reconfiguring (Teece, 2007).
+The first stage, sensing, refers to the firm’s ability to recognize and
+anticipate opportunities and threats in the external environment. This
+involves scanning for technological advancements, market shifts, and
+emerging trends, a crucial element for SMEs looking to adopt AI tech-
+nologies effectively. The second stage, seizing, focuses on how firms
+respond to these opportunities by mobilizing their resources and taking
+action. This may involve investing in new digital tools, skills, or business
+models to leverage AI capabilities. Finally, the third stage, reconfigur-
+ing, entails the continuous realignment of the firm’s resources and
+processes to maintain a competitive advantage. This might involve
+restructuring operations to integrate AI solutions more seamlessly or
+adopting new routines to ensure that AI technologies are utilized
+optimally.
+Dynamic capabilities comprise a set of higher-level activities that
+enable firms to align their regular operations with high-yield endeavors
+[26]. Dynamic capabilities involve two crucial elements for attaining a
+competitive advantage: dynamism and capabilities. The term capabil-
+ities refers to an organization’s efficiency in utilizing its resources to
+achieve specific outcomes or objectives [39–41]. Typically, capabilities
+represent a synthesis of competences, processes, technologies, and
+various resources. Evolving from competences, capabilities arise as or-
+ganizations blend the expertise and knowledge of their workforce with
+other resources, facilitating the execution of specific activities or func-
+tions. Firms’ capabilities are shaped by learning, organizational re-
+sources, and organizational histories [26,42]. Learning is an outcome of
+practice and experimentation, enabling tasks to be performed more
+effectively [26]. The term dynamic reflects the changing nature of the
+environment, emphasizing the role of innovation in a context where
+timing is critical [43]. Therefore, dynamic capabilities refer to a firm’s
+ability to modify its capabilities, such as by developing new products, to
+adapt to changes in the external environment [44]. Dynamic capabilities
+encompass not only capabilities but also the processes and routines of
+firms [20]. Similarly, Teece et al. (2007) view dynamic capabilities as
+the firm’s capacity to integrate and reconfigure capabilities to address
+rapidly changing environments.
+As we have indicated, these are the two types of capabilities that we
+will utilize in our research. First, digital capabilities refer to an organi-
+zation’s proficiency and capacity to leverage digital technologies and
+resources effectively to achieve strategic objectives and stay competitive
+in the digital age [45–49]. These capabilities encompass a range of el-
+ements, including technological infrastructure, digital skills and com-
+petencies, data management, and the integration of digital tools and
+processes into various aspects of the business. Digital capabilities are
+crucial for organizations aiming to navigate the complexities of the
+digital landscape, capitalize on emerging opportunities, and address
+challenges related to technological advancements and evolving market
+demands. Second, innovation capabilities refer to an organization’s
+ability to effectively and consistently create, develop, and implement
+new ideas, processes, products, or services [26,29,50]. These capabil-
+ities are critical for staying competitive in dynamic and rapidly changing
+business environments.
+3. Hypotheses
+To conceptualize the complex dynamics of AI adoption in SMEs, we
+propose a framework based on dynamic capabilities and resource de-
+pendency theories. Fig. 1 illustrates this model, reflecting the hypothe-
+ses we develop in this section.
+3.1. Digital and innovation capabilities and their influence on AI adoption
+in SMEs
+In our analysis, we have considered two types of internal resources
+within organizations, namely, digital and innovation capabilities.
+Examining how they impact AI adoption first necessitates identifying the
+individual effects of both capabilities. Subsequently, we analyze how
+they influence the adoption process, considering that these capabilities
+coexist within the organization and interact, potentially producing
+complementary effects [29].
+In the context of Industry 4.0, companies are implementing digital
+technologies to transform production systems, work organization, and
+strategic decision-making [51]. The integration of digital technologies
+with production management systems is recognized as a crucial element
+for digital transformation (Bai et al., 2020; [52]). This integration en-
+ables increased efficiency and quality in manufacturing and supply
+chains by automating various aspects of production and manufacturing
+([53]; [54]). In this context, Bharadwaj et al. [55], [56] and [57]
+highlight that the adoption of digital technologies fosters the acquisition
+of digital capabilities, a result of the experience and learning within the
+organization. Furthermore, digital capabilities can be identified as a
+driving force for the adoption of AI. For example, on the SME opts to
+utilize cloud computing services, such as Amazon Web Services (AWS)
+or Microsoft Azure, for managing its data storage, processing, and
+computing requirements [58]. This decision enables the company to
+access scalable and on-demand computing resources without necessi-
+tating substantial upfront investments in physical infrastructure. This, in
+turn, updates the process for the SME to implement AI algorithms hosted
+on the cloud, which analyze historical sales data, customer behavior,
+and external factors (such as market trends or seasonal patterns).
+Moreover, the decision of the SME to modernize its production processes
+through the integration of smart devices, IoT sensors, and robotics can
+facilitate the adoption of AI. For instance, the installation of smart
+sensors on machinery and production lines allows for the collection of
+real-time data concerning factors like machine performance, energy
+consumption, and product quality ([59]; Chen, 2020). Subsequently,
+this collected data could be transmitted to an AI system, where advanced
+M.F. Arroyabe et al.
+Technology in Society 79 (2024) 102733 
+3 
+
+=== page 4 (PDF page index) ===
+algorithms analyze it to predict potential equipment failures. Moreover,
+the AI system can proactively identify issues such as wear in a robotic
+arm or deviations from standard machine performance, enabling the
+anticipation of potential breakdowns [60]. Additionally, if a specific
+machine requires maintenance, the AI system directs a robot to
+temporarily assume that task, ensuring minimal disruption to the overall
+production line. Therefore, the integration of smart devices, IoT and
+robotics, with AI can transform the traditional manufacturing process
+into a smart and adaptive system. These examples illustrate how digital
+technologies can facilitate the integration of AI into production pro-
+cesses, resulting in smart manufacturing that is responsive, efficient, and
+technologically advanced. Hence, we propose.
+Hypothesis 1a.
+The digital capabilities of SMEs facilitate the adoption
+of AI.
+Regarding innovation capabilities, they should facilitate the inte-
+gration of AI in companies. The adoption of AI by organizations requires
+not only AI capabilities from staff and managers but also necessitates
+changes in processes, organization, and the products of the companies
+[1,2]. These changes can be facilitated by the presence of innovative
+capabilities, where the organization has previously developed various
+innovations. Thus, the adoption of AI by organizations involves a pro-
+found reassessment of their existing processes ([5]; Baabdullah et al.,
+[61]). Organizational and structural changes are essential to incorporate
+AI significantly. Innovation plays a fundamental role by providing a
+productive ground for experimentation and development. Companies
+that have developed innovative capabilities can be better equipped to
+implement AI effectively. These innovative capabilities not only refer to
+the ability to generate new ideas but also to the skill to adapt and modify
+existing processes and products to integrate cutting-edge technologies
+[2]. Moreover, innovation also can become a driver for the creation of
+new products and services enabled by AI. Wang et al. [11] point out that
+innovative companies can identify market opportunities and design
+solutions that leverage the full potential of AI. This entails not only the
+development of new products but also the continuous improvement of
+existing products and services through AI, leading to increased customer
+satisfaction and a sustainable competitive advantage. Hence, we
+propose.
+Hypothesis 1b.
+The innovative capabilities of SMEs facilitate the
+adoption of AI.
+Digital and innovative capabilities can coexist simultaneously within
+the organization, and this presence can impact the adoption of AI.
+Analyzing their influence on AI adoption requires considering the syn-
+ergistic effects highlighted in existing literature, particularly when
+multiple types of innovative capabilities are integrated. Previously
+Arranz et al. [29] indicated, from the perspective of dynamic capability,
+that research highlights the innovation process within organizations
+requiring the mobilization of resources, capabilities, and organizational
+routines. It underscores the synergies that emerge when companies
+embrace various forms of innovation in their organizational processes,
+potentially leading to the integration of innovation strategies that can
+produce synergies and economies of scale ([29]; Fagerber, 2018).
+Regarding digital and innovation capabilities in the context of SMEs,
+these capabilities can generate synergistic and complementary effects
+that facilitate the adoption of AI. Digital capabilities entail a robust
+understanding of digital technologies [5], while innovation capabilities
+involve the ability to apply technical knowledge to create new and
+effective solutions [26]. Bhalerao et al. [12] point out that when em-
+ployees and managers in SMEs possess digital capabilities, they acquire a
+better understanding of the capabilities and limitations of AI. This un-
+derstanding enables them to assess how AI can be effectively integrated
+into their operations and business processes. Furthermore, digital ca-
+pabilities empower SMEs to identify specific areas where AI can be
+applied to enhance efficiency and productivity. Simultaneously, inno-
+vation capabilities empower SMEs to discover ways to leverage AI in
+their day-to-day operations [2]. For instance, they can identify oppor-
+tunities to automate repetitive tasks, enhance product or service
+personalization, or even develop new AI-based products. Moreover,
+Kulkow (2021) point out that the adoption of AI will require the creation
+of organizational routines and procedures, for which possessing capa-
+bilities in process and organizational innovations becomes crucial.
+Therefore, we posit that digital and innovation capabilities provide a
+solid foundation for SMEs to adopt and make the most of AI. By un-
+derstanding technology, identifying opportunities, adapting continu-
+ously, creatively solving problems, and enhancing competitiveness,
+SMEs can leverage the synergistic and complementary effects of these
+capabilities to drive their growth and success in the era of AI.
+Hypothesis 1c.
+Digital and innovation capabilities, when acting in
+conjunction in SMEs, generate synergistic and complementary effects, in
+the adoption of AI.
+The relative importance of digital capabilities compared to innova-
+tion capabilities in adopting AI in a SME, both sets of capabilities are
+Fig. 1. Framework and hypotheses.
+M.F. Arroyabe et al.
+Technology in Society 79 (2024) 102733 
+4 
+
+=== page 5 (PDF page index) ===
+crucial, but their impact can vary. The effective integration of AI into an
+SME benefits from a balanced combination of digital and innovation
+capabilities. Technical understanding and the ability to adapt technol-
+ogy are combined with creativity to generate innovative solutions,
+collectively driving success in the adoption of artificial intelligence in
+the business context [5,12].
+Concerning the relative importance of both in adopting AI, digital
+capabilities are essential for understanding the underlying technology of
+AI and how to integrate it into the company’s existing systems. SMEs
+with strong digital capabilities can quickly adapt to new tools and
+technologies, facilitating the technical implementation of AI systems
+[11]. Alternatively, innovation capabilities involve creativity and skills
+to adapt technology to meet the specific needs of the company [29]. If
+the SME requires efficient technical implementation and the company
+has complex digital systems and needs a rapid and efficient technical
+implementation, digital capabilities can be crucial to ensure an inte-
+gration of AI into its existing infrastructure. Hence, we propose.
+Hypothesis 1d.
+Digital capabilities have a greater impact than inno-
+vation capabilities on the adoption of AI in SMEs.
+3.2. Business environmental support and the impact in AI adoption in
+SME
+The literature emphasizes that a proper integration of AI in com-
+panies depends on a supportive environment [11,12]. Business envi-
+ronmental support, financial support, collaboration opportunities,
+skilled workforce, and robust infrastructure, can play a pivotal role in
+facilitating the adoption and integration of AI technologies. Hence,
+business environmental support should facilitate the AI adoption in
+SMEs stands.
+More in detail, access to financial resources is fundamental for SMEs
+to invest in AI technologies [10]. Financial support can enable SMEs to
+acquire AI software, hardware, and hire skilled professionals. Addi-
+tionally, it aids in funding research and development activities, ensuring
+the customization of AI solutions to meet specific business needs [9].
+Moreover, collaborative networks and partnerships with research in-
+stitutions, tech companies, and other SMEs provide invaluable knowl-
+edge exchange opportunities [1,12]. SMEs benefit from shared insights,
+best practices, and collaborative projects, enhancing their understand-
+ing of AI applications. Collaborative environments foster innovation and
+experimentation, leading to the development of AI solutions tailored for
+SME requirements. Additionally, a workforce equipped with AI-related
+skills is imperative for successful implementation [12]. Business envi-
+ronmental support should focus on training programs, workshops, and
+educational initiatives. Skilled employees can effectively exploit AI
+tools, ensuring optimal utilization and problem-solving. Moreover,
+SMEs need a robust IT infrastructure to support AI implementation [62].
+Adequate internet connectivity, data storage facilities, and cybersecurity
+measures are essential. Business environmental support in the form of
+subsidized technology infrastructure and technical support ensures
+SMEs possess the necessary foundation to host and operate AI applica-
+tions securely.
+Therefore, business environmental support is a driver of AI adoption
+in SMEs. By providing financial support, fostering collaboration, skilled
+workforce, and ensuring robust infrastructure, the business ecosystem
+can empower SMEs the transformative power of AI. This holistic
+approach not only accelerates AI adoption but also strengthens SMEs,
+making them agile, competitive, and future-ready in the digital land-
+scape. Hence, we propose.
+Hypothesis 2.
+The business environmental support facilities the
+adoption of AI in SMEs.
+3.3. Business environmental support and internal capabilities in AI
+adoption in SMEs
+Regarding the relationship between business environmental support
+and internal capabilities (digital and innovation), we assert that there is
+a significant synergistic effect between business environmental support
+(including funding, collaboration, skills, infrastructure, among others)
+and internal capabilities in the adoption of AI in SMEs. This synergy is
+crucial for the successful adoption of AI by SMEs and for maximizing the
+benefits derived from it.
+As we have observed in previous hypotheses, digital and innovation
+capabilities are essential for understanding, implementing, and adapting
+AI technologies in the day-to-day operations of SMEs. Digital capabil-
+ities facilitate the understanding of AI tools, while innovation capabil-
+ities enable the adaptation of these tools to meet specific business needs.
+In this context, business environmental support, through financial sup-
+port and collaboration opportunities, for example, can facilitate the
+acquisition of AI technologies and access to experts in the field. Col-
+laborations with technology companies and research centres enable
+SMEs to benefit from specialized knowledge and expertise, accelerating
+the AI adoption process. Adequate technological infrastructure and
+technical skills are essential for implementing and maintaining AI sys-
+tems. The environmental support that provides technological infra-
+structure and training programs in technical skills creates a conducive
+environment for AI adoption.
+In summary, business environmental support and internal capabil-
+ities can interact synergistically to facilitate the adoption of AI in SMEs.
+This synergy not only accelerates the adoption of AI technologies but
+also drives innovation, improves competitiveness, and significantly
+contributes to the growth and positive evolution of SMEs in the digital
+economy.
+Hypothesis 3a.
+Business environmental support in combination with
+digital and innovation capabilities, has a synergistic effect on the
+adoption of AI in SMEs.
+Regarding the drivers with the greatest impact, as we have observed
+in previous hypotheses, internal capabilities can provide a solid foun-
+dation for adopting AI in SMEs, while environmental support represents
+supporting from the ecosystem. SMEs with robust digital capabilities can
+have the ability to understand, utilize, and adapt AI technologies
+effectively. This includes the capacity to analyze data, use software, and
+comprehend the technological implications of AI. Moreover, the ability
+to innovate is crucial. SMEs with innovative skills can apply AI in cre-
+ative ways, developing unique solutions and adapting AI technologies to
+meet specific business needs.
+However, the effectiveness of business environmental support de-
+pends on the degree of elaboration and cohesion. According to Zietsma
+et al. [63], the aim is to understand the condition of an environmental
+support framework and its transformative capacity, which is linked to
+the degree of elaboration and coherence of the elements forming the
+institutional ecosystem. Firstly, existing literature indicates that the
+degree of elaboration of the institutional ecosystem relies on the set of
+measures adopted and their level of implementation [63–65]. The
+literature presents contradictory arguments, suggesting that a high de-
+gree of elaboration and implementation can both benefit and hinder
+change processes. Secondly, the transformative capacity of the institu-
+tional infrastructure is influenced by the degree of coherence of its
+structure. Following Greenwood et al. [66], which emphasizes institu-
+tional complexity, one can assess whether ecosystem elements reinforce
+each other and align around an institutional logic, that is, a coherent
+rationality in the prevailing rules of the game, or whether they reflect
+different rationalities that may be in competition. Hence, we propose.
+Hypothesis 3b.
+Internal capabilities have a greater impact on the
+adoption of AI in SMEs than business environmental support.
+M.F. Arroyabe et al.
+Technology in Society 79 (2024) 102733 
+5 
+
+=== page 6 (PDF page index) ===
+4. Methodology
+4.1. Database
+To empirically investigate the research questions, we analyze data
+from Eurostat’s Flash Eurobarometer No. 486, commissioned by the
+European Commission [67]. This survey, conducted between February
+and May 2020, explores diverse topics, including innovation and digital
+technologies. This survey is a highly regarded instrument that provides
+statistically representative data on SMEs across the 27 EU member
+states, as well as in several other countries including Bosnia and Her-
+zegovina, Brazil, Canada, Iceland, Japan, North Macedonia, Norway,
+Serbia, Turkey, the UK, the USA, and Kosovo. The survey covers busi-
+nesses employing one or more people across a wide range of sectors,
+including
+mining,
+manufacturing,
+construction,
+information
+and
+communication, and many others, following the NACE codes. The
+sampling method is stratified, ensuring that the survey accurately re-
+flects the diverse business landscape across these regions. Data collec-
+tion was conducted via telephone interviews in their respective national
+languages using the Computer-Assisted Telephone Interviewing (CATI)
+method [67].
+As this study specifically targets SMEs in Europe, the sample utilized
+comprises 12,108 SMEs. The geographical scope of the database en-
+compasses all 27 countries in the EU. The survey is statistically repre-
+sentative of SMEs across various sizes and sectors. To confirm this, we
+conducted T-tests to ascertain if there were significant differences be-
+tween the population and the final sample concerning size and sectors,
+resulting in no significant bias.
+Tables 1 and 2 illustrate the sample distribution based on size and
+geographical region.
+4.2. Measures
+The initial component in our research model encompasses digital
+capabilities. To measure these capabilities, we utilized an established
+multi-item indicator from the literature, which assumes that the
+possession of digital technologies equips the company with these ca-
+pabilities [26]. In alignment with existing literature, the questionnaire
+employs a multi-item approach, incorporating various emerging tech-
+nologies like big data, cloud technology, robotics, data analytics, and
+blockchain. The specific question from the Eurobarometer survey asks:
+"Which of the following digital technologies has your enterprise adop-
+ted?" The response options include: i) Cloud computing; ii) Robotics; iii)
+Smart devices; iv) Big data analytics; v) High-speed infrastructure; and
+vi) Blockchain. To assess the degree of digital capabilities in SMEs, we
+used these responses to construct a new variable, formulated as a cu-
+mulative index of the six types of digital technologies (Cronbach’s
+Alpha: .718).
+The second variable, innovation capabilities, was also based on a
+well-established multi-item measure, considering four types of innova-
+tion in companies (Oke et al., 2007; [29]). The Eurobarometer survey
+question posed is: "Has your enterprise introduced any of the following
+types of innovations?" The options include: i) A new or significantly
+improved product or service to the market; ii) A new or significantly
+improved production process or method; iii) A new organization of
+management or a new business model; and iv) A new way of selling your
+goods or services. In line with previous variables, innovation capabilities
+is created as a cumulative index (Cronbach’s Alpha: .780).
+The third set of measures includes variables that pertain to the
+ecosystem in which the company operates. In this context, a substantial
+body of literature indicates that a favorable ecosystem, encompassing
+aspects such as financial support, knowledge, and regulations, positively
+influences the digitalisation and environmental practices, as well as the
+innovation of companies. The Eurobarometer survey question used to
+assess this aspect asks: “How would you rate your business environment
+concerning i) Overall strength and performance of your regional busi-
+ness environment; ii) Access to and collaboration with business partners,
+including other enterprises, the public sector, educational institutions,
+research organizations, etc.; iii) Availability of staff with the right skills,
+including managerial skills; iv) Access to financial support, and v)
+Infrastructure for business”. In alignment with the preceding variables,
+business environmental support is constructed as a cumulative index
+based on these responses (Cronbach’s Alpha: .711).
+The final variable refers to the adoption of AI. For this measure, we
+used the Eurobarometer survey’s question on AI implementation stages,
+which categorizes adoption into four stages, ranging from no intention
+to full implementation. The response options in the question include: i)
+Yes, and it has already been implemented; ii) Yes, and it is in the process
+of being implemented; iii) No, but it may be considered in the future;
+and iv) No, and it will not be in the future. To operationalize this, we
+establish an ordinal scale ranging from 1 to 4. In this scale, 1 signifies
+null intention, progressing up to 4, which represents complete
+implementation.
+4.3. Variables of control
+Moreover, we have included some control variables. The control
+variables pertains to internal aspects of SMEs, such as the size, the
+company’s age (year), and sector (manufacturing/service). Regarding
+size, we categorized the companies into three groups: from 0 to 9 em-
+ployees as micro-enterprises; from 10 to 49 employees as small enter-
+prises; and from 50 to 250 employees as medium-sized enterprises. The
+second control variable is the year of establishment. In this context, the
+variable of age has served as a moderating factor in digitalisation and
+Table 1
+Sample size distribution.
+Employees
+Frequency
+Percent
+1 to 9
+7708
+63.7
+10 to 49
+2571
+21.2
+50 to 250
+1829
+15.1
+Total
+12108
+100.0
+Table 2
+Sample geographical distribution.
+Countries
+Frequency
+Percent
+FR - France
+485
+4.0
+BE - Belgium
+475
+3.9
+NL - The Netherlands
+474
+3.9
+DE - Germany
+479
+4.0
+IT - Italy
+476
+3.9
+LU - Luxembourg
+195
+1.6
+DK - Denmark
+479
+4.0
+IE - Ireland
+475
+3.9
+GR - Greece
+482
+4.0
+ES -Spain
+476
+3.9
+PT - Portugal
+479
+4.0
+FI - Finland
+476
+3.9
+SE - Sweden
+476
+3.9
+AT - Austria
+470
+3.9
+CY - Cyprus (Republic)
+201
+1.7
+CZ - Czech Republic
+482
+4.0
+EE - Estonia
+484
+4.0
+HU - Hungary
+481
+4.0
+LV - Latvia
+489
+4.0
+LT - Lithuania
+481
+4.0
+MT - Malta
+201
+1.7
+PL - Poland
+475
+3.9
+SK - Slovakia
+492
+4.1
+SI - Slovenia
+488
+4.0
+BG - Bulgaria
+476
+3.9
+RO - Romania
+479
+4.0
+HR - Croatia
+482
+4.0
+Total
+12108
+100.0
+M.F. Arroyabe et al.
+Technology in Society 79 (2024) 102733 
+6 
+
+=== page 7 (PDF page index) ===
+sustainability in a wide array of studies. Finally, the sector affiliation is
+incorporated by considering whether the company belongs to the
+manufacturing or service sector.
+5. Analysis and results
+Prior to delving into result analysis, we conducted some checks on
+the survey to ensure the reliability of the questionnaires and responses.
+This included testing for common method variance (CMV) and common
+method bias (CMB) using the approach outlined by Podsakoff et al. [68].
+The analysis identified five distinct latent constructs that collectively
+explain 68.4 % of the variance. The first factor contributes to 22.110 %
+of the variance, which falls below the recommended threshold of 50 %.
+This outcome indicates that CMV and CMB do not pose significant
+concerns in our results.
+Regarding Hypotheses 1a, 1b, and 2, we conducted a regression
+analysis to assess the impact of independent and control variables on the
+adoption of AI (Table 3). In Model 5, our findings reveal a positive and
+significant coefficient for the cumulative index measuring the level of
+digital capabilities (β = .798; p < 0.001) as well as for innovative ca-
+pabilities (β = .190; p < 0.001), indicating a positive effect. Concerning
+the control variables, we observe that both size and sector have a pos-
+itive effect on digitization, whereas firms’ age has a negative effect.
+Furthermore, when analyzing the effect of business environmental
+support on the probability of adopting AI in Model 2, a positive effect is
+observed (β = .062; p < 0.05) when the variable acts individually.
+However, when combined with internal capabilities, it does not show
+significance in the adoption of AI. Additionally, in terms of the robust-
+ness of our analysis, the final column of the regression analysis presents
+the VIF (variance inflation factor) scores, affirming the absence of
+collinearity concerns among the digital capabilities, innovation capa-
+bilities, and external support variables. Therefore, we corroborate the
+hypotheses.
+In addition to the previous analysis and with the aim of delving
+deeper into the relationship between independent variables and the
+dependent variable, we examined into the analysis of the effect of digital
+and innovative capabilities on the probability of adopting AI in SMEs
+(Table 4), analyzing the marginal effect of both variables. Thus, for
+digital capabilities variable, with a range from 0 to 6, Model 1 shows the
+marginal effects of each value of the variable, using zero score as the
+reference value. We observe that the relationship between digital ca-
+pabilities and AI follows a monotonically increasing function, confirm-
+ing that a higher value of digital capabilities corresponds to a greater
+probability of an effect on AI. In Model 2, we see the marginal effect of
+innovative capabilities. In the same line as the previous analysis, we
+observe that innovative capabilities affect AI following a monotonically
+increasing relationship. On the other hand, in Model 3, we see the
+marginal effect of the environmental variable, noting that the function is
+monotonically increasing but not across the entire range of the variable,
+as at low values of the variable, the marginal effect is not significant (see
+Table 5).
+Regarding Hypotheses 1d and 3b, which posit how is the impact both
+digital and innovative capabilities, as well as business environmental
+support, on the adoption of AI, we enhance our prior regression analysis
+by incorporating ANN.1 The inclusion of ANN in our study allows us to
+explore the intricate relationships among input variables and their in-
+fluence on the output variable, accommodating nonlinearities and in-
+teractions within the input variables. Unlike traditional linear regression
+models, ANNs, particularly the Multi-Layer Perceptron (MLP), are
+capable of modeling complex, non-linear relationships that are often
+present in real-world data [69]. This makes ANNs particularly
+well-suited for capturing subtle patterns and interactions that might be
+missed by conventional techniques, thereby enhancing the predictive
+accuracy and robustness of our model. To structure the ANN-MLP ar-
+chitecture, we follow to the approach outlined by Wang [70] and Arranz
+et al. [69]. [71] The development of the ANN-MLP architecture involves
+two key considerations, first, determining the number and size of the
+hidden layers, and second, selecting the learning algorithm. While the
+number of inputs and outputs is dictated by the available input and
+output variables, the determination of the number and size of hidden
+layers involves experimenting with various combinations of hidden
+layer numbers and neuron counts. This is achieved through a
+trial-and-error methodology ([72]; [73]). In simpler terms, different
+Table 3
+Regression analysis.
+Variables
+Model 1
+Model 2
+Model 3
+Model 4
+Model 5
+Model 6
+Model 7
+VIF
+YEAR
+−0.146a (0.055)
+−0.131a (0.062)
+−0.125a (0.059)
+−0.128b (0.055)
+−0.104* (0.067)
+−0.139b (0.057)
+−0.139b (0.061)
+1.051
+SIZE
+0.337c (0.048)
+0.281c (0.054)
+0.126b (0.053)
+0.278c (0.049)
+0.111a (0.060)
+0.174c (0.051)
+0.157c (0.056)
+1.051
+SECTOR
+0.111b (0.043)
+0.112a (0.040)
+0.161a (0.101)
+0.107b (0.075)
+0.181a (0.113)
+0.112a (0.099)
+0.175a (0.106)
+1.128
+ENVIRONMENT
+​
+0.062b (0.022)
+​
+​
+0.008 (0.024)
+​
+​
+1.019
+DIGITALISATION
+​
+​
+0.863c (0.029)
+​
+0.798c (0.034)
+​
+​
+1.139
+INNOVATION
+​
+​
+​
+0.453c (0.026)
+0.190c (0.033)
+​
+​
+1.175
+DIGITALISATION&
+INNOVATION
+​
+​
+​
+​
+​
+0.195c (0.008)
+​
+​
+DIGITALISATION&
+INNOVATION&
+ENVRIONMENTAL
+​
+​
+​
+​
+​
+​
+0.014c (0.001)
+​
+−2 Log Likelihood
+Chi-Square
+Sig.
+120.524
+49.484
+0.000
+559.049
+38.595
+0.000
+461.880
+1090.007
+0.000
+429.845
+334.963
+0.000
+2282.679
+846.357
+0.000
+838.521
+687.664
+0.000
+1546.920
+563.466
+0.000
+​
+Cox and Snell
+0.004
+0.004
+0.088
+0.028
+0.092
+0.056
+0.051
+​
+Nagelkerke
+0.011
+0.010
+0.227
+0.072
+0.230
+0.146
+0.136
+​
+McFadden
+0.009
+0.009
+0.188
+0.058
+0.189
+0.119
+0.111
+​
+a p < 0.05.
+b p < 0.01.
+c p < 0.001.
+1 An Artificial Neural Network (ANN), specifically a Multilayer Perceptron
+(MLP), is a type of machine learning model inspired by the structure and
+functioning of the human brain. Comprising layers of interconnected nodes
+(neurons), an MLP consists of an input layer, one or more hidden layers, and an
+output layer. Each connection between nodes is associated with a weight, and
+the network learns through a process called backpropagation, where it adjusts
+these weights iteratively to minimize the difference between predicted and
+actual outcomes during training. MLPs are adept at capturing complex patterns
+and relationships in data, making them particularly suited for tasks such as
+classification and regression. The nodes in each layer apply a mathematical
+activation function to the weighted inputs, introducing non-linearity to the
+model. This non-linearity enables MLPs to learn and represent intricate map-
+pings in data, enhancing their capacity to handle intricate tasks within the
+realm of machine learning.
+M.F. Arroyabe et al.
+Technology in Society 79 (2024) 102733 
+7 
+
+=== page 8 (PDF page index) ===
+architectures are tested using diverse activation functions, with the goal
+of identifying the configuration that minimizes errors.
+Fig. 2 depicts the architecture of the ANN-MLP used in the simula-
+tion, performing 3 input nodes, 2 nodes in the hidden layer, and 1 output
+variable node. In Fig. 3, the normalized importance of each input vari-
+able concerning the output variable is illustrated.2 It is evident that
+digitalisation capabilities have the most significant impact on AI (digi-
+talisation: .730; 100 % normalized value), followed by innovation ca-
+pabilities (innovation: .195; 26.7 % normalized value), with business
+environmental support having the least impact on the probability of
+adopting AI (digitalisation: .075; 10.3 % normalized value). Further-
+more, we assessed the robustness of the analysis by fitting the ANN-MLP
+design, revealing an error level of 5.6 % in the testing stage and 5.4 %.
+Consequently, the Hypotheses are confirmed.
+Regarding Hypotheses 1c and 3a on whether the variables of digital
+and innovation capabilities, along with business environmental support,
+acting in conjunction, have a synergistic effect on the adoption of AI, in
+Table 4, we observe the results of regression analysis. Model 7 displays
+the joint variable of digital and innovation capabilities (internal capa-
+bilities= digital * innovation), along with its marginal effect, considering
+zero as the reference value. Upon examining the results, we first note
+that the function is monotonically increasing. Moreover, we observe that
+the growth of the marginal effect is decreasing, approaching more of a
+concave function than a convex function, which could not explain the
+existence of synergistic effects. As for the joint effect of the three input
+variables on the adoption of AI, in Model 8, we see that the function is
+also monotonic but clearly concave, as the marginal effects decrease.
+Hence, from this analysis, we cannot confirm the hypotheses of the ex-
+istence of synergistic effects.
+In addition to the regression analysis presented, we have conducted
+an additional analysis using tree regression. Tree model analysis is a
+technique employed in data mining and machine learning to construct
+predictive models. It operates by recursively dividing the data into
+subsets based on the values of input features. These subsets are depicted
+as branches of a tree, where each internal node corresponds to a decision
+based on a feature, and each leaf node represents the predicted outcome.
+Once the tree is constructed, it can be utilized to make predictions on
+new data. Tree model analysis offers several advantages, including
+interpretability, as decision rules are presented clearly and intuitively.
+More specifically, concerning Hypothesis 1c, the econometric models
+for this analysis are outlined as follows:
+AI = f (digital capabilities; innovation capabilities)
+In Fig. 4, the outcomes of this analysis are presented, utilizing CHAID
+as a method,3 and illustrating the potential combinations of both ca-
+pabilities with different values. Initially, two levels of the decision tree
+are observed, with the first corresponding to digital capabilities, having
+the greatest impact, and the second to innovation capabilities, exhibit-
+ing a lower impact on the probability of adopting AI in SMEs (Chi-
+Table 4
+Regression analysis (Marginal effect).
+Variables
+Model 1
+Model 2
+Model 3
+Model 4
+Model 5
+Model 6
+YEAR
+−0.126b
+0.059
+−0.132c
+0.055
+−0.128b
+0.062
+SIZE
+0.124c
+0.053
+0.272c
+0.049
+0.289c
+0.054
+SECTOR
+0.060
+0.101
+122a
+0.095
+−0.111
+0.104
+[DIGITALISATION = 0.00]
+0a
+​
+​
+​
+​
+​
+[DIGITALISATION = 1.00]
+1.026c
+0.401
+​
+​
+​
+​
+[DIGITALISATION = 2.00]
+1.899c
+0.384
+​
+​
+​
+​
+[DIGITALISATION = 3.00]
+2.608c
+0.380
+​
+​
+​
+​
+[DIGITALISATION = 4.00]
+3.518c
+0.381
+​
+​
+​
+​
+[DIGITALISATION = 5.00]
+4.573c
+0.388
+​
+​
+​
+​
+[DIGITALISATION = 6.00]
+5.209b
+0.396
+​
+.
+​
+​
+[INNOVATION = .00]
+​
+​
+0a
+​
+​
+​
+[INNOVATION = 1.00]
+​
+​
+0.164c
+0.239
+​
+​
+[INNOVATION = 2.00]
+​
+​
+0.476c
+0.226
+​
+​
+[INNOVATION = 3.00]
+​
+​
+0.924c
+0.221
+​
+​
+[INNOVATION = 4.00]
+​
+​
+1.326****
+0.218
+​
+​
+[INNOVATION = 5.00]
+​
+.
+2.056c
+0.221
+​
+​
+[ENVIRONMARGINAL = 0.00]
+​
+​
+​
+​
+0a
+​
+[ENVIRONMARGINAL = 1.00]
+​
+​
+​
+​
+0.249
+1803.822
+[ENVIRONMARGINAL = 2.00]
+​
+​
+​
+​
+13.234
+0.204
+[ENVIRONMARGINAL = 3.00]
+​
+​
+​
+​
+13.127c
+0.109
+[ENVIRONMARGINAL = 4.00]
+​
+​
+​
+.
+13.455c
+0.000
+−2 Log Likelihood
+Chi-Square
+Sig.
+457.203
+1094.684
+0.000
+​
+418.107
+346.702
+0.000
+​
+225.829
+40.663
+0.000
+​
+Cox and Snell
+0.088
+​
+0.029
+​
+0.005
+​
+Nagelkerke
+0.228
+​
+0.075
+​
+0.012
+​
+McFadden
+0.189
+​
+0.060
+​
+0.009
+​
+a p < 0.05.
+b p < 0.01.
+c p < 0.001.
+2 Ibrahim [75] revises some methods for assessing the relative importance of
+input variables in artificial neural networks. These methods are based on Gar-
+son’s algorithm, which uses the absolute values of the final connection weights
+when calculating variable contributions. RIx = ∑n
+|
+|wxy wyz|
+∑m
+y=1 |wxy wyz| where RIx is the
+relative importance of neuron x. ∑m
+y=1 wxy wyz represents the sum of the product
+of the final weights connection from input neurons to hidden neurons with the
+connnections from hidden neurons to output neurons.
+3 The CHAID (Chi-squared Automatic Interaction Detection) method is a
+hierarchical tree-building algorithm commonly employed for cluster analysis.
+This method recursively partitions a dataset into homogeneous subsets based on
+the most significant predictors, identified through a series of chi-squared tests.
+Beginning with the entire dataset, CHAID identifies the variable that best dis-
+criminates between the target classes and creates branches accordingly. This
+process continues iteratively, producing a tree structure where each node rep-
+resents a decision point based on specific attribute thresholds. CHAID is
+particularly useful for analysing categorical data, as it efficiently identifies in-
+teractions between variables and produces a hierarchical cluster structure that
+aids in understanding complex relationships within the dataset.
+M.F. Arroyabe et al.
+Technology in Society 79 (2024) 102733 
+8 
+
+=== page 9 (PDF page index) ===
+square: 1626.938; df: 5; sig.: .000). To explore into the analysis, we
+identified the branches that are more likely to adopt AI. Previous
+recoding the AI variable, at the first level, node 6 emerges as having a
+higher probability of adopting AI, where the digital capabilities variable,
+ranging from 0 to 6, takes a high value (score: 5 and 6), estimating that
+51.8 % of cases adopt AI. Moreover, when we examine node 5 combined
+with node 15, we observe a synergistic effect between the variables of
+digital capabilities and innovation capabilities. More in detail, node 5
+indicates that 16.2 % of SMEs adopt AI, with a medium value of digital
+capabilities (score: 3). However, when this is combined with high values
+of innovation capabilities, as represented by node 15, with a value of 4
+(range: 0 to 5), the probability of adopting AI in SMEs increases to 28.3
+% (Chi-square: 19.029; df: 2; sig.: .000). Therefore, it is evident that the
+adoption of AI is more likely with high values of digital capabilities, or
+when combining medium values of digital capabilities with high values
+of innovation capabilities, resulting in the latter case in a synergistic
+effect, thus corroborating Hypothesis 1c.
+In the same way, we have conducted an analysis between internal
+capabilities (digital and innovation) and business environmental sup-
+port, and the results have not demonstrated the existence of comple-
+mentarities between these variables. As shown in Fig. 5, the analysis
+indicates that internal capabilities significantly influence the probability
+of adopting AI in SMEs (Chi-square: 983.702; df: 3; sig.: .000), rejecting
+the influence of business environmental support and thereby rejecting
+Hypothesis 3a.
+6. Discussion
+Based on our results, the first set of hypotheses, which examine the
+impact of digital capabilities, innovation capabilities, and business
+environmental support, support these factors as crucial drivers for the
+adoption of AI in SMEs. This discussion investigates the implications of
+our results and their alignment with existing literature. Regarding the
+hypotheses 1a, 1b, 1c, and 1d, the study extends prior research by
+highlighting the crucial role of digital capabilities, illustrating how the
+integration of smart devices, IoT, and robotics with AI can revolutionize
+traditional manufacturing processes into intelligent and adaptive sys-
+tems ([59]; Chen, 2020 [59]; Chen, [74]). This finding highlights the
+significance of digitalisation, illustrated by technologies such as cloud
+computing, as a prerequisite for AI adoption. Our results contribute to
+the understanding that SMEs leveraging cloud computing services gain
+flexible access to computing resources, enabling them to deploy AI al-
+gorithms efficiently [58]. This combination permits SMEs to analyze
+Table 5
+Marginal effect of regression analysis.
+Variables
+Model 7
+Model 8
+Estimation
+Error
+Estimation
+Error
+YEAR
+−0.147b
+0.057
+−0.122b
+0.061
+SIZE
+0.168c
+0.051
+0.156c
+0.055
+SECTOR
+0.107a
+0.078
+0.075
+0.104
+[INTERNALMARGINAL = 0.00]
+0a
+.
+​
+​
+[INTERNALMARGINAL = 1.00]
+18.023c
+0.000
+​
+​
+[INTERNALMARGINAL = 2.00]
+19.474c
+0.632
+​
+​
+[INTERNALMARGINAL = 3.00]
+19.572c
+0.615
+​
+​
+[INTERNALMARGINAL = 4.00]
+20.365c
+0.607
+​
+​
+[INTERNALMARGINAL = 5.00]
+21.448b
+0.606
+​
+​
+[INTERNALMARGINAL = 6.00]
+22.305b
+0.606
+​
+​
+[SYNERGYMARGINAL = 0.00]
+​
+​
+0a
+.
+[SYNERGYMARGINAL = 1.00]
+​
+​
+18.780c
+0.000
+[SYNERGYMARGINAL = 2.00]
+​
+​
+20.133c
+0.555
+[SYNERGYMARGINAL = 3.00]
+​
+​
+20.333c
+0.526
+[SYNERGYMARGINAL = 4.00]
+​
+​
+21.642a
+0.521
+[SYNERGYMARGINAL = 5.00]
+​
+​
+22.723a
+0.522
+−2 Log Likelihood
+Chi-Square
+Sig.
+378.665
+683.069
+0.000
+​
+312.993
+541.536
+0.000
+​
+Cox and Snell
+0.056
+​
+0.049
+​
+Nagelkerke
+0.145
+​
+0.131
+​
+McFadden
+0.118
+​
+0.107
+​
+a p < 0.05.
+b p < 0.01.
+c p < 0.001.
+Fig. 2. The ANN-MLP architecture.
+M.F. Arroyabe et al.
+Technology in Society 79 (2024) 102733 
+9 
+
+=== page 10 (PDF page index) ===
+diverse datasets, including historical sales data, customer behavior, and
+external factors, paving the way for data-driven decision-making.
+Moreover, our analysis reinforces the existing body of knowledge
+that underscores the significance of innovation capabilities in facili-
+tating AI integration within organizations. Our results validate the
+notion that the adoption of AI necessitates more than just technical AI
+competencies among staff and managers; it requires comprehensive
+changes across processes, organizational structures, and product offer-
+ings [1,2]. By highlighting the critical role of innovative capabilities, our
+study contributes to the literature by showing that organizations with a
+strong innovation track record are better positioned to undergo the
+necessary organizational changes for effective AI implementation.
+However, our findings show significant doubt on the presumed role of
+business environmental support as a decisive driver in the adoption of
+AI. This challenges previous studies that consistently highlighted the
+pivotal role of a supportive environment in AI integration [11,12],
+suggesting that internal capabilities may play a more critical role than
+previously thought.
+Considering the second set of hypotheses (hypothesis 2), which ex-
+plores how the impact of both digital is and innovation capabilities
+along with business environmental support on AI adoption in SMEs, our
+study provides a nuanced contribution to the literature by establishing a
+quantitative ranking of the magnitude of their effects. The findings
+showcase the critical role of digital capabilities in the adoption process
+compared to innovation capabilities. When evaluating the relative
+importance of these capabilities in the context of AI adoption, our results
+show that digital capabilities are essential for understanding and inte-
+grating AI technology into existing systems, thereby facilitating
+continuous technical implementation [11]. Conversely, innovation ca-
+pabilities encompass creativity and the expertise to adapt technology to
+align with the specific needs of a company [29]. Our study reinforces the
+idea that adaptability and technical expertise associated with digital
+capabilities are key to the successful integration of AI into the existing
+infrastructure of SMEs, a contribution that adds depth to the current
+literature. Moreover, the results bring to light the limited role that
+business environmental support plays compared to the internal capa-
+bilities of SMEs. This finding contributes to ongoing debates in literature
+about the effectiveness of environmental support, emphasizing the
+complexity of its relationship with organizational change. In particular,
+it contributes to research emphasizing that the effectiveness of envi-
+ronmental support depends on the degree of elaboration and cohesion
+within the institutional framework [63], and to research that suggests
+that a high degree of elaboration and implementation can either facili-
+tate or impede change processes [64,65]. This underscores the
+complexity of the relationship between business environmental support
+and its impact on organizational change. Furthermore, another essential
+aspect of the transformative capacity of institutional ecosystems is
+closely connected to the degree of coherence within their structure, as
+highlighted by Greenwood et al. [66]. This underscores the importance
+of the internal consistency and alignment of different elements within
+the institutional ecosystem for effective transformative processes.
+The final set of hypotheses, Hypotheses 3a and 3b, investigate the
+existence of synergistic effects among the input variables in their impact
+on AI adoption in SMEs. Our results reveal a nuanced understanding of
+complementarity, showing that in SMEs with high digital capabilities,
+innovation capabilities do not significantly increase the probability of AI
+adoption. However, when the level of digital capabilities is lower, the
+complementarity with innovation capabilities exhibits synergistic ef-
+fects. This contribution to the literature clarifies the role of innovation
+capabilities in enhancing AI adoption, particularly when digital profi-
+ciency is lacking. Consistent with the literature, digital capabilities
+involve a robust understanding of digital technologies [5], while inno-
+vation capabilities encompass the ability to apply technical knowledge
+to generate new and effective solutions [26]. Our findings align with
+those of Bhalerao et al. [12], who noted that when employees and
+managers in SMEs possess digital capabilities, they gain a better un-
+derstanding of AI’s potential and limitations, facilitating its effective
+integration into business processes. However, we also demonstrate that
+innovation capabilities, while empowering SMEs to explore ways to
+leverage AI in their operations [2], play a secondary role in AI adoption
+when digital capabilities are already strong, highlighting the contextual
+nature of these capabilities’ impact, as also noted by Kulkow (2021).
+Finally, as anticipated by previous findings, we observe that environ-
+mental support does not contribute to achieving synergistic effects with
+the internal capabilities of SMEs. These results align with previous
+studies that emphasize that synergistic effects occur when multiple
+Fig. 3. Normalized importance of the input variables.
+M.F. Arroyabe et al.
+Technology in Society 79 (2024) 102733 
+10 
+
+=== page 11 (PDF page index) ===
+capabilities are integrated into the organization, enabling the sharing of
+organizational routines, processes, and the generation of economies of
+scale [29].
+Therefore, our study provides valuable insights into the factors
+influencing AI adoption in SMEs, making significant contributions to the
+literature by robustly supporting the importance of digital and innova-
+tion capabilities as critical drivers of AI adoption. Specifically, our
+research emphasizes the pivotal role of digital capabilities in under-
+standing AI technology and facilitating its integration into SMEs’
+existing systems. Innovation capabilities are also essential, particularly
+in adapting technology to meet specific organizational needs and
+fostering organizational change. Our findings challenge the traditionally
+recognized role of business environmental support, suggesting that in-
+ternal capabilities may be more decisive in AI adoption. Furthermore,
+our analysis reveals the existence of synergistic effects between digital
+and innovation capabilities, particularly in SMEs with lower digital
+proficiency. These synergies highlight the importance of integrating
+various organizational capabilities to enhance AI adoption. Overall, our
+study contributes to a deeper understanding of the complex dynamics
+surrounding AI adoption in SMEs, emphasizing the critical role of in-
+ternal capabilities while questioning the significance of external support
+mechanisms.
+Fig. 4. Tree regression analysis (internal capabilities).
+Fig. 5. Tree regression analysis (internal capabilities and business environ-
+mental support).
+M.F. Arroyabe et al.
+Technology in Society 79 (2024) 102733 
+11 
+
+=== page 12 (PDF page index) ===
+7. Conclusion
+In this study, we investigated the intricate dynamics of adopting AI in
+SMEs, focusing on the interplay between digital capabilities, innovation
+capabilities, and business environmental support. Our findings offer
+novel insights into the dynamics of AI integration within SMEs,
+expanding the understanding of how internal and external factors
+contribute to successful AI adoption.
+Our study contributes novel evidence in several key areas. First, by
+integrating digital capabilities and innovation, our findings highlight
+the combined effect of these factors on AI adoption. Unlike previous
+studies that often examined these capabilities in isolation, we demon-
+strate that digital capabilities, particularly in areas like cloud computing
+and IoT, are crucial for AI integration, with innovation capabilities
+playing a complementary role. Second, our research challenges the
+traditionally recognized role of business environmental support. Con-
+trary to existing literature, we provide evidence that internal capabilities
+are more decisive in AI adoption than external support mechanisms,
+offering a more nuanced view of the factors driving AI adoption in SMEs.
+Third, we identify synergistic effects between digital and innovation
+capabilities, particularly in SMEs with lower digital proficiency. This
+novel insight suggests that boosting innovation capabilities can
+compensate for weaker digital capabilities, facilitating AI integration
+even in less digitally advanced SMEs. Finally, our focus on the European
+Union context offers region-specific evidence, contributing to the liter-
+ature by providing insights tailored to the unique dynamics of SMEs in
+Europe.
+Our study offers significant theoretical contributions by deepening
+the understanding of the interplay between digital capabilities, inno-
+vation capabilities, and business environmental support in driving AI
+adoption within SMEs. Dynamic capabilities theory traditionally em-
+phasizes the importance of an organization’s adaptability in the face of
+technological change. Our findings extend this framework by demon-
+strating that it is not just the presence of digital and innovation capa-
+bilities in isolation that matters, but the synergy between these
+capabilities that creates a more powerful foundation for AI adoption in
+SMEs. This highlights the dynamic interaction of internal capabilities,
+showing that when combined, digital and innovation capabilities
+generate a complementary effect, facilitating smoother and more
+effective AI integration.
+Additionally, our study enriches resource dependency theory by
+revealing the role of business environmental support. While previous
+research has recognized the importance of external support for tech-
+nology adoption, our findings emphasize that its effectiveness is
+contingent upon the institutional framework’s degree of elaboration and
+cohesion. In other words, the presence of external support alone is not
+sufficient—its impact depends on how well the external environment
+aligns with SMEs’ internal capabilities. This insight deepens resource
+dependency theory by showing the interdependence between internal
+capabilities and external support in the specific context of AI adoption.
+Regarding the implications for Managers and Policy-Makers, for man-
+agers, our study underscores the critical importance of cultivating both
+digital and innovation capabilities. SMEs with a strong foundation in
+digital competencies can effortlessly integrate AI into existing systems,
+ensuring technical efficiency. Simultaneously, innovation capabilities
+empower SMEs to creatively apply AI, driving unique solutions and
+enhancing competitive advantage. Moreover, policymakers should
+consider the findings as they design support frameworks for SMEs.
+Recognizing the limited impact of business environmental support in
+isolation, policies should encourage a holistic approach that fosters the
+development of internal capabilities alongside providing a conducive
+external business environment. This may involve targeted training
+programs, financial incentives, and collaborative initiatives to enhance
+both digital and innovation competencies.
+Despite its contributions, our study has limitations. The generaliz-
+ability of findings may be constrained by the specific context and
+industry focus. Additionally, the rapidly evolving nature of technology
+poses challenges in capturing the full spectrum of AI applications. Future
+research could explore these dynamics across diverse industries and
+incorporate longitudinal perspectives to capture the evolving nature of
+AI adoption in SMEs.
+CRediT authorship contribution statement
+Marta F. Arroyabe: Writing – review & editing, Writing – original
+draft, Validation, Software, Methodology, Investigation, Formal anal-
+ysis. Carlos F.A. Arranz: Writing – review & editing, Writing – original
+draft, Software, Methodology, Investigation, Formal analysis, Concep-
+tualization. Ignacio Fernandez De Arroyabe: Writing – review &
+editing, Writing – original draft, Software, Methodology, Investigation,
+Formal
+analysis,
+Conceptualization.
+Juan
+Carlos
+Fernandez
+de
+Arroyabe: Writing – review & editing, Writing – original draft, Soft-
+ware, Methodology, Investigation, Formal analysis, Conceptualization.
+Data availability
+The data that has been used is confidential.
+References
+[1] B. Marr, Artificial Intelligence in Practice: How 50 Successful Companies Used AI
+and Machine Learning to Solve Problems, John Wiley & Sons, 2019.
+[2] N. Haefner, J. Wincent, V. Parida, O. Gassmann, Artificial intelligence and
+innovation management: a review, framework, and research agenda, Technol.
+Forecast. Soc. Change 162 (2021) 120392.
+[3] S. Hajkowicz, C. Sanderson, S. Karimi, A. Bratanova, C. Naughtin, Artificial
+intelligence adoption in the physical sciences, natural sciences, life sciences, social
+sciences and the arts and humanities: a bibliometric analysis of research
+publications from 1960-2021, Technol. Soc. 74 (2023) 102260.
+[4] A. Zahlan, R.P. Ranjan, D. Hayes, Artificial intelligence innovation in healthcare:
+literature review, exploratory analysis, and future research, Technol. Soc. (2023)
+102321.
+[5] I. Kulkov, The role of artificial intelligence in business transformation: a case of
+pharmaceutical companies, Technol. Soc. 66 (2021) 101629.
+[6] S. Nazir, S. Khadim, M.A. Asadullah, N. Syed, Exploring the influence of artificial
+intelligence technology on consumer repurchase intention: the mediation and
+moderation approach, Technol. Soc. 72 (2023) 102190.
+[7] A. Samadhiya, S. Yadav, A. Kumar, A. Majumdar, S. Luthra, J.A. Garza-Reyes,
+A. Upadhyay, The influence of artificial intelligence techniques on disruption
+management: does supply chain dynamism matter? Technol. Soc. (2023) 102394.
+[8] E.B. Hansen, S. Bøgh, Artificial intelligence and internet of things in small and
+medium-sized enterprises: a survey, J. Manuf. Syst. 58 (2021) 362–372.
+[9] R. Wei, C. Pardo, Artificial intelligence and SMEs: how can B2B SMEs leverage AI
+platforms to integrate AI technologies? Ind. Market. Manag. 107 (2022) 466–483.
+[10] J. Shao, Z. Lou, C. Wang, J. Mao, A. Ye, The impact of artificial intelligence (AI)
+finance on financing constraints of non-SOE firms in emerging markets, Int. J.
+Emerg. Mark. 17 (4) (2022) 930–944.
+[11] J. Wang, Y. Lu, S. Fan, P. Hu, B. Wang, How to survive in the age of artificial
+intelligence? Exploring the intelligent transformations of SMEs in central China,
+Int. J. Emerg. Mark. 17 (4) (2022) 1143–1162.
+[12] K. Bhalerao, A. Kumar, A. Kumar, P. Pujari, A study of barriers and benefits of
+artificial intelligence adoption in small and medium enterprise, Acad. Market.
+Stud. J. 26 (2022) 1–6.
+[13] S. Nambisan, K. Lyytinen, Y. Yoo (Eds.), Handbook of Digital Innovation, Edward
+Elgar Publishing, 2020.
+[14] S.F. Wamba, A. Gunasekaran, S. Akter, S.J.F. Ren, R. Dubey, S.J. Childe, Big data
+analytics and firm performance: effects of dynamic capabilities, J. Bus. Res. 70
+(2017) 356–365.
+[15] G. Vial, Understanding digital transformation: a review and a research agenda,
+Managing digital transformation (2021) 13–66.
+[16] N. Omrani, N. Rejeb, A. Maalaoui, M. Dabi´c, S. Kraus, Drivers of digital
+transformation in SMEs, IEEE Trans. Eng. Manag. (2022). https://ieeexplore.ieee.
+org/abstract/document/9954626.
+[17] K.S. Warner, M. W¨ager, Building dynamic capabilities for digital transformation:
+an ongoing process of strategic renewal, Long. Range Plan. 52 (3) (2019) 326–349.
+[18] R. Bouncken, R. Barwinski, Shared digital identity and rich knowledge ties in
+global 3D printing—a drizzle in the clouds? Global Strategy Journal 11 (1) (2021)
+81–108.
+[19] L. Agostini, A. Nosella, R. Filippini, Towards an integrated view of the
+ambidextrous organization: a second-order factor model, Creativ. Innovat. Manag.
+25 (1) (2016) 129–141.
+[20] I. Barreto, Dynamic capabilities: a review of past research and an agenda for the
+future, J. Manag. 36 (1) (2010) 256–280.
+[21] A.J. Hillman, M.C. Withers, B.J. Collins, Resource dependence theory: a review,
+J. Manag. 35 (6) (2009) 1404–1427.
+M.F. Arroyabe et al.
+Technology in Society 79 (2024) 102733 
+12 
+
+=== page 13 (PDF page index) ===
+[22] J.M. Drees, P.P. Heugens, Synthesizing and extending resource dependence theory:
+a meta-analysis, J. Manag. 39 (6) (2013) 1666–1698.
+[23] C. Hofer, H. Jin, R.D. Swanson, M.A. Waller, B.D. Williams, The impact of key retail
+accounts on supplier performance: a collaborative perspective of resource
+dependency theory, J. Retailing 88 (3) (2012) 412–420.
+[24] B.N. Ghosh, Dependency Theory Revisited, Routledge, 2019.
+[25] K.M. Eisenhardt, J.A. Martin, Dynamic capabilities: what are they? Strat. Manag. J.
+21 (10–11) (2000) 1105–1121.
+[26] D.J. Teece, The foundations of enterprise performance: dynamic and ordinary
+capabilities in an (economic) theory of firms, Acad. Manag. Perspect. 28 (4) (2014)
+328–352.
+[27] L.A. de Vasconcelos Gomes, A.L.F. Facin, M.S. Salerno, R.K. Ikenami, Unpacking
+the innovation ecosystem construct: evolution, gaps and trends, Technol. Forecast.
+Soc. Change 136 (2018) 30–48.
+[28] D.S. Oh, F. Phillips, S. Park, E. Lee, Innovation ecosystems: a critical examination,
+Technovation 54 (2016) 1–6.
+[29] N. Arranz, M.F. Arroyabe, J. Li, J.F. de Arroyabe, An integrated model of
+organisational innovation and firm performance: generation, persistence and
+complementarity, J. Bus. Res. 105 (2019) 270–282.
+[30] A. Minbashian, J.E. Bright, K.D. Bird, A comparison of artificial neural networks
+and multiple regression in the context of research on personality and work
+performance, Organ. Res. Methods 13 (3) (2010) 540–561.
+[31] M.J. Somers, J.C. Casal, Using artificial neural networks to model nonlinearity: the
+case of the job satisfaction—job performance relationship, Organ. Res. Methods 12
+(3) (2009) 403–417.
+[32] A.L. Pablo, T. Reay, J.R. Dewald, A.L. Casebeer, Identifying, enabling and
+managing dynamic capabilities in the public sector, J. Manag. Stud. 44 (5) (2007)
+687–708.
+[33] J. Pfeffer, G. Salancik, External control of organizations—resource dependence
+perspective, in: Organizational Behavior 2, Routledge, 2015, pp. 373–388.
+[34] J. Hessels, S.C. Parker, Constraints, internationalization and growth: a cross-
+country analysis of European SMEs, J. World Bus. 48 (1) (2013) 137–148.
+[35] S. Badghish, Y.A. Soomro, Artificial intelligence adoption by SMEs to achieve
+sustainable business performance: application of
+technology–organization–environment framework, Sustainability 16 (5) (2024)
+1864.
+[36] L. Mei, T. Zhang, J. Chen, Exploring the effects of inter-firm linkages on SMEs’
+open innovation from an ecosystem perspective: an empirical study of Chinese
+manufacturing SMEs, Technol. Forecast. Soc. Change 144 (2019) 118–128.
+[37] J. Hessels, S. Terjesen, Resource dependency and institutional theory perspectives
+on direct and indirect export choices, Small Bus. Econ. 34 (2010) 203–220.
+[38] S. Sharma, G. Singh, N. Islam, A. Dhir, Why do SMEs adopt artificial intelligence-
+based chatbots? IEEE Trans. Eng. Manag. 71 (2024) 1773–1786.
+[39] G. Ray, J.B. Barney, W.A. Muhanna, Capabilities, business processes, and
+competitive advantage: choosing the dependent variable in empirical tests of the
+resource-based view, Strat. Manag. J. 25 (1) (2004) 23–37.
+[40] R. Grewal, R.J. Slotegraaf, Embeddedness of organizational capabilities, Decis. Sci.
+J. 38 (3) (2007) 451–488.
+[41] P. Del Río, J. Carrillo-Hermosilla, T. K¨onn¨ol¨a, M. Bleda, Resources, capabilities and
+competences for eco-innovation, Technol. Econ. Dev. Econ. 22 (2) (2016) 274–292.
+[42] R. Suddaby, D. Coraiola, C. Harvey, W. Foster, History and the micro-foundations
+of dynamic capabilities, Strat. Manag. J. 41 (3) (2020) 530–556.
+[43] C.C. Bitencourt, F. de Oliveira Santini, W.J. Ladeira, A.C. Santos, E.K. Teixeira, The
+extended dynamic capabilities model: a meta-analysis, Eur. Manag. J. 38 (1)
+(2020) 108–120.
+[44] S.A. Zahra, H.J. Sapienza, P. Davidsson, Entrepreneurship and dynamic
+capabilities: a review, model and research agenda, J. Manag. Stud. 43 (4) (2006)
+917–955.
+[45] J. Heredia, M. Castillo-Vergara, C. Geldes, F.M.C. Gamarra, A. Flores, W. Heredia,
+How do digital capabilities affect firm performance? The mediating role of
+technological capabilities in the “new normal”, Journal of Innovation & Knowledge
+7 (2) (2022) 100171.
+[46] N. Levallet, Y.E. Chan, Role of digital capabilities in unleashing the power of
+managerial improvisation, MIS Q. Exec. 17 (1) (2018) 1–21.
+[47] N. Alsufyani, A.Q. Gill, Digitalisation performance assessment: a systematic review,
+Technol. Soc. 68 (2022) 101894.
+[48] H. Gupta, A.K. Yadav, S. Kusi-Sarpong, S.A. Khan, S.C. Sharma, Strategies to
+overcome barriers to innovative digitalisation technologies for supply chain
+logistics resilience during pandemic, Technol. Soc. 69 (2022) 101970.
+[49] M. Roux, S. Chowdhury, P. Kumar Dey, E. Vann Yaroson, V. Pereira, A. Abadie,
+Small and medium-sized enterprises as technology innovation intermediaries in
+sustainable business ecosystem: interplay between AI adoption, low carbon
+management and resilience, Ann. Oper. Res. (2023) 1–50.
+[50] O. Branzei, I. Vertinsky, Strategic pathways to product innovation capabilities in
+SMEs, J. Bus. Ventur. 21 (1) (2006) 75–105.
+[51] ´A. Díaz-Chao, P. Ficapal-Cusí, J. Torrent-Sellens, Environmental assets, industry
+4.0 technologies and firm performance in Spain: a dynamic capabilities path to
+reward sustainability, J. Clean. Prod. 281 (2021) 125264.
+[52] A.B.L. de Sousa Jabbour, C.J.C. Jabbour, C. Foropon, M. Godinho Filho, When
+titans meet–Can industry 4.0 revolutionise the environmentally-sustainable
+manufacturing wave? The role of critical success factors, Technol. Forecast. Soc.
+Change 132 (2018) 18–25.
+[53] B. Brenner, B. Hartl, The perceived relationship between digitalization and
+ecological, economic, and social sustainability, J. Clean. Prod. 315 (2021) 128128.
+[54] R. Zhu, J. Zhang, Rebounding through the pandemic: towards the digitized and
+digitalized small hospitality business in China, Int. J. Contemp. Hospit. Manag. 33
+(8) (2021) 2676–2694.
+[55] A.S. Bharadwaj, O.A. El Sawy, P.A. Pavlou, N. Venkatraman, Digital business
+strategy: toward a next generation of insights, MIS Q. 37 (2) (2013) 471–482.
+[56] A. Bharadwaj, O.A. El Sawy, P.A. Pavlou, N.V. Venkatraman, Digital business
+strategy: toward a next generation of insights, MIS Q. (2013) 471–482.
+[57] L.B.P. Da Silva, R. Soltovski, J. Pontes, F.T. Treinta, P. Leit˜ao, E. Mosconi, R.
+T. Yoshino, Human resources management 4.0: literature review and trends,
+Comput. Ind. Eng. 168 (2022) 108111.
+[58] N.A. Sultan, Reaching for the “cloud”: how SMEs can manage, Int. J. Inf. Manag. 31
+(3) (2011) 272–278.
+[59] F. Shrouf, G. Miragliotta, Energy management based on Internet of Things:
+practices and framework for adoption in production management, J. Clean. Prod.
+100 (2015) 235–246.
+[60] M. Javaid, A. Haleem, A. Vaish, R. Vaishya, K.P. Iyengar, Robotics applications in
+COVID-19: a review, Journal of Industrial Integration and Management 5 (4)
+(2020) 441–451.
+[61] A.M. Baabdullah, A.A. Alalwan, E.L. Slade, R. Raman, K.F. Khatatneh, SMEs and
+artificial intelligence (AI): antecedents and consequences of AI-based B2B
+practices, Ind. Market. Manag. 98 (2021) 255–270.
+[62] L. McMillan, L. Varga, A review of the use of artificial intelligence methods in
+infrastructure systems, Eng. Appl. Artif. Intell. 116 (2022) 105472.
+[63] C. Zietsma, P. Groenewegen, D.M. Logue, C.R. Hinings, Field or fields? Building the
+scaffolding for cumulation of research on institutional fields, Acad. Manag. Ann. 11
+(1) (2017) 391–450.
+[64] Y. Benkler, The battle over the institutional ecosystem in the digital environment,
+Commun. ACM 44 (2) (2001) 84–90.
+[65] J.A. Ekstrom, O.R. Young, Evaluating functional fit between a set of institutions
+and an ecosystem, Ecol. Soc. 14 (2) (2009) 1–18.
+[66] R. Greenwood, M. Raynard, F. Kodeih, E.R. Micelotta, M. Lounsbury, Institutional
+complexity and organizational responses, Acad. Manag. Ann. 5 (1) (2011)
+317–371.
+[67] Eurostat, Flash Eurobarometer 486: SMEs, start-ups, scale-ups and
+entrepreneurship. http://data.europa.eu/euodp/en/data/dataset/S2244
+_486_ENG, 2022.
+[68] P.M. Podsakoff, S.B. MacKenzie, J.Y. Lee, N.P. Podsakoff, Common method biases
+in behavioral research: a critical review of the literature and recommended
+remedies, J. Appl. Psychol. 88 (5) (2003) 879.
+[69] C.F. Arranz, V. Sena, C. Kwong, Institutional pressures as drivers of circular
+economy in firms: a machine learning approach, J. Clean. Prod. 355 (2022)
+131738.
+[70] Q. Wang, Artificial neural networks as cost engineering methods in a collaborative
+manufacturing environment, Int. J. Prod. Econ. 109 (2007) 53–64.
+[71] N. Arranz, J.C. Fernandez de Arroyabe, Efficiency in technological networks, an
+approach from artificial neural networks (ANN), Int. J. Manag. Sci. Eng. Manag. 5
+(2010) 453–460.
+[72] J. Ciurana, G. Quintana, M.L. Garcia-Romeu, Estimating the cost of vertical high-
+speed machining centers, a comparison between multiple regression analysis and
+the neural approach, Int. J. Prod. Econ. 115 (2008) 171–178.
+[73] K. Mohrotra, Elements of Artificial Neural Networks, MIT Press, Cambridge, MA,
+1994.
+[74] Y. Chen, J. Li, J. Zhang, Digitalisation, data-driven dynamic capabilities and
+responsible innovation: an empirical study of SMEs in China, Asia Pac. J. Manag.
+(2022) 1–41.
+[75] O.M. Ibrahim, A comparison of methods for assessing the relative importance of
+input variables in artificial neural networks, J. Appl. Sci. Res. 9 (11) (2013)
+5692–5700.
+Ignacio Fernandez de Arroyabe is Cyber Risk Manager in Lloyds Bank Commercial
+Banking (UK). He has worked in cybersecurity at Jaguar Land Rover in the UK. His
+research interests are in cybersecurity risk management in firms. He is a PhD candidate in
+cybersecurity at the Computer Science Department at Loughborough University, UK.
+Carlos F.A. Arranz is a Lecturer in Business Operations at the University of Greenwich. His
+main research interest centres on the application of Machine Learning methods to the
+analysis of business, particularly on the implementation of Circular Economy Models. He
+holds a PhD in Business Analytics from Essex Business School (University of Essex), an
+MRes in International Political Economy from the London School of Economics and Po-
+litical Science (LSE), and an MRes in Economics and Finance from the Universit´e du
+Luxembourg. Before that, he received a BSc in Economics and Business Economics (In-
+ternational Economics Studies Specialisation) from Maastricht University.
+Marta F. Arroyabe is a Reader and Deputy Head of the Strategy Operations and Entre-
+preneurship (SOE) Group at Essex Business School. Marta’s research focuses on four pri-
+mary areas: innovation, digitalisation & cybersecurity, environmental management, and
+entrepreneurship. In the area of innovation, her research aims to understand the devel-
+opment and implementation of innovation in firms and explores firms’ innovation de-
+cisions and strategies. In digitalisation and cybersecurity, her research investigates the
+intersection of IT security, digital transformation, and cybersecurity resilience in SMEs.
+Her research investigates the digitalisation dynamics in SMEs, emphasizing the multifac-
+eted nature of drivers, interactions, and the overall decision-making process within the
+evolving landscape of Industry 4.0. Her research also delves into the strategic decision-
+making behind cybersecurity investments in SMEs and provides an understanding of
+how cybersecurity challenges, capabilities and organizations’ external environment
+M.F. Arroyabe et al.
+Technology in Society 79 (2024) 102733 
+13 
+
+=== page 14 (PDF page index) ===
+intersect with the broader landscape of digital transformation and strategic decision-
+making within SMEs, aiming to shed light on practical aspects that can enhance resil-
+ience and decision-making in the face of evolving cyber threats. In the area of environ-
+mental management, she primarily focuses on two topics, eco-innovation and circular
+economy, where she studies business responses to improving environmental performance
+and to increasing societal concerns for the environment. Her research explores the
+development of eco-innovation and circular economy business models in firms and the
+impact of these on firms’ performance. Finally, in the area of entrepreneurship, her
+research primarily focuses on entrepreneurial education and entrepreneurial intention.
+Her work aims to understand to which extent entrepreneurial education in higher edu-
+cation institutions (such as universities) spurs students’ entrepreneurial intention and
+fosters entrepreneurial activity. She has published her work in “Journal of Business
+Research”, "R&D Management", “Technovation”, “Studies in Higher Education”, “British
+Journal of Management”, “European Journal of Innovation Management”, “Technology
+Analysis and Strategic Management”, “Journal of Cleaner Production”, “Technological
+Forecasting and Social Change”, "Journal of Computer Information Systems" or "Computers and
+Security".
+Juan Carlos. Fernandez de Arroyabe is a Professor at Essex Business School (University
+of Essex). His research interests include joint R&D projects, R&D networks, and complex
+technological systems. He is the author or co-author of numerous papers published in the
+British Journal of Management, IEEE Transaction Engineering Management, the Complexity,
+Technovation, Studies in Higher Education, Journal Cleaner Production, Business Strategy and
+The Environment, Journal Business Research; Emergence: Organization and Complexity,
+Technological Forecasting Social Change, Journal of Enterprise Information Management, In-
+ternational Small Business Journal, European Journal of Work and Organisational Psychology,
+Scandinavian Journal of Tourism, and Industry Higher Education. Also, he is Associate Editor
+of the Journal of Entrepreneurship in Emerging Economies and a member of the Editorial
+Board of Technological Forecasting Social Change.
+M.F. Arroyabe et al.
+Technology in Society 79 (2024) 102733 
+14 

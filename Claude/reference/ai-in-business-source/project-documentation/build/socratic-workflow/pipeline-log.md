@@ -1,0 +1,359 @@
+# Pipeline log — the document hand-in pipeline
+
+One entry per gate run and per live run of `run_documents.py`. The build plan
+(`buildplan.html`, beside this file) puts a gate's transcript here rather than in a
+pull request, because there are no pull requests: each phase is one commit on `main`, pushed when
+its gate passed, and the next phase starts when the push has landed.
+
+Scores of fixtures are not pasted here — a score carries the sheet's bands, and this file is in a
+public repository. The provenance line and the headings found are enough to show a gate passed.
+
+---
+
+## Gate 0 — 11 September 2026 — ground
+
+```
+$ python3 project-documentation/socratic_agent/gates.py 0
+gate 0 — ground, at /Users/witoldtenhove/Documents/HAN/M3DM/ai-in-business-intake
+  ok   README.md exists
+  ok   roster.tsv exists
+  ok   log.tsv exists
+  ok   rubric exists
+  ok   inbox exists
+  ok   teams exists
+  ok   rubric/prd-scoresheet.md exists
+  ok   no per-week folder at the root 
+  ok   roster header is team/names/channel
+  ok   every roster line has team, names and channel (0 team(s); the owner fills these in)
+  ok   fixtures README names prd-socratic-gate.md
+  ok   fixtures README names blueprint-socratic-workflow.html
+  ok   fixtures README names pull only
+  ok   pipeline-log.md exists
+PASSED
+exit 0
+```
+
+The roster has zero teams: the file has its header and its comment, and the names are the owner's to fill in before the week-1 run. Gate 0 checks the roster's shape and reports the count; it does not require a team, because the run that needs one is phase 3's, not this one.
+
+## Gate 1 — 11 September 2026 — intake
+
+Two defects found on the first run, both fixed before this transcript: a second hand-in of the same deliverable with a different extension was filed as a first version and its text overwrote the first; and the manifest was rewritten on a run that did nothing, so "no file changed" could not be checked.
+
+```
+$ python3 project-documentation/socratic_agent/gates.py 1
+gate 1 — intake, scratch root /var/folders/tl/27n5mfs173zf3987pbbpmpcw0000gn/T/intake-gate-zjrdi6o3
+  run 1
+  ok   exit 1 (got 1)
+  ok   Team 3 PRD.pdf filed and converted
+  ok   team-03-prd-v2.md filed as -v2 and converted
+  ok   t05_prd.docx filed and converted
+  ok   the non-PDF is filed but not converted
+  ok   prd-final.pdf stays in the inbox
+  ok   manifest has prd-final.pdf with an empty team cell
+  ok   team-03 documents.tsv holds one prd line, at version 2
+  ok   log.tsv has header + 4 moves (5 lines)
+  run 2 — manifest corrected
+  ok   exit 0 (got 0)
+  ok   prd-final.pdf filed as team-06 and converted
+  ok   log.tsv gained exactly one line
+  ok   team-06 documents.tsv has one line
+  ok   manifest is empty
+  run 3 — nothing to do
+  ok   exit 2 (got 2)
+  ok   no file changed
+PASSED
+exit 
+```
+
+## Gate 2 — 11 September 2026 — scorer
+
+```
+$ .venv/bin/python project-documentation/socratic_agent/gates.py 2
+gate 2 — scorer, scratch root /var/folders/…/intake-gate-rqt7nh1d
+  intake
+      team-03 blueprint v1: team-03-blueprint.html → team-03-week-01-blueprint.txt (3374 words)
+      team-03 prd v1: team-03-prd.md → team-03-week-01-prd.txt (2203 words)
+  ok   both fixtures filed and converted
+  run 1 — score
+      team-03 prd v1: SCORESHEET → teams/team-03/week-01/owners/score-prd.md
+      ! team-03 blueprint: unscored: no sheet for blueprint
+  ok   exit 1, because the blueprint has no sheet (got 1)
+  ok   owners/score-prd.md written
+  ok   provenance header carries criteria commit, sheet hash and version
+  ok   required headings present
+  ok   nothing written for the blueprint
+    headings found: ## SCORESHEET, ## BEFORE V1
+    header:
+      criteria: site/prd-criteria.html @ e5f12af
+      sheet: rubric/prd-scoresheet.md sha256 8edcc7d4ec1c
+      previous: none
+  run 2 — skip
+  ok   exit 1 again: the blueprint is still unscored (got 1)
+  ok   score-prd.md unchanged
+PASSED
+exit 0
+```
+
+About 30 seconds of model time per document.
+
+**Read, not gated.** The fixture was scored three times in three fresh scratch roots. One run
+*returned* it on invariant V2 — the primary user is a student team, not "the team as
+researchers" building a platform — which is arguably right: the gate's own PRD is not the kind of
+document the sheet was written for, and the fixture is a stand-in. The other two runs scored it,
+six points apart, and disagreed by two or more on three items (A5, C1, B3). Two readings for the
+sheet's author: the invariants are applied softly two times in three, and the items that moved
+are the ones whose criterion asks for something the document could carry implicitly. Neither is
+a defect in the step; both are calibration, and the sheet is the place to tighten them. A team's
+real PRD, written to the brief, will not trip V2 the way this fixture does.
+
+## Gate 3 — 11 September 2026 — questioner, register, lint
+
+The first run failed on the lint, and the lint was wrong: it rejected a question for the word
+*assessment*, which is the fixture's own subject, and another for a section code the team had
+written itself. The lint now exempts quoted spans, no longer flags ordinary words, and treats a
+code as a leak only when it does not occur in the team's own text. What it still catches is what
+the sheet would leak: a code the team never wrote, a total, a fraction, a band name, and the
+words score, scoresheet, band and rubric.
+
+```
+$ .venv/bin/python project-documentation/socratic_agent/gates.py 3
+gate 3 — questioner
+  scenario 1 — first week, PRD fixture
+      team-03 prd v1: RETURNED → teams/team-03/week-01/owners/score-prd.md
+      team-03: 4 questions → teams/team-03/week-01/team/message.md; register: no earlier questions
+  ok   questions.md has three to five lines (4)
+  ok   every question ends in a question mark
+  ok   message.md written and passes lint
+  ok   register has 4 lines, all open
+  ok   no roster name in the assembled input
+  ok   no roster name in the message
+  ok   no score column in the assembled input
+  scenario 2 — planted lint failure
+  ok   lint catches the planted lines (3 hits: criterion code, a total, the word band)
+  ok   lint passes a question quoting the team's own code and words
+  scenario 3 — week 2, one register question answered in a doctored document
+      team-03 prd v1: RETURNED → teams/team-03/week-02/owners/score-prd.md
+      team-03: 4 questions → teams/team-03/week-02/team/message.md; register: team-03-w01-q1→answered, team-03-w01-q2→ducked
+  ok   q1 (the clock) is answered with a quote
+  ok   the answered question is not asked again
+  ok   q2 has a valid status (open)
+  ok   at most five questions open
+PASSED
+exit 0
+```
+
+About a minute of model time for two scores and two question sets.
+
+**The fixture's message, in full** (scenario 1) — the one output that is meant to be read:
+
+> 1. The document states, "Primary user — a team of four, in weeks 2 to 6, who have just published that week's handbook page." Given that "The problem" is described as the gate being "built not at all" and the mechanism it replaces "does not scale past the kick-off," what problem, from the perspective of this primary user, does the Socratic gate solve?
+> 2. The document states, "The hard deadline is a feature, and it is this document's sharpest claim." How does the document demonstrate that this hard deadline serves as a beneficial "feature" for the "Primary user — a team of four"?
+> 3. The document states, "The team's only action is to publish on time — the whole interface, by design." However, it also states that someone "must be able to... Show what a question changed" and that "What they owe in return is a revision." In what ways are these actions of showing changes and making revisions consistent with the team's "only action"?
+> 4. The "Secondary user — the two module owners" receive "the same report the team received, plus the score behind it and the gate-A signal." What specific action would a module owner take, or what decision would they make differently, on Monday morning, given this information and the criteria described in section 3.D1?
+
+**Read, not gated.** Every question is anchored in a quoted sentence, and the third finds a real
+tension in the document. The fourth asks about "the criteria described in section 3.D1" — a
+section of the fixture, so allowed, and a reminder that the questioner will refer to a team's own
+codes when the team uses them. Across gates 2 and 3 the scorer has now *returned* this fixture on
+invariant V2 four times in seven; the questioner worked from the returned reason each time and
+still produced grounded questions, which is the behaviour the design wanted for a document that
+fails an invariant.
+
+## Gate 4 — 11 September 2026 — coherence
+
+Two things changed on the way to this transcript. The gate's own trace counter only knew tables
+and dashes, and the model writes the trace as a nested list, one top-level item per PRD line;
+the counter now counts top-level items. And the lint rejected a good question for the word
+*scoring* — the blueprint fixture is a document about a scorer — so the exemption that already
+held for codes now holds for words: a term the team's own text contains is not a leak. The
+lecturer reading every message before it is sent is the rule; the lint is the net under it.
+
+```
+$ .venv/bin/python project-documentation/socratic_agent/gates.py 4
+gate 4 — coherence
+  the pair — week 2
+      team-03: coherence over 2 documents, 22 finding(s) → teams/team-03/week-02/owners/coherence.md
+  ok   exit 0 (got 0)
+  ok   the three headings are present
+  ok   TRACE has at least seven rows, one per line of the PRD's table (57)
+  ok   FINDINGS names the planted departure: the inbox door against pull-only
+  ok   provenance header carries the sheet hash
+  the questioner, after it
+      team-03: 5 questions → teams/team-03/week-02/team/message.md; register: no earlier questions
+  ok   exit 0 (got 0)
+  ok   at least one register line is tagged coherence (5)
+  ok   no direction code in the message
+  one document alone
+      team-03: coherence skipped — 1 document(s) so far, needs two
+  ok   skipped with a reason, nothing written, exit 2 (got 2)
+PASSED
+exit 0
+```
+
+About a minute and a quarter: one coherence call over both fixtures, one questioner call.
+
+**The findings, in part** — our own documents, so publishable. Besides the planted departure,
+which the report classified as a *recorded change* rather than a contradiction because the
+blueprint states and justifies it, the first run found two open questions of the PRD that the
+blueprint's own list of open questions drops — region and residency, and who owns the project —
+and a PRD requirement the blueprint carries only generally: the manual override of a gate,
+"logged with a reason". All three are true, and they are the blueprint's to answer. The count of
+findings varied between runs (6, 12, 22) as the model split or merged items; the substance of
+the top findings did not.
+
+**The questions it led to** (one of five):
+
+> The blueprint states that the questioner "never sees a number" and that this "is a property of
+> the wiring rather than a rule the model has to remember". What specific aspect of the wiring, as
+> described in the blueprint, ensures that the questioner model call definitively does not receive
+> any numerical data from the scoring process?
+
+## Decision on the first live run — 11 September 2026 — nothing is returned
+
+The first real PRD scored (team 2, week 1) was *returned* by the scorer on invariant V1: it
+judged roughly 1,600 words of Markdown to be more than three pages, from text in which it
+could not see pages. The module owner decided on the spot: **nothing is returned.** A failed
+invariant is reported at the top of the owners' score under `## INVARIANTS`, the sheet is filled
+in regardless, and the team gets one plain note before the questions, marked as feedback and
+not a question. The scorer is now also told the document's word count, so V1 is no longer an
+estimate. The sheet's §3.2 and instruction block, the scorer's required shape, the message
+frame and the build plan's phase 5.3 all changed together.
+
+```
+$ .venv/bin/python project-documentation/socratic_agent/gates.py 2
+  ok   required headings present: invariants, sheet, before v1
+  ok   nothing is returned: the sheet is filled in whatever the invariants say
+    invariants: V1 — pass · V2 — pass · V3 — pass        (the fixture; the 2,203-word PRD)
+PASSED
+$ .venv/bin/python project-documentation/socratic_agent/gates.py 3
+  ok   one failure extracted, code stripped: the document runs to about 2,400 words. The brief asked for one to three pages.
+  ok   the note sits before the questions and is marked as feedback
+  ok   the message with the note passes lint
+  ok   a passing invariant produces no note
+  … (the earlier scenarios unchanged)
+PASSED
+```
+
+Also on this run: the questioner's first message for team 2 failed the lint on the word
+*scoring*, used outside a quotation, and the second attempt passed. The retry is the design.
+
+## Gate 6 — 13 September 2026 — handling
+
+Added after the first live run, from four things the lecturer did by hand that week: a file with
+no team in its name needed a manifest edit; a wrong file was taken out with a plain delete and
+could not be brought back; redoing one step meant deleting its outputs by hand and the register
+with them; and seeing where a team stood meant listing folders. Nothing in this phase talks to a
+model, and nothing in it deletes.
+
+```
+$ python3 project-documentation/socratic_agent/gates.py 6
+gate 6 — handling
+  a team folder in the inbox
+  ok   filed as team-04 from the folder name, no manifest needed
+  ok   no manifest left behind
+  ok   log records the inbox path
+  withdraw, and file again from the archive
+  ok   week folder moved whole to archive/
+  ok   original and score travelled with it
+  ok   the register as it was is kept beside it
+  ok   documents.tsv has no week-1 line
+  ok   register restored to its snapshot (empty)
+  ok   log records the withdrawal
+  ok   the archived original files again as a fresh v1
+  redo question
+  ok   question outputs moved into attempts/
+  ok   team/ is gone, so the step will run again
+  ok   register restored: the old question open again, this week's gone
+  ok   the document itself untouched
+  status and sent
+  ok   status shows the team's row and the empty inbox
+  ok   sent refuses when there is no message yet
+  ok   sent writes the marker and status shows it
+PASSED
+exit 0
+$ python3 project-documentation/socratic_agent/gates.py 1
+PASSED
+```
+
+## Gate 6 again — 13 September 2026 — link files
+
+Some teams keep their document on GitHub, so the inbox now takes a link: a Markdown file holding
+one URL. Gate 6 gained a scenario that serves a document from a local web server, drops a link to
+it in a team folder, and checks that the document is fetched and filed as the original, that the
+link file is filed beside it as `-source.md`, that the log records the URL, that a Markdown file
+which merely contains a link is not treated as one, and that a link to a repository rather than a
+file is named and stays in the inbox. The first run of the gate used a `file://` URL and passed
+the wrong way — the link file was filed as a five-word document — which is why the gate now uses
+`http://`, the only scheme the pipeline accepts.
+
+```
+$ python3 project-documentation/socratic_agent/gates.py 6
+  ok   a GitHub page URL is rewritten to its raw file
+  ok   the document behind the link is fetched and filed as the original
+  ok   the link file is filed beside it as the source
+  ok   the link file has left the inbox
+  ok   the log records the URL
+  ok   a document that merely contains a link is not a link file
+  ok   a link to a repository rather than a file is named and stays in the inbox
+  … (the earlier scenarios unchanged)
+PASSED
+$ python3 project-documentation/socratic_agent/gates.py 1
+PASSED
+```
+
+## Live run — week 2 — 18 September 2026 — blueprints, revised PRDs
+
+Four of eight teams had handed in by Friday evening (deadline Monday 21 September): teams 3, 5
+and 7 a blueprint and a revised PRD, team 4 a blueprint. Seven documents filed, seven scored,
+coherence over two documents for each of the four teams, and a message for each. Exit 1 on the
+first run, 0 after the steps below. Nothing sent yet.
+
+What had to be handled by hand, and why:
+
+- **Two links in one link file** (team 3). Intake takes one document per link file, and rightly
+  keeps such a file in the inbox. Split into `prd-wk2.md` and `blueprint-wk2.md`; the original is
+  in `archive/team-03/` and the move is in `log.tsv`.
+- **Link files that name no document** (teams 4 and 5, `assignment-wk2.md`). Renamed to say which
+  document they hold, which intake reads when the fetched file's name says nothing.
+- **One PDF holding the research proposal, the PRD and the blueprint** (team 5). Filed twice, as
+  `prd` and `blueprint`, so the register could be read against the revised PRD. `part_hint`
+  finds the blueprint in it but not the PRD: the title page reads "Research Proposal & PRD", so
+  the PRD hint pointed at 247 words of front matter. Both text files were cut to their own
+  section by hand; the full text is in `attempts/`, the PDF untouched.
+- **Invariant reason taken from the wrong clause** (team 5, blueprint). V1 failed on length —
+  fair, about four and a half pages — but the reason quoted V1's second clause, "mostly code, or
+  an implementation manual", which the document is not. Replaced in the message with the length.
+  For the sheet's author: V1 carries two tests, and its reason can come from the one that did
+  not fail.
+- **More than five questions open** (team 4, three runs: 8, 9, 7; team 5, once: 6). A team that
+  does not return to its week-1 questions starts the week at the cap, so every new question needs
+  a withdrawal first, and the questioner kept adding without withdrawing although its
+  instructions say to. Team 5 came right on a plain re-run. Team 4 was run through
+  `step_question` with one paragraph added to the instructions for that call only, spelling the
+  count out; everything else — register, snapshot, frame, lint — was the pipeline's. Worth a
+  change to `instructions-documents.txt` or to the input, which could state the count.
+- **Procedure notes.** Teams 4, 5 and 7 did not include the section returning to the week-1
+  questions that the brief asks for; team 3's revised PRD carries no version or date, team 5's
+  no date or reason, and team 5 bundled three documents in one file. Each got a plain note in the
+  frame's notice block, added after the run and linted with `lint_message`; the pipeline's own
+  message is kept as `owners/message-pipeline.md`. The pipeline has no door for a lecturer's
+  note yet, so a `--redo question` would drop these.
+
+## Live run — week 2 — 20 September 2026 — team 1, late hand-in
+
+Team 1 posted its blueprint and revised PRD on Saturday, a day before the Monday deadline. Run
+with `--team team-01`, so the four teams already done were left untouched. Two documents filed,
+two scored, coherence over both, one message. Exit 0 in one run; the PRD's V1 failed on length
+(1479 words) and rides along as a notice in the message. Nothing sent yet.
+
+What had to be handled by hand, and why:
+
+- **Two links in one link file** (team 1, `assignment-wk2.md`), as with team 3 on 18 September.
+  Split into `prd-wk2.md` and `blueprint-wk2.md`; the original is in `archive/team-01/` and the
+  move is in `log.tsv`. Second occurrence in two runs: teams read "put the link in a file" as
+  "put the links in a file", and the fix is a line in the brief, not in the code.
+- **Parentheses in the URL** (team 1, PRD). The document's GitHub path ends in
+  `...Document%20(week%202).docx` — the spaces encoded, the parentheses not. `URL_RE` excludes
+  `()` so a link file holds the URL truncated at the first bracket, and the fetch would have
+  missed. Percent-encoded to `%28`/`%29` by hand when splitting. Worth a change to `URL_RE`:
+  parentheses are legal in a URL and GitHub's own copy button hands them out unencoded.

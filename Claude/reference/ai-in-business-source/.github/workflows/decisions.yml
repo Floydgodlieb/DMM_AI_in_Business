@@ -1,0 +1,42 @@
+name: Check decision records
+
+# Separate from pages.yml on purpose. That workflow is filtered to site/** and
+# ends in a deploy; this one guards work/decisions/, which is never published.
+# Folding the two together would run the publication pipeline for changes that
+# cannot reach the site.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'work/decisions/**'
+      - '.github/scripts/check-adrs.sh'
+      - '.github/workflows/decisions.yml'
+  pull_request:
+    paths:
+      - 'work/decisions/**'
+      - '.github/scripts/check-adrs.sh'
+      - '.github/workflows/decisions.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Lint records and enforce immutability
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The immutability check reads each record as it was at the base
+          # commit, so the history has to be there.
+          fetch-depth: 0
+
+      - name: Check decision records
+        env:
+          # An accepted record may not change. Comparing against the base of the
+          # pull request — or the previous tip on a push — is what makes that
+          # enforceable rather than an honour system.
+          BASE_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+        run: ./.github/scripts/check-adrs.sh

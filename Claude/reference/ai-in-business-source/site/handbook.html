@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI for SMEs — Handbook (template)</title>
+<style>
+/* ================================================================
+   Business Data Solutions — brand system (palette C "strict minimal")
+   Inlined from stylebook/shared.css + handbook-specific additions.
+   ================================================================ */
+:root {
+  --primary: #d4db3e;
+  --supporting: #1a1a1a;
+  --cream: #f5f0e6;
+  --bg-yellow: #fafbf0;
+  --bg-cream: #f5f0e6;
+  --bg-cream-2: #f0ebe0;
+  --bg-off-white: #f9f8f4;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+  --bg-page: #ffffff;
+  --bg-section: #f9fafb;
+  --border: #e5e7eb;
+  --border-strong: #d1d5db;
+  --text-xs: 0.75rem;  --text-sm: 0.875rem; --text-base: 1rem;
+  --text-lg: 1.125rem; --text-xl: 1.25rem;  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem; --text-4xl: 2.25rem; --text-5xl: 3rem;
+  --space-1: 0.25rem; --space-2: 0.5rem; --space-3: 0.75rem; --space-4: 1rem;
+  --space-6: 1.5rem; --space-8: 2rem; --space-12: 3rem; --space-16: 4rem;
+  --space-20: 5rem;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.04), 0 2px 6px rgba(0,0,0,.04);
+  --shadow-md: 0 2px 4px rgba(0,0,0,.06), 0 8px 16px rgba(0,0,0,.06);
+  --shadow-lg: 0 4px 8px rgba(0,0,0,.08), 0 16px 32px rgba(0,0,0,.08);
+  --radius-sm: 6px; --radius-md: 12px; --radius-lg: 20px; --radius-full: 9999px;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--bg-page);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a {
+  color: var(--text-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+a:hover { background: var(--bg-yellow); }
+
+/* NAV */
+.bds-nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--bg-page);
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-4) var(--space-8);
+}
+.bds-nav-inner {
+  max-width: 1024px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: var(--space-6); flex-wrap: wrap;
+}
+.bds-wordmark {
+  display: inline-flex; align-items: center; gap: var(--space-3);
+  text-decoration: none; color: var(--text-primary);
+}
+.bds-wordmark svg { width: 28px; height: 28px; flex-shrink: 0; }
+.bds-wordmark:hover { background: transparent; }
+.bds-wordmark-name { display: block; font-weight: 700; font-size: var(--text-xl); line-height: 1.2; }
+.bds-wordmark-sub { display: block; font-size: var(--text-xs); color: var(--text-secondary); line-height: 1.3; }
+.bds-nav-links { display: flex; gap: var(--space-4); font-size: var(--text-sm); flex-wrap: wrap; }
+.bds-nav-links a { color: var(--text-secondary); }
+.bds-nav-links a:hover { color: var(--text-primary); }
+.bds-nav-tag {
+  font-size: var(--text-sm); color: var(--text-muted);
+}
+
+/* PAGE LAYOUT */
+.bds-page {
+  max-width: 880px; margin: 0 auto;
+  padding: var(--space-12) var(--space-8) var(--space-20);
+}
+.bds-page-header {
+  margin-bottom: var(--space-12);
+  padding-bottom: var(--space-8);
+  border-bottom: 1px solid var(--border);
+}
+.bds-eyebrow {
+  font-size: var(--text-xs); text-transform: uppercase;
+  letter-spacing: 0.1em; color: var(--text-muted);
+  font-weight: 600; margin-bottom: var(--space-2);
+}
+h1.bds-h1 { font-size: var(--text-4xl); font-weight: 700; margin: 0 0 var(--space-6); line-height: 1.15; }
+
+.lead-quote {
+  margin: 0 0 var(--space-6); padding: var(--space-4) var(--space-6);
+  border-left: 4px solid var(--primary);
+  background: var(--bg-yellow);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-lg); color: var(--text-secondary);
+}
+.lead-quote em { font-style: italic; }
+
+/* Part headers (markdown level-1 "# Part …" / "# Appendix …") */
+h2.bds-part {
+  font-size: var(--text-3xl); font-weight: 700; line-height: 1.2;
+  margin: var(--space-20) 0 var(--space-6);
+  padding-top: var(--space-8);
+  border-top: 2px solid var(--supporting);
+}
+h2.bds-part::before {
+  content: ""; display: block;
+  width: 48px; height: 5px; background: var(--primary);
+  border-radius: var(--radius-full); margin-bottom: var(--space-4);
+}
+
+/* Sub-sections (markdown level-2 "## …") */
+h3 {
+  font-size: var(--text-xl); font-weight: 700;
+  margin: var(--space-12) 0 var(--space-3); line-height: 1.3;
+}
+
+p { margin: 0 0 var(--space-4); }
+ul, ol { margin: 0 0 var(--space-4); padding-left: var(--space-6); }
+li { margin: 0 0 var(--space-2); }
+li > ul, li > ol { margin-top: var(--space-2); }
+
+strong { font-weight: 700; }
+em { font-style: italic; }
+
+/* Inline blockquote separators (the leading ── rules become breathing room) */
+hr { border: none; border-top: 1px solid var(--border); margin: var(--space-12) 0; }
+
+/* Tables */
+.tbl-wrap { overflow-x: auto; margin: var(--space-6) 0; }
+table {
+  width: 100%; border-collapse: collapse;
+  font-size: var(--text-sm);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md); overflow: hidden;
+}
+thead th {
+  background: var(--bg-cream);
+  text-align: left; font-weight: 700;
+  border-bottom: 2px solid var(--border-strong);
+}
+th, td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  vertical-align: top; line-height: 1.5;
+}
+th:last-child, td:last-child { border-right: none; }
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:nth-child(even) { background: var(--bg-off-white); }
+td a { word-break: break-word; }
+
+/* Theme cards (Part 4) */
+.theme {
+  background: var(--bg-page);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-md);
+  padding: var(--space-6) var(--space-8);
+  margin: var(--space-8) 0;
+}
+.theme h3 { margin-top: 0; }
+.theme-help { color: var(--text-secondary); }
+.theme .angles { list-style: none; padding-left: 0; }
+.theme .angles > li {
+  padding: var(--space-3) 0;
+  border-top: 1px solid var(--border);
+}
+.theme .angles > li:first-child { border-top: none; }
+.src {
+  display: block; margin-top: var(--space-2);
+  font-size: var(--text-sm); color: var(--text-secondary);
+}
+.illus { margin-top: var(--space-4); margin-bottom: 0; color: var(--text-muted); font-size: var(--text-sm); }
+
+/* Code */
+code {
+  font-family: 'SF Mono', Monaco, Consolas, 'Liberation Mono', monospace;
+  font-size: 0.9em; background: var(--bg-section);
+  padding: 0.15em 0.4em; border-radius: 4px; border: 1px solid var(--border);
+}
+
+/* Footer */
+.bds-footer {
+  border-top: 1px solid var(--border);
+  padding: var(--space-8); background: var(--bg-section);
+  text-align: center; color: var(--text-muted); font-size: var(--text-sm);
+}
+.bds-footer-inner { max-width: 1024px; margin: 0 auto; }
+.bds-footer-inner > p { margin: 0 0 var(--space-2); }
+.bds-footer-inner > p:last-child { margin-bottom: 0; }
+.bds-credit { font-size: var(--text-xs); }
+
+/* Template placeholders */
+.tpl { color: var(--text-muted); font-style: italic; border-bottom: 1px dashed var(--border-strong); }
+p.tpl, li.tpl { display: block; border: 1px dashed var(--border-strong); border-radius: var(--radius-sm); padding: var(--space-3) var(--space-4); background: var(--bg-section); }
+.tpl-notice { border-left: 4px solid var(--primary); background: var(--bg-yellow); padding: var(--space-3) var(--space-4); border-radius: var(--radius-sm); }
+.chapter-meta { font-size: var(--text-sm); color: var(--text-muted); margin-top: calc(-1 * var(--space-2)); }
+
+/* Responsive */
+@media (max-width: 640px) {
+  .bds-nav { padding: var(--space-3) var(--space-4); }
+  .bds-page { padding: var(--space-8) var(--space-4) var(--space-12); }
+  h1.bds-h1 { font-size: var(--text-3xl); }
+  h2.bds-part { font-size: var(--text-2xl); }
+  .theme { padding: var(--space-4) var(--space-4); }
+}
+</style>
+</head>
+<body>
+
+<nav class="bds-nav" aria-label="Site">
+  <div class="bds-nav-inner">
+    <a href="index.html" class="bds-wordmark" aria-label="AI in Business — course home">
+      <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Business Data Solutions">
+        <g fill="#1a1a1a">
+          <polygon points="9,29 11,10 17,10 19,29"/>
+          <polygon points="8,8.5 20,8.5 19,10 9,10"/>
+          <rect x="11" y="5" width="6" height="3.5"/>
+          <path d="M10.5 5 Q10.5 1.5 14 1.5 Q17.5 1.5 17.5 5 Z"/>
+          <rect x="13.5" y="0" width="1" height="1.8"/>
+        </g>
+        <rect x="13" y="6" width="2" height="2" fill="#d4db3e"/>
+        <g stroke="#d4db3e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+          <path d="M21 4 L26 7 L21 10"/>
+          <path d="M26 4 L31 7 L26 10"/>
+        </g>
+      </svg>
+      <span class="bds-wordmark-text">
+        <span class="bds-wordmark-name">AI in Business</span>
+        <span class="bds-wordmark-sub">HAN &middot; minor Data Driven Decision Making in Business</span>
+      </span>
+    </a>
+    <span class="bds-nav-links">
+      <a href="index.html">Course</a>
+      <a href="week-03.html">Week 3</a>
+      <a href="index.html#work">What you make</a>
+    </span>
+  </div>
+</nav>
+
+<main class="bds-page" id="top">
+
+  <header class="bds-page-header">
+    <div class="bds-eyebrow"><a href="index.html">HAN · AIBS × AEL — course site</a></div>
+    <h1 class="bds-h1">AI for SMEs — Handbook</h1>
+    <blockquote class="lead-quote"><em>A living handbook that helps regional manufacturing SMEs put AI to work — written by HAN students, one practical question at a time.</em></blockquote>
+    <div class="tpl-notice">
+      <p><strong>This is the handbook's template.</strong> The structure on this page is the shell every cohort fills. The content comes from the teams: researched in the AIBS module, and produced through the research platform the same teams build in AEL. What the handbook is for, who reads it, how it is used and what quality it must reach is specified in each team's product requirements document. That document, not this page, is where the handbook's requirements live.</p>
+      <p>Placeholders are marked <span class="tpl">like this</span>. A section stays on the page until a cohort fills it; nothing here is published to an SME reader before it has been reviewed (see <a href="#about">About this handbook</a>).</p>
+    </div>
+  </header>
+
+  <section id="start">
+    <h2 class="bds-part">Start here</h2>
+    <p class="tpl">Orientation for an SME owner who is new to AI: what this handbook is, who it is for, how to use it, and what it deliberately does not do. Written for a busy non-technical reader — plain language, no jargon, and short enough to read in one sitting.</p>
+  </section>
+
+  <section id="themes">
+    <h2 class="bds-part">The questions this handbook answers</h2>
+    <p>The handbook is organised by <strong>themes</strong>, and every theme is posed as a question an owner would actually ask — not as a topic. The themes are the stable structure; the chapters beneath them compound from cohort to cohort. One theme, one team, one chapter.</p>
+    <div class="tbl-wrap">
+    <table>
+      <thead>
+        <tr><th>#</th><th>Theme</th><th>The SME-facing question</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td><span class="tpl">theme name</span></td><td><span class="tpl">the question, as an owner would ask it</span></td></tr>
+        <tr><td>2</td><td><span class="tpl">theme name</span></td><td><span class="tpl">the question, as an owner would ask it</span></td></tr>
+        <tr><td>…</td><td><span class="tpl">one row per theme in the cohort's research spine</span></td><td></td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section id="chapter">
+    <h2 class="bds-part">Chapter template</h2>
+    <p>Every chapter has the same anatomy, so an owner who has read one knows how to read the next. A chapter is <strong>SME-translation guidance for one theme, grounded in one illustrative use case</strong>. Copy this block once per theme.</p>
+
+    <div class="theme">
+      <h3>Theme <span class="tpl">N</span> — <span class="tpl">the SME-facing question</span></h3>
+      <p class="theme-help"><em class="tpl">One sentence on what this chapter helps an owner do.</em></p>
+      <p class="chapter-meta"><span class="tpl">Team</span> · <span class="tpl">cohort</span> · <span class="tpl">version</span> · SME: <span class="tpl">named, with consent — or a persona/archetype, and the chapter says which</span> · sources last appraised <span class="tpl">date</span></p>
+      <ol>
+        <li><strong>The question, for this kind of SME.</strong> <span class="tpl">The theme's question narrowed to a sector and size — for example, a 30-person CNC shop.</span></li>
+        <li><strong>The translation.</strong> <span class="tpl">The general theory turned into plain guidance an owner can act on.</span></li>
+        <li><strong>Illustrative use case (CRISP-DM).</strong> <span class="tpl">One concrete example through the six phases — business understanding, data understanding, data preparation, modelling, evaluation, deployment — honest about the data reality.</span></li>
+        <li><strong>Recommended tooling.</strong> <span class="tpl">Concrete, accessible options, no-code first, with what each costs in effort.</span></li>
+        <li><strong>Responsible AI &amp; trust.</strong> <span class="tpl">Whether the firm's data stays its own; how far the output can be relied on and how that was tested; GDPR; guardrails; where a human stays in the loop; what it means for the people doing the work.</span></li>
+        <li><strong>First five steps for an owner.</strong> <span class="tpl">The Monday-morning starting actions.</span></li>
+        <li><strong>Sources.</strong> <span class="tpl">Every claim traceable to a source the team has appraised for credibility, relevance and recency. Field material is anonymised or published with consent.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="tooling">
+    <h2 class="bds-part">Tooling index</h2>
+    <p class="tpl">The accessible, mostly no-code tools referenced across the chapters, in one place: what each is for, what it costs in money and effort, and which chapter shows it in use.</p>
+  </section>
+
+  <section id="ecosystem">
+    <h2 class="bds-part">Regional ecosystem &amp; support</h2>
+    <p class="tpl">Where an owner in the region can go next: innovation centres, hubs, training, funding and networks. Organisations are named only with their agreement, and people are not named.</p>
+  </section>
+
+  <section id="about">
+    <h2 class="bds-part">About this handbook</h2>
+    <p><strong>Who writes it.</strong> Students of HAN University of Applied Sciences, in teams, as the integrated task of the AIBS module (the research) and the AEL module (the platform it is researched and written with). Each cohort adds new chapters and refreshes existing ones, so the handbook compounds over time.</p>
+    <p><strong>The quality bar.</strong> Every chapter is measured against the same four criteria before it is published: <strong>clarity</strong> for a non-technical reader, <strong>accuracy</strong> against appraised sources, <strong>responsible-AI coverage</strong>, and <strong>usefulness to an SME owner</strong>. Nothing reaches an SME reader unreviewed — chapters are curated by the course team before publication.</p>
+    <p><strong>Educational, not consultancy.</strong> This handbook offers inspiration and starting points, not commercial advice or guarantees. Every chapter carries this disclaimer. Decisions about a firm remain the firm's own.</p>
+    <p><strong>Confidentiality.</strong> Real SME cases are anonymised or published only with consent. Sensitive or identifying data never enters the public handbook.</p>
+  </section>
+
+</main>
+
+<footer class="bds-footer">
+  <div class="bds-footer-inner">
+    <p>AI in Business — the handbook template · <em>educational, not consultancy</em></p>
+    <p class="bds-credit">Site designed and built by <a href="https://www.businessdatasolutions.nl/" target="_blank" rel="noopener">Business Data Solutions</a>, provided to the minor as a courtesy &mdash; <a href="index.html#colophon">colophon</a>.</p>
+  </div>
+</footer>
+
+</body>
+</html>

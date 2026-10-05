@@ -1,0 +1,4373 @@
+
+=== page 1 (PDF page index) ===
+Research Policy 51 (2022) 104515
+Available online 19 March 2022
+0048-7333/© 2022 The Authors. Published by Elsevier B.V. This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+Subsidized R&D collaboration: The causal effect of innovation vouchers on 
+innovation outcomes 
+Marco Kleine a,b,*, Jonas Heite b, Laura Rosendahl Huber b,c 
+a Faculty of Economics and Business, Department of Innovation Management and Strategy, University of Groningen, Nettelbosje 2, Groningen, AE 9747, the Netherlands 
+b Max Planck Institute for Innovation and Competition, Marstallplatz 1, 80539 Munich, Germany 
+c Rotterdam School of Management, Department of Strategic Management and Entrepreneurship, Erasmus University Rotterdam, Burgemeester Oudlaan 50, 3062 PA 
+Rotterdam, the Netherlands   
+A R T I C L E I N F O  
+JEL classifications: 
+O31 
+O36 
+O38 
+Keywords: 
+Randomized controlled trial 
+Industrial policy 
+SMEs 
+Open innovation 
+Collaboration 
+Subsidy 
+Innovation outcomes 
+A B S T R A C T  
+We study the causal effect of subsidized R&D collaboration on external collaborations and innovation outcomes 
+of small and medium-sized enterprises (SMEs). In particular, we make use of a randomized controlled trial to 
+analyze the effect of a nationwide innovation voucher scheme in the United Kingdom that grants SMEs across all 
+industries financial support of up to 5,000 GBP for engaging the services of experts, e.g., from universities, 
+research institutes or IP advisors, when pursuing an innovation-related project. Our results show that the 
+innovation voucher program has an immediate, short-term impact on the execution of these innovation projects 
+with positive effects on product and service development, internal processes, and intellectual property protec­
+tion. However, we also observe that these results fade out quite quickly, i.e., two years after the intervention 
+many effects caused by the innovation voucher program have disappeared. Based on our results, we also provide 
+some practical guidance to further improve the effectiveness of voucher programs.   
+1. Introduction 
+It has been well established that R&D is important for economic 
+growth and innovation, and we know that in particular small and 
+medium-sized enterprises (SMEs) can be drivers of this (Audretsch et al., 
+2006; Haltiwanger et al., 2013; Howell, 2017). One of the reasons is that 
+SMEs are particularly effective in developing radical innovations, which 
+have been associated with value creation and productivity growth 
+(Criscuolo et al., 2012; Hottenrott & Lopes-Bento, 2015; Scherer & 
+others, 1986). To successfully exploit innovation opportunities, firms 
+need the right combination of financial and human capital resources. 
+However, these are two things that are often in short supply in SMEs. 
+Due to their size, they typically lack access to financial resources, have 
+less availability of skills and competencies, and lower absorptive ca­
+pacity (Ortega-Argil´es et al., 2009). 
+Several policy schemes have been introduced to reduce these com­
+pany constraints (Czarnitzki & Delanote, 2015; Mina et al., 2021; San­
+toleri et al., 2020). First, direct R&D subsidies and fiscal incentives for 
+R&D activities (such as tax credits) are meant to alleviate financial 
+constraints. These policy schemes have shown to be partly effective in 
+fostering R&D investments and innovation activities of SMEs. However, 
+there are also some downsides to these schemes such as high adminis­
+trative burden and limited availability (Hottenrott & Lopes-Bento, 2016; 
+Romero-Jord´an et al., 2014). Furthermore, recent research indicates 
+that merely increasing R&D spending without the relevant additional 
+human capital could be suboptimal, because internal capabilities are 
+important drivers of innovation activities and success (Coad et al., 
+2014). Hence, policy makers have started to encourage external R&D 
+collaborations by providing subsidies for these types of projects to 
+alleviate human capital constraints (Hottenrott & Lopes-Bento, 2014; 
+Kang & Park, 2012; Roesler & Broekel, 2017). However, these subsi­
+dized R&D collaborations are typically only available for a few 
+large-scale research consortia (Branstetter & Sakakibara, 2002; Czar­
+nitzki et al., 2007) and thereby do not seem to be the optimal tool to 
+alleviate human capital constraints faced by SMEs. At the same time, 
+alleviating these constraints seems particularly important, since 
+research shows that in today’s complex and knowledge-intensive envi­
+ronment the acquisition of missing knowledge and complementary 
+* Corresponding author at: Faculty of Economics and Business, Department of Innovation Management and Strategy, University of Groningen, Nettelbosje 2, 
+Groningen, AE 9747, the Netherlands 
+E-mail addresses: m.kleine@rug.nl (M. Kleine), Jonas.Heite@gmx.de (J. Heite), rosendahlhuber@rsm.nl (L.R. Huber).  
+Contents lists available at ScienceDirect 
+Research Policy 
+journal homepage: www.elsevier.com/locate/respol 
+https://doi.org/10.1016/j.respol.2022.104515 
+Received 9 July 2020; Received in revised form 3 March 2022; Accepted 4 March 2022   
+
+=== page 2 (PDF page index) ===
+Research Policy 51 (2022) 104515
+2
+resources is key to SMEs’ innovation and growth outcomes (Parida et al., 
+2012; Spithoven et al., 2013). 
+One way to address this issue is by encouraging SMEs to get the 
+required knowledge from external consultants or specialized knowledge 
+providers. Building on the more general literature on R&D collabora­
+tions (e.g., Belderbos, Carree, & Lokshin, 2004; Cassiman & Veugelers, 
+2002; Leiponen & Helfat, 2010), several recent papers show that this 
+type of collaboration is also highly relevant for SMEs (Hossain & 
+Kauranen, 2016; van de Vrande et al., 2009). The question then arises: 
+what prevents SMEs from accessing these resources that could be 
+potentially beneficial to them? One of the reasons that has been iden­
+tified in the literature is organizational resistance from managers 
+regarding the use of external knowledge providers (Chapman & 
+Hewitt-Dundas, 2018). Additionally, for many subsidies the adminis­
+trative burden may be high which is particularly burdensome in a small 
+organization, whereas the results of R&D expenditures are typically 
+uncertain and not immediate (Sala et al., 2016). Moreover, the costs 
+associated with external collaborations, such as communication and 
+monitoring costs, may not outweigh the benefits (van de Vrande et al., 
+2009). Finally, collaborations with external partners can suffer from 
+other issues, such as SMEs having difficulty articulating their knowledge 
+needs, or the lack the absorptive capacity to use the acquired knowledge 
+effectively (Muscio, 2007). Taken together, these factors can lead to 
+suboptimal behavior by managers of SMEs when it comes to using 
+external knowledge providers for their innovation activities (Bakhshi 
+et al., 2015; Chapman & Hewitt-Dundas, 2018). 
+Policy tools that step in and support companies and managers in 
+overcoming these burdens of collaboration could be beneficial for 
+companies, and the increase in innovation seems desirable from a so­
+cietal perspective. The innovation voucher is a policy tool that aims to 
+do exactly that. The rationale behind this program is that it provides a 
+small, low barrier subsidy that encourages SMEs to collaborate with an 
+external partner on a specific, well-defined innovation project. The 
+additional financial resources in combination with the acquired external 
+knowledge will allow them to experience the benefits of increased 
+knowledge and capabilities, without many of the downsides mentioned 
+above. This policy tool has become popular in recent years and provides 
+a small subsidy of typically 5,000 to 10,000 EUR to acquire knowledge 
+that is not available within the SME (Bakhshi et al., 2015; Sala et al., 
+2016; Schade & Grigore, 2009).1 However, to date, relatively little is 
+known about the effectiveness of this policy tool when it comes to 
+innovation outcomes. This paper aims to fill that gap by testing the 
+effectiveness of the innovation voucher program on fostering innovation 
+activities and improving innovation outcomes of SMEs. 
+To evaluate the effectiveness of the program, we are interested in two 
+types of effects. First, we want to test if the voucher indeed increases 
+collaborations of SMEs with external partners and to what extent this 
+lasts beyond the treatment period. Second, we move beyond the analysis 
+of collaboration activities and estimate the effectiveness of the innova­
+tion voucher on innovation outcomes. To this end, we collaborated with 
+Innovation Growth Lab (IGL) and Innovate UK to evaluate a large-scale 
+randomized controlled trial (RCT) that was conducted on a cross- 
+industrial innovation voucher program in 2015 that addressed all 
+SMEs in the United Kingdom (UK). Firms that were awarded the inno­
+vation voucher received (up to) 5,000 GBP to conduct an innovation- 
+related project with any type of expert or partner they wanted to 
+collaborate with, as long as they had not worked with them before. 
+Applicants were randomly assigned to the treatment and the control 
+group, where the firms in the treatment group were offered the voucher 
+and the firms in the control group were not. Firms were further tested for 
+eligibility for the voucher (cf Section 3.2. for eligibility criteria). The 
+population of all eligible firms consisted of 1,463 firms (1,107 in the 
+treatment and 356 in the control group). To assess the effects of the 
+innovation voucher program, we collected various outcome measures 
+related to innovation outcomes and activities by means of two surveys. 
+The first survey was conducted one year after the award of the voucher, 
+the second survey two years after the award of the voucher. Our final 
+sample covers 760 observations (from 570 unique firms) that had 
+applied for the voucher in 2015 and replied to one or both of our 
+surveys. 
+In terms of firms’ collaboration activities, we can report a signifi­
+cantly positive effect on the probability of having any external support 
+for innovation activities in the year of the program. However, we do not 
+find evidence for lasting effects on collaboration beyond the very period 
+of the innovation voucher project execution. Furthermore, our results 
+show that being awarded a voucher has a positive effect on project- 
+related innovation outcomes. For example, we find positive effects on 
+product and service development for those firms aiming to conduct 
+respective projects with the innovation voucher, both one and two years 
+after the program as well as a significant improvement of firms’ internal 
+processes overall in the first year. Furthermore, the innovation voucher 
+has a positive short-term impact on the number of patent applications 
+for those firms planning to use the innovation voucher for IP-related 
+projects. However, also for these results we observe a high fade out of 
+the policy intervention, i.e., two years after the treatment many differ­
+ences between the treatment and the control group have disappeared. 
+Finally, beyond these main effects, we were also interested in under­
+standing reasons for non-compliance (i.e., not accepting or redeeming 
+the voucher that was offered). The results show that an important pre­
+dictor of voucher acceptance seems to be readiness, as indicated by 
+having already chosen an external partner at the time of application. 
+This finding is confirmed by responses to a set of specific questions on 
+this topic at the end of the second survey. These responses further 
+indicate that application process complexity is another important reason 
+for not redeeming the voucher. Hence, our results suggest that innova­
+tion voucher redemption rates and successful project implementations 
+could be increased by promoting readiness at the time of application, 
+allowing for longer project execution periods and by further simplifying 
+the administrative process. 
+With this paper, we make several contributions to the innovation 
+policy literature. First, since there is already some evidence on the effect 
+of innovation vouchers on future collaborations (e.g., Bakshi et al., 
+2015), the main contribution of our paper lies in understanding if this 
+policy tool and the use of external knowledge providers by SMEs also 
+leads to improved innovation outcomes. Second, endogeneity in the 
+choice to search for and to use external knowledge for innovation ac­
+tivities prevents the estimation of causal impacts of external knowledge 
+acquisition on innovation outcomes. The random assignment of a sub­
+sidy that intends to increase collaborations with external partners pro­
+vides us with the perfect instrument to estimate these effects in a causal 
+way. Furthermore, we extend existing findings on innovation vouchers 
+that are limited to a narrow scope in terms of industry, type of collab­
+oration partner and region (Bakhshi et al., 2015; Cornet et al., 2006) by 
+making use of a large-scale field experiment to test the effectiveness of a 
+nationwide, all-industry program with a broad scope of potential part­
+ners. Lastly, our study makes important contributions to the policy 
+debate on how to support innovation activities of SMEs. In this respect, 
+our results also provide guidance on how to increase the effectiveness of 
+innovation voucher programs. 
+The remainder of the paper is structured as follows. In Section 2, we 
+provide an overview of the related literature Section 3. covers the 
+context of the innovation voucher program and the design of the RCT. 
+The data and methods descriptions (Section 4) are followed by the 
+presentation of the results (Section 5). In Section 6, we discuss and 
+conclude. 
+1 Innovation voucher programs are widely spread throughout Europe, 
+Australia, Canada, and the US with schemes on the national and regional level. 
+The respective scope of the different programs varies and the subsidies range 
+from 500 EUR to 25,000 EUR. 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 3 (PDF page index) ===
+Research Policy 51 (2022) 104515
+3
+2. Related literature 
+In this section, we provide an overview of the related literature. We 
+start by examining the rationale behind public R&D support schemes in 
+general and discuss the potential limitations of these schemes for SMEs 
+(Section 2.1). Next, we focus our attention on the literature on external 
+R&D collaborations (Section 2.2), before considering the innovation 
+voucher as a specific policy tool that aims to improve innovation out­
+comes by SMEs in Section 2.3. 
+2.1. Public R&D support 
+It has been widely acknowledged that SMEs play an important role in 
+innovation activities, technological change and future growth (Cohen 
+et al., 2002; Czarnitzki & Delanote, 2015; Mina et al., 2021; Veugelers 
+et al., 2008). However, because public returns to R&D are potentially 
+higher than the private returns, investment levels in R&D are typically 
+below the social optimum (Veugelers et al., 2008). For SMEs, there are 
+several barriers that prevent them from reaching their full innovation 
+potential. For instance, the most prominent challenges that SMEs face 
+when striving to innovate is accessing the required financial and human 
+capital resources. To alleviate these constraints, increase R&D invest­
+ment levels, and improve innovation performance, policy makers have 
+implemented a number of public support schemes targeted at all types of 
+firms including SMEs (Canton et al., 2013; Czarnitzki & Hottenrott, 
+2011; Mina et al., 2021). 
+With regards to financial constraints, there are two types of policy 
+tools that are most common: direct R&D subsidies and R&D tax credits 
+or fiscal incentives. The literature studying the effects of the former on 
+innovation activities by SMEs mostly deals with larger subsidies aiming 
+at directly relaxing firms’ financial constraints. The results from these 
+studies typically show a positive impact of direct R&D subsidies on 
+innovation outcomes, such as patents and new product development (e. 
+g., Czarnitzki & Delanote, 2015; Czarnitzki & Hottenrott, 2011; Howell, 
+2017; Lerner, 2000) as well as more indirect effects such as SMEs’ 
+increased access to long-term debt (Meuleman & De Maeseneire, 2012) 
+and an increased likelihood of future collaborations (Bianchi et al., 
+2019). While direct R&D subsidies are only available to a small set of 
+selected companies, R&D tax credits or similar types of fiscal incentives 
+are broader policy tools aimed at reducing financial constraints (Bloom 
+et al., 2002; Lokshin & Mohnen, 2012). The main aim of these tools is to 
+lower the user cost of capital for all firms that are targeted by the tax 
+incentive to stimulate investment in R&D by these firms (Cowling, 
+2016). Several studies have been conducted to evaluate the effectiveness 
+of this policy measure and the findings suggest that there are indeed 
+benefits in terms of higher R&D expenditures and improved innovation 
+outcomes for SMEs (Cappelen et al., 2012; Coad et al., 2014; Czarnitzki 
+et al., 2011). 
+However, there are also several potential drawbacks to public R&D 
+support. For example, there is the risk of crowding out, i.e., when public 
+spending drives down private spending without increasing the overall 
+amount spent on R&D (Hottenrott & Lopes-Bento, 2014). Furthermore, 
+in the case of R&D tax credits, the scale of the forgone taxes is not trivial. 
+If tax credits are mainly used by large firms to reduce the burden of 
+corporate tax, this could lead to long term inefficiencies and deadweight 
+loss (Cowling, 2016; Romero-Jord´an et al., 2014). Finally, recent 
+research indicates that merely increasing R&D spending without adding 
+the appropriate human capital could be ineffective. For example, Coad 
+et al. (2014) found that strategic intent and internal capabilities are 
+important drivers of innovation activities, more so than the R&D tax 
+credit. Hence, besides financial constraints, the other constraint that 
+needs to be alleviated is access to relevant human capital. This is espe­
+cially important for SMEs because they are disproportionately affected 
+by knowledge constraints (Czarnitzki & Delanote, 2015; Hottenrott & 
+Lopes-Bento, 2014) due to their weaker competencies (Ortega-Argil´es 
+et al., 2009) and lower absorptive capacity (Muscio, 2007). 
+2.2. External R&D collaboration 
+One way to resolve human capital constraints for innovation activ­
+ities is by encouraging firms to find the relevant knowledge outside of 
+their organization, for example through external R&D collaborations 
+(Hottenrott & Lopes-Bento, 2016). The rationale behind fostering 
+external collaboration is that successful innovation depends on access­
+ing new knowledge by expanding the knowledge, skills and capabilities 
+of the own firm. When searching for knowledge, firms tend to search in 
+close proximity, both in terms of geographical location as well as in 
+terms of technological expertise (Wagner et al., 2014). However, when it 
+comes to innovation activities, there is a clear benefit from tapping into 
+larger and broader pools of knowledge (Leiponen & Helfat, 2010). 
+Furthermore, since new knowledge is constantly being generated by 
+different actors in the economy, it no longer seems possible to have all 
+the required knowledge in-house (van de Vrande et al., 2009). There­
+fore, SMEs need to capitalize on external knowledge and collaborate 
+with various types of partners to create and commercialize new in­
+novations (Haus-Reve et al., 2019). Bringing in external partners can be 
+useful to enhance R&D productivity and to be able to better exploit 
+existing resources, as they can serve as novel sources of ideas, ensure fast 
+access to resources, and enhance knowledge transfer (Hottenrott & 
+Lopes-Bento, 2016; Tether & Tajar, 2008). 
+However, so far most of the policy tools in this context were targeted 
+at fostering R&D collaborations in the form of larger research consortia, 
+where SMEs typically only played a minor role (Branstetter & Sakaki­
+bara, 2002; Czarnitzki et al., 2007). Only more recently, the research on 
+open innovation and external knowledge collaborations has expanded to 
+include multiple industries and different types of collaboration (Haus-­
+Reve et al., 2019; Mina et al., 2014; Tether & Tajar, 2008). Overall, there 
+is quite some evidence that shows that technology acquisition, R&D 
+collaboration and the adoption of open innovation practices are posi­
+tively related to SMEs’ innovation outcomes, in terms of product or 
+service innovation, patenting activity, and process innovation (Czar­
+nitzki & Delanote, 2015; Hossain & Kauranen, 2016; Parida et al., 2012). 
+For example, research has shown that collaboration with external 
+partners has a more positive influence on launching new products and 
+services for SMEs as compared to large firms (Spithoven et al., 2013). 
+These partners also help SMEs to capture the value of their inventions by 
+generating sales from them (Czarnitzki & Delanote, 2015; Tether & 
+Tajar, 2008; van de Vrande et al., 2009). 
+Besides these benefits, there are also a number of drawbacks of 
+external R&D collaboration for SMEs (Hottenrott & Lopes-Bento, 2016). 
+First, there is the issue defining the knowledge requirements and 
+searching for the right partner (Hossain & Kauranen, 2016). Second, 
+since trust is important for successful collaboration (Chapman & 
+Hewitt-Dundas, 2018), resistance within the firm to use external sources 
+could hinder successful access and use of relevant knowledge. Moreover, 
+once the correct partner has been found, it is important to have sufficient 
+absorptive capacity within the firm to use the external knowledge 
+effectively which may be more challenging for SMEs (Muscio, 2007). 
+Furthermore, working together with external partners can lead to co­
+ordination cost and requires more monitoring. The more complex the 
+project, the higher these costs will be (Leiponen & Helfat, 2010), which 
+could be problematic for smaller firms with limited available resources 
+(van de Vrande et al., 2009). Finally, since collaborating with external 
+partners on R&D activities requires some disclosure of knowledge, there 
+is always the risk of idea expropriation (Laursen & Salter, 2014). Even 
+though intellectual property (IP) protection seems at least as important 
+for SMEs as for larger firms, research shows that SMEs are more selective 
+about what IP they protect (Spithoven et al., 2013). 
+Besides the drawbacks for external collaboration itself, there are also 
+some concerns with respect to public support schemes for R&D collab­
+orations in general. One drawback that has been mentioned in relation 
+to large-scale R&D subsidies is the high administrative burden (Bran­
+stetter & Sakakibara, 2002). Applying for large subsidy programs 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 4 (PDF page index) ===
+Research Policy 51 (2022) 104515
+4
+typically involves a long, sometimes complicated process for which 
+SMEs lack the resources and expertise, making these schemes unat­
+tractive to them (Czarnitzki et al., 2007). Furthermore, also in this case 
+there is the risk of crowding out, i.e., if all attention and resources are 
+spent on one particular project at the expense of other potentially 
+promising projects this can be inefficient. Because SMEs are more 
+resource constrained than larger firms, they must think even more 
+carefully how time and money is spent (Hottenrott & Lopes-Bento, 
+2016). 
+2.3. Innovation voucher as a policy tool 
+To attenuate some of the drawbacks described above, policy makers 
+have become increasingly interested in small innovation subsidies for 
+SMEs called innovation vouchers, as an alternative to the more 
+formalized and long-term subsidized R&D collaborations. The rationale 
+behind these vouchers is to encourage and subsidize external collabo­
+rations by SMEs on a specific innovation project. For example, one of the 
+objectives of this policy scheme is to reduce the behavioral failure of 
+managers when it comes to the use of external knowledge (Bakhshi 
+et al., 2015; Chapman & Hewitt-Dundas, 2018). That is, it tries to 
+overcome organizational resistance from managers by encouraging 
+them to find the knowledge or expertise they need to execute a specific 
+innovation project externally and to collaborate with an external partner 
+that they have not worked with before. Moreover, while the main aim of 
+these vouchers is not to remove financial constraints, receiving 5,000 
+GBP of public funding in one R&D year could still be an important 
+resource that helps SMEs to undertake an innovation project that they 
+would not have done otherwise. Furthermore, the increase in relevant 
+knowledge and capabilities through the collaboration with external 
+experts that are new to the firm should lead to fresh ideas and more 
+successful innovation outcomes for this specific project. This could 
+encourage SMEs to draw on external knowledge providers more easily in 
+the future (Bakhshi et al., 2015). Finally, instead of having a complex 
+application process to obtain the subsidy, the administrative process to 
+apply for the innovation voucher is typically very straight forward and 
+short, as to not discourage SMEs from applying for this subsidy. 
+Based on the objectives and the design of the innovation voucher as a 
+policy tool, several effects can be expected. In terms of collaboration 
+between SMEs and external knowledge providers, there are likely to be 
+some first order effects because of the direct financial incentive provided 
+by the program to search for the support of an external expert. Recent 
+studies that have looked at how innovation vouchers influence behav­
+ioral outcomes, in terms of attitudes towards external knowledge pro­
+viders and the number of projects conducted with external partners, 
+show that being awarded an innovation voucher leads to a short term 
+increase in external collaborations for innovation activities among SMEs 
+(Cornet et al., 2006; Chapman & Hewitt-Dundas, 2018). Furthermore, 
+there are reasons to believe that receiving an innovation voucher will 
+also lead to improved innovation outcomes. Indeed, some preliminary 
+evidence on the positive impact of a small innovation subsidy (called 
+creative credits) on innovation outcomes has already been documented 
+in the paper by Bakhshi et al. (2015). This paper primarily discussed the 
+merits of experimental methods to policy evaluation for industrial and 
+innovation policy. As an example of an experimental approach, the 
+authors examined a small scale (N=150) regional program that provided 
+firms in the treatment group with a small (4,000 GBP) subsidy intended 
+to stimulate partnerships between SMEs and very specific types of 
+knowledge providers (i.e., creative service providers) around Man­
+chester City (United Kingdom). In terms of innovation output, Bakhshi 
+and colleagues found that firms in the treatment group are more likely to 
+have product, service, or process innovations, or new to market in­
+novations one year after being awarded the voucher. 
+The aim of our study is to extend this evidence by investigating 
+whether innovation vouchers can stimulate innovation outcomes on a 
+broader scale. As discussed above, the effectiveness of the innovation 
+voucher relies on two complementary components: external collabora­
+tion and financial support. On the one hand, the focus of the tool has 
+been on resolving human capital constraints. On the other hand, espe­
+cially for SMEs, the additional financial resources may help them to push 
+forward the development of a particular innovation activity or project. 
+Hence, the observed effects in terms of innovation outcomes may be due 
+to the additional funding and/or the collaborative element of the grant. 
+3. Context and RCT design 
+3.1. Context and program 
+The innovation subsidy that is analyzed in this study is called 
+“Innovation Vouchers Programme”. It was established by Innovate UK, 
+the UK government’s national innovation agency and part of the UK 
+Research and Innovation organization, in 2012 with an annual budget of 
+4 million GBP. The program provided up to 5,000 GBP to enable inno­
+vative small and medium-sized businesses to engage the services of ex­
+perts they had not worked with before to gain new knowledge that could 
+help their business to innovate and grow. In the 10 rounds that were 
+conducted before our study, over 6,600 firms applied for a voucher with 
+the result of over 3,100 subsidies being awarded. Of those, nearly 2,000 
+vouchers were redeemed. The innovation voucher program was dis­
+continued in 2016 for several reasons (e.g., strategic considerations, 
+high administrative burden as well as budgetary cuts led to the decision 
+of stopping the program to focus on other areas). 
+The innovation voucher’s logic chain (developed by Innovate UK) 
+was based on the rationale that the different elements would lead to the 
+persistence of the impact of the voucher over time. This rationale can be 
+summarized as follows: First, it aimed to stimulate SMEs to work with 
+external knowledge providers by incentivizing a first contact. Second, 
+collaboration with external experts was presumed to result in enhanced 
+knowledge and capabilities of SMEs, which in turn should lead to more 
+innovation outcomes. Finally, the goal of the voucher was to stimulate 
+ongoing collaborations with the new knowledge base beyond the expiry 
+of the voucher (see Table A.1 in the Appendix for more details). To this 
+end, the governmental initiative granted SMEs from all sectors financial 
+support of up to 5,000 GBP for engaging the services of experts from the 
+public or private sector for pursuing a particular innovation-related 
+project within the firm. Given the relatively small amount of support, 
+the scheme was mainly targeted at small-scale projects, for example 
+leading to an improved IP protection and product, service, or process 
+development, rather than breakthrough innovations. 
+At the time of the intervention, there were many different types of 
+support mechanisms available for SMEs through Innovate UK. These 
+ranged from interventions that help firms to find the right partner, gain 
+access to expertise or equipment, providing financial loans and grants as 
+well as connecting firms with investors. The innovation voucher pro­
+gram combined a small amount of public funding with the obligation to 
+find expert advice or external knowledge for a specific business chal­
+lenge. These elements distinguished the program from other support 
+programs in several ways. For example, the scope of the projects that 
+was conducted within the program was quite small and focused, e.g., 
+improving the design of a product, identifying suitable materials for 
+production, advice on how to file a patent, or how to commercialize an 
+existing patent. Furthermore, the amount that was available through the 
+innovation voucher program was much smaller compared to other 
+funding schemes. Data on other Innovate UK R&D grant applications of 
+the firms in our sample in the same time period shows that only 
+approximately 1% of these grants were smaller than 20,000 GBP and the 
+average amount of funding sought was 200,000 GBP. Finally, based on 
+the findings from Coad et al. (2014), the combination of financial and 
+human capital resources could be an important determinant in the 
+success of the program. 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 5 (PDF page index) ===
+Research Policy 51 (2022) 104515
+5
+3.2. Design of the RCT 
+To analyze the effectiveness of the program we used the randomized 
+allocation of the voucher for three application rounds in 2015. The 
+vouchers in these rounds were awarded in April, July, and October of 
+2015, respectively. We examine the year 2015 because the application 
+rounds before and after this time period were targeted at specific 
+themes, such as energy, water, or cyber-security, and at specific 
+geographical areas, which to that date had relatively low levels of pri­
+vate sector innovation and growth. This focus led to an insufficient 
+number of applicants in these rounds to be able to run a proper 
+randomization process. An RCT proposal was written for rounds 11-13. 
+To ensure a large enough number of applicants, these rounds were made 
+available to SMEs from all sectors and without any restrictions on the 
+innovation project. 
+There were four main stages for participation in the innovation 
+voucher program: (1) application, (2) lottery and eligibility checks, (3) 
+voucher claim, and (4) final payment. In the initial application stage, 
+firms indicated the specific innovation project that they wanted to 
+pursue with external help. If already available, the applicants further 
+proposed a certain external partner that they anticipated working with 
+and assessed the potential impact of the innovation project on their 
+business. In addition, firms answered a questionnaire, which included 
+baseline firm characteristics, past innovation-related activities as well as 
+plans on future activities. In the second step, a lottery was run. The 
+randomization was conducted within the financial restrictions of the 
+overall budget of the innovation voucher program. As such, the lottery 
+could produce as many offers as were needed to ultimately meet the 
+budget. The selected firms were then reviewed by three independent 
+reviewers who checked for certain eligibility criteria. The eligibility 
+criteria for the program required an applicant to be located in the UK 
+and to be a start-up, micro (<10 employees), small (10-49 employees), 
+or medium-sized (50-249 employees) business. Furthermore, the appli­
+cant should require help from a specialist to execute a specific innova­
+tion project or meet a certain business challenge. Firms were only 
+eligible for the innovation voucher if they had not worked with the 
+chosen external partner before the program. Finally, applicants were not 
+considered if they had previously received an innovation voucher from 
+Innovate UK. To obtain a control group that was comparable to the firms 
+in the treatment group, businesses that did not succeed during the lot­
+tery were also subjected to the eligibility check. Reviewers did not know 
+whether a firm had passed the lottery or not. After the review process, a 
+due diligence check with an optional personal credit check was con­
+ducted for the firms in the treatment group.2 An innovation voucher was 
+offered if the applicant passed the lottery and all outlined checks. The 
+third step included the process of claiming the innovation voucher. 
+Applicants had 10 days to accept their offer and up to 6 months to 
+complete the proposed project. After the work was completed, the 
+applicant uploaded a claim form. Finally, the claim was reviewed by a 
+program official with the result of issuing the payment of an amount of 
+up to 5,000 GPB in case of approval. 
+4. Data and methodology 
+4.1. Data and sample 
+In order to evaluate the voucher’s effectiveness, we collected data 
+from three sources: (1) Innovate UK, (2) Companies House API, and (3) 
+two surveys. Innovate UK provided us with several types of information. 
+First, they gave us information on the firms that applied for the inno­
+vation voucher program, covering all details from the application form. 
+They also informed us on the allocation of firms into the treatment and 
+the control group in the respective rounds, including information on 
+whether firms passed the eligibility checks. Finally, they provided us 
+with data on all other Innovate UK R&D grant applications of the firms 
+in our sample before (between 2010-2014), during (in 2015) and after 
+(2016-2021) the innovation voucher program. 
+The second data source that we used is the Companies House API.3 In 
+the application form, not all companies provided their address. Yet, we 
+wanted to control for companies’ main location in our randomization 
+and response bias checks as well as in our main analyses. In order to 
+include those companies with missing addresses in our analyses, we used 
+the developer hub of the Companies House API to match this informa­
+tion to our data. With this approach, we were also able to obtain in­
+formation on the industry in which a company is active, in a well- 
+structured manner according to the “Standard Industrial Classifica­
+tion” (SIC). For most firms (N=1595, 74.2%), we were able to pull the 
+data directly, using the company’s unique Companies House Number. 
+For the other firms, we first tried to match them using the company 
+name and their postcode, this was successful for 134 additional firms. 
+For the remaining firms we used a fuzzy matching algorithm that 
+matched the company with the closest possible string distance between 
+the names. This was successful for 357 additional firms (16.6% of our 
+sample). For 63 firms we were unable to find a match and used the 
+available information from the application form (in our final sample 
+location information is missing for 17 firms). 
+As a final source of data, we designed a questionnaire measuring the 
+firms’ innovation activity and outcomes as well as collaborations and 
+business outcomes (cf. Online Appendix 2). The logic chain described in 
+Section 3.1 included both immediate as well as lasting effects of the 
+innovation voucher program. Hence, all applicants of the innovation 
+voucher scheme in 2015 were contacted twice. For each application 
+round, the first survey was conducted one year after the voucher’s award 
+and the second survey was conducted two years after (cf Fig. 1.). 
+Firms were first contacted via an online survey (Computer-assisted 
+web interviewing, CAWI) with follow-up phone calls (Computer-assisted 
+telephone interviewing, CATI) in each of the two survey rounds. Firms 
+were contacted by an independent research organization. They were 
+Fig. 1. Timeline of the RCT  
+2 For legal reasons, firms in the control group could not be subjected to a due 
+diligence check. In our estimations, we will therefore compare the treatment 
+and the control group based on the lottery and the eligibility check. 
+3 https://developer.company-information.service.gov.uk/ 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 6 (PDF page index) ===
+Research Policy 51 (2022) 104515
+6
+told that they are being surveyed in order to learn more about the 
+innovation activities and needs of UK firms. Hence, in order to prevent 
+any biased responses or behavior, the survey participants were not 
+informed about the objective of evaluating the innovation voucher 
+scheme. 
+For the analyses, we focus on the group of companies, which passed 
+the program eligibility check. Firms that did not pass the eligibility 
+checks were not included in our analyses, because these were not the 
+firms that were intended to be treated by the innovation voucher scheme 
+Table 1. shows the resulting sample composition. Overall, 2,149 firms 
+applied for the program of which 1,463 firms were eligible to the 
+voucher. These eligible firms were divided into the treatment (1,107 
+firms) and the control (356 firms) group depending on whether they 
+passed the lottery. It is important to note that the imbalance between the 
+two groups is not the result of any selection bias, but rather due to the 
+fact that the randomization was done within the budgetary boundaries 
+of the innovation voucher program. This meant that firms were 
+randomly assigned to the treatment group, until the budget of the pro­
+gram was fulfilled. Hence, the share of firms assigned to the control 
+group is related to the number of applicants in a certain round, but not 
+due to non-random attrition of firms from this group. However, espe­
+cially in the survey in year two, the small sample size in the control 
+group could affect the power of our statistical test, making it more 
+difficult to find a significant effect of the treatment. We will take this 
+into account when discussing our results. 
+Table 1 also presents data on the number of respondents for the two 
+survey rounds. A total number of 459 firms participated in the first 
+survey that was conducted one year after the subsidy was awarded. This 
+equals an overall response rate of 31%. In the treatment group the 
+response rate is 33% (364 firms) and 6 percentage points higher than in 
+the control group (27%, 95 firms). The second survey round is charac­
+terized by a lower response rate than the first survey round (21%, 301 
+firms). Again, the treatment group (22%, 240 firms) has a 5 percentage 
+points higher response rate than the control group (17%, 61 firms). 
+Overall, the total number of observations amounts to 760 for both sur­
+veys. As 190 firms responded to both survey rounds, the number of 
+unique firms sums up to 570 businesses (treatment: 447, control: 123). 
+In Section 4.2, we elaborate on whether the lower response rate by firms 
+in the control group as compared to the treatment group is also likely to 
+result in biases, in particular if it leads to significant differences between 
+treatment and control group in the survey sample. 
+Table 2 shows some background characteristics of the firms in our 
+survey sample. In part A of Table 2, we present the industry structure of 
+our survey respondents, for the treatment and control group separately. 
+We elicited a firm’s principal industry based on the International Stan­
+dard Industrial Classification (ISIC) and observe that in both groups, 
+about 70% of all survey respondents indicated their principal activities 
+as services (treatment: 71.14%; control: 69.92%). In part B, we present 
+the firm size distribution at the time of application, as measured by the 
+number of employees. The majority of our survey respondents reported 
+Table 1 
+Sample composition   
+Total 
+Treatm. 
+(T) 
+Control 
+(C) 
+T-C 
+Total 
+1,463 
+1,107 
+356  
+Survey 1 (year 1 after award) 
+459 
+364 
+95  
+Response rate 
+31% 
+33% 
+27% 
+6%** 
+Survey 2 (year 2 after award) 
+301 
+240 
+61  
+Response rate 
+21% 
+22% 
+17% 
+5%* 
+Total observations: Survey 1 & 
+Survey 2 
+760 
+604 
+156  
+Unique firms: Survey 1 or Survey 2 
+570 
+447 
+123  
+Response rate 
+39% 
+40% 
+35% 
+5%*  
+** p<0.01 
+* p<0.05 
+* p<0.1. (Pearson Chi2 test). 
+Table 2 
+Summary statistics of survey sample  
+A. Industry classification 
+Total surveys 1 & 2 
+Unique firms 
+Unique firms in %  
+Treatment 
+Control 
+Treatment 
+Control 
+Treatment 
+Control 
+Manufacturing and other non-service industries    
+Manufacturing 
+127 
+44 
+97 
+33 
+21.70 % 
+26.83 % 
+Construction 
+18 
+2 
+13 
+1 
+2.91 % 
+0.81 % 
+Waste and recycling 
+14 
+1 
+8 
+1 
+1.79 % 
+0.81 % 
+Agriculture, forestry, and fishing 
+10 
+2 
+8 
+1 
+1.79 % 
+0.81 % 
+Others 
+5 
+1 
+3 
+1 
+0.67 % 
+0.81 % 
+Total manufacturing and other non-service industries 
+174 
+50 
+129 
+37 
+28.86 % 
+30.08 % 
+Service industries    
+Professional, scientific, and technical services 
+175 
+42 
+124 
+32 
+27.74% 
+26.02% 
+Information and communication services 
+117 
+26 
+91 
+21 
+20.36% 
+17.07% 
+Retail and wholesale services 
+48 
+21 
+35 
+18 
+7.83% 
+14.63% 
+Human health services 
+18 
+7 
+11 
+5 
+2.46% 
+4.07% 
+Administrative services 
+19 
+3 
+15 
+3 
+3.36% 
+2.44% 
+Others 
+53 
+7 
+42 
+7 
+9.40% 
+5.69% 
+Total service industries 
+430 
+106 
+318 
+86 
+71.14% 
+69.92%  
+B. Firm size 
+Total surveys 1 & 2 
+Unique firms 
+Unique firms in %  
+Treatment 
+Control 
+Treatment 
+Control 
+Treatment 
+Control 
+No employees 
+37 
+8 
+27 
+7 
+6.04% 
+5.69% 
+1-10 employees 
+506 
+129 
+372 
+103 
+83.22% 
+83.74% 
+11-50 employees 
+47 
+16 
+37 
+11 
+8.28% 
+8.94% 
+> 50 employees 
+14 
+3 
+11 
+2 
+2.46% 
+1.63% 
+Total 
+604 
+156 
+447 
+123 
+100% 
+100%  
+C. Project goal 
+Total surveys 1 & 2 
+Unique firms 
+Unique firms in %  
+Treatment 
+Control 
+Treatment 
+Control 
+Treatment 
+Control 
+Products and services 
+296 
+83 
+219 
+65 
+48.99% 
+52.85% 
+IP 
+113 
+21 
+84 
+18 
+18.79% 
+14.63% 
+Sales and marketing 
+104 
+23 
+76 
+19 
+17.00% 
+15.45% 
+Conceptual 
+47 
+27 
+35 
+19 
+7.83% 
+15.45% 
+Internal processes 
+44 
+2 
+33 
+2 
+7.38% 
+1.63% 
+Total 
+604 
+156 
+447 
+123 
+100% 
+100%  
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 7 (PDF page index) ===
+Research Policy 51 (2022) 104515
+7
+to have 1-10 employees (treatment: 83.22%, control: 83.74%). About 
+6% of the observations refer to firms not having any employees (treat­
+ment: 6.04%, control: 5.69%), whereas about 2% indicated that they 
+had more than 50 employees (treatment: 2.46%, control: 1.63%). 
+4.2. Randomization check and response bias 
+4.2.1. Randomization check 
+An important assumption underlying the internal validity of our 
+estimation of the treatment effect is the random assignment to the 
+treatment and the control group. In this section, we therefore test 
+whether firms have been randomly assigned to the treatment and the 
+control group based on firm characteristics from the application form, i. 
+e., information about the companies at the date of application. In 
+particular, we use the following information about the companies: the 
+number of employees, the balance sheet total in GBP, turnover in GBP, 
+the company’s (main) location according to the Nomenclature of Ter­
+ritorial Units for Statistics 1 (NUTS 1), the company’s industry according 
+to the Standard Industry Classification (SIC), as well as binary indicators 
+whether a firm belongs to a parent company, whether it has a defined 
+R&D strategy, uses R&D tax credits, is exporting, holds or has applied for 
+patents, holds or has applied for trademarks, and holds or has applied for 
+design rights. We refer to Table A.2 in the Appendix for further expla­
+nations on the variables applied.4 In addition, we examine whether there 
+are differences between companies in the treatment vs. control group in 
+terms of R&D grants received prior to the innovation voucher program. 
+We use probit models to understand whether treatment and control 
+group differ in some characteristics and, more importantly, whether the 
+firm characteristics are jointly different between the two groups 
+(McKenzie, 2015). 
+We apply randomization checks on three different levels: 1) a 
+treatment vs. control group comparison of the entire population (Model 
+(1), Table A.2 in the Appendix), 2) the comparison after the eligibility 
+decision (i.e., after firms were excluded that did not pass the eligibility 
+checks; Model (2), Table A.2 in the Appendix), and 3) the comparison of 
+firms that responded to the survey and passed the eligibility checks 
+(Model (3), Table A.2 in the Appendix). 
+We note differences on some dimensions of firm characteristics. That 
+is, throughout all three levels of comparison, the treatment group is 
+significantly less likely to hold a patent/patent application than the 
+control group. Moreover, there seem to be differences between treat­
+ment and control group in the distribution of companies’ main in­
+dustry5. Lastly, in the eligible survey sample, the treatment group is 
+significantly more likely to use R&D tax credits. Importantly, despite 
+these differences on some dimensions of firm characteristics, the Chi2- 
+test for joint orthogonality (McKenzie, 2015) is not significant for any of 
+the sample specifications. 
+As we will explain in detail in Section 4.3, we will also investigate 
+heterogeneous effects based on the specific goal of the innovation 
+project to be conducted with the innovation voucher. In particular, we 
+will analyze treatment effects for companies that aimed to pursue a 
+product-and service-related project. Moreover, we will examine treat­
+ment effects for those companies that aimed to improve the intellectual 
+property protection with the help of the innovation voucher. Therefore, 
+we categorized the survey sample according to the project objective (cf 
+Section 4.3.). Here, we would like to explore, to what extent the 
+randomization process also worked for these subsamples. In the sub­
+sample of companies that aimed to pursue a product- or service-related 
+project, we do not observe any significant differences in the firm char­
+acteristics between treatment and control group (Model (4), Table A.2 in 
+the Appendix). In the subsample of companies that aimed to pursue a 
+project to improve their intellectual property protection, we observe 
+that companies in the treatment group are more likely to have a defined 
+R&D strategy and are significantly less likely to be exporting than 
+companies in the control group (Model (5), Table A.2 in the Appendix). 
+However, the Chi2-test for joint orthogonality is not significant for any of 
+the particular subgroups of interest, which favors the notion of an 
+overall random assignment also within these subgroups. 
+Based on these analyses, we conclude on the one hand that overall 
+the differences between treatment and control group seem to be small 
+and that the randomization process was largely successful. On the other 
+hand, to account for the differences observed, we will investigate 
+treatment effects not only by fully relying on the validity of the 
+randomization process, but by also controlling for firm characteristics 
+(cf Section 4.3.). 
+4.2.2. Response bias 
+A potential threat to the external validity (or generalizability) of our 
+findings could be due to the non-random responses of firms to our sur­
+veys. We test for this potential response bias between respondents, i.e., 
+firms that participated in at least one of our two survey rounds, and non- 
+respondents (see Table A.3 in the Appendix). We apply probit re­
+gressions with the decision whether to respond to any of the survey, 
+whether to respond to survey one, and whether to respond to survey two 
+as the dependent variable. We investigate these response biases using 
+the same dependent variables on firm characteristics as for the 
+randomization checks. 
+When looking at the individual coefficients, we see that there are 
+some differences between respondents and non-respondents. For 
+instance, irrespective of the survey round, respondents are significantly 
+more likely to be a patent holder/applicant (Table A.3 in the Appendix; 
+Models (1), (2), and (3)). However, besides these differences, it is 
+important to note that the Chi2- tests for joint orthogonality are insig­
+nificant when comparing all survey respondents with non-respondents 
+(Model (1), Table A.3 in the Appendix), when comparing respondents 
+to the first survey round with non-respondents (Model (2), Table A.3 in 
+the Appendix) and when comparing respondents to the second survey 
+round with non-respondents (Model (3), Table A.3 in the Appendix). 
+Next, we examine response biases separately by treatment and con­
+trol group. As for the analyses on the overall population, the Chi2-tests 
+for joint orthogonality are also insignificant when comparing the survey 
+respondents from the treatment group with treatment-group non-re­
+spondents (Model (4), Table A.3 in the Appendix) and when comparing 
+the survey respondents from the control group with the control-group 
+non-respondents (Model (5), Table A.3).6 
+4.3. Variables 
+4.3.1. Outcome variables 
+All outcome measures rely on survey data and capture information 
+on the 12 months before the respective survey round. Based on the 
+objective of the innovation voucher program, we consider two groups of 
+outcomes. First, we try to replicate the findings from previous studies 
+that have found positive (short-term) effects of similar subsidies on 
+external collaborations (e.g., Cornet et al. 2006). External collaborations 
+are measured by the probability of having received any external support 
+4 Note that in principle, our analyses in this Section 4.2 could suffer from 
+multicollinearity between covariates, which would artificially eliminate statis­
+tical significance. Therefore, we also investigated the variance inflation factors 
+of the model coefficients. Based on these analyses, we deem the basic model 
+specification with the above-mentioned variables appropriate. We refer to the 
+Online Appendix 1 for the details on the multicollinearity analyses.  
+5 We infer this from Kolmogorov-Smirnov tests of equal industry distributions 
+amongst treatment and control group (the lottery sample: p=0.199; the eligible 
+sample: p=0.070; the survey sample: p=0.067). 
+6 Since the categorization by innovation project (e.g., product- and service 
+related projects, IP related projects) has been conducted for the survey sample 
+only, we cannot assess response biases by project category. 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 8 (PDF page index) ===
+Research Policy 51 (2022) 104515
+8
+for innovation activities (binary indicator based on the set of questions 
+under “Q10” of the survey, see the survey in the Online Appendix 2), the 
+proportion of innovation activities conducted with the help of external 
+partners (survey question “Q11”), and the total number of external 
+partners that the firm worked with within its innovation activities (set of 
+questions under “Q10” of the survey). 
+Second, in line with the aim of the voucher program to support 
+beneficiaries to conduct an innovation-related project, we measure 
+several innovation outcomes reflecting possible project outcomes. In 
+particular, we analyze the number of minimum viable products (MVPs), 
+the number of new products and services, the number of award received 
+due to new products and services, the number of newly established in­
+ternal processes, as well as the number of new patent, design right, and 
+trademark applications (all variables from set of questions under “Q12” 
+of the survey). This is in line with other papers studying innovation 
+performance in both manufacturing and service firms (Criscuolo et al., 
+2012; Leiponen & Helfat, 2010). 
+4.3.2. Explanatory variables – the treatment variable 
+The most important explanatory variable in this study is of course the 
+indication whether or not a firm was awarded an innovation voucher. 
+This is captured by a binary variable (treatment effect) that is equal to 
+one if the firm was randomly assigned to receiving the subsidy and 
+passed the eligibility check and zero if it passed the eligibility check but 
+was not assigned the voucher. Note that the treatment group also in­
+cludes 107 firms that were assigned to the voucher, passed the eligibility 
+checks but then failed the due diligence test. We had to include these 
+firms in the treatment group, because due to legal reasons, firms in the 
+control group could not be subjected to a due diligence check. 
+As in many randomized controlled trials, participation is voluntary 
+among those randomly assigned to the treatment group. In our case, 
+another 335 firms that were randomly assigned to receiving an inno­
+vation voucher ultimately did not redeem it (33.5% of those offered the 
+voucher). We elaborate on the reasons for this in Section 5.3. Since we 
+do not know, which of the firms in the control group would have 
+redeemed the voucher if they had been offered the subsidy, in our main 
+analyses, we do not restrict the treatment group to those that eventually 
+redeemed the voucher. Consequently, we base our evaluation on the 
+initial treatment assignment and not on the treatment actually received, 
+thus applying an intention-to-treat analysis. Hence, the treatment effect 
+we estimate in the main body of this paper is the effect of being offered a 
+voucher. Since governments can also only offer certain programs but 
+will not be able to force people to actually take-up and use them, we feel 
+that this effect is also the most interesting from a policy perspective. At 
+the same time, there is also merit in understanding the effect on those 
+companies that eventually redeemed the voucher, i.e., on the treatment 
+compliers. We will also investigate this effect instrumenting the 
+endogenous decision of treatment compliance with the exogenous 
+treatment assignment. 
+4.3.3. Explanatory variables – control variables 
+In principle, the setup of a randomized controlled trial should have 
+resulted in random assignment of firms with different (observed and 
+unobserved) characteristics to the two groups, which would allow us to 
+estimate the unbiased effect of the innovation voucher program on the 
+above-mentioned outcome variables without controlling for firm char­
+acteristics. At the same time, the use of control variables may help in­
+crease precision in the estimation (i.e., reduce variance). Moreover, if 
+estimated effect sizes are similar with and without the inclusion of 
+control variables, this provides a strong case for truly unbiased estimates 
+and a case against an omitted variable bias. 
+Hence, in our main specification, we include a set of control variables 
+in our regression analyses, which mainly aim to cover basic firm char­
+acteristics. With this main specification, we aim to reduce the risk of an 
+omitted variable bias without overfitting the regression models. The 
+firm’s age (elicited in our surveys) controls for the fact that older firms 
+may already be better connected to the external knowledge base. In a 
+similar vein, older firms might be less financially constrained compared 
+to younger firms. Furthermore, we include a binary variable indicating 
+whether a firm is active in the service industry to account for industry 
+effects (elicited in our surveys based on the International Standard In­
+dustrial Classification – ISIC).7 Service firms have been shown to be 
+more likely to engage the services of external partners (especially con­
+sultants) compared to manufacturers (Tether & Tajar, 2008). Moreover, 
+the number of employees at the time of application, as indicated by the 
+firms on the application form, takes possible effects due to firm size into 
+account (e.g., larger firms should have more relationships, all else 
+equal). As a last set of control variables on basic firm characteristics, we 
+control for firms’ (main) location by including region fixed effects at the 
+level of major socio-economic regions (“Nomenclature of Territorial 
+Units for Statistics 1” – NUTS 1). We obtain this information based on 
+the firms’ postal code as obtained from the Companies House API. In our 
+main specifications, we also include round fixed effects to control for the 
+selection into one of the three subsidy rounds that are being analyzed in 
+this study. We apply the main specification throughout all treatment 
+effect analyses in the main body of the paper as well as for the estimated 
+effects on the treatment compliers, i.e., the instrumental variable 
+estimations. 
+To investigate the robustness of the results obtained with our main 
+specification, we further analyze treatment effects on two extremes with 
+respect to the inclusion of controls. These robustness checks are reported 
+in the Appendix of the paper (see Tables A.4 to A.12). On the one hand, 
+we analyze treatment effects without any control variables and thereby 
+fully rely on the random assignment of firms into treatment and control 
+group. On the other hand, we investigate robustness by including 
+extended firm characteristic control variables in addition to above- 
+mentioned control variables for the basic firm characteristics and 
+round fixed effects. With the latter approach, we mitigate the risk of an 
+omitted variable bias even further. For the extended firm characteristics, 
+we mostly rely on information obtained from the application form that 
+reflect the firm status at the date of application. Specifically, we cover 
+firms’ balance sheet total in GBP, turnover in GBP, as well as binary 
+indicators whether a firm a) belongs to a parent company, b) has a 
+defined R&D strategy, c) uses R&D tax credits, d) is exporting, e) holds 
+or has applied for patents, f) holds or has applied for trademarks, and g) 
+holds or has applied for design rights (for detailed variable definitions 
+see Section 4.2 and the table notes for Table A.2). Moreover, we control 
+for whether firms have received governmental R&D grants in the 5 years 
+prior to the innovation voucher program (information obtained from the 
+Innovate UK R&D grants database). 
+4.3.4. Interaction variables 
+As previously discussed, the innovation voucher program has a broad 
+scope with respect to how the funding of the 5,000 GBP should be used. 
+The regulations laid out that the program aimed to support SMEs to 
+collaborate with knowledge-based institutions across the public or pri­
+vate sector. However, it can be assumed that the innovation outcomes 
+we observe are strongly related to the specific objective of the innova­
+tion project (i.e., the project goal), as described at the time of applica­
+tion. In line with this argumentation, Belderbos et al. (2004a, 2004b) 
+point out that the goals and thus the determinants of R&D collaborations 
+differ depending on the type of innovation project. Therefore, we will 
+analyze specific innovation outcomes conditional on the type of inno­
+vation project planned. To this end, an independent classifier manually 
+classified all project descriptions from the application form in order to 
+7 As described above, we also obtained the SIC codes from the Companies 
+House API database. However, we feel that the self-reported industry better 
+reflects their main industry classification at the time of the intervention. 
+Moreover, unlike for the SIC codes, we have the information available for all 
+companies in our survey sample. 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 9 (PDF page index) ===
+Research Policy 51 (2022) 104515
+9
+assign one of the following project categories: products and services 
+(incl. MVPs, new and improved products or services), IP protection, 
+sales- and marketing-related projects, conceptual projects (e.g., business 
+planning, feasibility studies), as well as internal processes. This classi­
+fication was done for all firms (both treatment and control groups), but 
+the classifier was unaware of the treatment status of the firms. Part C of 
+Table 2 provides an overview of the number of firms by project category. 
+Based on the project goal, diverse outcomes are to be expected from 
+the innovation voucher program. We expect effects on new MVPs as well 
+as new products and services to be strongest among those firms that 
+aimed to conduct a product- or service-related project. Hence, we will 
+analyze the voucher’s effect on these outcomes separately for these 
+companies. Businesses that were planning to conduct IP-related projects 
+are expected to apply for new patents, trademarks, or design rights. 
+Thus, we will analyze IP-related outcomes for firms with these projects 
+separately. Note that the IP-related subgroup analysis relies on a rela­
+tively small number of observations and should thus be interpreted with 
+caution. Unfortunately, the number of observations is even more limited 
+for the other project categories and the project-related goals tend to be 
+very heterogeneous, for instance within the sales and marketing cate­
+gory, the internal processes category, and the conceptual category. 
+Hence, we refrain from subgroup analyses on these project categories. 
+4.4. Empirical strategy 
+We analyze the effect of innovation vouchers on collaboration ac­
+tivities and innovation outcomes (both overall and by project goal 
+subgroups). Of course, we are interested in the main effect of the 
+innovation voucher program on the different outcome variables. Yet, in 
+particular when it comes to innovation outcomes, we expect diverging 
+outcomes depending on the project goal. We therefore expect some of 
+the effects to be particularly strong for the subgroup of firms that pur­
+sued similar project goals. Accordingly, we will conduct two types of 
+analyses: (1) studying the main effect on the full sample, (2) and 
+unbundling the effect of the particular subgroup based on their project 
+goal from the effect on other firms not belonging to that subgroup. 
+Most of our outcome variables are count variables and highly 
+skewed. Hence, for these outcome variables we apply Poisson re­
+gressions. In case of continuous outcomes variables, we will investigate 
+ordinary least squares (OLS) regressions; for binary outcome variables, 
+we apply probit regressions. 
+Whenever we study the main effect on the full sample, we will esti­
+mate the following equation (example of a Poisson regression): 
+E[Yi] = exp [α + β0Ti + γXi + ϵi]
+(1) 
+Ti indicates whether an observation is from the treatment group. 
+Accordingly, β0 represents the treatment effect on the full sample. We 
+further include control variables X as explained in Section 4.3. ϵi refers 
+to the random error. 
+Whenever we are interested in subgroup specific effects, we will 
+estimate the following equation.8 
+Table 3 
+Descriptive statistics by treatment and control group    
+Overall 
+Treatment (T) 
+Control (C) 
+T=C  
+Type 
+Mean 
+St.D. 
+Obs. 
+Mean 
+St.D. 
+Obs. 
+Mean 
+St.D. 
+Obs. 
+T-C 
+Survey data year 1            
+Basic firm characteristics (controls)            
+Age 
+Cont. 
+6.40 
+11.38 
+459 
+6.35 
+10.89 
+364 
+6.56 
+13.14 
+95 
+-0.20 
+Service industry 
+0-1 
+0.72 
+0.45 
+459 
+0.73 
+0.44 
+364 
+0.67 
+0.47 
+95 
+0.06 
+Employees at application date 
+Count 
+7.27 
+24.66 
+459 
+7.30 
+24.36 
+364 
+7.15 
+25.87 
+95 
+0.15 
+Collaboration            
+External innovation support 
+0-1 
+0.80 
+0.40 
+459 
+0.83 
+0.37 
+364 
+0.66 
+0.48 
+95 
+0.18*** 
+Proportion inno. with partner (%) 
+Cont. 
+40.43 
+35.01 
+451 
+41.04 
+34.52 
+358 
+38.06 
+36.94 
+93 
+2.98 
+Partners 
+Count 
+56.60 
+941.41 
+451 
+68.27 
+1058 
+357 
+12.29 
+20.72 
+94 
+55.98 
+Innovation outcomes 
+New MVPs 
+Count 
+2.02 
+4.41 
+442 
+2.04 
+4.63 
+349 
+1.97 
+3.51 
+93 
+0.07 
+New products and services 
+Count 
+2.01 
+4.60 
+442 
+2.12 
+5.07 
+349 
+1.61 
+2.09 
+93 
+0.50 
+Product and service awards 
+Count 
+0.60 
+3.10 
+442 
+0.68 
+3.46 
+349 
+0.30 
+0.69 
+93 
+0.38 
+New internal processes 
+Count 
+1.37 
+3.23 
+442 
+1.48 
+3.49 
+349 
+0.97 
+1.87 
+93 
+0.51 
+New patent applications 
+Count 
+0.51 
+1.82 
+442 
+0.49 
+1.80 
+349 
+0.59 
+1.91 
+93 
+-0.10 
+New design right applications 
+Count 
+0.21 
+1.50 
+442 
+0.23 
+1.68 
+349 
+0.14 
+0.41 
+93 
+0.09 
+New trademark applications 
+Count 
+0.46 
+1.74 
+442 
+0.46 
+1.87 
+349 
+0.45 
+1.16 
+93 
+0.01 
+Survey data year 2            
+Basic firm characteristics (controls)            
+Age 
+Cont. 
+7.44 
+10.84 
+298 
+7.34 
+10.63 
+237 
+7.82 
+11.70 
+61 
+-0.48 
+Service industry 
+0-1 
+0.68 
+0.47 
+297 
+0.68 
+0.47 
+236 
+0.69 
+0.47 
+61 
+-0.01 
+Employees at application date 
+Count 
+7.00 
+22.65 
+301 
+7.25 
+24.54 
+240 
+6.02 
+12.81 
+61 
+1.24 
+Collaboration            
+External innovation support 
+0-1 
+0.92 
+0.27 
+205 
+0.92 
+9.27 
+162 
+0.93 
+0.26 
+43 
+0.05 
+Proportion inno. with partner (%) 
+Cont. 
+35.10 
+36.48 
+272 
+34.38 
+36.60 
+217 
+37.93 
+36.18 
+55 
+-3.55 
+Partners 
+Count 
+9.70 
+14.29 
+279 
+9.74 
+15.04 
+223 
+9.57 
+10.94 
+56 
+0.16 
+Innovation outcomes            
+New MVPs 
+Count 
+2.40 
+7.36 
+272 
+2.63 
+8.11 
+215 
+1.56 
+3.08 
+57 
+1.07 
+New products and services 
+Count 
+1.91 
+3.58 
+272 
+1.93 
+3.62 
+215 
+1.81 
+3.45 
+57 
+0.13 
+Product and service awards 
+Count 
+0.51 
+1.65 
+272 
+0.52 
+1.77 
+215 
+0.47 
+1.07 
+57 
+0.05 
+New internal processes 
+Count 
+1.84 
+4.44 
+272 
+1.75 
+3.57 
+215 
+2.19 
+6.82 
+57 
+-0.44 
+New patent applications 
+Count 
+0.47 
+1.15 
+272 
+0.44 
+1.03 
+215 
+0.58 
+1.52 
+57 
+-0.14 
+New design right applications 
+Count 
+0.27 
+1.23 
+272 
+0.19 
+0.90 
+215 
+0.58 
+2.02 
+57 
+-0.39** 
+New trademark applications 
+Count 
+0.34 
+0.97 
+272 
+0.34 
+0.91 
+215 
+0.35 
+1.17 
+57 
+-0.01  
+*** p<0.01 
+** p<0.05 
+* p<0.1 (t-tests). “Employees at application date” based on information from the application forms 
+8 For a similar estimation model, see Galasso & Schankerman’s (2018) 
+instrumental variables regressions, which also consider differential effects. 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 10 (PDF page index) ===
+Research Policy 51 (2022) 104515
+10
+E[Yi] = exp[α + β0Ti{1|Si = ˙Si} + β1Ti{1|Si ∕= ˙Si} + β2 ˙Si + γXi + ϵi]
+(2) 
+Here, β0 represents the treatment effect for companies that planned 
+to conduct a project falling under the project goal of interest ˙S. For 
+instance, for product- and service-related outcomes, we focus on the sub- 
+samples that have announced to conduct product- and service-related 
+projects and β0 captures the treatment effect for this subgroup. For IP 
+protection outcomes, we examine firms that planned to conduct IP- 
+related projects. The coefficient β1 of the second interaction term re­
+veals the treatment effect on all other project categories S ∕= ˙S whereas 
+β2 shows the coefficient for firms with the project goal of interest ( ˙S) in 
+the control group. Once more, we include control variables X as 
+explained in Section 4.3. 
+In our main analyses, we investigate effects on the companies that 
+were offered the voucher, i.e., the intent-to-treat effect. Yet, we will also 
+estimate the effects on those companies that eventually redeemed it. 
+Since the decision to redeem is endogenous, we will rely on instrumental 
+variable approaches, in which being offered a voucher serves as an in­
+strument for redeeming the innovation voucher. We will apply respec­
+tive two-step instrumental variable Poisson regressions, Two-Stage Least 
+Squares (2SLS) regressions and two-step instrumental variable probit 
+regressions, in analogy to the intent-to-treat estimations explained 
+above. 
+5. Results 
+5.1. Descriptive statistics and comparison of means 
+Table 3 presents descriptive results for the full survey sample, and by 
+treatment and control group separately. Firms that responded to the first 
+survey round were on average 6 years old, had on average 7 employees 
+at the date of voucher application, and were mostly active in the service 
+industry (72%). Our data indicates that 80% of the companies received 
+external support for their last year’s innovation activities and conducted 
+40% of their overall innovation activities with the help of external 
+partners. They were further characterized by innovation outcomes that 
+on average amounted to 2 new MVPs, 2 new products and services and 
+0.6 product and service awards within 12 months after the subsidy was 
+awarded. The number of applications for new patents, design rights, and 
+trademarks varied from 0.2 for design right applications to 0.5 for patent 
+and trademark applications within the year following the voucher’s 
+award. 
+The firms that replied to the second survey round are comparable to 
+the respondents of the first round in terms of age (mean: 7 years), in­
+dustry classification (68% were active in the service industry), and 
+measures such as collaboration, new products and services or IP. 
+Overall, it is important to note that most of the variables are charac­
+terized by a high variance, which is an indication for the heterogeneity 
+of the firms that applied for the innovation voucher program. 
+Treatment and control comparisons of the sample means show that 
+there are some substantial positive average differences, for instance, for 
+project-related outcomes in year one (new products and services, 
+product and service awards, new internal processes) and for new MVPs 
+in year two. Yet, in simple comparisons of means, these results are not 
+significant. In the next section, we will analyze these effects more closely 
+and additionally unbundle the effect of innovation vouchers for sub­
+groups according to their project goals. 
+5.2. Main results 
+We first test if the innovation voucher indeed has the desired effect 
+on external collaborations. Once we have established that, we will 
+analyze the causal effect of the innovation voucher program on inno­
+vation outcomes in terms of the creation of MVPs, new products and 
+services, awards received due to new products and services, newly 
+established internal processes as well as its effect on firms’ intellectual 
+property protection. 
+5.2.1. Collaborations 
+Table 4 shows the treatment effect on collaboration outcomes. We 
+observe that the innovation voucher significantly increases the proba­
+bility of having received any external innovation support in year one 
+after the innovation voucher award (Model (1): β0=0.557, p=0.001). 
+Hence, the voucher has a positive effect on establishing innovation 
+collaborations in the year of the innovation voucher program. However, 
+this is a one-time effect for the period of the innovation voucher award 
+and does not translate to the second year after the innovation voucher 
+award (Model (4), Table 4: β0=-0.052, p=0.876). Beyond the effect on 
+the probability of having received any external support, we do not 
+observe any substantial differences on other collaboration indicators 
+such as the overall proportion of innovation activities with external 
+partners or the total number of partners. This applies to one year 
+(Models (2) and (3), Table 4) as well as two years after the program 
+(Models (5) and (6), Table 4). 
+We also estimate the causal effect of the innovation vouchers on 
+collaborations for those companies that actually redeemed the voucher. 
+Table 4 
+Treatment effects on collaboration outcomes   
+Collaboration outcomes  
+Year 1 
+Year 2  
+External innovation 
+support (dummy) 
+Proportion of innovation 
+activities with partner 
+Total number of 
+partners 
+External innovation 
+support (dummy) 
+Proportion of innovation 
+activities with partner 
+Total number of 
+partners 
+Model 
+(1) 
+(2) 
+(3) 
+(4) 
+(5) 
+(6) 
+Treatment effect 
+0.557*** 
+2.031 
+-0.136 
+-0.052 
+-5.949 
+0.107 
+(0.163) 
+(4.536) 
+(0.405) 
+(0.334) 
+(6.094) 
+(0.239) 
+Constant 
+0.876** 
+37.519*** 
+0.934 
+1.704*** 
+43.448*** 
+2.116***  
+(0.354) 
+(7.938) 
+(0.173) 
+(0.538) 
+(11.882) 
+(0.344) 
+Observations 
+457 
+451 
+451 
+190 
+268 
+274 
+Wald Chi2/F- 
+statistic 
+27.20 
+1.55 
+130.80 
+10.81 
+0.53 
+20.51 
+p of model 
+0.039 
+0.074 
+0.000 
+0.626 
+0.931 
+0.198 
+(Pseudo) R2 
+0.057 
+0.025 
+0.542 
+0.053 
+0.027 
+0.051 
+Models (1) and (4): probit regressions; Models (2) and (5): OLS regressions; Models (3) and (6): Poisson regressions. Robust standard errors in parentheses. All models 
+controlling for basic firm characteristics as well as innovation voucher round fixed effects. Exception: Model (4) without controls for innovation voucher round fixed 
+effects because of perfect prediction. 
+*** p<0.01 
+** p<0.05 
+* p<0.1 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 11 (PDF page index) ===
+Research Policy 51 (2022) 104515
+11
+Table 5 
+Treatment effects on product and service outcomes as well as on process outcomes   
+Product and service outcomes 
+Number of new processes  
+Overall effect 
+Treatment effect for companies with product and service projects 
+Overall effect  
+Year 1 
+Year 2 
+Year 1 
+Year 2 
+Year 1 
+Year 2  
+Number of 
+new MVPs 
+Number of 
+new prod. 
+&serv. 
+Number of 
+awards 
+Number of 
+new MVPs 
+Number of 
+new prod. & 
+serv. 
+Number of 
+awards 
+Number of 
+new MVPs 
+Number of 
+new prod & 
+serv. 
+Number of 
+awards 
+Number of 
+new MVPs 
+Number of 
+new prod. & 
+serv. 
+Number of 
+awards 
+Number of 
+new proc. 
+Number of 
+new proc. 
+Model 
+(1) 
+(2) 
+(3) 
+(4) 
+(5) 
+(6) 
+(7) 
+(8) 
+(9) 
+(10) 
+(11) 
+(12) 
+(13) 
+(14) 
+Treatment effect 
+0.044 
+0.264 
+0.738* 
+0.438 
+0.132 
+0.014       
+0.428* 
+-0.243  
+(0.193) 
+(0.168) 
+(0.377) 
+(0.392) 
+(0.342) 
+(0.386)       
+(0.233) 
+(0.518) 
+Treatment effect for 
+companies with 
+product & service 
+projects       
+0.001 
+0.563** 
+0.486 
+0.936** 
+0.107 
+0.056         
+(0.293) 
+(0.240) 
+(0.397) 
+(0.459) 
+(0.334) 
+(0.630)   
+Treatment effect for 
+all others       
+0.128 
+0.009 
+1.340** 
+-0.004 
+0.191 
+-0.025         
+(0.227) 
+(0.225) 
+(0.560) 
+(0.487) 
+(0.419) 
+(0.467)   
+Companies with 
+product & service 
+projects (Dummy)       
+0.376 
+-0.457* 
+1.401*** 
+-0.559 
+-0.667 
+-0.116         
+(0.323) 
+(0.257) 
+(0.506) 
+(0.503) 
+(0.445) 
+(0.672)   
+Constant 
+0.118 
+0.225 
+-1.829** 
+0.447 
+-0.075 
+0.205 
+-0.180 
+0.468 
+-3.009*** 
+0.540 
+0.530 
+0.291 
+0.184 
+0.608  
+(0.357) 
+(0.298) 
+(0.794) 
+(0.634) 
+(0.522) 
+(0.621) 
+(0.361) 
+(0.348) 
+(0.867) 
+(0.704) 
+(0.608) 
+(0.745) 
+(0.400) 
+(0.770) 
+Observations 
+442 
+442 
+442 
+268 
+268 
+268 
+442 
+442 
+442 
+268 
+268 
+268 
+442 
+268 
+Wald Chi2 
+25.09 
+35.58 
+22.40 
+41.71 
+26.23 
+20.20 
+26.99 
+44.65 
+28.79 
+40.77 
+32.27 
+22.22 
+129.40 
+12.32 
+p of model 
+0.093 
+0.005 
+0.170 
+0.000 
+0.051 
+0.212 
+0.105 
+0.001 
+0.069 
+0.002 
+0.020 
+0.222 
+0.000 
+0.721 
+Pseudo R2 
+0.037 
+0.061 
+0.133 
+0.149 
+0.059 
+0.092 
+0.043 
+0.065 
+0.152 
+0.159 
+0.096 
+0.092 
+0.068 
+0.042 
+Poisson regressions. Robust standard errors in parentheses. All models controlling for basic firm characteristics as well as innovation voucher round fixed effects. 
+*** p<0.01 
+** p<0.05 
+* p<0.1. 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 12 (PDF page index) ===
+Research Policy 51 (2022) 104515
+12
+Respective two-step regression analyses, in which the decision to 
+redeem is instrumented by the voucher assignment, show that the results 
+obtained for the intent-to-treat group can be confirmed for the firms 
+actually treated (for the year one effect on any external innovation 
+support – Model (1), Table A.6 in the Appendix: β0=0.925, p=0.000). 
+5.2.2. Product- and service-related effects 
+Table 5 summarizes the effects of the subsidy on newly created or 
+significantly improved MVPs and products and services, as well as 
+awards on products and services – on the full survey sample (Models (1) 
+to (6)) and with a particular emphasis on those firms that had planned 
+projects on product and service development (Models (7) to (12)). Each 
+outcome variable is shown for the first and second survey round (i.e., 
+one year and two years after the voucher’s award, respectively). 
+The analysis of the full sample shows on average positive innovation 
+voucher effects for newly created or significantly improved products and 
+services: the positive coefficient of 0.264 corresponds to estimated 
+30.2%9 more created or improved products and services for those that 
+were offered a voucher compared to the control group. However, the 
+estimated effect falls short of being significant (Model (2): β0=0.264, 
+p=0.117). Notably, for the overall sample, the innovation voucher 
+significantly increases the firms’ number of awards received for in­
+novations or new products or services (Model (3): β0=0.738; p=0.051). 
+In the second year after the innovation voucher award, the voucher is 
+also estimated to increase the number of new or improved MVPs on 
+average by 55%. Yet for the full sample, this difference is not statistically 
+significant (Model (3): β0=0.438, p=0.264). In the analysis of the sub­
+sample of companies that particularly aimed to conduct product- and 
+service-related projects we observe more robust results. Here, the above 
+discussed effects on new or improved products as well as on new or 
+improved MVPs are stronger and significant (products and services – 
+Model (8): β0=0.563, p=0.019; MVPs – Model (10): β0=0.936, 
+p=0.041). This implies that firms that applied for the voucher with the 
+aim to develop or improve their products or services and were offered 
+the voucher are significantly more likely to be able to reach this inno­
+vation outcome compared to firms that had the same intention at 
+application but were part of the control group. Furthermore, we observe 
+no negative effects throughout both survey rounds, neither for the full 
+survey sample nor for the subgroup. This indicates that the reported 
+effect is net positive and not due to a speeding up effect of projects that is 
+negated later on. 
+Lastly, we estimate the causal effect of the innovation vouchers on 
+those companies that actually redeemed the voucher. Respective two- 
+stage regression analyses, in which the decision to redeem is instru­
+mented by the voucher assignment, show that the results obtained for 
+the intent-to-treat group can be confirmed for the firms actually treated. 
+The effect sizes are even larger (awards – Model (3), Table A.9 in the 
+Appendix: β0=0.952, p=0.042; products and services – Model (8): 
+β0=0.703, p=0.013; MVPs – Model (10): β0=1.169, p=0.033). 
+5.2.3. Internal processes-related effects 
+Next, we look at new or significantly improved internal processes. 
+The number of firms specifically targeting at internal processes is too 
+low for causal inferences (survey 1: N=28; survey 2: N=18), therefore 
+we rely on the full sample analyses, only. Model (13) in Table 5 shows 
+that in year one the innovation voucher is estimated to increase the 
+number of newly created or significantly improved internal processes 
+significantly and by about 53% (β0=0.428, p=0.066). The negative ef­
+fect estimated for year two is smaller than the positive year-one effect 
+and insignificant (Model (14), Table 5: β0=-0.243, p=0.639). 
+We also examine the innovation voucher effect on internal process 
+development for the group of firms that eventually redeemed the 
+voucher. As for the intent-to-treat group, the firms that redeemed the 
+voucher benefit from the innovation voucher and significantly increase 
+the number of new or significantly improved internal processes (Model 
+(13), Table A.9 in the Appendix: β0=0.586, p=0.053); the negative 
+treatment estimate for year two is once more insignificant (Model (14), 
+Table A.9 in the Appendix: β0=-0.345, p=0.656). 
+5.2.4. Intellectual property-related effects 
+We now turn our analyses to the effects of the innovation voucher on 
+IP protection. Due to the specificity of this outcome measure, the anal­
+ysis of the full sample yields no interesting findings. We refer the 
+interested reader to the Online Appendix 3, Table O.1. In the main body 
+of this paper, we focus on firms that applied for the innovation voucher 
+in order to conduct an IP-related project Table 6. shows a significant 
+treatment effect of the innovation voucher on the number of new patent 
+applications in the first year after the voucher was awarded. The effects 
+Table 6 
+Treatment effects on IP protection outcomes   
+Treatment effect for companies with IP projects  
+Year 1 
+Year 2  
+Number of new 
+patent applications 
+Number of new design 
+right applications 
+Number of new 
+trademark 
+applications 
+Number of new 
+patent applications 
+Number of new design 
+right applications 
+Number of new 
+trademark 
+applications 
+Model 
+(1) 
+(2) 
+(3) 
+(4) 
+(5) 
+(6) 
+Treatment effect for 
+companies with IP 
+projects 
+1.659** 
+0.356 
+0.253 
+-0.272 
+-0.716 
+1.135* 
+(0.734) 
+(1.132) 
+(0.603) 
+(0.860) 
+(1.225) 
+(0.624) 
+Treatment effect for all 
+others 
+-0.388 
+0.339 
+-0.112 
+-0.214 
+-1.387** 
+-0.069 
+(0.335) 
+(0.450) 
+(0.280) 
+(0.400) 
+(0.662) 
+(0.470) 
+Companies with IP 
+projects (0-1) 
+-1.531* 
+-0.900 
+-0.550 
+0.320 
+0.443 
+-0.452 
+(0.795) 
+(1.101) 
+(0.597) 
+(0.863) 
+(0.921) 
+(0.650) 
+Constant 
+0.386 
+-1.828** 
+-1.843*** 
+0.260 
+-1.501 
+-2.140***  
+(0.621) 
+(0.781) 
+(0.653) 
+(0.625) 
+(1.215) 
+(0.690) 
+Observations 
+442 
+442 
+442 
+268 
+268 
+268 
+Wald Chi2 
+51.36 
+29.40 
+23.23 
+23.68 
+7417.75 
+60.45 
+p of model 
+0.000 
+0.060 
+0.227 
+0.166 
+0.000 
+0.000 
+Pseudo R2 
+0.107 
+0.157 
+0.082 
+0.094 
+0.356 
+0.125 
+Poisson regressions. Robust standard errors in parentheses. All models controlling for basic firm characteristics as well as innovation voucher round fixed effects. 
+*** p<0.01 
+** p<0.05 
+* p<0.1. 
+9 Taking the exponential of a Poisson regression coefficient and subtracting 
+one yields the estimated percentage change of the dependent variable for a unit 
+change of the independent variable (here: for changing from control group (0) 
+to treatment group (1)). 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 13 (PDF page index) ===
+Research Policy 51 (2022) 104515
+13
+are sizeable – firms that applied with an IP-related project goal and were 
+offered an innovation voucher, are estimated to have about 4 times more 
+patent applications in the first year than firms that applied to conduct an 
+IP-related project but were not offered a voucher (Model (1): β0=1.659, 
+p=0.024). We do not find a significant treatment effect for the number of 
+design right or trademark applications in the first year after the 
+voucher’s award (design rights – Model (2): β0=0.356, p=0.753; 
+trademarks – Model (3): β0=0.253, p=0.675). Two years after the award 
+of the voucher, we observe another positive treatment effect – the 
+innovation voucher significantly increases the number of trademark 
+applications (Model (6): β0=1.135, p=0.069). There are no significant 
+treatment effects on the number of patent applications (Model (4): 
+β0=-0.272, p=0.752) or design right applications (Model (5): 
+β0=-0.716, p=0.559). Accordingly, the positive effect of the voucher on 
+patent application in the first year does not continue in the second year, 
+yet it does not revert either. 
+The analyses of intellectual property-related effects on those firms 
+that eventually redeemed the voucher reveal even stronger results than 
+those obtained for our intent-to-treat analyses. The estimated effect on 
+year-one patent applications is substantially higher for the firms actually 
+treated (Model (1), Table A.12 in the Appendix: β0=1.967, p=0.012) 
+than for the intent-to-treat group; the estimated effect on year-two 
+trademark applications is moderately higher (Model (6), Table A.12 in 
+the Appendix: β0=1.298, p=0.058). Overall, our findings indicate that 
+the relatively small treatment of the innovation voucher successfully 
+supports SMEs in carrying out their plan to improve on their IP 
+protection. 
+5.2.5. Robustness tests 
+As explained in Section 4.3, to test the robustness of our results ob­
+tained, we also conducted all intent-to-treat analyses without any con­
+trol variable and with extended controls in addition to our main 
+specification Tables A.4. and A.5 show robustness of our collaboration 
+analyses, Tables A.7 and A.8 relate to robustness of product- and service- 
+related results as well as results on internal processes Tables A.10. and 
+A.11 show robustness of the IP-related findings. Except for the year-two 
+result on new trademark applications, all results described above are 
+robust across these model specifications and yield similar effect sizes. 
+5.3. Additional results – predictors and behavior of non-complying and 
+non-awarded firms 
+Now that we have established these main effects, another thing that 
+would be interesting is to gain more insights into the characteristics and 
+behavior of the non-complying firms. Examining these firms that applied 
+and were offered a voucher, and either did not accept it or did accept it 
+but did not redeem the voucher, seems particularly important from a 
+policy perspective. Understanding their problems within the innovation 
+voucher program may be useful to reduce the rate of non-compliers and 
+ultimately to improve the effectiveness of future innovation voucher 
+programs. 
+To this end, we first conduct some descriptive analyses to understand 
+more about the characteristics of these firms and the circumstances 
+under which they decide to accept and redeem the voucher. Specifically, 
+we run probit regressions to investigate whether the decision to accept 
+the voucher (Model (1), Table 7) and whether to redeem the voucher 
+(Model (2), Table 7) is correlated with the following factors: a) firms’ 
+readiness for innovation project execution (measured by a binary vari­
+able indicating whether a firm has already chosen a supplier at the date 
+of application), b) firms’ other governmental funding prior to and dur­
+ing the innovation voucher program, and c) firms’ characteristics (cf 
+Section 4.2. for variable definitions). We make use of information from 
+the application form as well as information on other funding activities 
+(cf Section 4.1. for detailed information on the data sources). 
+Next, we also use our survey data to provide descriptive evidence to 
+what extent, and how non-redeeming firms and firms from the control 
+group conduct the project with which they applied for the innovation 
+voucher. For the non-redeeming group, we also investigate the stated 
+reasons for not redeeming the innovation voucher. In order not to 
+contaminate the main analyses of program effects with questions that 
+make the connection to the innovation voucher program particularly 
+salient, we decided to ask the respective questions only at the very end of 
+Table 7 
+Predictors of innovation voucher acceptance and redemption   
+Innovation voucher 
+acceptance (0-1) 
+Innovation voucher 
+redemption (0-1) 
+Model 
+(1) 
+(2) 
+Supplier known at 
+date of 
+0.278** 
+0.000 
+application (0-1) 
+(0.121) 
+(0.103) 
+Defined R&D 
+strategy 
+0.178 
+0.083 
+(0-1) 
+(0.132) 
+(0.112) 
+Governm. R&D 
+grants in the 
+0.378 
+-0.371*   
+year of the innov. 
+voucher program (0-1) 
+(0.309) 
+(0.215) 
+R&D tax credits 
+-0.305* 
+0.021 
+(0-1) 
+(0.178) 
+(0.147) 
+Prior governmental 
+R&D 
+-0.307 
+0.629** 
+grants (0-1) 
+(0.262) 
+(0.279) 
+Parent company 
+-0.823*** 
+-0.245 
+(0-1) 
+(0.285) 
+(0.259) 
+Number of 
+employees 
+-0.016*** 
+-0.000  
+(0.005) 
+(0.005) 
+Balance sheet total 
+-0.000*** 
+-0.000* 
+in GBP 
+(0.000) 
+(0.000) 
+Turnover in GBP 
+0.000** 
+0.000  
+(0.000) 
+(0.000) 
+Exporting (0-1) 
+0.040 
+0.059  
+(0.161) 
+(0.129) 
+Patent holder/ 
+applicant 
+-0.079 
+-0.048 
+(0-1) 
+(0.157) 
+(0.136) 
+Trademark holder/ 
+applicant 
+0.301** 
+-0.134 
+(0-1) 
+(0.135) 
+(0.115) 
+Design right 
+holder/ 
+-0.113 
+-0.130 
+applicant (0-1) 
+(0.174) 
+(0.147) 
+SIC level 1 fixed 
+effects 
+Yes 
+Yes 
+NUTS level 1 fixed 
+effects 
+Yes 
+Yes 
+Round fixed effects 
+Yes 
+Yes 
+Constant 
+0.925* 
+0.954**  
+(0.475) 
+(0.459) 
+Observations 
+909 
+818 
+Wald Chi2 
+67.07 
+43.02 
+p of model 
+0.000 
+0.114 
+Pseudo R2 
+0.099 
+0.048 
+Probit regressions. Robust standard errors in parentheses. 
+*** p<0.01 
+** p<0.05 
+* p<0.1 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 14 (PDF page index) ===
+Research Policy 51 (2022) 104515
+14
+the second survey.10 
+5.3.1. Predictors of non-compliance 
+When looking at non-compliance, we find that several factors seem 
+to play a role. First, an important predictor of voucher acceptance seems 
+to be readiness, as indicated by having already chosen an external 
+partner at the time of application (Model (1): β=-0.278, p=0.022). 
+Another reason for non-acceptance seems to be firm size, as measured by 
+the number of employees (Model (1): β=-0.016, p=0.001), as well as 
+having a parent company (Model (1): β=-0.823, p=0.004). That is, 
+larger firms and those that have a parent company are less likely to 
+accept the voucher. Finally, there seems to be some interaction with 
+other R&D related funding. In terms of redemption, we find that con­
+ditional on having accepted the voucher, if firms also received other 
+types of funding in 2015 (the year of the innovation voucher project), 
+they are less likely to redeem (Model (2): β=-0.371, p=0.084). If they 
+were successful in securing other types of funding before the year 2015, 
+they are more likely to redeem the voucher (Model (2): β=0.692, 
+p=0.024). That is, receiving other R&D funding prior to the voucher 
+program seems to crowd in or complement the innovation voucher 
+program, whereas other funding in the same year seems to crowd out 
+innovation voucher redemption. 
+We now turn our attention to the behavior of the non-redeeming 
+firms and stated reasons for non-redemption as well as to the behavior 
+of firms in the control group (i.e., non-awarded firms), as elicited at the 
+end of survey two. 
+5.3.2. Behavior of non-redeeming firms and reasons for non-redemption 
+Amongst those companies that were offered a voucher but ultimately 
+did not redeem it, 62% still conducted the project they applied for. 
+Those firms that conducted the project mostly financed the project 
+themselves (80%). In this group, 26% firms conducted the project on 
+their own. For the companies that opted for external support, prominent 
+collaboration partners were universities, research and technology or­
+ganizations, and users. 
+When being asked about the reasons for not redeeming the voucher, 
+firms could choose from a diversity of different aspects, e.g., compli­
+cated voucher processes, other funding opportunities, lack of a suitable 
+collaboration partner and lack of project completion time. Multiple 
+answers were possible as well as the indication of other reasons not 
+particularly listed in the survey items. Strikingly, about half of the re­
+spondents indicated that the project completion time of six months was 
+too short in order to redeem. Moreover, 27% of them stated that the 
+process was too complicated. 
+5.3.3. Behavior of non-awarded firms 
+Of the firms that replied to the second survey, about half the firms in 
+the control group, i.e., that were not offered an innovation voucher, still 
+managed to conduct the project for which they applied (51%). In 70% of 
+these cases, the project was financed by own funds. Importantly, for 
+many of these conducted projects, firms decided to move on without any 
+collaboration partner (in 38% of these cases). Those who collaborated 
+did so with a large variety of partners, the most popular being university 
+partners, IP advisors, suppliers and design collaborators. This finding is 
+in line with the above-mentioned treatment difference in the probability 
+of having had external support in the year of the innovation voucher 
+program (cf Section 5.2.). Behavior of the control group suggests that 
+this collaboration effect may not only be driven by those firms that did 
+not conduct the project they aimed for, but also by those conducting the 
+project on their own. 
+6. Discussion and conclusion 
+Policymakers around the globe use public funding and government 
+policies to support SMEs in their innovation activities. The rationale 
+behind these policy measures is that these ventures have been shown to 
+contribute substantially to economic growth (e.g., Haltiwanger et al., 
+2013; Scherer & others, 1986) and are more likely to introduce radical 
+innovations (Criscuolo et al., 2012; Hottenrott & Lopes-Bento, 2015). 
+However, due to their size, SMEs are also more likely to face financial 
+constraints and have limited access to innovation-relevant knowledge 
+(Lerner, 2000; van de Vrande et al., 2009). To ease knowledge con­
+straints, firms of all sizes increasingly rely on external collaborations for 
+their innovation activities. Yet, here again, SMEs seem to be at a 
+disadvantage to implement these collaborations successfully, for 
+example, due to a lack of available resources to search for the right 
+partner. In this paper, we examine a policy instrument, called innova­
+tion voucher that promotes R&D collaboration between SMEs and 
+external partners in order to improve innovation outcomes. 
+To test the effectiveness of this policy tool for SMEs’ innovation 
+outcomes, we make use of a large-scale RCT on the innovation voucher 
+program in the UK. Our findings provide evidence that the innovation 
+voucher program successfully fosters the execution of innovation pro­
+jects with positive effects on innovation outcomes. For example, we find 
+that it fosters the creation of products and service in the first year after 
+the innovation voucher award and the development of MVPs in the 
+second year among those firms that applied for the voucher with 
+product- and service-related project goals. Second, our results show an 
+increase in the number of new or improved internal processes for all 
+firms in the treatment group. Finally, it seems that firms with IP-related 
+project goals benefited from collaboration with IP advisors, leading to 
+more patent applications as well as trademark applications in the 
+treatment group among those firms. 
+However, we do not find measurable impacts of the voucher on 
+several other objectives that the subsidy was targeted at. While we find 
+evidence for the innovation voucher to increase the likelihood of 
+interaction with external partners in the year of the program, we do not 
+observe a significant impact on ongoing collaborations one year later. 
+This is in line with previous studies that find no evidence for medium- 
+term network externalities (Bakhshi et al., 2015). Thus, it seems that 
+while the voucher provides an effective stimulus to reduce knowledge 
+constraints for SMEs for a specific project, it does not seem to help SMEs 
+resolve knowledge constraints in the long run. This means that the idea 
+that this one-time positive experience would help SMEs in finding their 
+way to external knowledge providers for future projects, does not 
+materialize in our setting. Furthermore, our results show that the 
+innovation voucher does not lead to a general improvement in all 
+innovation activities, but only to positive effects on the specific outcome 
+that they had in mind at the time of application. To determine if the 
+successful innovation project, implemented with the support of the 
+voucher, are the result of crowding out other activities or projects or if it 
+actually leads to better business performance in the long run, one would 
+need to follow these firms for a longer period of time, which is beyond 
+the scope of this paper. (In our data, i.e., one and two years after the 
+program, we do not find any differences in business performance be­
+tween the firms in the treatment and the control group.) 
+Our results contribute to the innovation policy literature by sup­
+porting and extending previous findings on the positive impact of the 
+innovation voucher on the innovativeness of SMEs (e.g., Bakhshi et al., 
+2015; Sala et al., 2016). While other studies mainly focused on collab­
+oration outcomes or a more narrow scope of the subsidy in terms of type 
+of collaboration partner or location (Bakhshi et al., 2015; Cornet et al., 
+2006), we present evidence for treatment effects on innovation out­
+comes of a nationwide, all-industry program with a broad scope of po­
+tential partners. The use of an RCT with two follow-up surveys enables 
+us to estimate the causal impact of external collaborations on innovation 
+outcomes. From a policy perspective, our results provide causal 
+10 We base this analysis on those companies that correctly self-indicated at the 
+end of the second survey whether they were offered an innovation voucher 
+(N=231) and do not consider those firms that failed to do so (N=37). 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 15 (PDF page index) ===
+Research Policy 51 (2022) 104515
+15
+evidence on the effectiveness of the voucher scheme and thus strengthen 
+the rationale for this type of governmental funding. Hence, our study 
+adds to the policy debate on how to support innovation activities of 
+SMEs. Our results on the factors of non-compliance also provide guid­
+ance on how to increase the effectiveness of innovation voucher pro­
+grams. For example, by targeting small firms and requiring a certain 
+demonstrated readiness at the application stage. To some extent, firms 
+also state complicated processes to be another reason for not redeeming 
+the voucher. In this light, an innovation voucher program that allows for 
+longer project execution phases and further reduces administrative 
+barriers could be advisable. Furthermore, our results indicate that there 
+are limits to the behavioral change in terms of long-term external col­
+laborations: the collaborations and the positive innovation outcomes 
+only show up immediately after the treatment period. This suggests that, 
+even though the innovation voucher provides a promising first step, 
+more is needed to increase the innovation outcomes of SMEs in the 
+long-term. 
+We also acknowledge several limitations of our study. For example, 
+our analyses rely on self-reported data. Data collected via survey re­
+sponses provides a great source of primary data but is not without 
+downsides. For example, while the treatment assignment was done via 
+lottery and is thus random, this does not necessarily hold true for the 
+survey responses. One thing that can be noted from our randomization 
+and response bias checks is that there seems to be a certain pattern with 
+regards to firms that are patent holders at the time of application. These 
+results suggest that survey respondents in both the treatment and the 
+control group were more likely to be patent holders than non- 
+respondents, and thus could be more innovative ex-ante. This pattern 
+could limit the external validity (or generalizability) of our findings 
+because we cannot be certain that our findings would also hold for less 
+innovative firms. Furthermore, we observe that, prior to the innovation 
+voucher program, the firms in the treatment group were less likely to be 
+patent holders or applicants than firms in the control group, which 
+potentially threatens the internal validity of our results. However, when 
+we control for this difference in our regression analyses, the results 
+remain unchanged with similar effect sizes and significance levels. 
+Another limitation is that we only observe short -term effects by 
+examining innovation outcomes one and two years after the award of 
+the voucher. Even though our analysis extends the timeframe of existing 
+studies, we might still miss potential medium- and long-term effects of 
+the voucher scheme. Since R&D projects can take several years until 
+measurable results can be identified, our analysis might miss some of 
+those effects. Furthermore, except for our results on awards received for 
+innovations or newly introduced products and services, we only assess 
+the quantity of innovation outcomes without examining the quality of 
+the developed products or patent applications (e.g., commercial success 
+of products or number of patent citations if being granted). Inferences 
+about these measures would take several years to materialize. Following 
+this line of reasoning, a promising endeavor may be to evaluate subsidies 
+over longer time periods with additional data from governmental da­
+tabases on patents or business outcomes. 
+Finally, there are many different types of support programs available 
+for SMEs in the UK. These range from support to gain access to expertise 
+or equipment to more direct financial support in terms of loans or grants. 
+Because of the difference in scope, amount of funding provided and the 
+collaboration element in this particular program, it is difficult to 
+compare or make claims about the efficacy or value for money of the 
+innovation voucher program vis-`a-vis other R&D support programs. And 
+even though our analysis broadens the scope from existing literature 
+from a regional to a national level (Bakhshi et al. 2015), the question 
+remains whether our findings will be transferable to similar programs in 
+other countries. By and large, we are confident that our findings can be 
+translated to other developed countries. Given the small financial 
+intervention, innovation vouchers might also represent an efficient 
+instrument for emerging economies. We must leave it to future research 
+to investigate if this is indeed the case. 
+CRediT authorship contribution statement 
+Marco Kleine: Conceptualization, Methodology, Validation, Formal 
+analysis, Data curation, Writing – original draft, Writing – review & 
+editing, Visualization, Supervision. Jonas Heite: Conceptualization, 
+Methodology, Validation, Formal analysis, Investigation, Data curation, 
+Writing – original draft, Visualization, Project administration. Laura 
+Rosendahl Huber: Conceptualization, Methodology, Validation, 
+Formal analysis, Data curation, Writing – original draft, Writing – re­
+view & editing, Visualization, Supervision. 
+Declaration of Competing Interest 
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper. 
+Acknowledgements 
+We are grateful for helpful comments and suggestions by Marc van 
+der Steeg, Alessandro Maffioli, Joris Meijaard, the editor and three 
+anonymous referees on an earlier version, and by discussions at the IGL 
+Research Winter Meetings 2017 and 2019 in Washington D.C. and 
+Amsterdam and the VHB-TIE conference 2019 in Darmstadt. We would 
+also like to thank researchers at IGL, Teo Firpo, Albert Bravo-Biosca and 
+James Phipps, for their support and advice, and Haylee Ham for excel­
+lent research assistance. The data collection was funded by Innovate UK, 
+part of UK Research and Innovation (www.innovateuk.ukri.org). The 
+access to innovation voucher program data and data on other R&D 
+support by Innovate UK is gratefully acknowledged. 
+Supplementary materials 
+Supplementary material associated with this article can be found, in 
+the online version, at doi:10.1016/j.respol.2022.104515. 
+Appendix 
+Supplementary Tables 
+Table A.1 
+Innovation voucher’s logic chain (as developed by Innovate UK).  
+Inputs 
+Activities 
+Outputs 
+Outcomes 
+Impacts 
+Public 
+investment 
+Collaboration 
+Knowledge 
+Innovation 
+Growth 
+Voucher 
+R&D 
+Technology/ 
+business 
+questions 
+answered 
+Investment in 
+R&D and 
+innovation 
+GVA  
+Technology 
+advice 
+Increased 
+innovation 
+capabilities 
+Product/ 
+process/service 
+development 
+Employment  
+Design 
+New 
+relationships 
+developed 
+Increased 
+engagement 
+with 
+knowledge 
+providers 
+Productivity  
+IP advice  
+Increased 
+awareness of 
+innovation 
+support 
+programs   
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 16 (PDF page index) ===
+Research Policy 51 (2022) 104515
+16
+Table A.2 
+Randomization checks with test for joint orthogonality  
+Sample 
+Total 
+sample 
+Eligibility 
+sample 
+Survey sample (after lottery 
+and eligibility check) 
+Product- and service-related survey 
+subgroup (after lottery and eligibility check) 
+IP-related survey subgroup (after 
+lottery and eligibility check) 
+Dep. Var.: IV lottery 
+assigned (0-1)      
+Model 
+(1) 
+(2) 
+(3) 
+(4) 
+(5) 
+Number of employees 
+0.000 
+0.001 
+0.000 
+0.023 
+-0.099  
+(0.002) 
+(0.003) 
+(0.004) 
+(0.021) 
+(0.115) 
+Balance sheet total in 
+GBP 
+-0.000 
+-0.000 
+0.000 
+0.000 
+0.003  
+(0.000) 
+(0.000) 
+(0.000) 
+(0.000) 
+(0.004) 
+Turnover in GBP 
+-0.000 
+-0.000 
+-0.000 
+-0.000 
+0.003  
+(0.000) 
+(0.000) 
+(0.000) 
+(0.000) 
+(0.003) 
+Parent company (0-1) 
+0.081 
+0.144 
+0.213 
+0.879   
+(0.167) 
+(0.219) 
+(0.409) 
+(0.685)  
+Defined R&D strategy (0- 
+1) 
+0.096 
+0.118 
+-0.060 
+-0.211 
+0.631*  
+(0.073) 
+(0.088) 
+(0.145) 
+(0.199) 
+(0.355) 
+R&D tax credits (0-1) 
+0.044 
+0.055 
+0.406** 
+0.447 
+0.528  
+(0.100) 
+(0.117) 
+(0.206) 
+(0.335) 
+(0.608) 
+Exporting (0-1) 
+-0.030 
+-0.022 
+-0.027 
+0.074 
+-1.130**  
+(0.084) 
+(0.103) 
+(0.173) 
+(0.288) 
+(0.482) 
+Patent holder/applicant 
+(0-1) 
+-0.160* 
+-0.296*** 
+-0.326** 
+-0.001 
+-0.312  
+(0.092) 
+(0.104) 
+(0.164) 
+(0.244) 
+(0.366) 
+Trademark holder/ 
+applicant (0-1) 
+0.063 
+0.088 
+-0.044 
+0.205 
+-0.029  
+(0.078) 
+(0.094) 
+(0.151) 
+(0.227) 
+(0.511) 
+Design right holder/ 
+applicant (0-1) 
+0.120 
+0.081 
+0.174 
+0.204 
+0.329  
+(0.105) 
+(0.121) 
+-0.060 
+(0.293) 
+(0.836) 
+Prior govern. R&D grants 
+(0-1) 
+0.215 
+0.209 
+0.091 
+-0.110 
+-0.122  
+(0.171) 
+(0.190) 
+(0.295) 
+(0.418) 
+(0.756) 
+SIC level 1 fixed effects 
+Yes 
+Yes 
+Yes 
+Yes 
+No 
+NUTS level 1 fixed effects 
+Yes 
+Yes 
+Yes 
+Yes 
+No 
+Constant 
+0.617** 
+0.916** 
+0.601* 
+0.555 
+0.953***  
+(0.314) 
+(0.386) 
+(0.358) 
+(0.493) 
+(0.312) 
+Observations 
+1910 
+1317 
+516 
+256 
+100 
+Log likelihood 
+-1072.358 
+-710.969 
+-258.316 
+-128.970 
+-39.814 
+Wald Chi2 test for joint 
+orthogonality 
+30.44 
+38.58 
+33.35 
+23.19 
+14.65 
+p of model 
+0.444 
+0.135 
+0.223 
+0.675 
+0.145 
+Probit regressions. Standard errors in parentheses. Explanation and definition of variables: Unless mentioned otherwise, data obtained from application form ques­
+tionnaire (questionnaire wording in parantheses) – number of employees (“number of employees”), balance sheet total in GBP (“balance sheet total”), turnover in GBP 
+(“turnover”), parent company (“Does your business have a parent company or are you part of a group of linked enterprises?”), defined R&D strategy (“Does your firm 
+have a defined R&D strategy?”), R&D tax credits (“Does your firm use R&D tax credits”?), exporting (“Does your firm currently export?”), patent holder/applicant 
+(“Does your firm hold or has it applied for patents?”), trademark holder /applicant (“Does your firm hold or has it applied for trademarks?”), design right holder (“Does 
+your firm hold or has it applied for design rights?”), prior governmental R&D grants (data from InnovateUK), SIC level 1 fixed effects (from Company House API 
+database; we are unable to assign a SIC code classification to 160 companies due to missing information in the Company House API database), NUTS level 1 fixed effects 
+(from Company House API data base). The Parent company coefficient in Model (5) is omitted because of perfect prediction, no SIC or NUTS level 1 fixed effects 
+because of overfitting. 
+*** p<0.01 
+** p<0.05 
+* p<0.1. 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 17 (PDF page index) ===
+Research Policy 51 (2022) 104515
+17
+Table A.3 
+Check for response bias with test for joint orthogonality        
+Dependent variable: Survey 
+respondent (0-1) 
+Any survey to 
+population 
+Survey 1 to 
+population 
+Survey 2 to 
+population 
+Any survey treatment respondent to 
+treatment population 
+Any survey control group respondent to 
+control group population 
+Model 
+(1) 
+(2) 
+(3) 
+(4) 
+(5) 
+Number of employees 
+-0.002 
+-0.000 
+-0.003 
+-0.002 
+-0.001  
+(0.002) 
+(0.003) 
+(0.003) 
+(0.003) 
+(0.005) 
+Balance sheet total in GBP 
+-0.000 
+-0.000 
+-0.000 
+-0.000 
+-0.000  
+(0.000) 
+(0.000) 
+(0.000) 
+(0.000) 
+(0.000) 
+Turnover in GBP 
+0.000 
+-0.000 
+0.000* 
+0.000 
+0.000  
+(0.000) 
+(0.000) 
+(0.000) 
+(0.000) 
+(0.000) 
+Parent company (0-1) 
+-0.084 
+0.073 
+-0.431* 
+-0.041 
+-0.409  
+(0.193) 
+(0.196) 
+(0.243) 
+(0.213) 
+(0.535) 
+Defined R&D strategy (0-1) 
+0.008 
+-0.001 
+-0.019 
+-0.038 
+0.180 
+(0.081) 
+(0.083) 
+(0.090) 
+(0.092) 
+(0.177) 
+R&D tax credits (0-1) 
+-0.183* 
+-0.306*** 
+-0.091 
+-0.082 
+-0.610**  
+(0.107) 
+(0.112) 
+(0.120) 
+(0.122) 
+(0.252) 
+Exporting (0-1) 
+0.039 
+0.128 
+0.037 
+0.076 
+-0.082  
+(0.094) 
+(0.097) 
+(0.105) 
+(0.108) 
+(0.215) 
+Patent holder/applicant (0-1) 
+0.224** 
+0.233** 
+0.242** 
+0.241** 
+0.333 
+(0.095) 
+(0.098) 
+(0.105) 
+(0.111) 
+(0.208) 
+Trademark holder/applicant 
+(0-1) 
+-0.008 
+-0.090 
+0.040 
+-0.089 
+0.296 
+(0.085) 
+(0.088) 
+(0.095) 
+(0.098) 
+(0.194) 
+Design right holder/applicant 
+(0-1) 
+-0.130 
+-0.178 
+-0.231* 
+-0.107 
+-0.289 
+(0.110) 
+(0.115) 
+(0.127) 
+(0.126) 
+(0.251) 
+Prior governmental R&D 
+grants (0-1) 
+0.162 
+0.197 
+0.059 
+0.123 
+0.270 
+(0.165) 
+(0.170) 
+(0.181) 
+(0.186) 
+(0.386) 
+SIC level 1 fixed effects 
+Yes 
+Yes 
+Yes 
+Yes 
+Yes 
+NUTS 1 fixed effects 
+Yes 
+Yes 
+Yes 
+Yes 
+Yes 
+Constant 
+-0.132 
+-0.543 
+-0.538 
+0.050 
+-0.050  
+(0.326) 
+(0.346) 
+(0.353) 
+(0.357) 
+(0.434) 
+Observations 
+1,317 
+1,317 
+1,312 
+997 
+315 
+Log likelihood 
+-872.090 
+-809.782 
+-664.999 
+-662.329 
+-194.937 
+Wald Chi2 test for joint 
+orthogonality 
+27.06 
+36.93 
+27.79 
+25.17 
+23.58 
+p of model 
+0.62 
+0.18 
+0.53 
+0.72 
+0.65 
+Probit regressions. Comparison of eligible firms. Standard errors in parentheses. Explanation and definition of variables – see Table A.1. 
+*** p<0.01 
+** p<0.05 
+* p<0.1. 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 18 (PDF page index) ===
+Research Policy 51 (2022) 104515
+18
+Table A.5 
+Treatment effects on collaboration outcomes (extended controls)   
+Collaboration outcomes  
+Year 1 
+Year 2  
+External innovation 
+support (dummy) 
+Proportion of innovation 
+activities with partner 
+Total number of 
+partners 
+External innovation 
+support (dummy) 
+Proportion of innovation 
+activities with partner 
+Total number of 
+partners 
+Model 
+(1) 
+(2) 
+(3) 
+(4) 
+(5) 
+(6) 
+Treatment effect 
+0.591*** 
+2.146 
+0.334 
+0.133 
+-6.304 
+-0.041 
+(0.168) 
+(4.754) 
+(0.442) 
+(0.402) 
+(6.491) 
+(0.258) 
+Constant 
+0.505 
+37.790*** 
+-3.014*** 
+1.728*** 
+41.726*** 
+2.298***  
+(0.371) 
+(8.852) 
+(0.919) 
+(0.604) 
+(12.507) 
+(0.319) 
+Observations 
+443 
+438 
+438 
+180 
+256 
+262 
+Wald Chi2/F- 
+statistic 
+47.24 
+1.16 
+379.69 
+62.98 
+2.03 
+33.89 
+p of model 
+0.007 
+0.270 
+0.000 
+0.000 
+0.003 
+0.138 
+(Pseudo) R2 
+0.098 
+0.045 
+0.834 
+0.295 
+0.118 
+0.088 
+Models (1) and (4): probit regressions; Models (2) and (5): OLS regressions; Models (3) and (6): Poisson regressions. Robust standard errors in parentheses. All models 
+controlling for basic and extended firm characteristics as well as innovation voucher round fixed effects. Exception: Model (4) without controls for parent company and 
+innovation voucher round fixed effects because of perfect prediction. 
+*** p<0.01 
+** p<0.05 
+* p<0.1 
+Table A.6 
+Treatment effects on collaboration outcomes for treatment compliers   
+Collaboration outcomes  
+Year 1 
+Year 2  
+External innovation 
+support (dummy) 
+Proportion of innovation 
+activities with partner 
+Total number of 
+partners 
+External innovation 
+support (dummy) 
+Proportion of innovation 
+activities with partner 
+Total number of 
+partners 
+Model 
+(1) 
+(2) 
+(3) 
+(4) 
+(5) 
+(6) 
+Treatment 
+effect 
+0.925*** 
+2.926 
+-0.190 
+-0.074 
+-8.071 
+0.142 
+(0.249) 
+(6.399) 
+(0.580) 
+(0.486) 
+(8.009) 
+(0.310) 
+Constant 
+0.661 
+36.826*** 
+0.913 
+1.723** 
+45.533*** 
+2.080***  
+(0.409) 
+(8.423) 
+(0.950) 
+(0.709) 
+(12.416) 
+(0.393) 
+Observations 
+457 
+451 
+451 
+190 
+268 
+274 
+Instrumental variable regressions. Models (1) and (4): Two-step instrumental variable probit regressions; Models (2) and (5): 2SLS regressions; Models (3) and (6): 
+Two-step instrumental variable Poisson regressions. Robust standard errors in parentheses. All models controlling for basic firm characteristics as well as innovation 
+voucher round fixed effects. Exception: Model (4) without controls for innovation voucher round fixed effects because of perfect prediction. 
+*** p<0.01 
+** p<0.05 
+* p<0.1 
+Table A.4 
+Treatment effects on collaboration outcomes (no controls)   
+Collaboration outcomes  
+Year 1 
+Year 2  
+External innovation 
+support (dummy) 
+Proportion of innovation 
+activities with partner 
+Total number of 
+partners 
+External innovation 
+support (dummy) 
+Proportion of innovation 
+activities with partner 
+Total number of 
+partners 
+Model 
+(1) 
+(2) 
+(3) 
+(4) 
+(5) 
+(6) 
+Treatment effect 
+0.543*** 
+2.980 
+1.715** 
+-0.074 
+-3.549 
+0.017 
+(0.154) 
+(4.232) 
+(0.838) 
+(0.324) 
+(5.453) 
+(0.184) 
+Constant 
+1.261*** 
+38.065*** 
+2.509*** 
+1.478*** 
+37.927*** 
+2.259***  
+(0.419) 
+(3.818) 
+(0.173) 
+(0.291) 
+(4.852) 
+(0.152) 
+Observations 
+459 
+451 
+451 
+205 
+272 
+279 
+Wald Chi2/F- 
+statistic 
+12.38 
+0.50 
+4.19 
+0.05 
+0.42 
+0.01 
+p of model 
+0.000 
+0.482 
+0.041 
+0.819 
+0.516 
+0.926 
+(Pseudo) R2 
+0.026 
+0.001 
+0.025 
+0.001 
+0.002 
+0.000 
+Models (1) and (4): probit regressions; Models (2) and (5): OLS regressions; Models (3) and (6): Poisson regressions. Robust standard errors in parentheses. All models 
+without controls. 
+*** p<0.01 
+** p<0.05 
+* p<0.1. 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 19 (PDF page index) ===
+Research Policy 51 (2022) 104515
+19
+Table A.7 
+Treatment effects on product and service outcomes as well as on process outcomes (no controls)   
+Product and service outcomes 
+Number of new processes  
+Overall effect 
+Treatment effect for companies with product and service projects 
+Overall effect  
+Year 1 
+Year 2 
+Year 1 
+Year 2 
+Year 1 
+Year 2  
+Number of 
+new MVPs 
+Number of 
+new prod. & 
+serv. 
+Number of 
+awards 
+Number of 
+new MVPs 
+Number of 
+new prod. & 
+serv. 
+Number 
+of awards 
+Number of 
+new MVPs 
+Number of 
+new prod. & 
+serv. 
+Number of 
+awards 
+Number of 
+new MVPs 
+Number of 
+new prod. & 
+serv. 
+Number 
+of awards 
+Number of 
+new proc. 
+Number of 
+new proc. 
+Model 
+(1) 
+(2) 
+(3) 
+(4) 
+(5) 
+(6) 
+(7) 
+(8) 
+(9) 
+(10) 
+(11) 
+(12) 
+(13) 
+(14) 
+Treatment effect 
+0.035 
+0.272 
+0.822** 
+0.521 
+0.068 
+0.095       
+0.422* 
+-0.226  
+(0.221) 
+(0.185) 
+(0.359) 
+(0.334) 
+(0.281) 
+(0.377)       
+(0.236) 
+(0.432) 
+Treatment effect for 
+companies with 
+product & service 
+projects       
+0.019 
+0.576** 
+0.668 
+1.102*** 
+0.135 
+0.156         
+(0.351) 
+(0.287) 
+(0.489) 
+(0.416) 
+(0.337) 
+(0.630)   
+Treatment effect for 
+all others       
+0.072 
+-0.003 
+1.293*** 
+-0.023 
+0.031 
+0.035         
+(0.194) 
+(0.212) 
+(0.448) 
+(0.445) 
+(0.381) 
+(0.420)   
+Companies with 
+product & service 
+projects (Dummy)       
+0.236 
+-0.529** 
+1.148** 
+-0.591 
+-0.673 
+-0.039         
+(0.327) 
+(0.254) 
+(0.468) 
+(0.464) 
+(0.451) 
+(0.602)   
+Constant 
+0.677*** 
+0.478*** 
+-1.200*** 
+0.446* 
+0.592** 
+-0.747** 
+0.543*** 
+0.727*** 
+-1.969*** 
+0.693* 
+0.867** 
+-0.728** 
+-0.033 
+0.785*  
+(0.184) 
+(0.133) 
+(0.236) 
+(0.260) 
+(0.251) 
+(0.297) 
+(0.147) 
+(0.186) 
+(0.379) 
+(0.362) 
+(0.338) 
+(0.345) 
+(0.199) 
+(0.409) 
+Observations 
+442 
+442 
+442 
+272 
+272 
+272 
+442 
+442 
+442 
+272 
+272 
+272 
+442 
+272 
+Wald Chi2 
+0.02 
+2.17 
+5.24 
+2.43 
+0.06 
+0.06 
+1.36 
+7.78 
+12.23 
+7.03 
+8.24 
+0.08 
+3.19 
+0.27 
+p of model 
+0.875 
+0.141 
+0.022 
+0.119 
+0.808 
+0.801 
+0.715 
+0.051 
+0.007 
+0.071 
+0.041 
+0.995 
+0.074 
+0.601 
+Pseudo R2 
+0.000 
+0.004 
+0.015 
+0.010 
+0.000 
+0.000 
+0.004 
+0.008 
+0.032 
+0.030 
+0.029 
+0.001 
+0.007 
+0.003 
+Poisson regressions. Robust standard errors in parentheses. All models without controls 
+*** p<0.01 
+** p<0.05 
+* p<0.1. 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 20 (PDF page index) ===
+Research Policy 51 (2022) 104515
+20
+Table A.8 
+Treatment effects on product and service outcomes as well as on process outcomes (extended controls)   
+Product and service outcomes 
+Number of new processes  
+Overall effect 
+Treatment effect for companies with product and service projects 
+Overall effect  
+Year 1 
+Year 2 
+Year 1 
+Year 2 
+Year 1 
+Year 2  
+Number of 
+new MVPs 
+Number of 
+new prod. & 
+serv. 
+Number of 
+awards 
+Number of 
+new MVPs 
+Number of 
+new prod. & 
+serv. 
+Number of 
+awards 
+Number of 
+new MVPs 
+Number of 
+new prod. & 
+serv. 
+Number of 
+awards 
+Number of 
+new MVPs 
+Number of 
+new prod. & 
+serv. 
+Number of 
+awards 
+Number of 
+new proc. 
+Number of 
+new proc. 
+Model 
+(1) 
+(2) 
+(3) 
+(4) 
+(5) 
+(6) 
+(7) 
+(8) 
+(9) 
+(10) 
+(11) 
+(12) 
+(13) 
+(14) 
+Treatment effect 
+0.026 
+0.185 
+0.742** 
+0.379 
+-0.001 
+-0.023       
+0.427* 
+-0.385  
+(0.177) 
+(0.165) 
+(0.372) 
+(0.436) 
+(0.359) 
+(0.419)       
+(0.251) 
+(0.523) 
+Treatment effect for 
+companies with 
+product & service 
+projects       
+0.016 
+0.545** 
+0.653 
+0.754* 
+0.068 
+-0.278         
+(0.301) 
+(0.276) 
+(0.459) 
+(0.424) 
+(0.351) 
+(0.581)   
+Treatment effect for 
+all others       
+0.081 
+-0.141 
+1.206** 
+0.097 
+-0.004 
+0.183         
+(0.249) 
+(0.255) 
+(0.583) 
+(0.563) 
+(0.443) 
+(0.472)   
+Companies with 
+product & service 
+projects (Dummy)       
+0.333 
+-0.490* 
+1.147** 
+-0.677 
+-0.806 
+-0.061         
+(0.348) 
+(0.283) 
+(0.502) 
+(0.607) 
+(0.500) 
+(0.683)   
+Constant 
+0.098 
+0.050 
+-2.021** 
+-0.272 
+-0.124 
+-0.504 
+-0.160 
+0.295 
+-3.056*** 
+0.086 
+0.492 
+-0.286 
+0.107 
+0.808  
+(0.366) 
+(0.283) 
+(0.895) 
+(0.784) 
+(0.561) 
+(0.778) 
+(0.397) 
+(0.353) 
+(0.942) 
+(0.946) 
+(0.667) 
+(0.795) 
+(0.421) 
+(0.751) 
+Observations 
+429 
+429 
+429 
+256 
+256 
+256 
+429 
+429 
+429 
+256 
+256 
+256 
+429 
+256 
+Wald Chi2 
+437.14 
+169.49 
+35.62 
+68.96 
+73.08 
+37.87 
+255.38 
+194.99 
+38.10 
+66.49 
+81.37 
+37.94 
+305.31 
+28.64 
+p of model 
+0.000 
+0.000 
+0.124 
+0.000 
+0.000 
+0.062 
+0.0000 
+0.000 
+0.120 
+0.000 
+0.000 
+0.100 
+0.000 
+0.328 
+Pseudo R2 
+0.080 
+0.122 
+0.156 
+0.235 
+0.135 
+0.088 
+0.087 
+0.128 
+0.174 
+0.239 
+0.172 
+0.097 
+0.087 
+0.086 
+Poisson regressions. Robust standard errors in parentheses. All models controlling for basic and extended firm characteristics as well as innovation voucher round fixed effects. 
+*** p<0.01, 
+** p<0.05, 
+* p<0.1. 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 21 (PDF page index) ===
+Research Policy 51 (2022) 104515
+21
+Table A.9 
+Treatment effects on product and service outcomes for treatment compliers   
+Product and service outcomes 
+Number of new processes  
+Overall effect 
+Treatment effect for companies with product and service projects 
+Overall effect  
+Year 1 
+Year 2 
+Year 1 
+Year 2 
+Year 1 
+Year 2  
+Number of 
+new MVPs 
+Number of 
+new prod. & 
+serv. 
+Number of 
+awards 
+Number of 
+new MVPs 
+Number of 
+new prod. & 
+serv. 
+Number of 
+awards 
+Number of 
+new MVPs 
+Number of 
+new prod. & 
+serv. 
+Number of 
+awards 
+Number of 
+new MVPs 
+Number of 
+new prod. & 
+serv. 
+Number of 
+awards 
+Number of 
+new proc. 
+Number of 
+new proc. 
+Model 
+(1) 
+(2) 
+(3) 
+(4) 
+(5) 
+(6) 
+(7) 
+(8) 
+(9) 
+(10) 
+(11) 
+(12) 
+(13) 
+(14) 
+Treatment effect 
+0.062 
+0.360 
+0.952** 
+0.582 
+0.178 
+0.019       
+0.586* 
+-0.345  
+(0.271) 
+(0.222) 
+(0.469) 
+(0.493) 
+(0.449) 
+(0.519)       
+(0.302) 
+(0.775) 
+Treatment effect for 
+companies with 
+product & service 
+projects       
+-0.001 
+0.703** 
+0.593 
+1.169** 
+0.120 
+0.075         
+(0.401) 
+(0.284) 
+(0.494) 
+(0.547) 
+(0.438) 
+(0.824)   
+Treatment effect for 
+all others       
+0.186 
+0.011 
+1.678*** 
+0.023 
+0.257 
+-0.036         
+(0.324) 
+(0.340) 
+(0.646) 
+(0.705) 
+(0.543) 
+(0.668)   
+Companies with 
+product &       
+0.377 
+-0.443* 
+1.408*** 
+-0.533 
+-0.661 
+-0.115   
+service projects 
+(Dummy)       
+(0.320) 
+(0.256) 
+(0.520) 
+(0.501) 
+(0.441) 
+(0.661)   
+Constant 
+0.103 
+0.142 
+-2.049** 
+0.268 
+-0.128 
+0.200 
+-0.189 
+0.346 
+-3.182*** 
+0.320 
+0.477 
+0.284 
+0.038 
+0.702  
+(0.391) 
+(0.326) 
+(0.868) 
+(0.726) 
+(0.615) 
+(0.646) 
+(0.368) 
+(0.374) 
+(0.921) 
+(0.792) 
+(0.663) 
+(0.743) 
+(0.446) 
+(0.930) 
+Observations 
+442 
+442 
+442 
+268 
+268 
+268 
+442 
+442 
+442 
+268 
+268 
+268 
+442 
+268 
+Two-step instrumental variable Poisson regressions. Robust standard errors in parentheses. All models controlling for basic firm characteristics as well as innovation voucher round fixed effects. 
+*** p<0.01 
+** p<0.05 
+* p<0.1. 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 22 (PDF page index) ===
+Research Policy 51 (2022) 104515
+22
+Table A.10 
+Treatment effects on IP protection outcomes (no controls)   
+Treatment effect for companies with IP projects  
+Year 1 
+Year 2  
+Number of new 
+patent applications 
+Number of new design 
+right applications 
+Number of new 
+trademark 
+applications 
+Number of new 
+patent applications 
+Number of new design 
+right applications 
+Number of new 
+trademark 
+applications 
+Model 
+(1) 
+(2) 
+(3) 
+(4) 
+(5) 
+(6) 
+Treatment effect for 
+companies with IP 
+projects 
+1.424** 
+0.390 
+0.220 
+-0.310 
+-1.427 
+0.788 
+(0.672) 
+(1.014) 
+(0.477) 
+(0.712) 
+(1.010) 
+(0.690) 
+Treatment effect for all 
+others 
+-0.397 
+0.537 
+0.013 
+-0.292 
+-1.076 
+-0.232 
+(0.431) 
+(0.536) 
+(0.385) 
+(0.441) 
+(0.673) 
+(0.532) 
+Companies with IP 
+projects (0-1) 
+-1.368* 
+-0.575 
+-0.342 
+0.308 
+0.979 
+-0.385 
+(0.732) 
+(1.009) 
+(0.500) 
+(0.768) 
+(0.995) 
+(0.781) 
+Constant 
+-0.424 
+-1.910*** 
+-0.757*** 
+-0.596 
+-0.756 
+-1.001**  
+(0.343) 
+(0.315) 
+(0.289) 
+(0.396) 
+(0.541) 
+(0.483) 
+Observations 
+442 
+442 
+442 
+272 
+272 
+272 
+Wald Chi2 
+5.90 
+2.19 
+0.65 
+1.47 
+6.06 
+3.05 
+p of model 
+0.117 
+0.533 
+0.885 
+0.690 
+0.109 
+0.385 
+Pseudo R2 
+0.012 
+0.012 
+0.001 
+0.006 
+0.064 
+0.012  
+Poisson regressions. Robust standard errors in parentheses. All models without controls. 
+*** p<0.01 
+** p<0.05 
+* p<0.1. 
+Table A.11 
+Treatment effects on IP protection outcomes (extended controls)   
+Treatment effect for companies with IP projects  
+Year 1 
+Year 2  
+Number of new 
+patent applications 
+Number of new design 
+right applications 
+Number of new 
+trademark 
+applications 
+Number of new 
+patent applications 
+Number of new design 
+right applications 
+Number of new 
+trademark 
+applications 
+Model 
+(1) 
+(3) 
+(4) 
+(5) 
+(6) 
+(7) 
+Treatment effect for 
+companies with IP 
+projects 
+1.321 
+0.103 
+-0.225 
+-0.318 
+-0.398 
+1.749** 
+(0.846) 
+(1.297) 
+(0.648) 
+(0.974) 
+(1.222) 
+(0.737) 
+Treatment effect for all 
+others 
+-0.107 
+0.416 
+-0.128 
+-0.184 
+-1.486** 
+-0.056 
+(0.282) 
+(0.614) 
+(0.315) 
+(0.431) 
+(0.632) 
+(0.539) 
+Companies with IP 
+projects (0-1) 
+-1.097 
+-0.627 
+-0.182 
+0.341 
+0.391 
+-0.912 
+(0.767) 
+(1.123) 
+(0.583) 
+(0.909) 
+(1.150) 
+(0.760) 
+Constant 
+-0.344 
+-2.109** 
+-2.417*** 
+-0.547 
+-2.310* 
+-2.249***  
+(0.630) 
+(0.822) 
+(0.696) 
+(0.681) 
+(1.215) 
+(0.828) 
+Controls 
+Yes 
+Yes 
+Yes 
+Yes 
+Yes 
+Yes 
+Observations 
+429 
+429 
+429 
+256 
+256 
+256 
+Wald Chi2 
+148.58 
+99.35 
+131.80 
+115.50 
+8012.11 
+389.79 
+p of model 
+0.000 
+0.000 
+0.000 
+0.000 
+0.000 
+0.000 
+Pseudo R2 
+0.239 
+0.215 
+0.160 
+0.224 
+0.420 
+0.164 
+Poisson regressions. Robust standard errors in parentheses. All models controlling for basic and extended firm characteristics as well as innovation voucher round fixed 
+effects. 
+*** p<0.01 
+** p<0.05 
+* p<0.1. 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 23 (PDF page index) ===
+Research Policy 51 (2022) 104515
+23
+References 
+Audretsch, D.B., Keilbach, M.C., Lehmann, E.E., 2006. Entrepreneurship and Economic 
+Growth. Oxford University Press. 
+Bakhshi, H., Edwards, J.S., Roper, S., Scully, J., Shaw, D., Morley, L., Rathbone, N., 2015. 
+Assessing an experimental approach to industrial policy evaluation: Applying RCT+
+to the case of Creative Credits. Research Policy 44 (8), 1462–1472. https://doi.org/ 
+10.1016/j.respol.2015.04.004 https://doi.org/.  
+Belderbos, R., Carree, M., Diederen, B., Lokshin, B., Veugelers, R., 2004. Heterogeneity in 
+R&D cooperation strategies. Int. J. Ind Organiz. 22 (8–9), 1237–1263. https://doi. 
+org/10.1016/j.ijindorg.2004.08.001 https://doi.org/.  
+Belderbos, R., Carree, M., Lokshin, B., 2004. Cooperative R&D and firm performance. 
+Research Policy 33 (10), 1477–1492. https://doi.org/10.1016/j.respol.2004.07.003 
+https://doi.org/.  
+Bianchi, M., Murtinu, S., Scalera, V.G., 2019. R&D Subsidies as Dual Signals in 
+Technological Collaborations. Research Policy 48 (9), 103821. https://doi.org/ 
+10.1016/j.respol.2019.103821 https://doi.org/.  
+Bloom, N., Griffith, R., Van Reenen, J., 2002. Do R & D tax credits work? Evidence from a 
+panel of countries 1979-1997. J. Public Economics 85 (1), 1–31. https://doi.org/ 
+10.1016/S0047-2727(01)00086-X https://doi.org/.  
+Branstetter, L.G., Sakakibara, M., 2002. When Do Research Consortia Work Well and 
+Why? Evidence from Japanese Panel Data. Am. Econ. Rev. 92 (1), 143–159. https:// 
+doi.org/10.1257/000282802760015649 https://doi.org/.  
+Canton, E., Grilo, I., Monteagudo, J., van der Zwan, P., 2013. Perceived credit constraints 
+in the European Union. Small Bus. Economics 41 (3), 701–715. https://doi.org/ 
+10.1007/s11187-012-9451-y https://doi.org/.  
+Cappelen, Å., Raknerud, A., Rybalka, M., 2012. The effects of R&D tax credits on 
+patenting and innovations. Research Policy 41 (2), 334–345. https://doi.org/ 
+10.1016/j.respol.2011.10.001 https://doi.org/.  
+Cassiman, B., Veugelers, R., 2002. R&D Cooperation and Spillovers: Some Empirical 
+Evidence from Belgium. Am. Econ. Rev. 92 (4), 1169–1184. 
+Chapman, G., Hewitt-Dundas, N., 2018. The effect of public support on senior manager 
+attitudes to innovation. Technovation 69, 28–39. 
+Coad, A., Cowling, M., Nightingale, P., Pellegrino, G., Savona, M., & Siepel, J. (2014). UK 
+Innovation Survey: Highly innovative firms and growth. https://ore.exeter.ac.uk/re 
+pository/handle/10871/15163. 
+Cohen, W.M., Nelson, R.R., Walsh, J.P., 2002. Links and impacts: The influence of public 
+research on industrial R&D. Management Science 48 (1), 1–23. https://doi.org/ 
+10.1287/mnsc.48.1.1.14273 https://doi.org/.  
+Cornet, M., Vroomen, B., der Steeg, M., 2006. Do innovation vouchers help SMEs to cross 
+the bridge towards science? CPB Netherlands Bureau for Economic Policy Analysis 
+(Vol. 58).  
+Cowling, M., 2016. You can lead a firm to R&D but can you make it innovate? UK 
+evidence from SMEs. Small Business Economics 46 (4), 565–577. https://doi.org/ 
+10.1007/s11187-016-9704-2 https://doi.org/.  
+Criscuolo, P., Nicolaou, N., Salter, A., 2012. Exploring differences in innovation between 
+start-ups and established firms. Research Policy 41 (2), 319–333. https://doi.org/ 
+10.1016/j.respol.2011.12.001 https://doi.org/.  
+Czarnitzki, D., Delanote, J., 2015. R&D policies for young SMEs: input and output effects. 
+Small Bus. Economics 45 (3), 465–485. 
+Czarnitzki, D., Ebersberger, B., Fier, A., 2007. The relationship between R&D 
+collaboration, subsidies and R&D performance: Empirical evidence from Finland and 
+Germany. J. Appl. Econ. 22 (7), 1347–1366. https://doi.org/10.1002/JAE.992 
+https://doi.org/.  
+Czarnitzki, D., Hanel, P., Rosa, J.M., 2011. Evaluating the impact of R&D tax credits on 
+innovation: A microeconometric study on Canadian firms. Research Policy 40 (2), 
+217–229. https://doi.org/10.1016/j.respol.2010.09.017 https://doi.org/.  
+Czarnitzki, D., Hottenrott, H., 2011. R&D investment and financing constraints of small 
+and medium-sized firms. Small Bus. Economics 36 (1), 65–83. https://doi.org/ 
+10.1007/s11187-009-9189-3 https://doi.org/.  
+Galasso, A., Schankerman, M., 2018. Patent rights, innovation, and firm exit. Rand J. 
+Econ. 49 (1), 64–86. https://doi.org/10.1111/1756-2171.12219 https://doi.org/.  
+Haltiwanger, J., Jarmin, R.S., Miranda, J., 2013. Small versus large versus young. Review 
+of Economics and Statistics. The MIT Press, pp. 347–361. https://doi.org/10.1162/ 
+REST_a_00288 (Vol. 95, Issue 2https://doi.org/.  
+Haus-Reve, S., Fitjar, R.D., Rodríguez-Pose, A., 2019. Does combining different types of 
+collaboration always benefit firms? Collaboration, complementarity and product 
+innovation in Norway. Research Policy 48 (6), 1476–1486. https://doi.org/ 
+10.1016/j.respol.2019.02.008 https://doi.org/.  
+Hossain, M., Kauranen, I., 2016. Open innovation in SMEs: a systematic literature 
+review. J. Strategy Management 9 (1), 58–73. https://doi.org/10.1108/JSMA-08- 
+2014-0072 https://doi.org/.  
+Hottenrott, H., Lopes-Bento, C., 2014. (International) R&D collaboration and SMEs: The 
+effectiveness of targeted public R&D support schemes. Research Policy 43 (6), 
+1055–1066. https://doi.org/10.1016/j.respol.2014.01.004 https://doi.org/.  
+Hottenrott, H., Lopes-Bento, C., 2015. Quantity or quality? Knowledge alliances and their 
+effects on patenting. Ind. Corporate Change 24 (5), 981–1011. 
+Hottenrott, H., Lopes-Bento, C., 2016. R&D Partnerships and Innovation Performance: 
+Can There Be too Much of a Good Thing? J. Product Innov. Management 33 (6), 
+773–794. https://doi.org/10.1111/jpim.12311 https://doi.org/.  
+Howell, S.T., 2017. Financing innovation: Evidence from R&D grants. Am. Econ. Rev. 
+107 (4), 1136–1164. https://doi.org/10.1257/aer.20150808 https://doi.org/.  
+Kang, K.N., Park, H., 2012. Influence of government R&D support and inter-firm 
+collaborations on innovation in Korean biotechnology SMEs. Technovation 32 (1), 
+68–78. https://doi.org/10.1016/j.technovation.2011.08.004 https://doi.org/.  
+Laursen, K., Salter, A.J., 2014. The paradox of openness: Appropriability, external search 
+and collaboration. Research Policy 43 (5), 867–878. https://doi.org/10.1016/j. 
+respol.2013.10.004 https://doi.org/.  
+Leiponen, A., Helfat, C.E., 2010. Innovation objectives, knowledge sources, and the 
+benefits of breadth. Strat. Management J. 31 (2), 224–236. https://doi.org/10.1002/ 
+smj.807 https://doi.org/.  
+Lerner, J., 2000. The government as venture capitalist: the long-run impact of the SBIR 
+program. J. Private Equity 3 (2), 55–78. 
+Lokshin, B., Mohnen, P., 2012. How effective are level-based R&D tax credits? Evidence 
+from the Netherlands. Applied Economics 44 (12), 1527–1538. https://doi.org/ 
+10.1080/00036846.2010.543083 https://doi.org/.  
+McKenzie, D., 2015. Tools of the Trade: a joint test of orthogonality when testing for 
+balance. World Bank Blogs. https://blogs.worldbank.org/impactevaluations/tools-tr 
+ade-joint-test-orthogonality-when-testing-balance. 
+Meuleman, M., De Maeseneire, W., 2012. Do R&D subsidies affect SMEs’ access to 
+external financing? Research Policy 41 (3), 580–591. https://doi.org/10.1016/j. 
+respol.2012.01.001 https://doi.org/.  
+Mina, A., Bascavusoglu-Moreau, E., Hughes, A., 2014. Open service innovation and the 
+firm’s search for external knowledge. Research Policy 43 (5), 853–866. https://doi. 
+org/10.1016/j.respol.2013.07.004 https://doi.org/.  
+Mina, A., Minin, A.Di, Martelli, I., Testa, G., Santoleri, P, 2021. Public funding of 
+innovation: Exploring applications and allocations of the European SME Instrument. 
+Research Policy 50 (1), 104131. https://doi.org/10.1016/j.respol.2020.104131 
+https://doi.org/.  
+Muscio, A., 2007. The impact of absorptive capacity on smes’ collaboration. Econ. Innov. 
+New Technol. 16 (8), 653–668. https://doi.org/10.1080/10438590600983994 
+https://doi.org/.  
+Table A.12 
+Treatment effects on IP protection outcomes for treatment compliers   
+Treatment effect for companies with IP projects  
+Year 1 
+Year 2  
+Number of new 
+patent applications 
+Number of new design 
+right applications 
+Number of new 
+trademark 
+applications 
+Number of new 
+patent applications 
+Number of new design 
+right applications 
+Number of new 
+trademark 
+applications 
+Model 
+(1) 
+(2) 
+(3) 
+(4) 
+(5) 
+(6) 
+Treatment effect for 
+companies with IP 
+projects 
+1.967** 
+0.536 
+0.351 
+-0.382 
+-1.235 
+1.298* 
+(0.784) 
+(1.477) 
+(0.815) 
+(1.324) 
+(3.018) 
+(0.685) 
+Treatment effect for all 
+others 
+-0.641 
+0.474 
+-0.171 
+-0.288 
+-1.777 
+-0.161 
+(0.586) 
+(0.605) 
+(0.428) 
+(0.599) 
+(1.324) 
+(0.710) 
+Companies with IP 
+projects (0-1) 
+-1.532* 
+-0.915 
+-0.548 
+0.314 
+0.673 
+-0.448 
+(0.787) 
+(1.108) 
+(0.599) 
+(0.887) 
+(0.977) 
+(0.674) 
+Constant 
+0.494 
+-1.966** 
+-1.808** 
+0.338 
+-3.597 
+-2.157***  
+(0.703) 
+(0.894) 
+(0.712) 
+(0.682) 
+(1.486) 
+(0.784) 
+Observations 
+442 
+442 
+442 
+268 
+269 
+268 
+Two-step instrumental variable Poisson regressions. Robust standard errors in parentheses. All models controlling for basic firm characteristics as well as innovation 
+voucher round fixed effects. Model (5) does not control for age, since the regression model estimation with age did not converge. 
+*** p<0.01, 
+** p<0.05, 
+* p<0.1. 
+M. Kleine et al.                                                                                                                                                                                                                                  
+
+=== page 24 (PDF page index) ===
+Research Policy 51 (2022) 104515
+24
+Ortega-Argil´es, R., Vivarelli, M., Voigt, P., 2009. R&D in SMEs: A paradox? Small Bus. 
+Economics 33 (1), 3–11. https://doi.org/10.1007/s11187-009-9187-5 https://doi. 
+org/.  
+Parida, V., Westerberg, M., Frishammar, J., 2012. Inbound Open Innovation Activities in 
+High-Tech SMEs: The Impact on Innovation Performance. J. Small Bus. Management 
+50 (2), 283–309. https://doi.org/10.1111/j.1540-627X.2012.00354.x https://doi. 
+org/.  
+Roesler, C., Broekel, T., 2017. The role of universities in a network of subsidized R&D 
+collaboration: The case of the biotechnology-industry in Germany. Review Regional 
+Research 37 (2), 135–160. https://doi.org/10.1007/s10037-017-0118-7 https://doi. 
+org/.  
+Romero-Jord´an, D., Delgado-Rodríguez, M.J., ´Alvarez-Ayuso, I., de Lucas-Santos, S., 
+2014. Assessment of the public tools used to promote R&D investment in Spanish 
+SMEs. Small Bus. Economics 43 (4), 959–976. https://doi.org/10.1007/s11187-014- 
+9575-3 https://doi.org/.  
+Sala, A., Landoni, P., Verganti, R., 2016. Small and Medium Enterprises collaborations 
+with knowledge intensive services: an explorative analysis of the impact of 
+innovation vouchers. R&D Management 46 (S1), 291–302. 
+Santoleri, P., Mina, A., Di Minin, A., Martelli, I., 2020. The Causal Effects of R&D Grants: 
+Evidence from a Regression Discontinuity. SSRN Electronic J. 822781 https://doi. 
+org/10.2139/ssrn.3637867 https://doi.org/.  
+Schade, S., Grigore, C., 2009. Availability and focus on Innovation Voucher schemes in 
+European regions. Enterprise and Industry Directorate General. European 
+Commission, Brussels, p. 326. 
+Scherer, F.M., 1986. Innovation and growth: Schumpeterian perspectives. MIT Press 
+Books, p. 1. 
+Spithoven, A., Vanhaverbeke, W., Roijakkers, N., 2013. Open innovation practices in 
+SMEs and large enterprises. Small Bus. Economics 41 (3), 537–562. https://doi.org/ 
+10.1007/s11187-012-9453-9 https://doi.org/.  
+Tether, B.S., Tajar, A., 2008. Beyond industry-university links: Sourcing knowledge for 
+innovation from consultants, private research organisations and the public science- 
+base. Research Policy 37 (6–7), 1079–1095. https://doi.org/10.1016/j. 
+respol.2008.04.003 https://doi.org/.  
+van de Vrande, V., de Jong, J.P.J., Vanhaverbeke, W., de Rochemont, M., 2009. Open 
+innovation in SMEs: Trends, motives and management challenges. Technovation 29 
+(6–7), 423–437. https://doi.org/10.1016/j.technovation.2008.10.001 https://doi. 
+org/.  
+Veugelers, R., Veugelers, Reinhilde, 2008. The Role of SMEs in Innovation in the EU. A 
+Case for Policy Intervention?. In: Review of Business and Economic Literature, LIII, 
+pp. 239–262. https://econpapers.repec.org/RePEc:ete:revbec:20080302. 
+Wagner, S., Hoisl, K., Thoma, G., 2014. Overcoming localization of knowledge - The role 
+of professional service firms. Strat. Management J. 35 (11), 1671–1688. https://doi. 
+org/10.1002/smj.2174 https://doi.org/.  
+M. Kleine et al.                                                                                                                                                                                                                                  

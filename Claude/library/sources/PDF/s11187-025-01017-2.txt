@@ -1,0 +1,3522 @@
+
+=== page 1 (PDF page index) ===
+Vol.: (0123456789)
+Small Bus Econ (2025) 65:719–745 
+https://doi.org/10.1007/s11187-025-01017-2
+RESEARCH ARTICLE
+AI, robots and innovation in European SMEs
+Agustí Segarra‑Blasco   · Josep Tomàs‑Porres   · 
+Mercedes Teruel 
+Accepted: 7 February 2025 / Published online: 25 February 2025 
+© The Author(s) 2025
+Abstract  There is increasing interest in the impact 
+of advanced digital technologies on SMEs, but the 
+determinants of their adoption and their association 
+with multiple innovation outcomes remain unexplored. 
+Based on the Flash Eurobarometer 486, this paper 
+analyses how the adoption of artificial intelligence and 
+robots is related to European SMEs carrying out prod-
+uct, process, organizational and marketing innovations. 
+Our results establish scale-ups and start-ups as the 
+most likely adopters of these technologies and the most 
+innovative firms. Furthermore, internal characteristics, 
+such as internationalization and firm size, and exter-
+nal factors, such as the availability of digital skills and 
+infrastructure, are significant drivers of digitalization at 
+the firm level. In a two-stage approach, we find that the 
+adoption of artificial intelligence and robots is associ-
+ated with all innovation types, although these technolo-
+gies serve more specialised objectives in manufactur-
+ing rather than in service sectors. Our results confirm a 
+significant variability in the adoption of artificial intel-
+ligence and robots, as well as heterogeneous associa-
+tions with innovation outcomes.
+Plain English Summary  The digital adoption in 
+European SMEs: how start-ups and scale-ups boost 
+innovation using artificial intelligence and robots. 
+This paper explores what drives SMEs to adopt arti-
+ficial intelligence and robots, examining the associa-
+tion of these with technological and non-technologi-
+cal innovations. Using the Flash Eurobarometer 486 
+“SMEs, Start-ups, Scale-ups and Entrepreneurship” 
+we find that, due to their enhanced capabilities and 
+organisational flexibility, start-ups and scale-ups are 
+at the forefront of the digital transformation. This 
+improves their ability to innovate, as these technolo-
+gies are significantly associated with innovation. 
+However, the relationship between artificial intelli-
+gence, robots, and innovation differs between manu-
+facturing and service sectors. In manufactures, digi-
+tal technologies tend to have more specialised roles, 
+while in services sectors they have a broader applica-
+tion. Our results highlight the importance of fostering 
+a more favourable environment for the development 
+of innovative start-ups and scale-ups to close the digi-
+tal distance between the European Union and coun-
+tries at the technological frontier.
+Keywords  Artificial intelligence · Robots · 
+Innovation · SMEs
+JEL Classification  O14 · O31 · O33
+A. Segarra‑Blasco · J. Tomàs‑Porres · M. Teruel (*) 
+Universitat Rovira i Virgili, Department of Economics, 
+ECO-SOS, Av. Universitat, 1, 43204 Reus, Spain
+e-mail: mercedes.teruel@urv.cat
+J. Tomàs‑Porres 
+Università degli Studi di Torino, Department of Economics 
+and Statistics “Cognetti de Martiis”, Lungo Dora Siena, 
+100A, 10153 Torino, Italy
+
+=== page 2 (PDF page index) ===
+720
+	
+A. Segarra‑Blasco et al.
+Vol:. (1234567890)
+1  Introduction
+The integration of advanced digital technologies 
+(ADTs)1 marks a paradigm shift in corporate innova-
+tion strategies, offering new opportunities for growth, 
+efficiency and creativity (Li et  al., 2023). Among 
+ADTs, robotics and artificial intelligence (AI)2 rep-
+resent the core of the digital transformation. On the 
+one hand, robotics aims at improving process effi-
+ciency by automatising manual tasks. In this sense, a 
+robot is an autonomous machine that does not need a 
+human operator and can be programmed to perform 
+a complex series of actions automatically (Acemoglu 
+& Restrepo, 2019). On the other hand, AI searches 
+for efficiency improvement by automatising cognitive 
+tasks. AI has the potential to disrupt the functioning 
+of all industries and the nature of business processes 
+(Calvino & Fontanelli, 2023).
+The versatility of these cross-cutting technologies 
+and their applications across sectors sparks a debate 
+on how they will affect the economy (Makridakis, 
+2017). Both technologies are characterised by their 
+flexibility and adaptability to a wide variety of tasks, 
+having great potential to generate externalities in 
+multiple scientific and innovative areas, leading to 
+increasing returns of scale. However, the complex-
+ity and costs associated with the adoption of AI and 
+robots generate a gap between digitalised and non-
+digitalised firms that has not been properly addressed 
+in the literature (Skare & Soriano, 2021). The adop-
+tion of ADTs for SMEs is more challenging due to 
+their limited resources (Aghion et  al., 2021). How-
+ever, considering the disruptive role that start-ups 
+and scale-ups exert in the market, a group of SMEs 
+might find in digitalisation an opportunity to foster 
+their innovative potential and close the technological 
+distance (Audretsch et  al., 2020; Coad et  al., 2024; 
+Veugelers et al., 2019a).
+To the best of our knowledge, few comprehen-
+sive studies analyse the digital adoption patterns 
+of SMEs and their association with multiple inno-
+vation outcomes (Ardito, 2023; Battistoni et  al., 
+2023; Merín-Rodrigáñez et  al., 2024). Our paper 
+addresses this gap by determining the internal and 
+external drivers of ADT adoption and their relation-
+ship with technological and non-technological inno-
+vations for a sample of European SMEs from the 
+Flash Eurobarometer 486 “SMEs, Start-ups, Scale-
+ups and Entrepreneurship”. We adopt a two-stage 
+residual inclusion strategy to analysing the relation-
+ship between the adoption of ADTs and the innova-
+tive potential of European SMEs. More concretely, 
+the first stage explores how firm characteristics and 
+country-level digitalisation are associated with the 
+adoption of AI and robots. Then, the second stage 
+addresses the linkages of both technologies with 
+product, process, organisational and marketing 
+innovations. This strategy allows us to control for 
+endogeneity due to reverse causality between inno-
+vation and the adoption of digital technologies, as 
+well as the multicollinearity problem due to a mul-
+tiplicity in the determinants of ADTs and innova-
+tion outcomes.
+Paying special attention to the differences 
+between start-ups and scale-ups, we observe that 
+these firms have an advantage in the adoption of 
+AI and robots compared to other SMEs, confirming 
+their role as key agents driving the European digi-
+tal adoption. However, the digital adoption patterns 
+of start-ups and scale-ups differ considerably. While 
+the first are more likely to adopt only robots into 
+their productive structure, scale-ups adopt AI and 
+robots more extensively. Specific firm characteristics 
+such as internationalisation and firm age are tightly 
+related to ADT adoption, confirming self-selection 
+patterns in the digitalisation of firms. Furthermore, 
+the positive and significant impact of digital skills 
+and infrastructure at the country level underscores 
+the role of externalities and knowledge spillovers 
+from the rest of the economy as a key source of 
+incentives for digitalisation.
+Overall, in terms of the relationship between arti-
+ficial intelligence, robots, and innovation, we find a 
+consistent association between both ADTs and all 
+1  The European Commission (2021) defines ADTs as recent 
+or future technologies expected to substantially alter the busi-
+ness and social environment. ADTs include AI, big data analy-
+sis, Internet of Things, machine learning, 3-D printing, cloud 
+computing services, enterprise resource planning software and 
+robotics.
+2  AI combines machine learning, deep learning, and language 
+recognition capabilities for structured and unstructured data. 
+In 2019, the World Commission on the Ethics of Scientific 
+Knowledge and Technology (COMEST) of UNESCO defined 
+AI as a field involving machines with the ability to mimic cer-
+tain functionalities of human intelligence, including features 
+such as perception, learning, reasoning, problem-solving, lin-
+guistic interaction and even the production of creative works.
+
+=== page 3 (PDF page index) ===
+721
+AI, robots and innovation in European SMEs﻿	
+Vol.: (0123456789)
+types of innovations. This is despite the relationship 
+being highly industry dependent. In manufactures, 
+the use of technologies is more specialised, driving 
+specific innovation types. Whereas, in service sec-
+tors, AI and robots are more extensively integrated 
+into the firm and drive innovation more broadly.
+At the academic level, this article contributes 
+to several aspects of the literature. In line with 
+previous works (Blichfeldt & Faullant, 2021), it 
+explores the mechanisms driving the complex rela-
+tionship between ADTs and innovation processes. 
+Our work emphasizes the importance of AI and 
+robots as the cornerstone of the digital transforma-
+tion of European SMEs, providing a holistic per-
+spective on how digitalisation is related with the 
+development of complementary technological and 
+non-technological innovations. Among all firms, 
+start-ups and scale-ups lead in the digitalisation 
+of European SMEs, as they take advantage of their 
+more dynamic structure, innovative potential, and 
+market advantages (Piaskowska et al., 2021). Our 
+paper confirms that the current technological wave 
+is driven by heterogenous innovative behaviours of 
+firms and industries and dependent in the techno-
+logical availability at country level. As a result, an 
+evolutionary (continuous) process of variety gen-
+eration (innovation) and market selection emerges 
+among SMEs.
+At the policy level, we consider that the emer-
+gence of studies exploring the links between 
+digital technologies and the innovative capacity 
+of European SMEs is fundamental in address-
+ing the digital distance between the EU and the 
+US (Veugelers et al., 2019b). Our study provides 
+relevant insights for the design of public policies 
+aimed at facilitating the adoption of ADTs. Addi-
+tionally, we highlight the need to identify start-
+ups and scale-ups and provide them with incen-
+tives to foster their digitalisation and innovation 
+capacities.
+The paper is structured as follows. Section  2 
+provides a literature review providing insights on 
+the determinants of digitalisation, the role of SMEs 
+and the relationship between ADTs and innova-
+tion. Section 3 presents the database and provides 
+the main descriptive statistics. Section 4 discusses 
+the econometric strategy, while outcomes are pre-
+sented and discussed in Sect.  5. Finally, Sect.  6 
+presents the conclusions of the paper.
+2  Literature review
+2.1  The adoption of artificial intelligence and robots
+The adoption of ADTs is a complex phenomenon, 
+influenced by the intricate nature of modern tech-
+nologies and the high costs associated with their 
+implementation (Carlaw & Lipsey, 2002; Jovanovic 
+& Rousseau, 2005; Skare & Soriano, 2021). As a 
+result, many firms refrain from major changes, rely-
+ing on their conventional equipment and processes 
+despite the transformative potential of digitalisation 
+on reshaping their productive structure.
+Technologies related to artificial intelligence and 
+robotics range from those based on data, such as 
+machine learning and generative AI, to physical sys-
+tems such as robots or sensors. Recent advances in 
+communication and machine learning are enabling 
+a more complex and interactive integration of these 
+technologies within firms (Dirican, 2015). The devel-
+opment of task-specific machines and generative AI 
+is reconfiguring workplaces, enhancing the dynamism 
+of innovation processes.
+In particular, data-intensive technologies are 
+advancing rapidly, opening new technological sce-
+narios (Ciarli et al., 2021; Lanzolla et al., 2021). The 
+development of AI technologies, in parallel with the 
+emergence of the Internet of Things and sophisticated 
+sensors, is facilitating the way for intelligent comput-
+ing systems. Furthermore, more sophisticated sen-
+sors and wireless communication technologies allow 
+complete mobility on manufacturing floors and self-
+coordination involving swarms of devices increasing 
+the autonomy of robots, their ability to collaborate 
+with humans, and their precision in various industrial 
+applications (Jaccoud et  al., 2024). The emergence 
+of robots with image recognition enables many new 
+applications across industries such as agriculture, 
+manufacturing, and personal services (Autor, 2015). 
+These robots not only perform tasks independently, 
+but also autonomously evaluate and adapt their 
+behaviour. For instance, adaptative robots can inter-
+act with customers in personalised ways, learning 
+from each interaction to improve customer services 
+(Bredeche et al., 2018).
+The literature identifies several stylised facts that 
+foster the adoption of ADTs. Digital adopters are 
+more competitive in terms of productivity and tend to 
+export more (Camina et al., 2020; Koch et al., 2021; 
+
+=== page 4 (PDF page index) ===
+722
+	
+A. Segarra‑Blasco et al.
+Vol:. (1234567890)
+Añón Higón & Bonvin, 2024). Consequently, firms 
+adopting ADTs are more likely to improve their oper-
+ations efficiency, productivity and flexibility (Melitz 
+& Redding, 2021; Revoltella et  al., 2020). AI and 
+robots require the adaptation of existing IT systems 
+and raise compatibility issues with existing organisa-
+tional structures (Nolan, 2020). Hence, for successful 
+adoption, firms must develop complementary skills, 
+adapt them to non-digital environments and tech-
+niques, train the workforce, align previous production 
+methods and, in essence, modify their organisational 
+culture by developing a whole range of secondary 
+innovations (Ciarli et al., 2021).
+However, the nature of the relationship is more 
+intricate and is subject to self-selection patterns. 
+Zeira’s (1998) foundational theory posits that only 
+the most successful firms can effectively adopt ADTs 
+and obtain significant returns. Adoption rates of 
+many digital technologies remain relatively low and 
+are biased towards larger firms that are more open to 
+international markets. In particular, Acemoglu et al. 
+(2022) find a pronounced difference in the adoption 
+rates of advanced robots, supporting the idea that 
+ADTs involve major integration costs that limit their 
+adoption to a group of firms.
+This underscores the importance of internal capa-
+bilities, such as knowledge, skills and human capi-
+tal, as key enablers of ADTs at the firm level (Soluk 
+et al., 2023). From a technological perspective, there 
+is a hierarchical pattern whereby more sophisticated 
+technologies tend to be adopted only after firms have 
+used and mastered basic applications, and thus have 
+developed basic digital skills (Zolas et al., 2021). This 
+defines part of the heterogeneity in digital adoption, 
+subject to self-selection and path-dependent processes 
+(Montobbio et al., 2022). Among key internal charac-
+teristics, the literature identifies firm size, performance 
+and resource availability as relevant variables shaping 
+the adoption of ADTs (Acemoglu et al., 2023; Koch 
+et al., 2021).
+In addition to internal factors, firms are subject to 
+competitive forces and other external elements, such 
+as the existence of an adequate digital infrastructure 
+and labour market skills (Agrawal et al., 2019a). The 
+availability of skilled labour is a cornerstone in the 
+effective adoption and use of digital technologies. 
+ADTs require complex, often costly, skills that are 
+scarce in the labour market (Shapiro & Mandelman, 
+2021). As a result, firms are more likely to adopt 
+ADTs when they operate in a context that ensures 
+the availability of digital skills (Cirillo et al., 2023). 
+Similarly, modern technologies require a more exten-
+sive use of physical resources and a better infrastruc-
+ture to support them, giving firms in more digitalised 
+economies a competitive advantage in the digital 
+transformation (Greenstein, 2019). The combination 
+of internal and external determinants of ADTs adop-
+tion leads us to the first set of hypotheses:
+Hypothesis 1a. The adoption of AI and robots fol-
+lows self-selection patterns defined by firm charac-
+teristics and other internal capabilities.
+Hypothesis 1b. Firms are more likely to adopt AI 
+and robots in highly digitalised economies.
+A firm’s digital transformation is characterised by 
+interdependencies within a set of emerging technolo-
+gies causing revolutionary changes at industrial and 
+social levels (Hanelt et al., 2021). Thus, digitalisation 
+is not simply a collection of individual technologies 
+and innovations, it involves a coevolutionary process 
+where reciprocal and dynamic influences-such as in the 
+case of AI and robotics-play a central role (Battaglia 
+et al., 2023). As AI algorithms become more sophisti-
+cated, they enable robots to execute increasingly more 
+complex tasks. Alternatively, advancements in robots, 
+such as improved sensors provide richer data leading to 
+better models and solutions.
+In essence, this feedback loop creates a self-rein-
+forcing process where the combination of different 
+technologies opens numerous options for achieving 
+tasks more efficiently, enabling the development of 
+new technological trajectories (Ciarli et al., 2021).
+However, advancements in digital technologies are 
+not exogenous, as they are shaped by the competitive 
+strategies and challenges faced by innovative firms. As 
+digital technologies evolve, new individual applica-
+tions emerge, leading to more complex technological 
+interactions that demand new skills and capabilities 
+while offering opportunities to explore novel innova-
+tions. The increasingly cross-cutting and interactive 
+nature of ADTs translates into higher degrees of omni-
+presence and complementarity (Martinelli et al., 2021). 
+Therefore, in addition to internal and external factors 
+driving digitalisation, we propose that AI and robots 
+show a certain degree of complementarity:
+
+=== page 5 (PDF page index) ===
+723
+AI, robots and innovation in European SMEs﻿	
+Vol.: (0123456789)
+Hypothesis 2. The adoption of AI and robots is 
+interdependent.
+2.2  Digitalisation in SMEs
+Digital technologies facilitate the emergence of new 
+digital business models that are often associated 
+with rapid replication and scalability (Piaskowska 
+et al., 2021). However, the ability to adopt technolo-
+gies such as AI and robots is strongly related to the 
+internal capabilities and external incentives that are 
+in place prior to the firm’s adoption decision (Sha-
+hadat et  al., 2023). Their internal capabilities allow 
+a rapid identification of opportunities for exploiting 
+short-term benefits, which can potentially become 
+long-term strategic assets due to competitive break-
+throughs (Teece, 2007). Therefore, it is crucial to 
+couple the adoption of ADTs with the development 
+of the skills and capabilities required to fully exploit 
+digital technologies (Canhoto et al., 2021).
+Among SMEs, start-ups and scale-ups stand out 
+for their dynamic capabilities, which facilitate the 
+adoption of ADTs (Mula et  al., 2024). Start-ups, 
+being inherently innovative, possess the capacity to 
+identify, assess and capitalise innovative opportuni-
+ties in new market niches (Audretsch et  al., 2020). 
+Start-ups benefit from their low iteration barriers and 
+a more dynamic workforce ready to adapt to chang-
+ing technological paradigms (Ghezzi, 2019). This 
+flexibility and responsiveness to market shifts makes 
+them more capable of adopting innovative business 
+models (Hajoary et al., 2024). Additionally, start-ups 
+often have a less entrenched organisational resistance, 
+supporting the adoption of ADT as compared to other 
+SMEs (Aaldering & Song, 2021; Acs et  al., 2021). 
+However, their lack of experience moderates their 
+potential to adopt ADTs, as more established firms 
+have a knowledge advantage that allows for a more 
+effective exploitation of digital technologies (Forman 
+& Van Zeebroeck, 2019).
+Conversely, scale-ups are characterised by high-
+growth processes, innovation and the capacity for 
+exploiting economies of scale (Coad et  al., 2024). 
+Recently, Mula et al. (2024) show that the develop-
+ment of dynamic capabilities in scale-ups is fun-
+damental to manage the tensions related to rapid 
+growth. These enhanced capabilities have the poten-
+tial to drive the digital transformation of scale-up 
+firms. However, scale-ups often face challenges 
+related to managing the pressures of growing early 
+quickly, which can constrain their capacity of AI and 
+robots (Nicholls-Nixon, 2005).
+Thus, while start-ups and scale-ups face unique 
+advantages and challenges in adopting ADTs, we 
+expect that these firm types to be more likely to adopt 
+AI and robots compared to other SMEs. This leads to 
+our third hypothesis:
+Hypothesis 3. Start-ups and scale-ups are more 
+likely to adopt ADTs than other SMEs.
+2.3  The relationship between AI, robots and 
+innovation
+Recent empirical studies show that the digital adop-
+tion is significantly associatied with the development 
+of technological and non-technological innovations 
+(Calvino & Fontanelli, 2023; Cattani et  al., 2023; 
+Holl & Rama, 2024; Koch et al., 2021). The exten-
+sive applications of AI and robots, along with their 
+interdependencies, offer numerous opportunities to 
+transform business processes. Robotics and AI are the 
+subject of numerous innovations, but they also open 
+new possibilities and facilitate addressing challenges 
+from unexplored perspectives, forming a feedback 
+loop that operates in both directions, generating mul-
+tiple technological trajectories that evolve over time, 
+at a different pace in different industries (Ciarli et al., 
+2021). Advances in digital technologies are not com-
+pletely exogenous, taking into account that innovation 
+is a source as well as an outcome of digital transfor-
+mations in organizations and industries. Therefore, 
+the use of digital technologies can foster creativ-
+ity and innovativeness (Blichfeldt & Faullant, 2021; 
+Veugelers et al., 2019a).
+AI and robots serve as the outcomes and founda-
+tions of innovation due to their inherently knowl-
+edge-intensive nature. ADTs significantly foster 
+knowledge spillovers, scalability and collaboration, 
+helping to surpass innovation barriers (Ciriello et al., 
+2018; Li et al., 2023). Consequently, these technolo-
+gies spur innovation by allowing a faster accumula-
+tion of knowledge and the development of internal 
+capabilities tightly related to innovation (Cockburn 
+et  al., 2018). As an example, Igna and Venturini 
+(2023) highlight the strong learning effects from AI 
+
+=== page 6 (PDF page index) ===
+724
+	
+A. Segarra‑Blasco et al.
+Vol:. (1234567890)
+adoption, generating knowledge complementarities 
+across different areas in highly digitalised firms.
+ADTs facilitate information storage, data analysis 
+and information transmission, thereby increasing the 
+flexibility of operations and enhancing the interac-
+tions within the firm (Blichfeldt & Faullant, 2021). 
+This contributes to a reduction in the costs directly 
+associated with innovation processes, increasing 
+the appeal and demand for existing products or ena-
+bling the expansion of product offerings and other 
+organisational changes (Babina et al., 2024). Follow-
+ing Agrawal et al., (2019a, b), AI creates new busi-
+ness opportunities by enabling firms to learn better 
+and faster from big data. Accordingly, Rammer et al. 
+(2022) show a strong association between AI, world-
+first product innovations and process innovations. 
+Therefore, the adoption of AI and robots is potentially 
+associated with the development of product and pro-
+cess innovations.
+Concerning non-technological innovations, digital-
+ised firms have incentives to reallocate their internal 
+resources to knowledge-intensive activities, such as 
+innovation processes, to improve their market posi-
+tion or to close information asymmetries with con-
+sumers (Acemoglu & Restrepo, 2018; Rampersad, 
+2020). This shows that digital adopters have more 
+capacity to explore new market niches and explore 
+new marketing strategies.
+Finally, AI and robots drive resource reallocation 
+and human capital adjustments by reducing per-unit 
+labour costs (Agrawal et al., 2019b; Rammer et al., 
+2022). Analysing the firm as a set of tasks with var-
+ying degrees of complexity, the adoption of AI and 
+robots allows the automatization of the relatively less 
+complex tasks (Acemoglu & Autor, 2011).3 Aghion 
+et  al. (2017) discuss the possibility that relatively 
+low-skilled tasks, substituted by digital technolo-
+gies, are replaced by more complex tasks intensive in 
+human capital.
+Despite these potential positive linkages, firms 
+must address challenges related to workforce skills 
+and an adaptation of organisational rules in order 
+to obtain returns from ADTs on innovation (Bryn-
+jolfsson & McAfee, 2014). Therefore, firms need to 
+invest in generating learning effects and to train their 
+workforce. These potential barriers can moderate the 
+relationship between digitalisation and innovations. 
+For instance, multiple authors identify insignificant 
+impacts on innovation outcomes from the adoption 
+of artificial intelligence (Babina et al., 2024; Kopka 
+& Fornahl, 2024), making further technological 
+advancements more challenging (Bloom et al., 2020). 
+Despite this, we consider that introducing AI and 
+robots benefits the innovative potential of the firm:
+Hypothesis 4. The adoption of AI and robots 
+is positively associated with a firm’s innovative 
+capacity.
+Regarding specific innovation types, the literature 
+suggests that digital technologies affect differently 
+innovations related to the reorganisation of produc-
+tion methods (i.e. process innovations and organisa-
+tional innovations) or innovations with a clear market 
+focus (i.e. product and marketing innovations (Ciarli 
+et al., 2021). These differences are tightly related to 
+the specific roles that an advanced digital technology 
+serves and the ability of the firm of generating, inte-
+grating and recombining digital knowledge into other 
+organisational dimensions (Colfer & Baldwin, 2016).
+As robots become increasingly autonomous, their 
+integration into business processes can drive sig-
+nificant performance gains. However, the integra-
+tion of smart robots may foster non-technological 
+innovations such as organisational innovations due 
+to the reorganisation of workers and tasks. Addition-
+ally, smart robots may also drive marketing innova-
+tions when they become an advertising claim for 
+customers.
+Concerning artificial intelligence, there are inter-
+nal and external facts that may affect whether AI 
+promotes the development of innovations. Since AI 
+facilitates the management of big data and informa-
+tion this is technology that can be implemented in 
+different innovation dimensions.4 AI is crucial for the 
+development of technological innovations, since the 
+use of AI increases the storage and use of information 
+3  This leads to a reduction of production costs and generates 
+efficiency gains that lead to a reduction in the price of a prod-
+uct or an enhancement in product quality (Zeira, 1998).
+4  A recent work from Bahoo et al. (2023) identifies eight fields 
+where AI may promote innovation (business models, product 
+innovation, open innovation, innovation process, innovation 
+structure, firm’s knowledge and market performance and sup-
+ply chain management).
+
+=== page 7 (PDF page index) ===
+725
+AI, robots and innovation in European SMEs﻿	
+Vol.: (0123456789)
+that may improve business processes by increasing 
+their efficiency or reducing time development, while 
+they can also improve the development of more cus-
+tomized products or forecast changes of needs.
+Despite the scarce evidence in the literature ana-
+lysing which specific innovations are more tightly 
+associated with concrete digital technologies, our 
+final hypothesis is the following:
+Hypothesis 5. The specific roles of AI and robots 
+associate differently with each specific innovation 
+outcome.
+3  The database and descriptive statistics
+3.1  The database
+Our data belongs to the Flash Eurobarometer 486 
+“SMEs, Start-ups, Scale-ups and Entrepreneurship” 
+conducted by TNS Political & Social at the request 
+of the European Commission.5 The survey was car-
+ried out between February 19th and May 5th, 2020, 
+and covers all European countries in addition to Bos-
+nia and Herzegovina, Brazil, Canada, Croatia, Great 
+Britain, Iceland, Japan, Kosovo, Makedonia, Norway, 
+Serbia, Turkey and USA, with a sample of 16,365 
+firms. The target population includes firms with 1 to 
+250 employees, but it contains a subsample of larger-
+sized firms. For the purposes of this analysis, the 
+empirical work primarily focused on the 27 EU mem-
+ber countries.
+The cross-sectional nature of the data prevents 
+establishing causality between the variables of inter-
+est. Despite this, FL 486 is a relevant dataset for 
+addressing how the adoption of digital technolo-
+gies affects innovative performance among Euro-
+pean firms.6 FL 486 asked surveyed firms if they 
+had adopted some of the seven ADTs considered: 
+AI and machine learning; cloud computing; robots; 
+smart devices and intelligent sensors; big data ana-
+lytics; highspeed infrastructure; and blockchain 
+technologies.7
+To control for country-specific characteristics, 
+we employ the Digital Economy and Society Index 
+(DESI), which reports composite indexes summa-
+rizing indicators on the digital performance of EU 
+member states across four main dimensions: human 
+capital, connectivity, integration of digital technolo-
+gies, and digital public services.8 The information in 
+DESI is monitored and published annually since 2014 
+by the European Commission. Here, we focus on the 
+indexes from 2020, as they match the specific firm 
+information from FL 486.
+3.2  Descriptive statistics
+Table  1 presents our main variables.9 To provide a 
+broad perspective of the relationship between ADTs 
+on innovation, we cover a wide spectrum of potential 
+innovation outcomes. Product innovations refer to the 
+introduction of new products to the market or signifi-
+cantly improving existing ones. Process and organi-
+sational innovations respectively focus on increasing 
+the efficiency of operations and the design of more 
+effective managerial practices. Finally, marketing 
+innovations involve the development and implemen-
+tation of new strategies to promote a firm’s goods or 
+services.
+5  European Commission: Flash Eurobarometer 486: SMEs, 
+start-ups, scale-ups and entrepreneurship, February-May 2020. 
+TNS Political & Social [Producer]; GESIS Data Archive: 
+ZA7637, dataset version 2.0.0. (2020), https://​doi.​org/​10.​
+4232/1.​13639.
+6  See for instance, Cattani et  al. (2023), Ardito (2023) and 
+Holl and Rama (2024). Ardito (2023) reveals that each digital 
+technology has heterogeneous impacts on sustainable innova-
+tions. Additionally, Cattani et  al. (2023) and Holl and Rama 
+(2024) highlight the role of the geographical environment in 
+adopting ADTs.
+7  Other databases are the following. The Survey on Business 
+Strategies (ESEE – Encuesta Sobre Estrategias Empresari-
+ales) is an annual survey of 2,000 Spanish manufacturing firms 
+with three decades of coverage. The European Manufacturing 
+Survey (EMS) compiles information about the adoption and 
+impact of robots for manufacturing firms. EMS selects ran-
+dom firms from seven European countries (Austria, France, 
+Germany, Spain, Sweden, Switzerland, and The Netherlands). 
+There are five waves: 2001‒02, 2003‒04, 2006‒07, 2009‒10 
+and 2012‒13. However, EMS only includes industrial robots 
+and their application in the manufactures. Finally, the EIB 
+Group Survey on Investment and Investment Finance is an 
+annual survey of 12,800 EU and US firms. It is designed to 
+build a panel of observations to support time series analysis.
+8  The database is available in https://​digit​al-​strat​egy.​ec.​europa.​
+eu/​en/​polic​ies/​desi
+9  Tables 6 and 7 show the main descriptive statistics and cor-
+relations.
+
+=== page 8 (PDF page index) ===
+726
+	
+A. Segarra‑Blasco et al.
+Vol:. (1234567890)
+As our key explanatory variables, we consider the 
+use of artificial intelligence and robots. AI increases a 
+firm’s ability to compute large volumes of information 
+and automatise processes with the use of generative 
+AI. On the other hand, robots increase the efficiency of 
+relatively simple and repetitive operations. According to 
+Table 6 (Appendix 1), some 6.9% of European SMEs 
+adopt AI, while 8.3% adopt robots. Across sectors, 
+Table 1   Definition of variables
+Innovation
+Dummy indicating whether the firm has introduced …
+  Product
+… a product innovation during the last 12 months
+  Process
+… a process innovation during the last 12 months
+  Organisational
+… an organisational innovation during the last 12 months
+  Marketing
+… a marketing innovation during the last 12 months
+ADTs
+Dummy indicating whether the firm uses…
+  Artificial intelligence
+… Artificial intelligence
+  Robots
+… robots
+Firm characteristics
+Dummy indicating whether the firm …
+  Start-up
+…is less than 5 years old, is innovative, and has plans to grow by at least 10%
+  Scale-up
+…has grown by at least 30% int terms of sales or employees during the last three years
+  Exports
+… exports to foreign markets
+  Global value chain
+… belongs to a global value chain
+  Exports and global value chain
+… exports and belongs to a global value chain simultaneously
+  Firm size
+Firm size in terms of the number of employees
+  Firm age
+Number of years
+  Big city
+… is in a big city
+  Industrial area
+… is in an industrial area
+  Goods
+… trades with goods directly
+  ICT
+… belongs to ICT sectors
+DESI indicators
+Percentage of …
+  Internet use
+… individuals who use the internet at least once a week
+  Firms providing ICT training
+… firms that provided ICT training to their personnel
+  ICT specialists
+… ICT specialists over total employment
+  100 Mbps broadband take-up
+… households subscribing to a fixed broadband of at least 100 Mbps
+  VHCN coverage
+… households covered by any fixed Very High-Capacity Network
+  Mobile broadband take-up
+… individuals with number of mobile data subscriptions
+  SMEs selling online
+… SMEs selling online
+  Selling online cross-border
+…SMEs that carried out electronic sales to other countries
+  e-Government users
+…internet users with public authorities
+Table 2   Cross-tabulation showing advanced digital technologies and innovation outcomes
+Note: All values show means and standard deviation in brackets
+Source: own elaboration from FL 486
+Innovation outcomes
+Product
+Process
+Organisational
+Marketing
+Advanced digital technologies
+Artificial intel-
+ligence
+0.432 (0.496)
+0.301 (0.459)
+0.257
+(0.437)
+0.303 (0.460)
+Robots
+0.450 (0.498)
+0.450 (0.498)
+0.246
+(0.431)
+0.217 (0.412)
+
+=== page 9 (PDF page index) ===
+727
+AI, robots and innovation in European SMEs﻿	
+Vol.: (0123456789)
+manufacturing firms tend to adopt more robots than 
+firms operating in services sectors, which depend more 
+on AI in relative terms. Regarding the distribution of 
+innovation outcomes, product innovations are the most 
+common, being developed by 27.2% of the total sample. 
+Furthermore, 19.9% and 19.5% of firms develop mar-
+keting and process innovations, respectively. Finally, 
+organizational innovations are the least common (some 
+15.6%).
+Table  2 cross-tabulates the distribution of 
+ADTs and innovation outcomes. According to our 
+information, firms adopting AI are more likely to 
+develop organisational and marketing innovations 
+on average terms. Alternatively, robot adopters 
+are more likely to introduce product and process 
+innovations. Among AI adopters, product innova-
+tions are the most common, followed by marketing 
+and process innovations. For robot adopters, prod-
+uct and process innovations are equally adopted. 
+However, from a descriptive perspective, we can-
+not identify significant robust associations across 
+groups. These associations will be thoroughly ana-
+lysed with inference tools.
+As additional control variables, we consider 
+whether a firm is a scale-up or a start-up. Scale-ups 
+correspond to firms that grew by at least 30% in terms 
+of sales or employees during the last 3 years. Start-
+ups are innovative firms that are less than 5 years old 
+and have ambitious growth plans. According to the 
+descriptive statistics, more scale-ups operate in man-
+ufactures (20.6%), while more start-ups are in service 
+sectors (6.2%).
+Firm size and firm age proxy a firm’s resources 
+and experience. On average, firms employ 32 workers 
+and are 23.6 years old. In terms of internationalisa-
+tion, 30.7% of firms only export, 3.8% only partici-
+pate in global value chains and 5.1% export and par-
+ticipate in global value chains simultaneously, which 
+shows the limited internationalisation of European 
+SMEs. Regarding firm location, 46.6% of firms locate 
+in big cities, while 16.6% are placed in industrial 
+areas. Finally, a third of the sample is composed of 
+firms trading directly with goods (38.8%), and a small 
+proportion belongs to ICT industries (3.8%).
+Table 8 presents the share of firms adopting AI and 
+robots by sectors and size classes. The overall per-
+centage of firms using AI is 7.2% and using robots 
+is 9.1%. At the sectoral level, there are clear hetero-
+geneous factors. For instance, the ICT sector has the 
+highest percentage of AI users (25%) while robots are 
+adopted more by SMEs in manufactures and those 
+firms operating in the electricity, gas and steam sec-
+tors. Similarly, the largest firms have the highest 
+adoption rates for all technologies, while the smallest 
+ones present lower rates of adoption. To sum up, the 
+results provide insights into the heterogeneous pattern 
+across sectors and firm size.10
+Furthermore Tables  9 and  10 provide a break-
+down of the adoption of all the digital technologies 
+across European regions. We observe that the most 
+common technology is cloud computing (48%) fol-
+lowed by high-speed infrastructure. Technologies 
+such as blockchain and AI are less common (7.2% 
+and 3.1%, respectively). There is a high divergence 
+in the adoption across regions. SMEs in North-
+ern and Core countries present the higher shares, 
+regardless of the technology. Furthermore, start-
+ups and scale-ups in general present higher shares 
+of adoption of ADTs. This pattern is particularly 
+high for cloud computing, smart devices and high-
+speed infrastructure.
+In addition to firm characteristics, a set of indica-
+tors captures country-specific heterogeneities. These 
+variables refer to the usage of internet and the level 
+of ICT training and specialists in firms, the spread of 
+advanced digital infrastructure and the use of online 
+platforms to conduct trading activities or interaction 
+10  Robots are a comparatively well-established technology in 
+manufacturing, but, more recently, have been widely adopted 
+in services. Additionally, the adoption of robotics in manu-
+facturing is highly skewed and mostly adopted by a few large 
+firms. In addition, robot adopters are larger and grow faster 
+than their competitors (Acemoglu et al., 2020).
+
+=== page 10 (PDF page index) ===
+728
+	
+A. Segarra‑Blasco et al.
+Vol:. (1234567890)
+with public institutions. To properly model the effects 
+of country characteristics, we incorporate them into 
+three factors applying Principal Component Analy-
+sis (PCA) to overcome potential multicollinearity 
+issues.11
+Table  3 presents the factors. We refer to Fac-
+tor 1 as Digital Skills, as it is characterised by 
+the usage of the internet, the spread of ICT train-
+ing, the proportion of ICT specialists, the spread 
+of mobile broadband take-up, the share of SMEs 
+selling online and the use of electronic platforms 
+to interact with public institutions. Factor 2 is pre-
+dominantly composed of ICT training and national 
+or international internet sales. Consequently, we 
+refer to this factor as e-Commerce. Finally, Factor 3 
+mainly comprises the spread of medium and high-
+speed internet infrastructure. Therefore, we refer to 
+this factor as Infrastructure. 
+4  Methodology
+4.1  Econometric strategy
+This section presents the econometric strategy applied 
+to explore the factors associated with the decision to 
+adopt AI and robots, as well as their relationship with 
+multiple innovation outcomes. If European SMEs can 
+freely adopt both AI and robots as they become avail-
+able, our approach considers a sequence of actions in 
+which firms decide to adopt these digital technologies 
+and increase their innovation performance. This two-
+stage approach allows us to control the endogeneity 
+and multicollinearity problems due to the similarity 
+in the determination of ADTs and the development of 
+innovation activities.
+As our endogenous variables in the two stages do 
+not follow a linear distribution, a standard two-stage 
+linear squares assuming a linear distribution of prob-
+abilities or, more generally, a two-stage predictor 
+substitution, would provide biased estimates (Blun-
+dell & Powell, 2001; Terza et al., 2008). Therefore, 
+we apply a two-stage residual inclusion (2SRI) model 
+following the routinisation proposed by Terza (2017) 
+to asymptotically adjust the estimation in the second 
+stage. 2SRI models allow for non-linearity when the 
+first or second-stage dependent variables are binary. 
+More specifically, our first stage applies a bivariate 
+probit model assuming an interrelationship in the 
+adoption of artificial intelligence and robots:
+Table 3   Factorization of 
+DESI indicators
+Source: own elaboration 
+from DESI
+Variable
+(1)
+Digital skills
+(2)
+e-Commerce
+(3)
+Infrastructure
+Internet use
+0.927
+0.236
+0.104
+Firms providing ICT training
+0.630
+0.567
+ − 0.261
+ICT specialists
+0.793
+0.295
+0.032
+100 Mbps broadband take-up
+0.126
+0.129
+0.601
+VHCN coverage
+0.056
+ − 0.223
+0.736
+Mobile broadband take-up
+0.930
+0.300
+ − 0.047
+SMEs selling online
+0.448
+0.768
+0.113
+Selling online cross-border
+0.295
+0.763
+ − 0.222
+e-Government users
+0.817
+0.146
+0.138
+11  The PCA methodology derives F factors from M variables, 
+providing a linear reconstruction of the variables from the 
+original variance-covariance matrix in the following manner:
+  where 휃i,m is the value of the firm-year observation i belong-
+ing to the variable m; bf,m are the linear coefficients of variable 
+m on factor f, referred to as factor loadings; 휆i,f represents a 
+firm-year observation i belonging to factor f; ei,m is the resid-
+ual, referred to as unique variance, as it reflects the share of 
+the value not explained by covariances. PCA finds the optimal 
+factor loadings that minimize the residual (unique) variance 
+across all variables. The factors are composed, to a greater or 
+lesser extent, of all the variables introduced in the PCA. Rela-
+tively low factor loadings however are not stable. The consen-
+sus is that factor loadings higher than 0.4 after orthogonal rota-
+tion are considered sufficient to determine a strong association 
+between a variable and a factor (Guadagnoli & Velicer, 1988).
+휃i,m =
+F
+∑
+f=1
+bf,m휆i,f + ei,m
+
+=== page 11 (PDF page index) ===
+729
+AI, robots and innovation in European SMEs﻿	
+Vol.: (0123456789)
+where Z∗
+i,m is the firm-specific predicted likelihood 
+of adopting an advanced digital technology m = 1, 2 
+referring to AI or robots, respectively. b0 is the inter-
+cept, and b1 is a vector of parameters determining the 
+effects of the firm-specific controls Xi , which include 
+sector and country fixed effects. Furthermore, b2 is 
+another vector determining the influence of the matrix 
+of instrumental variables Wi , which corresponds to 
+three factors determining the country-level degree of 
+digitalisation. Finally, 휖i are firm-specific errors. This 
+structure explicitly models the interrelation between 
+AI and robots by allowing for correlations between 
+both error terms (Greene, 2000).
+After Eq. (1) is estimated, the residuals are defined as:
+where Zi,m is the observed adoption of AI or robots. 
+Based on these results, our second stage calculates 
+the likelihood of developing product, process, organi-
+sational, and marketing innovations,12 these being 
+j = 1,2, 3,4 , respectively, taking the following form:
+where:
+Yi,j identifies all innovation outcomes. 훽0 is the 
+intercept. 훽1 determines the effects of adopting AI 
+and robots. 훽2 determines the effects of the exog-
+enous variables Xi . 훽3 identifies the endogeneity 
+of the relationship between innovation and ADTs 
+defined by ri,m and 휀i,j are error terms. Equation (3) 
+is estimated following a multivariate probit struc-
+ture, which allows for correlations across all inno-
+vation outcomes, through the Geweke-Hajuvassi-
+low-Keane method (Cappellari & Jenkins, 2003; 
+Geweke, 1989; Hajivassiliou & McFadden, 1998; 
+Keane, 1994).
+(1)
+Z∗
+i,m = b0 + b1Xi + b2Wi + 휖i,m
+(2)
+ri,m = Zi,m −Z∗
+i,m
+(3)
+Y∗
+i,j = 훽0 + 훽1Zi,m + 훽2Xi + 훽3ri,m + 휀i,j
+(4)
+Yi,j =
+{
+1ifY∗
+i,j > 0
+0ifY∗
+i,j < 0
+However, the results from Eq.  (3) cannot be 
+directly interpreted, as the coefficients obtained do 
+not include the relationships established in the first 
+stage. To solve this issue, we obtain the asymptoti-
+cally correct standard errors (ACSE) for the second 
+stage following Terza (2017).
+As both stages are obtained with a maximum like-
+lihood estimator, the ACSE for each element of 훽 is 
+the square root of the same diagonal element in the 
+following matrix:
+where V
+(̂
+b
+)
+ and V
+(̂
+훽
+)
+ are the estimated covariance 
+matrices for the first and second stages, respectively 
+and:
+where ∇훽ln(̂f ∗
+i ) and ∇bln(̂f ∗
+i ) are the gradients 
+f ∗(Y|Z, W;훽, b).
+As a final note, we remark that continuous vari-
+ables such as firm size and age were converted into 
+logarithms and that the estimation include sector-
+specific fixed-effects to capture sectoral hetero-
+geneities and country-specific effects for country 
+heterogeneities.13
+4.2  Relevance and exogeneity conditions
+In a two-stage setting, the instrumental variables 
+utilised must fulfil the relevance and exogeneity 
+conditions, which are defined by E(Z, W) ≠0 and 
+E(Y, W) = 0 , respectively. In other words, the instru-
+ments used must be significantly correlated with a 
+firm’s specific level of digitalisation but not with its 
+innovation outcomes.
+(5)
+V
+(̂
+훽
+)
+AV
+(̂
+b
+)
+AV
+(̂
+훽
+)
++ V
+(̂
+훽
+)
+(6)
+A =
+n
+∑
+i=1
+∇훽ln(̂f ∗
+i )∇bln(̂f ∗
+i )
+12  Linear distributions of instrumentalized variables provide 
+more robust outcomes in multiple-stage regressions.
+13  Concerning the country-specific effects, countries are 
+grouped into wider geographical clusters to avoid collinearity 
+issues with the factor variables. Here, Western European coun-
+tries are Austria, Belgium, Germany, France, Ireland, Luxem-
+burg and the Netherlands. Mediterranean countries are Spain, 
+Italy, Portugal and Cyprus. Eastern countries are Bulgaria, 
+Czechia, Croatia, Hungary, Lithuania, Latvia, Poland, Roma-
+nia, Slovenia and Slovakia. Finally, northern countries are 
+Denmark, Sweden, Finland and Estonia.
+
+=== page 12 (PDF page index) ===
+730
+	
+A. Segarra‑Blasco et al.
+Vol:. (1234567890)
+According to the correlation matrix Table  7, the 
+relationship between the country-specific level of 
+digitalisation, the firm-specific digitalisation and the 
+innovation outcomes is low in all possible combina-
+tions, except for the digital skills factors. While this a 
+strong signal for the exogeneity condition, it hampers 
+the interpretation of the instruments’ relevance in the 
+first stage. However, the literature provides strong 
+evidence motivating the relationship between the 
+country and the firm-specific levels of digitalisation.
+We define the relevance of the available skills in 
+the labour market and the state of the infrastructure 
+when determining a firm’s adoption of digital tech-
+nologies in Sect. 2 (Cirillo et al., 2023; Greenstein, 
+2019; Shapiro & Mandelman, 2021). The nature of 
+this relationship is motivated by the needs that digi-
+tal technologies generate and how easy it is for firms 
+to cover these needs. Additionally, there are relevant 
+digital knowledge spillovers from the rest of the econ-
+omy that motivate a firm’s digitalisation in highly 
+digitalised economies or discourage firms from digi-
+talising if the rest of the economy is poorly digitalised 
+(Gal et al., 2019; Mosiashvili & Pareliussen, 2020).
+Therefore, from the combination of the observed 
+correlations in our data and the insights provided by 
+previous research, we consider the factors defining 
+the country-level digitalisation as good instruments, 
+although they are subject to limitations that affect 
+the imputation of direct causality between ADTs and 
+innovations. For this reason, we acknowledge that our 
+IV approach does not completely eliminate endoge-
+neity due to the simultaneity of the digitalisation and 
+innovations decision. Nevertheless, our econometric 
+strategy reduces the multicollinearity problem arising 
+from the adoption of AI and robots, innovation and 
+their determinants.
+5  Results
+This section presents and discusses the base outcomes 
+from the empirical analysis. Table 4 shows the esti-
+mations for the first stage of our 2SRI setting, which 
+explains the adoption of artificial intelligence in Col-
+umn 1 and robots in Column 2.
+We observe that scale-ups and start-ups are more 
+likely to digitalise, but they present different digital 
+adoption patterns. Scale-ups are associated with the 
+adoption of artificial intelligence and robots, while 
+start-ups are more likely to adopt only robots. On 
+average, both types of SMEs have a great absorp-
+tive capacity that makes it easier to adopt the most 
+ADTs and implement different innovative strategies 
+(Zahra & George, 2002). These firms exploit the new 
+knowledge and their existing technological excellence 
+to adapt to demanding market and environmental 
+changes (Camisón & Forés, 2010). Therefore, these 
+firms generate the optimal substrate for the adoption 
+of ADTs.
+The internationalisation of the firm also plays 
+a key role in the adoption of artificial intelligence 
+and robots, especially for firms exporting and 
+belonging to global value chains simultaneously. 
+Furthermore, firm size is significantly associated 
+with the adoption of both ADTs. For firm age, we 
+do not observe any significant association. These 
+results remark the role of specific firm character-
+istics, such as being subject to more competition in 
+international markets and having larger resources, 
+in determining digital adoption patterns, confirm-
+ing the principles of self-selection in the adoption 
+of ADTs (Montobbio et  al., 2022; Soluk et  al., 
+2023). In terms of location, the only significant 
+association is found for robots in industrial areas. 
+Firms trading directly with goods are more likely 
+to adopt robots in their production systems, while 
+firms in ITC sectors are more likely to adopt these 
+technologies.
+In terms of the country-specific factors, firms in 
+countries with higher levels of digital skills, e-com-
+merce and a better infrastructure are more likely to 
+adopt artificial intelligence. For robots, we find a 
+significant association with the digital skills present 
+in the country and the infrastructure. It is likely that 
+digital industrialization supports local firms with 
+basic digital equipment and services, resulting in an 
+increased investment in digitalization. Our results 
+contribute to Li et al. (2023), as we find firms more 
+likely to rely on the existing environment created 
+by pioneers’ technologies and engage in free-riding 
+behaviours rather than committing to generating 
+breakthroughs on their own, as it is a strategy sub-
+ject to larger costs and risks. Regarding the inter-
+dependencies in the adoption of AI and robots, the 
+
+=== page 13 (PDF page index) ===
+731
+AI, robots and innovation in European SMEs﻿	
+Vol.: (0123456789)
+estimated correlation between the two from the 
+bivariate probit is positive and significant, which 
+highlights the complementary adoption of these two 
+technologies.
+The results from the first stage of the 2SRI model 
+support our first three hypotheses. First, we find dif-
+ferent adoption patterns depending on a firm’s spe-
+cific internal characteristics and the environment in 
+which the organisation operates (Hypothesis 1a and 
+Hypothesis 1b). Second, the correlation between 
+the two specifications in the bivariate probit setting, 
+which provides a value of rho of 0.451 significant at 
+p < 0.01, confirms the complementarities in the adop-
+tion of both AI and robots (Hypothesis 2). Third, 
+scale-ups and start-ups are more likely to digitalise 
+Table 4   First stage 
+bivariate probit determining 
+the adoption of artificial 
+intelligence and robots
+Note: *p < 0.10, **p < 0.05, 
+***p < 0.01. Coefficients 
+(Std. Err.) reported. Non-
+exporters and firms not 
+participating in global value 
+chains are the base outcome 
+for internationalisation 
+dummies. Firms located in 
+small or medium cities are 
+the baseline for location 
+dummies. Retail sectors 
+are the base outcomes for 
+the sector fixed-effects. 
+Western European countries 
+are the base outcome for 
+geographical cluster fixed-
+effects
+(1)
+Artificial intelligence
+(2)
+Robots
+Firm-specific characteristics
+  Scale-up
+0.155***
+(0.048)
+0.176***
+(0.047)
+  Start-up
+0.143
+(0.093)
+0.522***
+(0.090)
+  Exports
+0.294***
+(0.045)
+0.296***
+(0.044)
+  Global value chain
+0.275***
+(0.092)
+0.211**
+(0.093)
+  Exports and global value chain
+0.534***
+(0.075)
+0.499***
+(0.072)
+  Size (Logs)
+0.114***
+(0.014)
+0.194***
+(0.014)
+  Age (Logs)
+ − 0.031
+(0.029)
+0.042
+(0.029)
+  Big city
+0.028
+(0.041)
+0.059
+(0.040)
+  Industrial area
+ − 0.034
+(0.059)
+0.094*
+(0.053)
+  Goods
+ − 0.057
+(0.050)
+0.206***
+(0.047)
+  ITC
+1.057***
+(0.092)
+0.511***
+(0.108)
+  Country-specific characteristics
+  Digital skills
+0.132***
+(0.040)
+0.127***
+(0.038)
+  e-commerce
+0.043*
+(0.025)
+0.008
+(0.025)
+Infrastructure
+0.069**
+(0.030)
+0.126***
+(0.028)
+Geographical cluster fixed-effects
+Yes
+Sector fixed-effects
+Yes
+Observations
+10,626
+Wald test for zero slopes
+1,205.92***
+Correlation (AI, Robots)
+0.451*** (0.026)
+Log likelihood
+ − 4,849.22
+
+=== page 14 (PDF page index) ===
+732
+	
+A. Segarra‑Blasco et al.
+Vol:. (1234567890)
+Table 5   Second stage multivariate probit with residual inclusion and asymptotically adjusted coefficients for the determinants of 
+innovation
+Note: *p < 0.10, **p < 0.05, ***p < 0.01. Coefficients (Std. Err.) reported. Non-exporters and firms not participating in global value 
+chains are the base outcome for internationalisation dummies. Firms located in small or medium cities are the baseline for location 
+dummies. Retail sectors are the base outcomes for the sector fixed-effects. Western European countries are the base outcome for gro-
+graphical cluster fixed-effects
+Artificial intelligence
+Robots
+(1)
+Product
+(2)
+Process
+(3)
+Organisational
+(4)
+Marketing
+(1)
+Product
+(2)
+Process
+(3)
+Organisational
+(4)
+Marketing
+Digital technologies – IV
+Artificial intel-
+ligence
+0.967***
+(0.166)
+1.297***
+(0.180)
+0.643***
+(0.186)
+0.151
+(0.172)
+Robots
+0.914***
+(0.131)
+1.297***
+(0.142)
+0.410***
+(0.144)
+0.302**
+(0.135)
+Firm-specific characteristics
+Scale-up
+0.220***
+(0.044)
+0.149**
+(0.001)
+0.236***
+(0.048)
+0.279***
+(0.045)
+0.208***
+(0.042)
+0.156***
+(0.045)
+0.263***
+(0.045)
+0.219***
+(0.043)
+Start-up
+0.753***
+(0.069)
+0.680***
+(0.074)
+0.686***
+(0.075)
+0.938***
+(0.070)
+0.510***
+(0.091)
+0.393***
+(0.099)
+0.623***
+(0.100)
+0.793***
+(0.093)
+Exports
+0.086
+(0.057)
+ − 0.108*
+(0.062)
+0.035
+(0.064)
+0.116*
+(0.060)
+0.090*
+(0.048)
+ − 0.069
+(0.053)
+0.094*
+(0.054)
+0.013
+(0.050)
+Global value 
+chain
+0.180**
+(0.084)
+ − 0.023
+(0.091)
+0.240***
+(0.090)
+0.239***
+(0.086)
+0.224***
+(0.075)
+0.071
+(0.082)
+0.313***
+(0.079)
+0.155**
+(0.076)
+Exports and 
+global value 
+chain
+0.211*
+(0.108)
+ − 0.200*
+(0.117)
+0.169
+(0.119)
+0.294***
+(0.112)
+0.229**
+(0.090)
+ − 0.119
+(0.098)
+0.280***
+(0.097)
+0.114
+(0.092)
+Size (Logs)
+ − 0.032
+(0.021)
+ − 0.029
+(0.023)
+0.060**
+(0.023)
+0.017
+(0.022)
+ − 0.086***
+(0.026)
+ − 0.086***
+(0.029)
+0.061**
+(0.029)
+ − 0.043
+(0.027)
+Age (Logs)
+0.089***
+(0.021)
+0.097***
+(0.023)
+0.058**
+(0.023)
+0.085***
+(0.022)
+0.045**
+(0.021)
+0.038*
+(0.099)
+0.037
+(0.023)
+0.078***
+(0.022)
+Big city
+0.092***
+(0.028)
+ − 0.052*
+(0.031)
+ − 0.014
+(0.032)
+0.055*
+(0.029)
+0.068**
+(0.029)
+ − 0.079**
+(0.032)
+ − 0.018
+(0.032)
+0.037
+(0.030)
+Industrial area
+0.174***
+(0.042)
+0.362***
+(0.044)
+0.110**
+(0.046)
+0.119***
+(0.043)
+0.088**
+(0.045)
+0.071
+(0.048)
+0.075
+(0.048)
+0.090**
+(0.045)
+Goods
+0.281***
+(0.035)
+0.188***
+(0.038)
+0.007
+(0.040)
+0.073**
+(0.036)
+0.107**
+(0.042)
+ − 0.047
+(0.073)
+ − 0.071
+(0.047)
+0.027
+(0.043)
+ITC
+0.020
+(0.185)
+ − 0.753***
+(0.204)
+ − 0.083
+(0.207)
+0.590***
+(0.192)
+0.409***
+(0.098)
+ − 0.122
+(0.108)
+0.274**
+(0.108)
+0.387***
+(0.101)
+Residuals
+ − 0.614***
+(0.160)
+ − 0.909***
+(0.175)
+ − 0.404**
+(0.180)
+0.124
+(0.166)
+ − 0.615***
+(0.125)
+ − 0.756***
+(0.136)
+ − 0.216
+(0.138)
+ − 0.247*
+(0.128)
+Sector fixed-
+effects
+Yes
+Yes
+Country fixed-
+effects
+Yes
+Yes
+Observations
+10,626
+10,626
+Wald test for 
+zero slopes
+2,254.61***
+2,310.86***
+LR test for no 
+correlation
+1,221.37***
+1,226.10***
+Log likelihood
+ − 19,283.65
+ − 19,254.05
+
+=== page 15 (PDF page index) ===
+733
+AI, robots and innovation in European SMEs﻿	
+Vol.: (0123456789)
+than other SMEs (Hypothesis 3). Nevertheless, they 
+differ in their digital adoption patterns, scale-ups 
+being more likely to adopt AI and robots and start-
+ups more likely to adopt only robots.
+Table 5 provides the outcomes from the multivari-
+ate probit regression, the second stage of the 2SRI 
+model. Artificial intelligence is significantly associ-
+ated with product, process and organisational inno-
+vations. Similarly, robots are related to all innovation 
+types. On the one hand, the results show the potential 
+interactions between the innovation outcomes and the 
+adoption of ADTs. On the other hand, these positive 
+coefficients are the result of a more effective usage of 
+these new technologies that increases the efficiency of 
+operations, enhances the quality of products, gener-
+eates new products, improves how firms are organised 
+and how the firm addresses its consumers. To sum up, 
+our results show that more innovative firms are also 
+more likely to have adopted artificial intelligence and 
+robots.
+When firms launch new products or expand 
+their product variety, they face uncertainty regard-
+ing what customers want and how customer prefer-
+ences might change. Using AI to analyse customer 
+data can potentially enable firms to overcome this 
+hurdle, providing the right product on a hyper-
+individualized basis. Furthermore, the availability 
+of resources arising from the adoption of ADTs 
+allow the firm to reallocate resources to more 
+complex tasks, such as innovation activities (Anto-
+nioli et  al., 2024) (Hypothesis 4). However, the 
+association between ADTs and specific innova-
+tion outcomes is heterogenous. According to our 
+results, both AI and robots are more tightly related 
+to product and process innovations, while to a 
+lower extent with innovations addressing organi-
+sational and marketing dimensions (Hypothesis 
+5). This result is characterised by the fact that the 
+digital transformation is closely linked to techno-
+logical innovations.
+Start-ups and scale-ups are the most innovative 
+firms in our sample, which aligns with previous evi-
+dence (Audretsch et al., 2020). Regarding other con-
+trol variables, the influence of the exporting activity 
+is positive in some cases but is far less consistent 
+than in the adoption decision. This underscores that 
+exports and internationalisation in European SMEs 
+do not spur innovation directly. Internationalisa-
+tion forces firms to adopt better strategies, such as 
+becoming more digitalised, which drive innovation 
+extensively.
+Firm size is associated with process innovations, 
+but smaller firms are more likely to develop product 
+and process innovations in the robot’s specification. 
+As Hottman et al. (2016) suggest, digital technolo-
+gies such as AI or robots have similar scale advan-
+tages and are important drivers of the superstar 
+firm phenomenon. Mature firms have a knowledge 
+advantage that drives innovation more extensively. 
+Furthermore, firm location patterns define a rele-
+vant distribution of innovation outcomes, especially 
+for firms in industrial areas. Finally, firms trading 
+directly with goods are more likely to generate 
+product and process innovations, while firms in ITC 
+are more likely to develop all innovations, except 
+process innovations.
+5.1  Extension. Manufacturing versus service sectors
+A key issue in this digital transformation is the dif-
+ferent adoption at multiple sectoral levels. Authors 
+such as Gallouj and Savona (2009) already estab-
+lished that manufacturing firms differ from services 
+since the former focus their innovation efforts on 
+the design, production, and quality of tangible prod-
+ucts, aiming to achieve higher efficiency levels, cost 
+reductions, and improvements in the physical attrib-
+utes of goods. In contrast, service firms empha-
+size process innovations and customer experience, 
+given the intangible nature of services, which are 
+often produced and consumed simultaneously. This 
+focus leads to innovation that prioritizes enhanced 
+customer interaction, personalization, and service 
+efficiency.
+The robustness of the base outcomes across 
+manufacturing and service sectors is tested in 
+Appendix 2. Regarding digital adoption patterns 
+across sectors, we find a lack of significance of 
+the country-level digitalisation in the adoption 
+decision of AI in manufacturing firms. Addition-
+ally, service firms located in industrial areas are 
+more likely to adopt robots into their productive 
+
+=== page 16 (PDF page index) ===
+734
+	
+A. Segarra‑Blasco et al.
+Vol:. (1234567890)
+structure. These two differences show two rele-
+vant patterns. First, firms in manufacturing sec-
+tors seem to be less dependent from the environ-
+mental externalities and knowledge spillovers in 
+the short term. A potential explanation is that 
+manufacturing firms usually invest in ADTs 
+which necessitate long-term investments and 
+substantial physical infrastructure developments. 
+Therefore, they require deeper structural changes 
+in the environment. Secondly, firms in service 
+sectors are influenced by the needs of their sur-
+roundings. Service firms have more capacity to 
+benefit from environmental changes given the 
+intangible nature of their production.
+Regarding the sectoral heterogeneities, AI is more 
+related to product, process, and marketing innova-
+tions in manufacturing sectors. However, robots are 
+only significantly associated with product and pro-
+cess innovations. Alternatively, in service sectors, 
+both ADTs are associated with all innovation out-
+comes significantly. Our results confirm that service 
+firms exhibit greater adaptability, with the ability to 
+scale and modify services rapidly, particularly when 
+leveraging digital platforms or advanced analytics 
+tools. Among service firms, technological innovation 
+primarily revolves around digital tools and informa-
+tion technologies, such as software, digital platforms, 
+and artificial intelligence, which enable flexible, cus-
+tomer-adaptive services with a reduced dependence 
+on physical assets.
+This highlights that advanced digital technolo-
+gies are more broadly integrated in the service sec-
+tor than in the manufacturing industries, which are 
+more specific in the tasks each digital technology 
+covers. Therefore, digitalisation in European manu-
+factures is used for more specialised purposes than 
+in the rest of the economy, while firms in service 
+sectors exploit artificial intelligence and robots in a 
+broader manner.
+6  Conclusions
+The cross-cutting nature of robots and artificial 
+intelligence is strongly associated with innova-
+tion activities. Despite the potential benefits from 
+digitalisation, European firms, and in particular 
+SMEs, are lagging in the adoption of ADTs due to 
+associated complexity and costs. To provide a bet-
+ter understanding of the topic, this paper explores 
+the determinants of AI and robot adoption and their 
+relationship with multiple innovation outcomes in 
+a sample of European SMEs.
+In a two-stage residual inclusion model, our results 
+show that digitalisation is determined by specific 
+firm characteristics, such as internationalisation and 
+firm size, as well as external factors to the firm, more 
+specifically digital skills and infrastructure. Among 
+SMEs, we find start-ups and scale-ups to be the most 
+digitalised and innovative firms, thus taking a leading 
+role in the European digital transition.
+Concerning the relationship between artificial 
+intelligence, robots and innovation we empha-
+size that, on average, both digital technologies are 
+positively associated with all innovation outcomes. 
+However, the relationships vary considerably across 
+industries. Digitalisation in European manufactures 
+is devoted to more specialised needs and drives spe-
+cific innovation types. Alternatively, in service sec-
+tors ADTs are more broadly integrated into the firm, 
+fostering multiple innovation types.
+Our paper provides the first comprehensive 
+study analysing simultaneously the digital adop-
+tion patterns and their effects on innovation in 
+European SMEs. Firstly, our results disentangle 
+the interlinkages and determinants of the adop-
+tion of artificial intelligence and robots. Secondly, 
+while most studies focus solely on individual 
+characteristics, we underscore the importance of 
+territorial factors due to the availability of skills, 
+
+=== page 17 (PDF page index) ===
+735
+AI, robots and innovation in European SMEs﻿	
+Vol.: (0123456789)
+infrastructure and other externalities. Thirdly, the 
+motivations for adopting AI and robots stem from 
+the expectation that these will increase the effi-
+ciency of production and other internal processes. 
+We discuss and analyse the interactions of these 
+efficiency gains and other factors such as a better 
+use of information linking them to the likelihood 
+of developing product, process, organisational and 
+marketing innovations.
+At the policy level, the discrepancy between pri-
+vate and social returns to digitalisation and inno-
+vation causes policy intervention to be essential 
+to avoid under-investments in digital technologies, 
+hampering the innovative potential of European 
+firms. Here, our results highlight the importance 
+of fostering a more favourable environment for 
+the development of innovative start-ups and scale-
+ups, which are often at the forefront of AI adop-
+tion and use. This can become a virtuous cycle of 
+innovation and AI development, in which more 
+advanced firms attract highly skilled talent and 
+investment. Laggard firms may take advantage of 
+leaders by having access to specialised resources 
+such as knowledge or human skills. Therefore, to 
+reduce the digital divide between North American 
+and European firms, it is essential to implement 
+policies aimed at fostering a favourable technology 
+ecosystem and business environment, particularly 
+for young SMEs.
+As a final remark, our study opens several 
+research lines on the role that digital technologies 
+have in fostering innovation, enhancing the perfor-
+mance of R&D activities and the implementation 
+of technological and non-technological innovations. 
+Thus, the effects of digital applications transcend 
+the limits of technological innovations, creating 
+novel invention methods. Future research should 
+investigate more deeply the effects that multiple 
+ADTs might have on different typologies of R&D 
+investment and the innovation strategies pursued by 
+firms.
+Acknowledgements  We thank Dolores Añon-Higon, Guill-
+ermo Arenas, Sara Amoroso, Diemo Urbig, Werner Bönte, 
+Torben Klarl and Alexander Schiersch for their comments. We 
+also thank other participants from 10TH ZEW Conference on 
+the Economics of Innovation and Patenting (Manheim, 26-27 
+of September 2024) and the Workshop on Entrepreneurship 
+and Management (Berlin, 21-22 of November 2024) for their 
+useful feedback.
+Author Contribution  Agustí Segarra-Blasco conceived 
+and designed the study, supervised the dataset, analysed the 
+data and wrote the manuscript. Josep Tomàs-Porres managed 
+the dataset and wrote the empirical analysis. Mercedes Teruel 
+contributed to the conceptualisation, wrote and supervised.
+Funding  Open Access funding provided thanks to the 
+CRUE-CSIC agreement with Springer Nature. This work 
+received support from Universitat Rovira i Virgili [2019PFR-
+URV-B2-80] and the Consolidated Group of Research from 
+the Departament de Recerca i Universitats from Generalitat de 
+Catalunya [2017-SGR-00493] and [2021-SGR-00729] and the 
+Martí i Franquès programme [2021-PMF-PIPF-33].
+Data availability  The dataset analysed during the current 
+study belongs to Flash Eurobarometer 486: SMEs, start-ups, 
+scale-ups and entrepreneurship, February-May 2020. TNS 
+Political & Social [Producer]; GESIS Data Archive: ZA7637, 
+dataset version 2.0.0. (2020). The dataset is available in https://​
+search.​gesis.​org/​resea​rch_​data/​ZA7637
+Declarations 
+Competing interests  The authors declare no competing interests.
+Ethical approval  This study was conducted in accordance 
+with the ethical guidelines of COPE.
+
+=== page 18 (PDF page index) ===
+736
+	
+A. Segarra‑Blasco et al.
+Vol:. (1234567890)
+Appendix 1. Additional descriptive statistics
+Tables 6, 7, 8, 9 and 10
+Table 6   Descriptive 
+statistics
+Note: All values show 
+means and standard 
+deviation in brackets
+Source: own elaboration 
+from FL 486 and DESI
+Variable
+Full sample
+Manufactures
+Services
+Innovation
+Product
+0.272 (0.445)
+0.348 (0.476)
+0.275 (0.447)
+Process
+0.195 (0.396)
+0.331 (0.471)
+0.164 (0.370)
+Organisational
+0.156 (0.363)
+0.160 (0.367)
+0.156 (0.363)
+Marketing
+0.199 (0.399)
+0.168 (0.374)
+0.222 (0.415)
+Advanced digital technologies
+Artificial intelligence
+0.072 (0.253)
+0.085 (0.269)
+0.074 (0.262)
+Robots
+0.091 (0.457)
+0.214 (0.395)
+0.060 (0.238)
+Firm characteristics
+Scale-up
+0.190 (0.392)
+0.206 (0.404)
+0.184 (0.388)
+Start-up
+0.060 (0.237)
+0.052 (0.223)
+0.062 (0.241)
+Firm size
+32.207 (156.167)
+51.923 (145.462)
+26.566 (176.069)
+Firm age
+23.684 (20.571)
+27.122 (21.038)
+22.595 (19.746)
+Exports
+0.307 (0.461)
+0.520 (0.500)
+0.288 (0.453)
+Global value chain
+0.038 (0.191)
+0.013 (0.113)
+0.047 (0.211)
+Exports and global value chain
+0.051 (0.220)
+0.103 (0.304)
+0.047 (0.211)
+Big city
+0.466 (0.499)
+0.336 (0.472)
+0.514 (0.500)
+Industrial location
+0.122 (0.328)
+0.209 (0.407)
+0.106 (0.307)
+Goods
+0.388 (0.487)
+0.688 (0.464)
+0.386 (0.487)
+ICT
+0.038 (0.191)
+0.0 (0.0)
+0.061 (0.240)
+DESI indicators
+Internet use
+79.262 (9.960)
+77.833 (9.752)
+79.458 (10.089)
+Firms providing ICT training
+20.642 (8.593)
+19.900 (8.298)
+20.817 (8.590)
+ICT specialists
+3.879 (1.240)
+3.741 (1.172)
+3.900 (1.258)
+100 Mbps broadband take-up
+19.097 (13.620)
+17.489 (13.527)
+19.323 (13.771)
+VHCN coverage
+37.028 (23.712)
+37.060 (23.138)
+36.724 (23.935)
+Mobile broadband take-up
+73.184 (12.153)
+71.643 (11.719)
+73.548 (12.245)
+SMEs selling online
+16.976 (6.485)
+16.033 (6.041)
+17.068 (6.535)
+Selling online cross-border
+8.480 (3.460)
+7.982 (3.133)
+8.548 (3.485)
+e-Government users
+62.707 (19.362)
+60.270 (19.539)
+63.295 (19.165)
+Observations
+10,626
+2,011
+6,624
+
+=== page 19 (PDF page index) ===
+737
+AI, robots and innovation in European SMEs﻿	
+Vol.: (0123456789)
+Table 7   Correlation matrix
+Source: own elaboration from FL486 and DESI
+(1)
+(2)
+(3)
+(4)
+(5)
+(6)
+(7)
+(8)
+(9)
+(10)
+(11)
+(12)
+(13)
+(14)
+(15)
+(16)
+(17)
+(18)
+(19)
+(1) Product
+1.000
+(2) Process
+0.257
+1.000
+(3) Organisa-
+tional
+0.175
+0.183
+1.000
+(4) Marketing
+0.247
+0.165
+0.223
+1.000
+(5) AI
+0.117
+0.117
+0.090
+0.078
+1.000
+(6) Robots
+0.135
+0.204
+0.090
+0.037
+0.230
+1.000
+(7) Scale-up
+0.103
+0.095
+0.099
+0.056
+0.069
+0.083
+1.000
+(8) Start-up
+0.118
+0.103
+0.102
+0.139
+0.023
+0.040
+ − 0.122
+(9) Exports
+0.102
+0.087
+0.039
+0.015
+0.062
+0.108
+0.089
+ − 0.008
+1.000
+(10) Global 
+value chain
+0.052
+0.031
+0.060
+0.045
+0.028
+0.017
+0.004
+0.044
+ − 0.132
+1.000
+(11) Exports 
+and global 
+value chain
+0.122
+0.097
+0.090
+0.052
+0.093
+0.140
+0.076
+0.014
+ − 0.154
+ − 0.046
+1.000
+(12) Firm size
+0.102
+0.145
+0.131
+0.019
+0.109
+0.222
+0.204
+ − 0.057
+0.144
+0.061
+0.160
+1.000
+(13) Firm age
+ − 0.004
+0.014
+ − 0.009
+ − 0.030
+0.006
+0.049
+0.012
+ − 0.498
+0.010
+ − 0.003
+0.034
+0.245
+1.000
+(14) Big city
+0.038
+ − 0.026
+0.012
+0.027
+0.022
+ − 0.008
+0.020
+0.041
+ − 0.003
+0.010
+0.027
+ − 0.002
+ − 0.103
+1.000
+(15) Industrial 
+location
+0.076
+0.087
+0.051
+0.038
+0.021
+0.073
+0.035
+ − 0.017
+0.045
+0.034
+0.124
+0.096
+0.074
+ − 0.066
+1.000
+(16) Goods
+0.131
+0.087
+0.003
+0.045
+ − 0.013
+0.115
+0.016
+ − 0.024
+0.160
+0.012
+0.081
+0.064
+0.109
+ − 0.067
+0.069
+1.000
+(17) ICT
+0.071
+0.012
+0.039
+0.041
+0.134
+0.009
+0.027
+0.021
+0.056
+ − 0.014
+0.008
+ − 0.034
+ − 0.035
+0.086
+ − 0.028
+ − 0.104
+1.000
+(18) Digital 
+skills
+0.047
+0.056
+0.057
+0.039
+0.089
+0.077
+0.027
+0.026
+ − 0.036
+0.087
+0.117
+0.030
+0.082
+ − 0.051
+0.100
+ − 0.011
+0.011
+1.000
+(19) e-Com-
+merce
+0.023
+0.026
+0.051
+0.019
+0.032
+0.003
+0.042
+ − 0.007
+ − 0.011
+0.060
+0.014
+0.025
+0.082
+ − 0.060
+0.029
+ − 0.026
+ − 0.008
+0.055
+1.000
+(20) Infra-
+structure
+0.033
+0.037
+0.004
+0.036
+ − 0.002
+0.031
+0.014
+0.017
+ − 0.051
+0.010
+0.044
+ − 0.034
+ − 0.137
+0.066
+0.000
+ − 0.055
+ − 0.011
+ − 0.017
+ − 0.136
+
+=== page 20 (PDF page index) ===
+738
+	
+A. Segarra‑Blasco et al.
+Vol:. (1234567890)
+Table 8   AI and robot users 
+by sectors and size class (% 
+users)
+% of all surveyed firms
+Source: own elaboration 
+from FL486
+Sector (NACE rev. 2)
+AI
+Robots
+1. Mining and Quarrying
+6.06%
+12.12%
+2. Manufacturing
+8.53%
+21.43%
+3. Electricity, Gas and Steam
+10.16%
+15.25%
+4. Water Supply and Waste Management
+2.70%
+7.20%
+5. Construction
+3.37%
+4.25%
+6. Wholesale and Retail Trade
+5.32%
+6.78%
+7. Transporting and Storage
+4.57%
+2.35%
+8. Accommodation and Food Service Activities
+4.61%
+2.86%
+9. Information and Communication
+25.00%
+10.23%
+10. Financial and Insurance Activities
+11.20%
+10.80%
+11. Real Estate Activities
+6.78%
+3.57%
+12. Professional, Scientific and Technical Activities
+10.90%
+8.84%
+13. Administrative and Support Service Activities
+7.44%
+4.89%
+14. Education
+4.59%
+7.06%
+15. Human Health and Social Work Activities
+5.72%
+4.77%
+16. Arts, Entertainment and Recreation
+7.40%
+4.93%
+Overall sample
+7.24%
+9.12%
+Size class
+0 to 9 employees
+4.88%
+4.21%
+10 to 49 employees
+8.27%
+9.59%
+50 to 250 employees
+10.32%
+19.78%
+More 250 employees
+20.03%
+31.72%
+Table 9   Digital 
+technologies by European 
+regions
+Note: % of all surveyed 
+firms
+Source: own elaboration 
+from FL486
+Digital technologies
+Northern countries
+Core countries
+Mediter-
+ranean 
+countries
+Eastern countries
+Artificial intelligence
+9.32%
+9.95%
+7.52%
+4.56%
+Cloud computing
+61.04%
+56.62%
+45.74%
+38.07%
+Robotics
+12.76%
+10.08%
+8.76%
+7.14%
+Smart devices
+27.23%
+32.23%
+21.99%
+25.30%
+Big data analytics
+17.03%
+15.78%
+10.90%
+11.33%
+High-speed infrastructure
+36.56%
+46.44%
+37.44%
+20.00%
+Blockchain
+2.18%
+4.68%
+3.63%
+2.32%
+Not adopting any DT
+24.53%
+22.84%
+36.46%
+41.94%
+Number of firms
+1,920
+3,034
+1.541
+4.730
+
+=== page 21 (PDF page index) ===
+739
+AI, robots and innovation in European SMEs﻿	
+Vol.: (0123456789)
+Appendix 2. Sector heterogeneities
+Tables 11, 12, 13
+Table 10   Share of adopting 
+digital technologies by 
+types of firms
+Note: % of all surveyed 
+firms
+Source: own elaboration 
+from FL486
+Digital technologies
+Start-ups
+Scale-ups
+Other SMEs
+All sample
+Artificial intelligence
+9.04%
+10.39%
+5.72%
+7.24%
+Cloud computing
+55.53%
+58.41%
+44.09%
+48.07%
+Robotics
+12.79%
+12.99%
+6.69%
+9.12%
+Smart devices
+32.76%
+33.79%
+23.70%
+27.05%
+Big data analytics
+19.18%
+18.14%
+10.42%
+13.45%
+High-speed infrastructure
+36.34%
+38.54%
+29.64%
+32.37%
+Blockchain
+3.58%
+5.05%
+2.40%
+3.11%
+Not adopting any DT
+24.80%
+23.44%
+37.29%
+33.05%
+Number of firms
+641
+2,039
+8,069
+11,225
+Table 11   First stage bivariate probit determining the adoption of artificial intelligence and robots across sector clusters
+Note: *p < 0.10, **p < 0.05, ***p < 0.01. Coefficients (Std. Err.) reported. Non-exporters and firms not participating in global value 
+chains are the base outcome for internationalisation dummies. Firms located in small or medium cities are the baseline for location 
+dummies. Retail sectors are the base outcomes for the sector fixed-effects. Western European countries are the base outcome for geo-
+graphical cluster fixed-effects
+Manufactures
+Services
+(1)
+Artificial intelligence
+(2)
+Robots
+(1)
+Artificial intelligence
+(2)
+Robots
+Firm-specific characteristics
+Scale-up
+0.251**
+(0.101)
+0.161*
+(0.085)
+0.122**
+(0.061)
+0.227***
+(0.063)
+Start-up
+0.150
+(0.232)
+0.336*
+(0.185)
+0.084
+(0.116)
+0.465***
+(0.119)
+Exports
+0.331***
+(0.114)
+0.389***
+(0.090)
+0.263***
+(0.056)
+0.269***
+(0.060)
+Global value chain
+0.535
+(0.328)
+0.476*
+(0.283)
+0.271**
+(0.106)
+0.176
+(0.113)
+Exports and global value chain
+0.617***
+(0.153)
+0.539***
+(0.128)
+0.467***
+(0.097)
+0.477***
+(0.099)
+Size (Logs)
+0.105***
+(0.032)
+0.261***
+(0.027)
+0.139***
+(0.018)
+0.185***
+(0.019)
+Age (Logs)
+0.021
+(0.068)
+ − 0.006
+(0.055)
+ − 0.050
+(0.035)
+0.026
+(0.039)
+Big city
+0.137
+(0.091)
+0.097
+(0.075)
+ − 0.027
+(0.051)
+0.078
+(0.054)
+Industrial area
+ − 0.040
+(0.108)
+ − 0.060
+(0.088)
+ − 0.105
+(0.080)
+0.189**
+(0.076)
+Goods
+ − 0.049
+(0.098)
+0.210**
+(0.082)
+ − 0.137**
+(0.063)
+0.083
+(0.065)
+ITC
+1.090***
+(0.117)
+0.857***
+(0.149)
+Country-specific characteristicss
+Digital skills
+0.063
+(0.057)
+0.156**
+(0.069)
+0.156***
+(0.051)
+0.136**
+(0.054)
+e-commerce
+0.062
+(0.063)
+0.060
+(0.046)
+0.049
+(0.032)
+0.019
+(0.034)
+Infrastructure
+0.062
+(0.063)
+0.170***
+(0.051)
+0.080**
+(0.037)
+0.129***
+(0.038)
+Sector fixed-effects
+Yes
+Yes
+Observations
+2,011
+6,624
+Wald test for zero slopes
+295.29***
+585.87***
+LR test for no correlation
+39.264***
+147.809***
+Log likelihood
+ − 1,323.74
+ − 2,791.35
+
+=== page 22 (PDF page index) ===
+740
+	
+A. Segarra‑Blasco et al.
+Vol:. (1234567890)
+Table 12   Second stage multivariate probit with residual inclusion and asymptotically adjusted coefficients for the determinants of 
+innovation in manufactures
+Note: *p < 0.10, **p < 0.05, ***p < 0.01. Coefficients (Std. Err.) reported. Non-exporters and firms not participating in global value 
+chains are the base outcome for internationalisation dummies. Firms located in small or medium cities are the baseline for location 
+dummies. Retail sectors are the base outcomes for the sector fixed-effects. Western European countries are the base outcome for geo-
+graphical cluster fixed-effects
+Artificial intelligence
+Robots
+(1)
+Product
+(2)
+Process
+(3)
+Organisational
+(4)
+Marketing
+(1)
+Product
+(2)
+Process
+(3)
+Organisational
+(4)
+Marketing
+Digital technologies—IV
+Artificial intel-
+ligence
+2.203***
+(0.519)
+1.821***
+(0.503)
+0.791
+(0.543)
+1.946***
+(0.523)
+Robots
+1.049***
+(0.219)
+1.347***
+(0.222)
+0.329
+(0.241)
+0.161
+(0.238)
+Firm-specific characteristics
+Scale-up
+ − 0.184
+(0.152)
+ − 0.139
+(0.147)
+0.123
+(0.158)
+ − 0.317**
+(0.154)
+0.175**
+(0.086)
+0.105
+(0.086)
+0.277***
+(0.092)
+0.114 (0.092)
+Start-up
+0.745***
+(0.191)
+0.493***
+(0.184)
+0.592***
+(0.198)
+0.441**
+(0.185)
+0.744***
+(0.180)
+0.418**
+(0.180)
+0.634***
+(0.195)
+0.652***
+(0.183)
+Exports
+ − 0.415**
+(0.187)
+ − 0.365**
+(0.182)
+ − 0.122
+(0.199)
+ − 0.631***
+(0.190)
+ − 0.116
+(0.111)
+ − 0.220**
+(0.112)
+0.048
+(0.126)
+ − 0.100
+(0.120)
+Global value 
+chain
+ − 0.895**
+(0.426)
+ − 0.660*
+(0.401)
+0.459
+(0.402)
+ − 0.693*
+(0.398)
+ − 0.279
+(0.307)
+ − 0.301
+(0.301)
+0.765***
+(0.293)
+0.231
+(0.298)
+Exports and 
+global value 
+chain
+ − 0.761**
+(0.348)
+ − 0.770**
+(0.338)
+ − 0.171
+(0.363)
+ − 1.060***
+(0.350)
+ − 0.046
+(0.175)
+ − 0.360**
+(0.178)
+0.177
+(0.188)
+ − 0.011
+(0.186)
+Size (Logs)
+ − 0.190***
+(0.058)
+ − 0.052
+(0.056)
+0.026
+(0.060)
+ − 0.219***
+(0.058)
+ − 0.229***
+(0.059)
+ − 0.145**
+(0.059)
+0.047
+(0.065)
+ − 0.087
+(0.063)
+Age (Logs)
+0.068
+(0.054)
+0.011
+(0.052)
+0.076
+(0.058)
+0.026
+(0.054)
+0.117**
+(0.050)
+0.052
+(0.050)
+0.092*
+(0.056)
+0.067
+(0.053)
+Big city
+ − 0.082
+(0.098)
+ − 0.264***
+(0.085)
+ − 0.080
+(0.104)
+ − 0.104
+(0.099)
+0.102
+(0.070)
+ − 0.139*
+(0.071)
+0.003
+(0.077)
+0.123*
+(0.074)
+Industrial area
+0.227**
+(0.090)
+0.253***
+(0.085)
+0.107
+(0.090)
+0.193**
+(0.088)
+0.182**
+(0.082)
+0.226***
+(0.081)
+0.085
+(0.086)
+0.129
+(0.085)
+Goods
+0.527***
+(0.083)
+0.347***
+(0.079)
+ − 0.081
+(0.084)
+0.162**
+(0.081)
+0.229***
+(0.083)
+0.068
+(0.083)
+ − 0.164*
+(0.090)
+0.017 (0.088)
+Residuals
+ − 1.988*** 
+(0.509)
+ − 1.546***
+(0.493)
+ − 0.741
+(0.531)
+ − 1.841***
+(0.509)
+ − 0.922*** 
+(0.210)
+ − 0.880*** 
+(0.213)
+ − 0.176
+(0.233)
+ − 0.248
+(0.227)
+Sector fixed-
+effects
+Yes
+Yes
+Geographical 
+cluster fixed-
+effects
+Yes
+Yes
+Observations
+2,011
+2,012
+Wald test for 
+zero slopes
+399.41***
+433.18***
+LR test for no 
+correlation
+210.17***
+211.71***
+Log likelihood
+ − 3,911.11
+ − 3,972.97
+
+=== page 23 (PDF page index) ===
+741
+AI, robots and innovation in European SMEs﻿	
+Vol.: (0123456789)
+Table 13   Second stage multivariate probit with residual inclusion and asymptotically adjusted coefficients for the determinants of 
+innovation in services
+Note: *p < 0.10, **p < 0.05, ***p < 0.01. Coefficients (Std. Err.) reported. Non-exporters and firms not participating in global value 
+chains are the base outcome for internationalisation dummies. Firms located in small or medium cities are the baseline for location 
+dummies. Retail sectors are the base outcomes for the sector fixed-effects. Western European countries are the base outcome for geo-
+graphical cluster fixed-effects
+Artificial intelligence
+Robots
+(1)
+Product
+(2)
+Process
+(3)
+Organisational
+(4)
+Marketing
+(1)
+Product
+(2)
+Process
+(3)
+Organisational
+(4)
+Marketing
+Digital technologies—IV
+Artificial intel-
+ligence
+0.807***
+(0.182)
+0.994***
+(0.203)
+0.683***
+(0.206)
+0.329*
+(0.186)
+Robots
+0.926***
+(0.163)
+1.117***
+(0.179)
+0.511***
+(0.181)
+0.458***
+(0.165)
+Firm-specific characteristics
+Scale-up
+0.243***
+(0.050)
+0.226***
+(0.055)
+0.214***
+(0.055)
+0.293***
+(0.051)
+0.170***
+(0.057)
+0.176***
+(0.063)
+0.196***
+(0.063)
+0.229***
+(0.058)
+Start-up
+0.775***
+(0.082)
+0.748***
+(0.089)
+0.634***
+(0.090)
+0.972***
+(0.083)
+0.554***
+(0.107)
+0.538***
+(0.116)
+0.525***
+(0.117)
+0.836***
+(0.107)
+Exports
+0.171***
+(0.062)
+ − 0.008
+(0.069)
+0.078
+(0.070)
+0.128**
+(0.063)
+0.143**
+(0.057)
+0.014
+(0.064)
+0.109*
+(0.064)
+0.062
+(0.058)
+Global value 
+chain
+0.297***
+(0.094)
+0.034
+(0.104)
+0.163
+(0.103)
+0.165*
+(0.097)
+0.319***
+(0.085)
+0.114
+(0.093)
+0.223**
+(0.092)
+0.124
+(0.087)
+Exports and 
+global value 
+chain
+0.445***
+(0.116)
+0.060
+(0.128)
+0.290**
+(0.127)
+0.306***
+(0.119)
+0.384***
+(0.111)
+0.089
+(0.120)
+0.341***
+(0.119)
+0.185*
+(0.111)
+Size (Logs)
+0.005
+(0.027)
+ − 0.012
+(0.031)
+0.062**
+(0.031)
+0.016
+(0.029)
+ − 0.036
+(0.031)
+ − 0.029
+(0.035)
+0.063*
+(0.035)
+ − 0.031
+(0.032)
+Age (Logs)
+0.081***
+(0.027)
+0.093***
+(0.031)
+0.042
+(0.030)
+0.084***
+(0.028)
+0.045*
+(0.026)
+0.046
+(0.029)
+0.014
+(0.029)
+0.074***
+(0.027)
+Big city
+0.077**
+(0.036)
+0.019
+(0.040)
+ − 0.034
+(0.040)
+ − 0.009
+(0.037)
+0.019
+(0.038)
+ − 0.048
+(0.042)
+ − 0.071*
+(0.042)
+ − 0.036
+(0.038)
+Industrial area
+0.212***
+(0.057)
+0.238***
+(0.062)
+0.137**
+(0.063)
+0.124**
+(0.058)
+0.052
+(0.064)
+0.056
+(0.070)
+0.031
+(0.070)
+0.051
+(0.065)
+Goods
+0.203***
+(0.049)
+0.086
+(0.055)
+0.042
+(0.055)
+0.079
+(0.050)
+0.094**
+(0.044)
+ − 0.058
+(0.050)
+ − 0.043
+(0.050)
+0.045
+(0.045)
+ITC
+0.371*
+(0.210)
+ − 0.264
+(0.236)
+ − 0.049
+(0.237)
+0.477**
+(0.216)
+0.414***
+(0.158)
+ − 0.001
+(0.176)
+0.172
+(0.175)
+0.308*
+(0.162)
+Residuals
+ − 0.398**
+(0.174)
+ − 0.612***
+(0.196)
+ − 0.388**
+(0.198)
+ − 0.024
+(0.178)
+ − 0.515***
+(0.152)
+ − 0.508***
+(0.169)
+ − 0.780*
+(0.409)
+ − 0.287*
+(0.154)
+Sector fixed-
+effects
+Yes
+Yes
+Geographical 
+cluster fixed-
+effects
+Yes
+Yes
+
+=== page 24 (PDF page index) ===
+742
+	
+A. Segarra‑Blasco et al.
+Vol:. (1234567890)
+Open Access  This article is licensed under a Creative Com-
+mons Attribution 4.0 International License, which permits 
+use, sharing, adaptation, distribution and reproduction in any 
+medium or format, as long as you give appropriate credit to the 
+original author(s) and the source, provide a link to the Crea-
+tive Commons licence, and indicate if changes were made. The 
+images or other third party material in this article are included 
+in the article’s Creative Commons licence, unless indicated 
+otherwise in a credit line to the material. If material is not 
+included in the article’s Creative Commons licence and your 
+intended use is not permitted by statutory regulation or exceeds 
+the permitted use, you will need to obtain permission directly 
+from the copyright holder. To view a copy of this licence, visit 
+http://creativecommons.org/licenses/by/4.0/.
+References
+Aaldering, L. J., & Song, C. H. (2021). Of leaders and laggards 
+- Towards digitalization of the process industries. Techno-
+vation, 105, 102211. https://​doi.​org/​10.​1016/j.​techn​ovati​
+on.​2020.​102211
+Acemoglu, A. D. & Autor, D. (2011). Skills, tasks and technologies: 
+Implications for employment and earnings. In D. Card, & O. 
+Ashenfelter (Eds.), Handbook of Labor Economics (vol. 4B, 
+pp. 1043–171. https://​doi.​org/​10.​1016/​S0169-​7218(11)​02410-5 
+Acemoglu, A. D., & Restrepo, P. (2018). The race between 
+man and machine: Implications of technology for 
+growth, factor shares, and employment. American Eco-
+nomic Review, 108(6), 1488–1542. https://​doi.​org/​10.​
+1257/​aer.​20160​696
+Acemoglu, A. D., & Restrepo, P. (2019). Artificial intelligence, 
+automation and work. In A. Agrawal, J. Gans, & A. Gold-
+farb (Eds.), The economics of artificial intelligence: An 
+agenda.  University of Chicago Press. https://​doi.​org/​10.​
+7208/​97802​26613​475-​010
+Acemoglu, A. D., Anderson, G., Beede, D., Buffington, C., 
+Childress, E., Dinlersoz, E., Foster, L., Goldschlag, 
+N., Haltiwanger, J., Kroff, Z., Restrepo, P., & Zolas, N. 
+(2022). Automation and the workforce: A firm-level view 
+from the 2019 Annual Business Survey. NBER Working 
+Paper No. 14741. https://​doi.​org/​10.​3386/​w30659
+Acemoglu, D., Anderson, G., Beede, D., Buffington, C., 
+Childress, E., Dinlersoz, E.,  Foster, L., Goldschlag, 
+N., Haltiwanger, J., Kroff, Z., Restrepo, P., & Zolas, N. 
+(2023). Advanced technology adoption: Selection or 
+causal effects?. In AEA Papers and Proceedings (vol. 
+113, pp. 210–214). American Economic Association. 
+https://​doi.​org/​10.​1257/​pandp.​20231​037
+Acemoglu, D., Lelarge, C., & Restrepo, P. (2020). Compet-
+ing with robots: Firm-level evidence from France. AEA 
+Papers and Proceedings, 110, 383–388. https://​doi.​org/​10.​
+1257/​pandp.​20201​003
+Acs, Z. J., Song, A., Szerb, L., Audretsch, D. B., & Komlosi, 
+E. (2021). The evolution of the global digital platform 
+economy: 1971–2021. Small Business Economics, 57(4), 
+1629–1659. https://​doi.​org/​10.​1007/​s11187-​021-​00561-x
+Aghion, P., Antonin, C., & Bunel, S. (2021). The power of 
+creative destruction: Economic upheaval and the wealth 
+of nations. Harvard University Press. https://​doi.​org/​10.​
+4159/​97806​74258​686
+Aghion, P., Jones, B. F., & Jones, C. I. (2017). Artificial intelligence 
+and economic growth (Vol. 23928). National Bureau of Eco-
+nomic Research. https://​doi.​org/​10.​7208/​97802​26613​475-​011
+Agrawal, A., Gans, J. S., & Goldfarb, A. (2019a). Exploring 
+the impact of artificial intelligence: Prediction versus 
+judgment. Information Economics and Policy, 47, 1–6. 
+https://​doi.​org/​10.​1016/j.​infoe​copol.​2019.​05.​001
+Agrawal, A., McHale, J., & Oettl, A. (2019b). Does scientist 
+immigration harm US science? An examination of the 
+knowledge spillover channel. Research Policy, 48(5), 
+1248–1259. https://​doi.​org/​10.​1016/j.​respol.​2019.​01.​005
+Añón Higón, D., & Bonvin, D. (2024). Digitalization and trade 
+participation of SMEs. Small Business Economics, 62, 
+857–877. https://​doi.​org/​10.​1007/​s11187-​023-​00799-7
+Antonioli, D., Marzucchi, A., Rentocchini, F., & Vannuc-
+cini, S. (2024). Robot adoption and product innovation. 
+Research Policy, 53(6), 105002. https://​doi.​org/​10.​1016/j.​
+respol.​2024.​105002
+Ardito, L. (2023). The influence of firm digitalization on sus-
+tainable innovation performance and the moderating role 
+of corporate sustainability practices: An empirical inves-
+tigation. Business Strategy and the Environment, 32(8), 
+5252–5272. https://​org.​sabidi.​urv.​cat/​10.​1002/​bse.​3415
+Audretsch, D., Colombelli, A., Grilli, L., Minola, T., & Ras-
+mussen, E. (2020). Innovative start-ups and policy initia-
+tives. Research Policy, 49(10), 104027. https://​doi.​org/​10.​
+1016/j.​respol.​2020.​104027
+Autor, D. H. (2015). Why are there still so many jobs? The history 
+and future of workplace automation. Journal of Economic 
+Perspectives, 29(3), 3–30. https://​doi.​org/​10.​1257/​jep.​29.3.3
+Babina, T., Fedyk, A., He, A., & Hodson, J. (2024). Artificial 
+intelligence, firm growth, and product innovation. Journal 
+of Financial Economics, 151, 103745. https://​doi.​org/​10.​
+1016/j.​jfine​co.​2023.​103745
+Bahoo, S., Cucculelli, M., & Qamar, D. (2023). Artificial intel-
+ligence and corporate innovation: A review and research 
+agenda. Technological Forecasting and Social Change, 188, 
+122264. https://​doi.​org/​10.​1016/j.​techf​ore.​2022.​122264
+Battaglia, D., Galati, F., Molinaro, M., & Pessot, E. (2023). 
+Full, hybrid and platform complementarity: Exploring the 
+industry 40 technology-performance link. International 
+Journal of Production Economics, 263, 108949. https://​
+doi.​org/​10.​1016/j.​ijpe.​2023.​108949
+Battistoni, E., Gitto, S., Murgia, G., & Campisi, D. (2023). 
+Adoption paths of digital transformation in manufactur-
+ing SME. International Journal of Production Economics, 
+255, 108675. https://​doi.​org/​10.​1016/j.​ijpe.​2022.​108675
+Blichfeldt, H., & Faullant, R. (2021). Performance effects of dig-
+ital technology adoption and product & service innovation–
+A process-industry perspective. Technovation, 105, 102275. 
+https://​doi.​org/​10.​1016/j.​techn​ovati​on.​2021.​102275
+Bloom, N., Jones, C. I., Van Reenen, J., & Webb, M. (2020). Are 
+ideas getting harder to find? American Economic Review, 
+110(4), 1104–1144. https://​doi.​org/​10.​1257/​aer.​20180​338
+
+=== page 25 (PDF page index) ===
+743
+AI, robots and innovation in European SMEs﻿	
+Vol.: (0123456789)
+Blundell, R., & Powell, J. L. (2001). Endogeneity in nonpara-
+metric and semiparametric regression models. cemmap 
+Working Papers CWP09/01. Institute for Fiscal Studies: 
+London, UK. https://​disco​very.​ucl.​ac.​uk/​id/​eprint/​14712/
+Bredeche, N., Haasdijk, E., & Prieto, A. (2018). Embodied evo-
+lution in collective robotics: A review. Frontiers in Robot-
+ics and AI, 5, 12. https://​doi.​org/​10.​3389/​frobt.​2018.​00012
+Brynjolfsson, E., & McAfee, A. (2014). The second machine 
+age: Work, progress, and prosperity in a time of brilliant 
+technologies. WW Norton & company.
+Calvino, F., & Fontanelli, L. (2023). A portrait of AI adopters 
+across countries: Firm characteristics, assets’ complemen-
+tarities and productivity. OECD. https://​doi.​org/​10.​1787/​
+0fb79​bb9-​en
+Camina, E., Diaz-Chao, A., & Torrent-Sellens, J. (2020). Auto-
+mation technologies: Long-term effects for Spanish indus-
+trial firms. Technological Forecasting and Social Change, 
+151, 119828. https://​doi.​org/​10.​1016/j.​techf​ore.​2019.​119828
+Camisón, C., & Forés, B. (2010). Knowledge absorptive capac-
+ity: New insights for its conceptualization and measure-
+ment. Journal of Business Research, 63(7), 707–715. 
+https://​doi.​org/​10.​1016/j.​jbusr​es.​2009.​04.​022
+Canhoto, A. I., Quinton, S., Pera, R., Molinillo, S., & Simkin, 
+L. (2021). Digital strategy aligning in SMEs: A dynamic 
+capabilities perspective. The Journal of Strategic Informa-
+tion Systems, 30(3), 101682. https://​doi.​org/​10.​1016/j.​jsis.​
+2021.​101682
+Cappellari, L., & Jenkins, S. P. (2003). Multivariate probit 
+regression using simulated maximum likelihood. The 
+STATA Journal, 3(3), 278–294. https://​doi.​org/​10.​1177/​
+15368​67X03​00300​305
+Carlaw, K. I., & Lipsey, R. G. (2002). Externalities, technologi-
+cal complementarities and sustained economic growth. 
+Research Policy, 31(8–9), 1305–1315. https://​doi.​org/​10.​
+1016/​S0048-​7333(02)​00065-3
+Cattani, L., Montresor, S., & Vezzani, A. (2023). Firms’ eco-
+innovation and Industry 4.0 technologies in urban and 
+rural areas. Regional Studies, 1–13. https://​doi.​org/​10.​
+1080/​00343​404.​2023.​22439​84
+Ciarli, T., Kenney, M., Massini, S., & Piscitello, L. (2021). 
+Digital technologies, innovation, and skills: Emerging tra-
+jectories and challenges. Research Policy, 50(7), 104289. 
+https://​doi.​org/​10.​1016/j.​respol.​2021.​104289
+Ciriello, R. F., Richter, A., & Schwabe, G. (2018). Digital 
+innovation. Business & Information Systems Engineering, 
+60, 563–569. https://​doi.​org/​10.​1007/​s12599-​018-​0559-8
+Cirillo, V., Fanti, L., Mina, A., & Ricci, A. (2023). The adop-
+tion of digital technologies: Investment, skills, work organ-
+isation. Structural Change and Economic Dynamics, 66, 
+89–105. https://​doi.​org/​10.​1016/j.​strue​co.​2023.​04.​011
+Coad, A., Bornhäll, A., Daunfeldt, S. O., & McKelvie, A. 
+(2024). Theoretical definition of a scale-up. in scale-ups 
+and high-growth firms: Theory, definitions, and measure-
+ment (pp. 31–42). Singapore: Springer Nature Singapore. 
+https://​doi.​org/​10.​1007/​978-​981-​97-​1379-0_5
+Cockburn, I. M., Henderson, R., & Stern, S. (2018). The 
+impact of artificial intelligence on innovation: An explora-
+tory analysis. In The economics of artificial intelligence: 
+An agenda (pp. 115–146). University of Chicago Press. 
+https://​doi.​org/​10.​7208/​97802​26613​475-​006
+Colfer, L. J., & Baldwin, C. Y. (2016). The mirroring hypoth-
+esis: Theory, evidence, and exceptions. Industrial and Cor-
+porate Change, 25(5), 709–738. https://​doi.​org/​10.​1093/​
+icc/​dtw027
+Dirican, C. (2015). The impacts of robotics, artificial intel-
+ligence on business and economics. Procedia-Social and 
+Behavioral Sciences, 195, 564–573. https://​doi.​org/​10.​
+1016/j.​sbspro.​2015.​06.​134
+European Commission (2021). Advanced Technologies for 
+Industry. Methodological Report, Brussels, 2021. https://​
+doi.​org/​10.​2826/​321124
+Forman, C., & Van Zeebroeck, N. (2019). Digital technol-
+ogy adoption and knowledge flows within firms: Can the 
+Internet overcome geographic and technological distance? 
+Research Policy, 48(8), 103697. https://​doi.​org/​10.​1016/j.​
+respol.​2018.​10.​021
+Gal, P., Nicoletti, G., Renault, T., Sorbe, S., & Timiliotis, C. (2019). 
+Digitalisation and productivity: In search of the holy grail–
+Firm-level empirical evidence from EU countries. OECD 
+Economics Department Working Papers, No. 1533, OECD 
+Publishing, Paris, https://​doi.​org/​10.​1787/​5080f​4b6-​en.
+Gallouj, F., & Savona, M. (2009). Innovation in services: A 
+review of the debate and a research agenda. Journal of 
+Evolutionary Economics, 19, 149–172. https://​doi.​org/​10.​
+1007/​s00191-​008-​0126-4
+Geweke, J. (1989). Bayesian inference in econometric mod-
+els using Monte Carlo integration. Econometrica, 57(6), 
+1317–1339. https://​doi.​org/​10.​2307/​19137​10
+Ghezzi, A. (2019). Digital startups and the adoption and imple-
+mentation of Lean Startup Approaches: Effectuation, Bri-
+colage and Opportunity Creation in practice. Technologi-
+cal Forecasting and Social Change, 146, 945–960. https://​
+doi.​org/​10.​1016/j.​techf​ore.​2018.​09.​017
+Greene, W. H. (2000). Econometric analysis (4th ed., pp. 201–
+215). Prentice Hall.
+Greenstein, S. (2019). Digital infrastructure. University of Chicago 
+Press. https://​doi.​org/​10.​7208/​chica​go/​97802​26800​615-​011
+Guadagnoli, E., & Velicer, W. F. (1988). Relation of sample 
+size to the stability of component patterns. Psychological 
+Bulletin, 103(2), 265.
+Hajivassiliou, V. A., & McFadden, D. L. (1998). The method of 
+simulated scores for the estimation of LDV models. Econo-
+metrica, 66(4), 863–896. https://​doi.​org/​10.​2307/​29995​76
+Hajoary, P. K., Jennifer, D. S., & Pathak, M. (2024). Digital 
+technology adoption in circular startups: An integrated 
+framework. Business Strategy & Development, 7(3), e425. 
+https://​doi.​org/​10.​1002/​bsd2.​425
+Hanelt, A., Bohnsack, R., Marz, D., & AntunesMarante, C. 
+(2021). A systematic review of the literature on digital 
+transformation: Insights and implications for strategy and 
+organizational change. Journal of Management Studies, 
+58(5), 1159–1197. https://​doi.​org/​10.​1111/​joms.​12639
+Holl, A., & Rama, R. (2024). Spatial patterns and drivers of 
+SME digitalisation. Journal of the Knowledge Economy, 15, 
+5625–5649. https://​doi.​org/​10.​1007/​s13132-​023-​01257-1
+
+=== page 26 (PDF page index) ===
+744
+	
+A. Segarra‑Blasco et al.
+Vol:. (1234567890)
+Hottman, C. J., Redding, S. J., & Weinstein, D. E. (2016). 
+Quantifying the sources of firm heterogeneity. The Quar-
+terly Journal of Economics, 131(3), 1291–1364. https://​
+doi.​org/​10.​1093/​qje/​qjw012
+Igna, I., & Venturini, F. (2023). The determinants of AI inno-
+vation across European firms. Research Policy, 52(2), 
+104661. https://​doi.​org/​10.​1016/j.​respol.​2022.​104661
+Jaccoud, F., Petit, F., Ciarli, T., & Savona, M. (2024). Automation 
+and employment over the technology life cycle: Evidence 
+from European regions. CESifo Working Papers. Electronic 
+copy available at: https://​ssrn.​com/​abstr​act=​47560​69
+Jovanovic, B., & Rousseau, P. L. (2005). General purpose tech-
+nologies. In Handbook of economic growth 1:1181–1224. 
+Elsevier. https://​doi.​org/​10.​1016/​S1574-​0684(05)​01018-X
+Keane, M. P. (1994). A computationally practical simulation 
+estimator for panel data. Econometrica, 62(1), 95–116. 
+https://​doi.​org/​10.​2307/​29514​77
+Koch, M., Manuylov, I., & Smolka, M. (2021). Robots and 
+firms. The Economic Journal, 131(638), 2553–2584. 
+https://​doi.​org/​10.​1093/​ej/​ueab0​09
+Kopka, A., & Fornahl, D. (2024). Artificial intelligence and 
+firm growth—Catch-up processes of SMEs through 
+integrating AI into their knowledge bases. Small Busi-
+ness Economics, 62(1), 63–85. https://​doi.​org/​10.​1007/​
+s11187-​023-​00754-6
+Lanzolla, G., Pesce, D., & Tucci, C. L. (2021). The digital 
+transformation of search and recombination in the inno-
+vation function: Tensions and an integrative framework. 
+Journal of Product Innovation Management, 38(1), 
+90–113. https://​doi.​org/​10.​1111/​jpim.​12546
+Li, S., Gao, L., Han, C., Gupta, B., Alhalabi, W., & Almakdi, S. 
+(2023). Exploring the effect of digital transformation on 
+Firms’ innovation performance. Journal of Innovation & 
+Knowledge, 8(1), 100317. https://​doi.​org/​10.​1016/j.​jik.​2023.​
+100317
+Makridakis, S. (2017). The forthcoming Artificial Intelligence 
+revolution: Its impact on society and firms. Futures, 90, 
+46–60. https://​doi.​org/​10.​1016/j.​futur​es.​2017.​03.​006
+Martinelli, A., Mina, A., & Moggi, M. (2021). The enabling tech-
+nologies of industry 4.0: Examining the seeds of the fourth 
+industrial revolution. Industrial and Corporate Change, 
+30(1), 161–188. https://​doi.​org/​10.​1093/​icc/​dtaa0​60
+Melitz, M. J., & Redding, S. J. (2021). Trade and innovation 
+(No. w28945). National Bureau of Economic Research. 
+https://​doi.​org/​10.​3386/​w28945
+Merín-Rodrigáñez, J., Dasí, À., & Alegre, J. (2024). Digital 
+transformation and firm performance in innovative SMEs: 
+The mediating role of business model innovation. Techno-
+vation, 134, 103027. https://​doi.​org/​10.​1016/j.​techn​ovati​
+on.​2024.​103027
+Montobbio, F., Staccioli, J., Virgillito, M. E., & Vivarelli, 
+M. (2022). Robots and the origin of their labour-saving 
+impact. Technological Forecasting and Social Change, 174, 
+121122. https://​doi.​org/​10.​1016/j.​techf​ore.​2021.​121122
+Mosiashvili, N., & Pareliussen, J. (2020). Digital technology 
+adoption, productivity gains in adopting firms and secto-
+ral spill-overs: Firm-level evidence from Estonia. OECD 
+Economics Department Working Papers, No. 1638, OECD 
+Publishing, Paris, https://​doi.​org/​10.​1787/​ba9d0​0be-​en
+Mula, C., Zybura, N., & Hipp, T. (2024). From digitalized 
+start-up to scale-up: Opening the black box of scaling in 
+digitalized firms towards a scaling process framework. 
+Technological Forecasting and Social Change, 202, 
+123275. https://​doi.​org/​10.​1016/j.​techf​ore.​2024.​123275
+Nicholls-Nixon, C. L. (2005). Rapid growth and high perfor-
+mance: The entrepreneur’s “impossible dream?” Academy 
+of Management Perspectives, 19(1), 77–89. https://​doi.​
+org/​10.​5465/​ame.​2005.​15841​955
+Nolan, A. (2020). Artificial intelligence, digital technology and 
+advanced production, in: OECD (ed.). The Digitalisation 
+of Science, Technology and Innovation: Key Develop-
+ments and Policies. OECD Publishing, Paris, pp. 119–
+142. https://​doi.​org/​10.​1787/​b9e4a​2c0-​en.
+Piaskowska, D., Tippmann, E., & Monaghan, S. (2021). Scale-
+up modes: Profiling activity configurations in scaling 
+strategies. Long Range Planning, 54(6), 102101. https://​
+doi.​org/​10.​1016/j.​lrp.​2021.​102101
+Rammer, C., Fernández, G. P., & Czarnitzki, D. (2022). Artifi-
+cial intelligence and industrial innovation: Evidence from 
+German firm-level data. Research Policy, 51(7), 104555. 
+https://​doi.​org/​10.​1016/j.​respol.​2022.​104555
+Rampersad, G. (2020). Robot will take your job: Innovation for an 
+era of artificial intelligence. Journal of Business Research, 
+116, 68–74. https://​doi.​org/​10.​1016/j.​jbusr​es.​2020.​05.​019
+Revoltella, D., Rückert, D. & Weiss, C. (2020). Adoption of digi-
+tal technologies by firms in Europe and the US. VoxEU.org. 
+https://​cepr.​org/​voxeu/​colum​ns/​adopt​ion-​digit​al-​techn​ologi​es-​
+firms-​europe-​and-​us-​evide​nce-​eib-​inves​tment-​survey
+Shahadat, M. H., Nekmahmud, M., Ebrahimi, P., & Fekete-Far-
+kas, M. (2023). Digital technology adoption in SMEs: What 
+technological, environmental and organizational factors 
+influence in emerging countries?. Global Business Review, 
+09721509221137199. https://​doi.​org/​10.​1177/​09721​50922​113
+Shapiro, A. F., & Mandelman, F. S. (2021). Digital adoption, 
+automation, and labor markets in developing countries. 
+Journal of Development Economics, 151, 102656. https://​
+doi.​org/​10.​1016/j.​jdeve​co.​2021.​102656
+Skare, M., & Soriano, D. R. (2021). How globalization is 
+changing digital technology adoption: An international 
+perspective. Journal of Innovation & Knowledge, 6(4), 
+222–233. https://​doi.​org/​10.​1016/j.​jik.​2021.​04.​001
+Soluk, J., Decker-Lange, C., & Hack, A. (2023). Small steps for 
+the big hit: A dynamic capabilities perspective on business 
+networks and non-disruptive digital technologies in SMEs. 
+Technological Forecasting and Social Change, 191, 122490. 
+https://​doi.​org/​10.​1016/j.​techf​ore.​2023.​122490
+Teece, D. J. (2007). Explicating dynamic capabilities: The 
+nature and microfoundations of (sustainable) enterprise 
+performance. Strategic Management Journal, 28(13), 
+1319–1350. https://​doi.​org/​10.​1002/​smj.​640
+Terza, J. V. (2017). Two-stage residual inclusion estimation: A 
+practitioners guide to Stata implementation. The Stata Jour-
+nal, 17(4), 916–938. https://​doi.​org/​10.​1177/​15368​67X18​
+01700​409
+Terza, J. V., Basu, A., & Rathouz, P. J. (2008). Two-stage resid-
+ual inclusion estimation: Addressing endogeneity in health 
+econometric modeling. Journal of Health Economics, 27(3), 
+531–543. https://​doi.​org/​10.​1016/j.​jheal​eco.​2007.​09.​009
+
+=== page 27 (PDF page index) ===
+745
+AI, robots and innovation in European SMEs﻿	
+Vol.: (0123456789)
+Veugelers, R., Ferrando, A., Lekpek, S., & Weiss, C. (2019a). 
+Young SMEs as a motor of Europe’s innovation machine. 
+Intereconomics, 54, 269–377. https://​doi.​org/​10.​1007/​
+s10272-​019-​0855-7
+Veugelers, R., Rückert, D., & Weiss, C. (2019b). Bridging the 
+Divide: New evidence about firms and digitalisation (No. 
+2019/17). Bruegel Policy Contribution. https://​www.​econs​
+tor.​eu/​bitst​ream/​10419/​237628/​1/​16871​33476.​pdf
+Zahra, S. A., & George, G. (2002). Absorptive capacity: A 
+review, reconceptualization, and extension. Academy of 
+Management Review, 27(2), 185–203. https://​doi.​org/​10.​
+5465/​amr.​2002.​65879​95
+Zeira, J. (1998). Workers, machines, and economic growth. The 
+Quarterly Journal of Economics, 113, 1091–1117. https://​
+doi.​org/​10.​1162/​00335​53985​55847
+Zolas, N., Kroff, Z., Brynjolfsson, E., McElheran, K., Beede, 
+D. N., Buffington, C., ... & Dinlersoz, E. (2021). Advanced 
+technologies adoption and use by us firms: Evidence from 
+the annual business survey (No. w28290). National Bureau 
+of Economic Research. https://​doi.​org/​10.​3386/​w28290
+Publisher’s Note  Springer Nature remains neutral with regard to 
+jurisdictional claims in published maps and institutional affiliations.

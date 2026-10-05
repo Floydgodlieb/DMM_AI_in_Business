@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Trust and AI safety — week 3 presenter deck</title>
+<meta name="robots" content="noindex" />
+<style>
+:root{--primary:#d4db3e;--supporting:#1a1a1a;--bg-cream:#f5f0e6;--bg-yellow:#fafbf0;--bg-off-white:#f9f8f4;
+--text-primary:#111827;--text-secondary:#4b5563;--text-muted:#6b7280;--bg-page:#fff;--border:#e5e7eb;--border-strong:#d1d5db;}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#111;color:var(--text-primary);
+font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Inter',Roboto,'Helvetica Neue',Arial,sans-serif}
+a{color:inherit;text-decoration:underline;text-decoration-color:var(--primary);text-decoration-thickness:.12em;text-underline-offset:.15em}
+.app{display:grid;grid-template-columns:1fr;grid-template-rows:1fr auto;height:100%}
+.app.notes-on{grid-template-columns:1fr minmax(18rem,28vw)}
+.stagewrap{display:flex;align-items:center;justify-content:center;padding:1.5vmin;min-width:0}
+.stage{position:relative;width:min(100%,calc((100vh - 5rem) * 16 / 9));aspect-ratio:16/9;container-type:inline-size;background:var(--bg-page);
+box-shadow:0 8px 40px rgba(0,0,0,.5);overflow:hidden}
+.slide{position:absolute;inset:0;display:none;flex-direction:column;padding:5cqw 6cqw 6cqw;line-height:1.35}
+.slide.is-dense p,.slide.is-dense li{font-size:2.15cqw}.slide.is-dense li{margin-bottom:.9cqw}.slide.is-dense h2{font-size:4cqw;margin-bottom:2cqw}
+.slide.is-denser p,.slide.is-denser li{font-size:1.9cqw}.slide.is-denser li{margin-bottom:.7cqw}.slide.is-denser h2{font-size:3.6cqw;margin-bottom:1.6cqw}
+.slide.current{display:flex}
+.slide-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:1.2cqw}
+.slide-kicker{font-size:1.5cqw;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--supporting)}
+.slide-kicker::before{content:"";display:inline-block;width:2.2cqw;height:.5cqw;background:var(--primary);border-radius:99px;margin-right:1cqw;vertical-align:middle}
+.slide-no{font-size:1.4cqw;color:var(--text-muted);font-variant-numeric:tabular-nums}
+.slide h2{font-size:4.6cqw;line-height:1.15;margin:0 0 2.6cqw;font-weight:700}
+.slide p,.slide li{font-size:2.5cqw;color:var(--text-primary)}
+.slide p{margin:0 0 1.6cqw}
+.slide ul{margin:0;padding-left:1.1em}
+.slide li{margin-bottom:1.3cqw}
+.slide li strong{color:var(--text-primary)}
+.slide em{color:var(--text-secondary)}
+.slide > :last-child{margin-bottom:0}
+.slide.is-title{background:var(--bg-cream);justify-content:center}
+.slide.is-title h2{font-size:7cqw}
+.slide.is-title p{color:var(--text-secondary);font-size:3cqw}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:4cqw}
+.cols h3{font-size:1.5cqw;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary);margin:0 0 1.2cqw}
+.slide .roles{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5cqw;margin:1.5cqw 0 2cqw;padding:0;list-style:none}
+.slide .roles li{background:var(--bg-cream);border-radius:.8cqw;padding:1.4cqw 1cqw;font-weight:700;text-align:center;margin:0;font-size:2.2cqw}
+.tpl{color:var(--text-muted);font-style:italic;border-bottom:.15cqw dashed var(--border-strong)}
+li.tpl,p.tpl{display:block;border:.15cqw dashed var(--border-strong);border-radius:.6cqw;padding:1cqw 1.5cqw;background:var(--bg-off-white);list-style:none;margin-left:-1.1em}
+.foot{position:absolute;left:6cqw;right:6cqw;bottom:1.8cqw;display:flex;justify-content:space-between;font-size:1.3cqw;color:var(--text-muted)}
+.notes{background:#1c1c1c;color:#e5e7eb;padding:1.5rem 1.6rem;overflow:auto;font-size:1.05rem;line-height:1.5;border-left:1px solid #333;display:none}
+.notes-on .notes{display:block}
+.notes h3{margin:0 0 .8rem;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#a3a3a3}
+.notes p{margin:0 0 .8rem}.notes ul{margin:0 0 .8rem;padding-left:1.2em}.notes li{margin-bottom:.35rem}
+.notes .empty{color:#777;font-style:italic}
+.notes .iv{font-size:.85rem;color:#a3a3a3;border-left:3px solid #444;padding-left:.7rem}.notes .iv a{color:#ddd}.notes code{font-family:inherit;background:#333;padding:0 .3em;border-radius:3px}
+.bar{grid-column:1/-1;display:flex;align-items:center;gap:1rem;padding:.5rem 1rem;background:#000;color:#bbb;font-size:.85rem}
+.bar button{background:#222;color:#eee;border:1px solid #444;border-radius:6px;padding:.3rem .7rem;cursor:pointer;font:inherit}
+.bar button:hover{background:#333}
+.bar .counter{font-variant-numeric:tabular-nums;min-width:4.5rem;text-align:center}
+.bar .title{margin-left:auto;color:#888;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar kbd{background:#222;border:1px solid #444;border-radius:4px;padding:0 .35em;font-family:inherit}
+.printonly{display:none}
+@media print{
+  @page{size:A4 landscape;margin:12mm}
+  html,body{background:#fff;height:auto}
+  .app,.bar,.notes,.stagewrap{display:none!important}
+  .printonly{display:block}
+  .page{break-after:page;display:grid;grid-template-rows:auto 1fr;gap:4mm;min-height:calc(210mm - 24mm)}
+  .page:last-child{break-after:auto}
+  .page .stage{width:190mm;aspect-ratio:16/9;box-shadow:none;border:.3mm solid #999;margin:0 auto;container-type:inline-size;position:relative;background:#fff;overflow:hidden}
+  .page .slide{display:flex}
+  .page .pnotes{font-size:10pt;line-height:1.4;color:#111;column-count:2;column-gap:8mm}
+  .page .pnotes h3{font-size:8pt;letter-spacing:.14em;text-transform:uppercase;color:#666;margin:0 0 2mm;column-span:all}
+  .page .pnotes p{margin:0 0 2.5mm}.page .pnotes ul{margin:0 0 2.5mm;padding-left:1.2em}
+}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <div class="stagewrap"><div class="stage">
+<section class="slide is-title" id="s1"><div class="slide-head"><div class="slide-kicker">AI in Business</div><span class="slide-no">1 / 9</span></div><h2>Trust and AI safety</h2><p>Week 3.</p><div class="foot"><span>AI in Business · week 3</span><span>1 / 9</span></div></section>
+<section class="slide" id="s2"><div class="slide-head"><div class="slide-kicker">Research methodology</div><span class="slide-no">2 / 9</span></div><h2>Desk research gets a tool; field research gets new data</h2><div class="cols"><div><h3>Desk research</h3><p>A new way of working: you design the tool that helps you.</p></div><div><h3>Field research</h3><p>New data, external validation, contact with your target audience.</p></div></div><div class="foot"><span>AI in Business · week 3</span><span>2 / 9</span></div></section>
+<section class="slide" id="s3"><div class="slide-head"><div class="slide-kicker">Research methodology</div><span class="slide-no">3 / 9</span></div><h2>How do you create value in desk and field research?</h2><div class="cols"><div><h3>Desk research</h3><ul><li><strong>Reliable?</strong> Same result if you run it again.</li><li><strong>Valid?</strong> Measures what it claims to.</li><li><strong>Transparent?</strong> You can show how it works.</li></ul></div><div><h3>Field research</h3><p><strong>Relevance?</strong> What your case study says beyond itself.</p></div></div><div class="foot"><span>AI in Business · week 3</span><span>3 / 9</span></div></section>
+<section class="slide" id="s4"><div class="slide-head"><div class="slide-kicker">Research methodology</div><span class="slide-no">4 / 9</span></div><h2>Reliability, validity, transparency &mdash; your quality criteria</h2><p>What changes when you work with AI?</p><div class="foot"><span>AI in Business · week 3</span><span>4 / 9</span></div></section>
+<section class="slide" id="s5"><div class="slide-head"><div class="slide-kicker">Research methodology</div><span class="slide-no">5 / 9</span></div><h2>Discussion: your first handbook page</h2><ul><li><strong>Search strategy.</strong> How did you use it in the tool?</li><li><strong>Quality criteria.</strong> Were they respected?</li><li><strong>Output quality.</strong> How would you rate it today?</li></ul><div class="foot"><span>AI in Business · week 3</span><span>5 / 9</span></div></section>
+<section class="slide" id="s6"><div class="slide-head"><div class="slide-kicker">Research methodology</div><span class="slide-no">6 / 9</span></div><h2>Trust splits three ways: the tool, you, and ownership</h2><ul><li><strong>The tool.</strong> Can you trust what it produces?</li><li><strong>You.</strong> Can you be trusted as the researcher?</li><li><strong>Ownership.</strong> Whose output is it?</li></ul><div class="foot"><span>AI in Business · week 3</span><span>6 / 9</span></div></section>
+<section class="slide" id="s7"><div class="slide-head"><div class="slide-kicker">Homework</div><span class="slide-no">7 / 9</span></div><h2>One exercise on your own, before week&nbsp;4</h2><p>About 25 minutes, any evening this week. <a href="tool-bias-experiment.html">The exercise is here</a>.</p>
+    <ul><li><strong>Bring</strong> your own AI assistant, signed in.</li><li><strong>Your team number</strong> sets the order of two rounds. Nothing else.</li><li><strong>In week&nbsp;4</strong> we read what the whole cohort did.</li></ul><div class="foot"><span>AI in Business · week 3</span><span>7 / 9</span></div></section>
+<section class="slide" id="s8"><div class="slide-head"><div class="slide-kicker">Homework</div><span class="slide-no">8 / 9</span></div><h2>Three rounds, so your interview guide changes for a reason</h2><p>One guide per team, <strong>Friday morning 25 September</strong>. <a href="tool-interview-prep.html">The assignment is here</a>.</p>
+    <ul><li><strong>You first</strong> &mdash; no AI in the room.</li><li><strong>Then AI</strong>, briefed as your SME. Log what wobbled.</li><li><strong>Then your partner team</strong>, reading it cold.</li></ul><div class="foot"><span>AI in Business · week 3</span><span>8 / 9</span></div></section>
+<section class="slide" id="s9"><div class="slide-head"><div class="slide-kicker">Our rulebook</div><span class="slide-no">9 / 9</span></div><h2>The rules we keep, week by week</h2><p>Every time we spot a habit worth keeping, we turn it into a rule.</p><div class="cols"><div><h3>Rule 1</h3><p>Before taking a break, <strong>always</strong> set AI to work.</p></div><div><h3>Rule 2</h3><p>Do something <strong>weird</strong>.</p></div><div><h3>Rule 3</h3><p class="tpl">Added together in the session.</p></div></div><div class="foot"><span>AI in Business · week 3</span><span>9 / 9</span></div></section>
+  </div></div>
+  <aside class="notes" aria-label="Instructor notes" data-audience="instructor" hidden>
+    <p class="iv"><strong>Instructor view.</strong> The notes show because the address carried <code>?instructor</code>. <a href="week-03-deck.html?student">Leave the instructor view</a>.</p>
+    <h3>Instructor notes</h3>
+<div class="note" id="note-s1"><p>Session of Monday 21 September. AIBS theme: trust and AI safety. AEL decision: where the team's knowledge lives.</p></div>
+<div class="note" id="note-s2" hidden><p>Desk research: the tool AEL is building for the team's own research is the new part of the "way of working" — not a shortcut, a designed instrument. Field research: this is the case study visit, and it earns its place by giving the team something a desk cannot — data nobody else has, and a check against everything the desk work assumed.</p></div>
+<div class="note" id="note-s3" hidden><p>Reliability, validity and transparency are the three questions to ask of a tool's own output, not just of what it retrieves. A team that cannot say "yes" to all three does not yet have a research instrument, it has a demo. Field research earns its place on a different axis: not whether it is reliable in the same sense, but whether the one case generalises — its relevance beyond itself.</p></div>
+<div class="note" id="note-s4" hidden><p>The pivot slide. Reliability, validity and transparency are not new to research — they are the field's existing quality bar. What is new is asking them of a process that includes an AI tool: the tool's output has to clear the same bar a human researcher's would, and a team should be able to say how it knows.</p></div>
+<div class="note" id="note-s5" hidden><p>The room's own first result, not a hypothetical: this is the first time the search-strategy and quality-criteria assignments from week 2 come back to be checked rather than just handed in. Push on the middle question — "did you check" is a different claim from "did you write criteria" — and let the third question be answered honestly rather than diplomatically; a flat "not yet" is a better answer here than a confident guess.</p></div>
+<div class="note" id="note-s6" hidden><p>Three separate questions, deliberately not collapsed into one. Trusting the tool's output is a methods question. Being trusted as a researcher is about the team's own credibility once AI is part of the process — a reader who cannot tell what the team checked will trust the whole page less, not more. Ownership is the one students usually have not considered: if the tool drafted it, whose work is it, and what do you say about that in the write-up?</p></div>
+<div class="note" id="note-s7" hidden><p>The exercise students do at home this week, alone, before the week 4 session. Say what it costs them (about 25 minutes and a laptop) and that the team number only sets the order of the two rounds. Say nothing about what the two rounds differ in: the comparison only works if they meet it cold. Their results come back in week 4, as one picture of the whole cohort.</p></div>
+<div class="note" id="note-s8" hidden><p>The team assignment for the field visit, due Friday morning rather than before week 4 -- say the earlier date out loud, because it sits beside the exercise and the two deadlines differ. The three rounds are the point: round 1 has to exist before AI sees it, or round 2 has nothing honest to react to. Say that the green light is a readiness check and not a mark, and that it does not replace signed consent.</p></div>
+<div class="note" id="note-s9" hidden><p>The rulebook, not the recap: read Rule 1 and Rule 2 as fixed and Rule 3 as the one the room writes today, the way week 2 wrote Rule 2. If nobody proposes one, offer a candidate rather than close the slide empty.</p></div>
+  </aside>
+  <div class="bar">
+    <button id="prev" type="button" aria-label="Previous slide">◀</button>
+    <span class="counter" id="counter">1 / 9</span>
+    <button id="next" type="button" aria-label="Next slide">▶</button>
+    <button id="notesbtn" type="button" data-audience="instructor" hidden>Notes <kbd>N</kbd></button>
+    <button id="printbtn" type="button">Print <kbd>P</kbd></button>
+    <span><kbd>←</kbd> <kbd>→</kbd> or click · <kbd>F</kbd> full screen</span>
+    <span class="title"><a href="week-03-slides.html">Trust and AI safety · week 3 · one card per slide</a> · <a href="index.html">course</a></span>
+  </div>
+</div>
+<div class="printonly">
+<div class="page"><div class="stage"><section class="slide current is-title" id="s1"><div class="slide-head"><div class="slide-kicker">AI in Business</div><span class="slide-no">1 / 9</span></div><h2>Trust and AI safety</h2><p>Week 3.</p><div class="foot"><span>AI in Business · week 3</span><span>1 / 9</span></div></section></div><div class="pnotes" data-audience="instructor" hidden><h3>Notes · 1 / 9</h3><p>Session of Monday 21 September. AIBS theme: trust and AI safety. AEL decision: where the team's knowledge lives.</p></div></div>
+<div class="page"><div class="stage"><section class="slide current" id="s2"><div class="slide-head"><div class="slide-kicker">Research methodology</div><span class="slide-no">2 / 9</span></div><h2>Desk research gets a tool; field research gets new data</h2><div class="cols"><div><h3>Desk research</h3><p>A new way of working: you design the tool that helps you.</p></div><div><h3>Field research</h3><p>New data, external validation, contact with your target audience.</p></div></div><div class="foot"><span>AI in Business · week 3</span><span>2 / 9</span></div></section></div><div class="pnotes" data-audience="instructor" hidden><h3>Notes · 2 / 9</h3><p>Desk research: the tool AEL is building for the team's own research is the new part of the "way of working" — not a shortcut, a designed instrument. Field research: this is the case study visit, and it earns its place by giving the team something a desk cannot — data nobody else has, and a check against everything the desk work assumed.</p></div></div>
+<div class="page"><div class="stage"><section class="slide current" id="s3"><div class="slide-head"><div class="slide-kicker">Research methodology</div><span class="slide-no">3 / 9</span></div><h2>How do you create value in desk and field research?</h2><div class="cols"><div><h3>Desk research</h3><ul><li><strong>Reliable?</strong> Same result if you run it again.</li><li><strong>Valid?</strong> Measures what it claims to.</li><li><strong>Transparent?</strong> You can show how it works.</li></ul></div><div><h3>Field research</h3><p><strong>Relevance?</strong> What your case study says beyond itself.</p></div></div><div class="foot"><span>AI in Business · week 3</span><span>3 / 9</span></div></section></div><div class="pnotes" data-audience="instructor" hidden><h3>Notes · 3 / 9</h3><p>Reliability, validity and transparency are the three questions to ask of a tool's own output, not just of what it retrieves. A team that cannot say "yes" to all three does not yet have a research instrument, it has a demo. Field research earns its place on a different axis: not whether it is reliable in the same sense, but whether the one case generalises — its relevance beyond itself.</p></div></div>
+<div class="page"><div class="stage"><section class="slide current" id="s4"><div class="slide-head"><div class="slide-kicker">Research methodology</div><span class="slide-no">4 / 9</span></div><h2>Reliability, validity, transparency &mdash; your quality criteria</h2><p>What changes when you work with AI?</p><div class="foot"><span>AI in Business · week 3</span><span>4 / 9</span></div></section></div><div class="pnotes" data-audience="instructor" hidden><h3>Notes · 4 / 9</h3><p>The pivot slide. Reliability, validity and transparency are not new to research — they are the field's existing quality bar. What is new is asking them of a process that includes an AI tool: the tool's output has to clear the same bar a human researcher's would, and a team should be able to say how it knows.</p></div></div>
+<div class="page"><div class="stage"><section class="slide current" id="s5"><div class="slide-head"><div class="slide-kicker">Research methodology</div><span class="slide-no">5 / 9</span></div><h2>Discussion: your first handbook page</h2><ul><li><strong>Search strategy.</strong> How did you use it in the tool?</li><li><strong>Quality criteria.</strong> Were they respected?</li><li><strong>Output quality.</strong> How would you rate it today?</li></ul><div class="foot"><span>AI in Business · week 3</span><span>5 / 9</span></div></section></div><div class="pnotes" data-audience="instructor" hidden><h3>Notes · 5 / 9</h3><p>The room's own first result, not a hypothetical: this is the first time the search-strategy and quality-criteria assignments from week 2 come back to be checked rather than just handed in. Push on the middle question — "did you check" is a different claim from "did you write criteria" — and let the third question be answered honestly rather than diplomatically; a flat "not yet" is a better answer here than a confident guess.</p></div></div>
+<div class="page"><div class="stage"><section class="slide current" id="s6"><div class="slide-head"><div class="slide-kicker">Research methodology</div><span class="slide-no">6 / 9</span></div><h2>Trust splits three ways: the tool, you, and ownership</h2><ul><li><strong>The tool.</strong> Can you trust what it produces?</li><li><strong>You.</strong> Can you be trusted as the researcher?</li><li><strong>Ownership.</strong> Whose output is it?</li></ul><div class="foot"><span>AI in Business · week 3</span><span>6 / 9</span></div></section></div><div class="pnotes" data-audience="instructor" hidden><h3>Notes · 6 / 9</h3><p>Three separate questions, deliberately not collapsed into one. Trusting the tool's output is a methods question. Being trusted as a researcher is about the team's own credibility once AI is part of the process — a reader who cannot tell what the team checked will trust the whole page less, not more. Ownership is the one students usually have not considered: if the tool drafted it, whose work is it, and what do you say about that in the write-up?</p></div></div>
+<div class="page"><div class="stage"><section class="slide current" id="s7"><div class="slide-head"><div class="slide-kicker">Homework</div><span class="slide-no">7 / 9</span></div><h2>One exercise on your own, before week&nbsp;4</h2><p>About 25 minutes, any evening this week. <a href="tool-bias-experiment.html">The exercise is here</a>.</p>
+    <ul><li><strong>Bring</strong> your own AI assistant, signed in.</li><li><strong>Your team number</strong> sets the order of two rounds. Nothing else.</li><li><strong>In week&nbsp;4</strong> we read what the whole cohort did.</li></ul><div class="foot"><span>AI in Business · week 3</span><span>7 / 9</span></div></section></div><div class="pnotes" data-audience="instructor" hidden><h3>Notes · 7 / 9</h3><p>The exercise students do at home this week, alone, before the week 4 session. Say what it costs them (about 25 minutes and a laptop) and that the team number only sets the order of the two rounds. Say nothing about what the two rounds differ in: the comparison only works if they meet it cold. Their results come back in week 4, as one picture of the whole cohort.</p></div></div>
+<div class="page"><div class="stage"><section class="slide current" id="s8"><div class="slide-head"><div class="slide-kicker">Homework</div><span class="slide-no">8 / 9</span></div><h2>Three rounds, so your interview guide changes for a reason</h2><p>One guide per team, <strong>Friday morning 25 September</strong>. <a href="tool-interview-prep.html">The assignment is here</a>.</p>
+    <ul><li><strong>You first</strong> &mdash; no AI in the room.</li><li><strong>Then AI</strong>, briefed as your SME. Log what wobbled.</li><li><strong>Then your partner team</strong>, reading it cold.</li></ul><div class="foot"><span>AI in Business · week 3</span><span>8 / 9</span></div></section></div><div class="pnotes" data-audience="instructor" hidden><h3>Notes · 8 / 9</h3><p>The team assignment for the field visit, due Friday morning rather than before week 4 -- say the earlier date out loud, because it sits beside the exercise and the two deadlines differ. The three rounds are the point: round 1 has to exist before AI sees it, or round 2 has nothing honest to react to. Say that the green light is a readiness check and not a mark, and that it does not replace signed consent.</p></div></div>
+<div class="page"><div class="stage"><section class="slide current" id="s9"><div class="slide-head"><div class="slide-kicker">Our rulebook</div><span class="slide-no">9 / 9</span></div><h2>The rules we keep, week by week</h2><p>Every time we spot a habit worth keeping, we turn it into a rule.</p><div class="cols"><div><h3>Rule 1</h3><p>Before taking a break, <strong>always</strong> set AI to work.</p></div><div><h3>Rule 2</h3><p>Do something <strong>weird</strong>.</p></div><div><h3>Rule 3</h3><p class="tpl">Added together in the session.</p></div></div><div class="foot"><span>AI in Business · week 3</span><span>9 / 9</span></div></section></div><div class="pnotes" data-audience="instructor" hidden><h3>Notes · 9 / 9</h3><p>The rulebook, not the recap: read Rule 1 and Rule 2 as fixed and Rule 3 as the one the room writes today, the way week 2 wrote Rule 2. If nobody proposes one, offer a candidate rather than close the slide empty.</p></div></div>
+</div>
+<script>
+(function () {
+  var on;
+  try {
+    if (/[?&]instructor(=|&|$)/.test(location.search)) { on = true; sessionStorage.setItem('bds-instructor', '1'); }
+    else if (/[?&]student(=|&|$)/.test(location.search)) { on = false; sessionStorage.removeItem('bds-instructor'); }
+    else { on = sessionStorage.getItem('bds-instructor') === '1'; }
+  } catch (e) {
+    on = /[?&]instructor(=|&|$)/.test(location.search);
+  }
+  if (!on) return;
+  var marked = document.querySelectorAll('[data-audience="instructor"]');
+  for (var i = 0; i < marked.length; i++) marked[i].hidden = false;
+})();
+</script>
+<script>
+(function(){
+  var slides=[].slice.call(document.querySelectorAll('#app .stage > .slide'));
+  var app=document.getElementById('app'), counter=document.getElementById('counter');
+  var noteBoxes=[].slice.call(document.querySelectorAll('.notes .note'));
+  var i=0;
+  function go(n){
+    i=Math.max(0,Math.min(slides.length-1,n));
+    slides.forEach(function(s,k){s.classList.toggle('current',k===i)});
+    noteBoxes.forEach(function(b,k){b.hidden=(k!==i)});
+    counter.textContent=(i+1)+' / '+slides.length;
+    if(location.hash!=='#'+slides[i].id) history.replaceState(null,'','#'+slides[i].id);
+  }
+  function fromHash(){var k=slides.findIndex(function(s){return '#'+s.id===location.hash});go(k<0?0:k)}
+  var notesEl=document.querySelector('.notes');
+  function notesAllowed(){return notesEl&&!notesEl.hidden}
+  function toggleNotes(){if(!notesAllowed())return;app.classList.toggle('notes-on');try{localStorage.setItem('deck-notes',app.classList.contains('notes-on')?'1':'0')}catch(e){}}
+  document.addEventListener('keydown',function(e){
+    if(e.metaKey||e.ctrlKey||e.altKey) return;
+    switch(e.key){
+      case 'ArrowRight': case 'ArrowDown': case 'PageDown': case ' ': case 'Enter': go(i+1); e.preventDefault(); break;
+      case 'ArrowLeft': case 'ArrowUp': case 'PageUp': case 'Backspace': go(i-1); e.preventDefault(); break;
+      case 'Home': go(0); break; case 'End': go(slides.length-1); break;
+      case 'n': case 'N': toggleNotes(); break;
+      case 'f': case 'F': if(document.fullscreenElement) document.exitFullscreen(); else document.documentElement.requestFullscreen(); break;
+      case 'p': case 'P': window.print(); break;
+    }
+  });
+  document.getElementById('prev').onclick=function(){go(i-1)};
+  document.getElementById('next').onclick=function(){go(i+1)};
+  document.getElementById('notesbtn').onclick=toggleNotes;
+  document.getElementById('printbtn').onclick=function(){window.print()};
+  document.querySelector('#app .stage').addEventListener('click',function(e){
+    if(e.target.closest('a')) return;
+    var r=this.getBoundingClientRect(); go(e.clientX-r.left>r.width/2?i+1:i-1);
+  });
+  window.addEventListener('hashchange',fromHash);
+  var want=new URLSearchParams(location.search).get('notes');
+  try{ if(notesAllowed()&&(want==='1'||(want===null&&localStorage.getItem('deck-notes')==='1'))) app.classList.add('notes-on'); }catch(e){}
+  fromHash();
+})();
+</script>
+</body>
+</html>

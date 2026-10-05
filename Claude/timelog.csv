@@ -1,0 +1,22 @@
+date,person,stage,minutes,done_by (tool|hand|both),note
+17-09-2026,Floyd,1,13:55 - 14:16,tool,
+17-09-2026,Floyd,2,14:19-14:20,tool,
+17-09-2026,Floyd,3,14:21 - 14:25,tool,
+17-09-2026,Floyd,4,14:25- 14:27,tool,
+17-09-2026,Floyd,5,14:27- 14:31,tool,
+17-09-2026,Floyd,5,14:31-14:39,hand,checking and approving
+17-09-2026,Floyd,6,14:39- 14:42,both,
+01-10-2026,Floyd,1,17:14-17:14,tool,auto: source-finder
+01-10-2026,Floyd,2,17:14-17:14,tool,auto: appraiser
+01-10-2026,Floyd,3,17:14-17:15,tool,auto: translator
+01-10-2026,Floyd,1,17:17-17:19,tool,auto: source-finder
+01-10-2026,Floyd,1,17:24-17:24,tool,auto: source-finder
+01-10-2026,Floyd,1,17:24-17:24,tool,auto: source-finder
+01-10-2026,Floyd,1,17:24-17:25,tool,auto: source-finder
+01-10-2026,Floyd,1,17:25-17:25,tool,auto: source-finder
+01-10-2026,Floyd,1,17:25-17:26,tool,auto: source-finder
+01-10-2026,Floyd,2,17:26-17:26,tool,auto: appraiser
+01-10-2026,Floyd,3,17:27-17:28,tool,auto: translator
+01-10-2026,Floyd,4,17:30-17:31,tool,auto: drafter
+01-10-2026,Floyd,5,17:35-17:36,tool,auto: checker
+01-10-2026,Floyd,5,17:36-17:36,tool,auto: checker

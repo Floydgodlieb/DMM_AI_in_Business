@@ -3,7 +3,7 @@ title: Where your data goes (GDPR and hosting)
 type: topic
 summary: Who processes a firm's data in an AI tool, and where, can change by default - the GDPR processor clauses and vendor terms in the library
 updated: 2026-10-05
-sources: S-011, S-013, S-015, S-028
+sources: S-067, S-071, S-011, S-013, S-015, S-028
 ---
 
 # Where your data goes (GDPR and hosting)
@@ -18,6 +18,10 @@ An AI supplier's default terms often allow processing outside a fixed location, 
 - Data typed into an AI tool may not be protected [W4-020].
 - Privacy is a reason many firms hold back from AI [W4-022] [W4-024].
 
+## What SMEs worry about
+
+- Among SMEs not using generative AI, 52% worry about what happens to the information fed into the models, and 54% about copyright, legal or regulatory issues (OECD survey, self-reports) [W4-176]. In CBS 2025 (provisional), 49 percent of businesses name privacy as a reason not to use AI [W4-159]. See [[knowledge-gap]].
+
 ## Contradictions and tensions
 
 > [!contradiction] W2-029 vs W2-030: EU traffic stays in the EU, except for one subprocessor's models
@@ -30,4 +34,4 @@ An AI supplier's default terms often allow processing outside a fixed location, 
 
 ## Sources
 
-[[S-011]] · [[S-013]] · [[S-015]] · [[S-028]] · see also [[vendor-dependency]], [[ai-act]]
+[[S-011]] · [[S-013]] · [[S-015]] · [[S-028]] · [[S-067]] · [[S-071]] · see also [[vendor-dependency]], [[ai-act]]

@@ -25,6 +25,7 @@ The US leads on investment, China pushes adoption by plan, and Europe worries ab
 
 ## Gaps
 
+- The economic effects of AI, as opposed to the race, are on [[ai-and-the-economy]].
 - No claim links the race to a concrete effect on a Dutch trader's tools or prices.
 
 ## Sources

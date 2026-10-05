@@ -3,7 +3,7 @@ title: Where to get AI knowledge from outside
 type: topic
 summary: Hubs, school programmes, networks and bought-in advice - what exists for a firm without IT staff, and what the evidence says it achieves
 updated: 2026-10-05
-sources: S-022, S-026, S-027, S-033, S-034, S-035, S-039, S-040, S-042
+sources: S-022, S-026, S-027, S-033, S-034, S-035, S-039, S-040, S-042, S-064, S-066, S-068, S-072
 ---
 
 # Where to get AI knowledge from outside
@@ -21,12 +21,16 @@ Outside help exists and SMEs ask for it, but the evidence says it works best alo
 - **Digiwerkplaats mkb** ([[digiwerkplaats-mkb]]): Avans helps owners in West- and Noordoost-Brabant with digitalisation questions [W4-017].
 - **Your supplier:** ask what training implementation needs [W4-010].
 - **Partners and networks:** small firms partner with outside organisations [W4-067] and use networks as sources of innovation [W4-068].
+- **Government programmes:** the G7 ministers' SME AI Adoption Blueprint exists because SME adoption lags large firms in every G7 country [W4-143]; see [[g7-sme-ai-blueprint]]. It is not Dutch.
+- **A staged route (a preprint, not peer-reviewed, no data of its own):** leadership awareness, then low-cost general-purpose AI tools, then off-the-shelf task tools, and only later in-house builds [W4-161] [W4-162].
 
 ## What the evidence says it achieves
 
 - The hubs report that 90% of users improved their digital maturity, by their own monitoring [W4-034].
 - A UK trial of a voucher for outside expert advice found the knowledge gain fades within two years [W4-042] and does not close gaps in the long run [W4-046].
 - In 2020 data, outside support mattered least for AI adoption, after the firm's own digital and innovation capabilities [W4-052].
+
+- Skill shortages are among SMEs' main hurdles in the OECD paper [W4-181], and in the pilot interviews insufficient technical support is a barrier [W4-153]; so the gap outside help is meant to fill is well documented, its effect is not.
 
 ## Contradictions and tensions
 
@@ -43,4 +47,4 @@ Outside help exists and SMEs ask for it, but the evidence says it works best alo
 
 ## Sources
 
-[[S-022]] · [[S-026]] · [[S-027]] · [[S-033]] · [[S-034]] · [[S-035]] · [[S-039]] · [[S-040]] · [[S-042]]
+[[S-022]] · [[S-026]] · [[S-027]] · [[S-033]] · [[S-034]] · [[S-035]] · [[S-039]] · [[S-040]] · [[S-042]] · [[S-064]] · [[S-066]] · [[S-068]] · [[S-072]]

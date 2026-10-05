@@ -3,7 +3,7 @@ title: Building AI capability inside the firm
 type: topic
 summary: Own capabilities, management commitment and staff training matter more for AI adoption than outside support
 updated: 2026-10-05
-sources: S-025, S-034, S-038, S-040, S-041, S-042
+sources: S-025, S-034, S-038, S-040, S-041, S-042, S-068, S-071
 ---
 
 # Building AI capability inside the firm
@@ -17,6 +17,8 @@ The research converges on one point: a small firm adopts AI when it builds capab
 - Education and practical training give staff confidence and make AI seem easier [W4-066].
 - Management commitment can offset limited resources [W4-069]; managers must put AI literacy on the agenda and budget for it [W4-038].
 - The review's advice: a learning culture, workforce investment, open communication and adaptable leadership [W4-070].
+- A preprint (not peer-reviewed, no data of its own) proposes starting with leadership awareness and securing commitment, then low-cost general-purpose AI tools to build skills and a positive attitude [W4-161], in five phases from awareness to in-house models [W4-162].
+- In practice, a third or fewer of SMEs using generative AI train staff or set internal guidelines (OECD survey, self-reports) [W4-177].
 - A sector adviser: make a sound plan and start small [W4-016].
 - Government, education and employers should cooperate on training and lifelong learning [W4-032].
 
@@ -32,4 +34,4 @@ The research converges on one point: a small firm adopts AI when it builds capab
 
 ## Sources
 
-[[S-025]] · [[S-034]] · [[S-038]] · [[S-040]] · [[S-041]] · [[S-042]] · see also [[external-knowledge-routes]], [[ai-literacy-duty]]
+[[S-025]] · [[S-034]] · [[S-038]] · [[S-040]] · [[S-041]] · [[S-042]] · [[S-068]] · [[S-071]] · see also [[external-knowledge-routes]], [[ai-literacy-duty]]
